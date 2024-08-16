@@ -1,5 +1,11 @@
 [
 {
+  "originalGuid" : "d67f1ea2-a5da-4c9c-9d35-63584202f2b0",
+  "mappedGuid" : "35799617-82b2-4ede-9063-1b48439b262e",
+  "counter" : 0,
+  "additionalMapping" : { }
+},
+{
   "originalGuid" : "schema: PUBLIC",
   "mappedGuid" : "schema: SC",
   "counter" : 0,
