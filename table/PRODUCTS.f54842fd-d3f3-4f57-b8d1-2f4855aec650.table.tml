@@ -1,0 +1,48 @@
+guid: f54842fd-d3f3-4f57-b8d1-2f4855aec650
+table:
+  name: PRODUCTS
+  db: DATA_CHALLENGE
+  schema: PUBLIC
+  db_table: PRODUCTS
+  connection:
+    name: My Connection
+    fqn: d67f1ea2-a5da-4c9c-9d35-63584202f2b0
+  columns:
+  - name: PRODUCT_ID
+    db_column_name: PRODUCT_ID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: PRODUCT_NAME
+    db_column_name: PRODUCT_NAME
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: TYPE
+    db_column_name: TYPE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: UNIT_COST_USD
+    db_column_name: UNIT_COST_USD
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: UNIT_RETAIL_PRICE_USD
+    db_column_name: UNIT_RETAIL_PRICE_USD
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64

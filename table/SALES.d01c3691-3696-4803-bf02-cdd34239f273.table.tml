@@ -1,0 +1,47 @@
+guid: d01c3691-3696-4803-bf02-cdd34239f273
+table:
+  name: SALES
+  db: DATA_CHALLENGE
+  schema: PUBLIC
+  db_table: SALES
+  connection:
+    name: My Connection
+    fqn: d67f1ea2-a5da-4c9c-9d35-63584202f2b0
+  columns:
+  - name: DATE_ID
+    db_column_name: DATE_ID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: PRODUCT_ID
+    db_column_name: PRODUCT_ID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: QUANTITY_SOLD
+    db_column_name: QUANTITY_SOLD
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  joins_with:
+  - name: SALES_to_INVENTORY
+    destination:
+      name: INVENTORY
+      fqn: 43ab8a16-473a-44dc-9c78-4346eeb51f6c
+    "on": "[SALES::PRODUCT_ID] = [INVENTORY::PRODUCT_ID]"
+    type: INNER
+  - name: SALES_to_PRODUCTS
+    destination:
+      name: PRODUCTS
+      fqn: f54842fd-d3f3-4f57-b8d1-2f4855aec650
+    "on": "[SALES::PRODUCT_ID] = [PRODUCTS::PRODUCT_ID]"
+    type: INNER
