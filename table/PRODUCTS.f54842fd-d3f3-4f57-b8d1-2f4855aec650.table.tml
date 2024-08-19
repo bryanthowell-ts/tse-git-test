@@ -8,7 +8,7 @@ table:
     name: My Connection
     fqn: d67f1ea2-a5da-4c9c-9d35-63584202f2b0
   columns:
-  - name: PRODUCT_ID
+  - name: PRODUCT ID
     db_column_name: PRODUCT_ID
     properties:
       column_type: MEASURE
@@ -16,7 +16,7 @@ table:
       index_type: DONT_INDEX
     db_column_properties:
       data_type: INT64
-  - name: PRODUCT_NAME
+  - name: PRODUCT NAME
     db_column_name: PRODUCT_NAME
     properties:
       column_type: ATTRIBUTE
