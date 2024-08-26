@@ -34,6 +34,11 @@
   "counter" : 2,
   "additionalMapping" : { }
 }, {
+  "originalGuid" : "9bfaffe4-b75b-4c3f-b937-b8db28aaabe9",
+  "mappedGuid" : "83b0b378-483c-4254-a3c5-b739b8db9822",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
   "originalGuid" : "cca7bc78-3f7f-47bf-bc8a-ba47ef22fe17",
   "mappedGuid" : "cca7bc78-3f7f-47bf-bc8a-ba47ef22fe17",
   "counter" : 1,
