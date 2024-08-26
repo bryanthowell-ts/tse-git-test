@@ -1,14 +1,1 @@
-[
-{
-  "originalGuid" : "db: DEVDBNAME",
-  "mappedGuid" : "db: PRODDBNAME",
-  "counter" : 0,
-  "additionalMapping" : { }
-},
-{
-  "originalGuid" : "schema: DEV_SCHEMA",
-  "mappedGuid" : "schema: CUSTOMER_A_SCHEMA",
-  "counter" : 0,
-  "additionalMapping" : { }
-}
-]
+
