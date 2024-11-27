@@ -32,3 +32,11 @@ table:
       index_type: DONT_INDEX
     db_column_properties:
       data_type: INT64
+  - name: A_NEW_COLUMN
+    db_column_name: A_NEW_COLUMN
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
