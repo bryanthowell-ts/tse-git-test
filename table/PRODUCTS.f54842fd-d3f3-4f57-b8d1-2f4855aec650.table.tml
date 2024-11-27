@@ -30,7 +30,7 @@ table:
       index_type: DONT_INDEX
     db_column_properties:
       data_type: VARCHAR
-  - name: UNIT_COST_USD
+  - name: UNITCOST_USD
     db_column_name: UNIT_COST_USD
     properties:
       column_type: MEASURE
