@@ -24,4 +24,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install thoughtspot_rest_api_v1 
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Test Commit and push files
+      run: |
+        git config --local user.email "345292+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        echo "Test new file" > newfile.txt
+        git add *
+        git commit -a -m "Add changes"
+        git push
          
