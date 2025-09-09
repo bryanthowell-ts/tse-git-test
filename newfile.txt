@@ -1,4 +1,3 @@
-https://embed-1-do-not-delete.thoughtspotstaging.cloud
 [
   {
     "metadata_id": "6246c548-985b-4dcf-9b62-196314a404b3",
