@@ -26,7 +26,7 @@ jobs:
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test Commit and push files
       env:
-       SECRET_VAL: "Test of Secret"
+       TS_TOKEN: ${{ secrets.E1_ORG_0_TOKEN }}
       run: |
         git config --local user.email "bryant.howell@thoughtspot.com"
         git config --local user.name "bryanthowell-ts"
