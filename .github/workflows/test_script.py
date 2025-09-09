@@ -70,11 +70,19 @@ def export_tml_with_obj_id(guid:Optional[str] = None,
     return yaml_tml
 
 
-# Get all Tables
+# Get Liveboards
 search_request = {
-    'metadata': {'type': 'LOGICAL_TABLE'},
-    'record_offset': 0,
-    'record_size': 5  # default is 10
+    "metadata": [
+    {
+      "type": "LIVEBOARD"
+    }
+  ],
+  "sort_options": {
+    "field_name": "CREATED",
+    "order": "DESC"
+  },
+  "record_size" : 5,
+    "record_offset": 0
 }
 tables = ts.metadata_search(request=search_request)
 
