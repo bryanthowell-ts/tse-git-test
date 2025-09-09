@@ -30,7 +30,7 @@ jobs:
       run: |
         git config --local user.email "bryant.howell@thoughtspot.com"
         git config --local user.name "bryanthowell-ts"
-        python ./test_script.py > newfile.txt
+        python ${{ github.action_path }}/test_script.py > newfile.txt
         git add *
         git commit -a -m "Add changes"
         git push
