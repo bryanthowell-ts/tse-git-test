@@ -11,7 +11,7 @@ from thoughtspot_rest_api_v1 import *
 #
 server = os.environ.get('TS_SERVER')       # or type in yourself
 print(server)
-exit()
+# exit()
 # Supply access token from REST API Playground or provide username/password securely
 full_access_token = os.environ.get('TS_TOKEN')
 
