@@ -25,10 +25,12 @@ jobs:
         pip install thoughtspot_rest_api_v1 
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test Commit and push files
+      env:
+       SECRET_VAL: "Test of Secret"
       run: |
         git config --local user.email "bryant.howell@thoughtspot.com"
         git config --local user.name "bryanthowell-ts"
-        echo "Test new file" > newfile.txt
+        python test_script.py > newfile.txt
         git add *
         git commit -a -m "Add changes"
         git push
