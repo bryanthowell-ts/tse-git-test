@@ -79,7 +79,7 @@ search_request = {
 tables = ts.metadata_search(request=search_request)
 
 for t in tables:
-    export_tml_with_obj_id(guid=t["metadata_id"], save_to_disk=true)
+    export_tml_with_obj_id(guid=t["metadata_id"], save_to_disk=True)
 
 print(json.dumps(tables, indent=2))
 
