@@ -29,11 +29,13 @@ jobs:
       env:
        TS_TOKEN: ${{ secrets.E1_ORG_0_TOKEN }}
        TS_SERVER: ${{ secrets.TS_SERVER }}
+       TS_SECRET_KEY: ${{ secrets.TS_SECRET_KEY }}
+       TS_USERNAME: ${{ secrets.TS_USERNAME }}
       run: |
         git config --local user.email "bryant.howell@thoughtspot.com"
         git config --local user.name "bryanthowell-ts"
         python .github/workflows/test_script.py > newfile.txt
         git add *
-        git diff-index --quiet HEAD || git commit -a -m "Add changes"
+        git diff-index --quiet HEAD || git commit -a -m "Downloaded latest TML"
         git push
          
