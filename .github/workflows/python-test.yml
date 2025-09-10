@@ -6,7 +6,7 @@ name: Python application
 on: 
   workflow_dispatch:
     inputs:
-      ORG_NAME:
+      TS_ORG_NAME:
         type: string
         description: 'ThoughtSpot org name (not org_id)'
         required: true
