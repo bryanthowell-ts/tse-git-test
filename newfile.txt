@@ -1,5 +1,5 @@
-Searching for org_id for Secondary
-org_id 2004448319 found
+Searching for org_id for Bryant-Denise Collab
+org_id 1917474577 found
 Requesting object listing
 5 objects retrieved
 guid: d084c256-e284-4fc4-b80c-111cb606449a
@@ -325,6 +325,122 @@ liveboard:
     - visualization_id: Viz_7
       size: LARGE
     - visualization_id: Viz_8
+      size: LARGE
+
+-------
+obj_id: AnevenNewerLiveboard-94aab256
+liveboard:
+  name: Copy of An even Newer Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales by Region and County
+      tables:
+      - id: Sales - abac 10.4
+        name: Sales - abac 10.4
+        obj_id: Sales_ABAC_10_4
+      search_query: "[Sales] sort by [Sales] descending [County] [Region] [Product type]"
+      answer_columns:
+      - name: County
+      - name: Product type
+      - name: Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: County
+          show_headline: false
+        - column_id: Product type
+          show_headline: false
+        - column_id: Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - County
+        - Region
+        - Product type
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_BAR
+        chart_columns:
+        - column_id: County
+        - column_id: Product type
+        - column_id: Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Region
+          "y":
+          - Total Sales
+          color:
+          - County
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": false,\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"1ead118c-703e-4f1b-acba-87ba980abd00\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"343a6ebf-6aba-4131-8a92-4e5780b675ff\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#747E8C\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"},{\"serieName\": \"ada county\",\"color\": \"#721F27\"},{\"serieName\": \"alachua county\",\"color\": \"#F47E89\"},{\"serieName\": \"alameda county\",\"color\": \"#B6313E\"},{\"serieName\": \"allegheny county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"baltimore county\",\"color\": \"#F04152\"},{\"serieName\": \"benton county\",\"color\": \"#2F3947\"},{\"serieName\": \"bergen county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"bernalillo county\",\"color\": \"#47515F\"},{\"serieName\": \"bexar county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"boulder county\",\"color\": \"#747E8C\"},{\"serieName\": \"broomfield county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"buncombe county\",\"color\": \"#FFA97E\"},{\"serieName\": \"burlington county\",\"color\": \"#C26232\"},{\"serieName\": \"carroll county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"chittenden county\",\"color\": \"#FF8142\"},{\"serieName\": \"clackamas county\",\"color\": \"#422E75\"},{\"serieName\": \"clark county\",\"color\": \"#B094F8\"},{\"serieName\": \"cobb county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"coconino county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"contra costa county\",\"color\": \"#8C62F5\"},{\"serieName\": \"cook county\",\"color\": \"#025B3C\"},{\"serieName\": \"cuyahoga county\",\"color\": \"#56D3A8\"},{\"serieName\": \"dallas county\",\"color\": \"#049160\"},{\"serieName\": \"dane county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"davis county\",\"color\": \"#06BF7F\"},{\"serieName\": \"dekalb county\",\"color\": \"#785F1A\"},{\"serieName\": \"denton county\",\"color\": \"#FCD977\"},{\"serieName\": \"denver county\",\"color\": \"#BF982A\"},{\"serieName\": \"deschutes county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"district of columbia county\",\"color\": \"#FCC838\"},{\"serieName\": \"dupage county\",\"color\": \"#22636B\"},{\"serieName\": \"duval county\",\"color\": \"#82DFE9\"},{\"serieName\": \"el paso county\",\"color\": \"#369FAA\"},{\"serieName\": \"fairfax county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"fairfield county\",\"color\": \"#48D1E0\"},{\"serieName\": \"flathead county\",\"color\": \"#163772\"},{\"serieName\": \"franklin county\",\"color\": \"#71A1F4\"},{\"serieName\": \"fresno county\",\"color\": \"#2359B6\"},{\"serieName\": \"fulton county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"gallatin county\",\"color\": \"#2E75F0\"},{\"serieName\": \"greenville county\",\"color\": \"#721F27\"},{\"serieName\": \"guilford county\",\"color\": \"#F47E89\"},{\"serieName\": \"hall county\",\"color\": \"#B6313E\"},{\"serieName\": \"hamilton county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"harris county\",\"color\": \"#F04152\"},{\"serieName\": \"hartford county\",\"color\": \"#2F3947\"},{\"serieName\": \"hennepin county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"henrico county\",\"color\": \"#47515F\"},{\"serieName\": \"howard county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"jackson county\",\"color\": \"#747E8C\"},{\"serieName\": \"jefferson county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"johnson county\",\"color\": \"#FFA97E\"},{\"serieName\": \"kent county\",\"color\": \"#C26232\"},{\"serieName\": \"king county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"kitsap county\",\"color\": \"#FF8142\"},{\"serieName\": \"knox county\",\"color\": \"#422E75\"},{\"serieName\": \"lake county\",\"color\": \"#B094F8\"},{\"serieName\": \"lane county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"larimer county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"los angeles county\",\"color\": \"#8C62F5\"},{\"serieName\": \"madison county\",\"color\": \"#025B3C\"},{\"serieName\": \"maricopa county\",\"color\": \"#56D3A8\"},{\"serieName\": \"marin county\",\"color\": \"#049160\"},{\"serieName\": \"marion county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mecklenburg county\",\"color\": \"#06BF7F\"},{\"serieName\": \"mercer county\",\"color\": \"#785F1A\"},{\"serieName\": \"mesa county\",\"color\": \"#FCD977\"},{\"serieName\": \"middlesex county\",\"color\": \"#BF982A\"},{\"serieName\": \"missoula county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"monroe county\",\"color\": \"#FCC838\"},{\"serieName\": \"monterey county\",\"color\": \"#22636B\"},{\"serieName\": \"montgomery county\",\"color\": \"#82DFE9\"},{\"serieName\": \"morris county\",\"color\": \"#369FAA\"},{\"serieName\": \"multnomah county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"nassau county\",\"color\": \"#48D1E0\"},{\"serieName\": \"new castle county\",\"color\": \"#163772\"},{\"serieName\": \"new haven county\",\"color\": \"#71A1F4\"},{\"serieName\": \"new york city county\",\"color\": \"#2359B6\"},{\"serieName\": \"oakland county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"oklahoma county\",\"color\": \"#2E75F0\"},{\"serieName\": \"orange county\",\"color\": \"#721F27\"},{\"serieName\": \"pierce county\",\"color\": \"#F47E89\"},{\"serieName\": \"pima county\",\"color\": \"#B6313E\"},{\"serieName\": \"plymouth county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"polk county\",\"color\": \"#F04152\"},{\"serieName\": \"prince william county\",\"color\": \"#2F3947\"},{\"serieName\": \"providence county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"ramsey county\",\"color\": \"#47515F\"},{\"serieName\": \"richland county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"sacramento county\",\"color\": \"#747E8C\"},{\"serieName\": \"salt lake county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"san bernardino county\",\"color\": \"#FFA97E\"},{\"serieName\": \"san diego county\",\"color\": \"#C26232\"},{\"serieName\": \"san francisco county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"san luis obispo county\",\"color\": \"#FF8142\"},{\"serieName\": \"san mateo county\",\"color\": \"#422E75\"},{\"serieName\": \"santa barbara county\",\"color\": \"#B094F8\"},{\"serieName\": \"santa clara county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"santa fe county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"shelby county\",\"color\": \"#8C62F5\"},{\"serieName\": \"snohomish county\",\"color\": \"#025B3C\"},{\"serieName\": \"sonoma county\",\"color\": \"#56D3A8\"},{\"serieName\": \"spokane county\",\"color\": \"#049160\"},{\"serieName\": \"st. louis county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"suffolk county\",\"color\": \"#06BF7F\"},{\"serieName\": \"summit county\",\"color\": \"#785F1A\"},{\"serieName\": \"tarrant county\",\"color\": \"#FCD977\"},{\"serieName\": \"thurston county\",\"color\": \"#BF982A\"},{\"serieName\": \"travis county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"ventura county\",\"color\": \"#FCC838\"},{\"serieName\": \"virginia beach city county\",\"color\": \"#22636B\"},{\"serieName\": \"wake county\",\"color\": \"#82DFE9\"},{\"serieName\": \"washington county\",\"color\": \"#369FAA\"},{\"serieName\": \"washoe county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"washtenaw county\",\"color\": \"#48D1E0\"},{\"serieName\": \"waukesha county\",\"color\": \"#163772\"},{\"serieName\": \"wayne county\",\"color\": \"#71A1F4\"},{\"serieName\": \"westchester county\",\"color\": \"#2359B6\"},{\"serieName\": \"whatcom county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"williamson county\",\"color\": \"#2E75F0\"},{\"serieName\": \"yellowstone county\",\"color\": \"#721F27\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: efe435bd-9a99-4046-b9b3-1210d987b133
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
+
+-------
+obj_id: ANewLiveboard-1
+liveboard:
+  name: An even Newer Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales by Region and County
+      tables:
+      - id: Sales - abac 10.4
+        name: Sales - abac 10.4
+        obj_id: Sales_ABAC_10_4
+      search_query: "[Sales] sort by [Sales] descending [County] [Region] [Product type]"
+      answer_columns:
+      - name: County
+      - name: Product type
+      - name: Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: County
+          show_headline: false
+        - column_id: Product type
+          show_headline: false
+        - column_id: Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - County
+        - Region
+        - Product type
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_BAR
+        chart_columns:
+        - column_id: County
+        - column_id: Product type
+        - column_id: Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Region
+          "y":
+          - Total Sales
+          color:
+          - County
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": false,\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"1ead118c-703e-4f1b-acba-87ba980abd00\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"343a6ebf-6aba-4131-8a92-4e5780b675ff\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#747E8C\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"},{\"serieName\": \"ada county\",\"color\": \"#721F27\"},{\"serieName\": \"alachua county\",\"color\": \"#F47E89\"},{\"serieName\": \"alameda county\",\"color\": \"#B6313E\"},{\"serieName\": \"allegheny county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"baltimore county\",\"color\": \"#F04152\"},{\"serieName\": \"benton county\",\"color\": \"#2F3947\"},{\"serieName\": \"bergen county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"bernalillo county\",\"color\": \"#47515F\"},{\"serieName\": \"bexar county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"boulder county\",\"color\": \"#747E8C\"},{\"serieName\": \"broomfield county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"buncombe county\",\"color\": \"#FFA97E\"},{\"serieName\": \"burlington county\",\"color\": \"#C26232\"},{\"serieName\": \"carroll county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"chittenden county\",\"color\": \"#FF8142\"},{\"serieName\": \"clackamas county\",\"color\": \"#422E75\"},{\"serieName\": \"clark county\",\"color\": \"#B094F8\"},{\"serieName\": \"cobb county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"coconino county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"contra costa county\",\"color\": \"#8C62F5\"},{\"serieName\": \"cook county\",\"color\": \"#025B3C\"},{\"serieName\": \"cuyahoga county\",\"color\": \"#56D3A8\"},{\"serieName\": \"dallas county\",\"color\": \"#049160\"},{\"serieName\": \"dane county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"davis county\",\"color\": \"#06BF7F\"},{\"serieName\": \"dekalb county\",\"color\": \"#785F1A\"},{\"serieName\": \"denton county\",\"color\": \"#FCD977\"},{\"serieName\": \"denver county\",\"color\": \"#BF982A\"},{\"serieName\": \"deschutes county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"district of columbia county\",\"color\": \"#FCC838\"},{\"serieName\": \"dupage county\",\"color\": \"#22636B\"},{\"serieName\": \"duval county\",\"color\": \"#82DFE9\"},{\"serieName\": \"el paso county\",\"color\": \"#369FAA\"},{\"serieName\": \"fairfax county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"fairfield county\",\"color\": \"#48D1E0\"},{\"serieName\": \"flathead county\",\"color\": \"#163772\"},{\"serieName\": \"franklin county\",\"color\": \"#71A1F4\"},{\"serieName\": \"fresno county\",\"color\": \"#2359B6\"},{\"serieName\": \"fulton county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"gallatin county\",\"color\": \"#2E75F0\"},{\"serieName\": \"greenville county\",\"color\": \"#721F27\"},{\"serieName\": \"guilford county\",\"color\": \"#F47E89\"},{\"serieName\": \"hall county\",\"color\": \"#B6313E\"},{\"serieName\": \"hamilton county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"harris county\",\"color\": \"#F04152\"},{\"serieName\": \"hartford county\",\"color\": \"#2F3947\"},{\"serieName\": \"hennepin county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"henrico county\",\"color\": \"#47515F\"},{\"serieName\": \"howard county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"jackson county\",\"color\": \"#747E8C\"},{\"serieName\": \"jefferson county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"johnson county\",\"color\": \"#FFA97E\"},{\"serieName\": \"kent county\",\"color\": \"#C26232\"},{\"serieName\": \"king county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"kitsap county\",\"color\": \"#FF8142\"},{\"serieName\": \"knox county\",\"color\": \"#422E75\"},{\"serieName\": \"lake county\",\"color\": \"#B094F8\"},{\"serieName\": \"lane county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"larimer county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"los angeles county\",\"color\": \"#8C62F5\"},{\"serieName\": \"madison county\",\"color\": \"#025B3C\"},{\"serieName\": \"maricopa county\",\"color\": \"#56D3A8\"},{\"serieName\": \"marin county\",\"color\": \"#049160\"},{\"serieName\": \"marion county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mecklenburg county\",\"color\": \"#06BF7F\"},{\"serieName\": \"mercer county\",\"color\": \"#785F1A\"},{\"serieName\": \"mesa county\",\"color\": \"#FCD977\"},{\"serieName\": \"middlesex county\",\"color\": \"#BF982A\"},{\"serieName\": \"missoula county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"monroe county\",\"color\": \"#FCC838\"},{\"serieName\": \"monterey county\",\"color\": \"#22636B\"},{\"serieName\": \"montgomery county\",\"color\": \"#82DFE9\"},{\"serieName\": \"morris county\",\"color\": \"#369FAA\"},{\"serieName\": \"multnomah county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"nassau county\",\"color\": \"#48D1E0\"},{\"serieName\": \"new castle county\",\"color\": \"#163772\"},{\"serieName\": \"new haven county\",\"color\": \"#71A1F4\"},{\"serieName\": \"new york city county\",\"color\": \"#2359B6\"},{\"serieName\": \"oakland county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"oklahoma county\",\"color\": \"#2E75F0\"},{\"serieName\": \"orange county\",\"color\": \"#721F27\"},{\"serieName\": \"pierce county\",\"color\": \"#F47E89\"},{\"serieName\": \"pima county\",\"color\": \"#B6313E\"},{\"serieName\": \"plymouth county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"polk county\",\"color\": \"#F04152\"},{\"serieName\": \"prince william county\",\"color\": \"#2F3947\"},{\"serieName\": \"providence county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"ramsey county\",\"color\": \"#47515F\"},{\"serieName\": \"richland county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"sacramento county\",\"color\": \"#747E8C\"},{\"serieName\": \"salt lake county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"san bernardino county\",\"color\": \"#FFA97E\"},{\"serieName\": \"san diego county\",\"color\": \"#C26232\"},{\"serieName\": \"san francisco county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"san luis obispo county\",\"color\": \"#FF8142\"},{\"serieName\": \"san mateo county\",\"color\": \"#422E75\"},{\"serieName\": \"santa barbara county\",\"color\": \"#B094F8\"},{\"serieName\": \"santa clara county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"santa fe county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"shelby county\",\"color\": \"#8C62F5\"},{\"serieName\": \"snohomish county\",\"color\": \"#025B3C\"},{\"serieName\": \"sonoma county\",\"color\": \"#56D3A8\"},{\"serieName\": \"spokane county\",\"color\": \"#049160\"},{\"serieName\": \"st. louis county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"suffolk county\",\"color\": \"#06BF7F\"},{\"serieName\": \"summit county\",\"color\": \"#785F1A\"},{\"serieName\": \"tarrant county\",\"color\": \"#FCD977\"},{\"serieName\": \"thurston county\",\"color\": \"#BF982A\"},{\"serieName\": \"travis county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"ventura county\",\"color\": \"#FCC838\"},{\"serieName\": \"virginia beach city county\",\"color\": \"#22636B\"},{\"serieName\": \"wake county\",\"color\": \"#82DFE9\"},{\"serieName\": \"washington county\",\"color\": \"#369FAA\"},{\"serieName\": \"washoe county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"washtenaw county\",\"color\": \"#48D1E0\"},{\"serieName\": \"waukesha county\",\"color\": \"#163772\"},{\"serieName\": \"wayne county\",\"color\": \"#71A1F4\"},{\"serieName\": \"westchester county\",\"color\": \"#2359B6\"},{\"serieName\": \"whatcom county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"williamson county\",\"color\": \"#2E75F0\"},{\"serieName\": \"yellowstone county\",\"color\": \"#721F27\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 7ed90d35-0f80-4f13-93f5-bd9598e82daf
+  layout:
+    tiles:
+    - visualization_id: Viz_1
       size: LARGE
 
 -------
@@ -2203,223 +2319,58 @@ liveboard:
       value: "false"
 
 -------
-obj_id: TestLB-10f9fb98
+obj_id: A_New_Liveboard
 liveboard:
-  name: Copy of Test LB 1
+  name: A New Liveboard
   visualizations:
   - id: Viz_1
     answer:
-      name: Total Total Sales by City
+      name: Total Sales by Region and County
       tables:
-      - id: Retail Sales
-        name: Retail Sales
-        obj_id: RetailSales-f88e8305
-      search_query: "[Total Sales] [City]"
+      - id: Sales - abac 10.4
+        name: Sales - abac 10.4
+        obj_id: Sales_ABAC_10_4
+      search_query: "[Sales] sort by [Sales] descending [County] [Region] [Product type]"
       answer_columns:
-      - name: City
-      - name: Total Total Sales
+      - name: County
+      - name: Product type
+      - name: Region
+      - name: Total Sales
       table:
         table_columns:
-        - column_id: City
+        - column_id: County
           show_headline: false
-        - column_id: Total Total Sales
+        - column_id: Product type
+          show_headline: false
+        - column_id: Region
+          show_headline: false
+        - column_id: Total Sales
           show_headline: false
         ordered_column_ids:
-        - City
-        - Total Total Sales
+        - County
+        - Region
+        - Product type
+        - Total Sales
         client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
-        type: COLUMN
+        type: STACKED_BAR
         chart_columns:
-        - column_id: City
-        - column_id: Total Total Sales
+        - column_id: County
+        - column_id: Product type
+        - column_id: Region
+        - column_id: Total Sales
         axis_configs:
         - x:
-          - City
+          - Region
           "y":
-          - Total Total Sales
+          - Total Sales
+          color:
+          - County
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Total Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"90752a41-4ce1-4d68-af2d-3b74a3c238ad\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Sales\"],\"isOpposite\": false}},{\"id\": \"54f56728-10ca-486e-b93c-64bdcbc0857d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"City\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Total Sales\",\"color\": \"#FF8142\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": false,\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"1ead118c-703e-4f1b-acba-87ba980abd00\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"343a6ebf-6aba-4131-8a92-4e5780b675ff\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#747E8C\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"},{\"serieName\": \"ada county\",\"color\": \"#721F27\"},{\"serieName\": \"alachua county\",\"color\": \"#F47E89\"},{\"serieName\": \"alameda county\",\"color\": \"#B6313E\"},{\"serieName\": \"allegheny county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"baltimore county\",\"color\": \"#F04152\"},{\"serieName\": \"benton county\",\"color\": \"#2F3947\"},{\"serieName\": \"bergen county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"bernalillo county\",\"color\": \"#47515F\"},{\"serieName\": \"bexar county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"boulder county\",\"color\": \"#747E8C\"},{\"serieName\": \"broomfield county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"buncombe county\",\"color\": \"#FFA97E\"},{\"serieName\": \"burlington county\",\"color\": \"#C26232\"},{\"serieName\": \"carroll county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"chittenden county\",\"color\": \"#FF8142\"},{\"serieName\": \"clackamas county\",\"color\": \"#422E75\"},{\"serieName\": \"clark county\",\"color\": \"#B094F8\"},{\"serieName\": \"cobb county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"coconino county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"contra costa county\",\"color\": \"#8C62F5\"},{\"serieName\": \"cook county\",\"color\": \"#025B3C\"},{\"serieName\": \"cuyahoga county\",\"color\": \"#56D3A8\"},{\"serieName\": \"dallas county\",\"color\": \"#049160\"},{\"serieName\": \"dane county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"davis county\",\"color\": \"#06BF7F\"},{\"serieName\": \"dekalb county\",\"color\": \"#785F1A\"},{\"serieName\": \"denton county\",\"color\": \"#FCD977\"},{\"serieName\": \"denver county\",\"color\": \"#BF982A\"},{\"serieName\": \"deschutes county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"district of columbia county\",\"color\": \"#FCC838\"},{\"serieName\": \"dupage county\",\"color\": \"#22636B\"},{\"serieName\": \"duval county\",\"color\": \"#82DFE9\"},{\"serieName\": \"el paso county\",\"color\": \"#369FAA\"},{\"serieName\": \"fairfax county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"fairfield county\",\"color\": \"#48D1E0\"},{\"serieName\": \"flathead county\",\"color\": \"#163772\"},{\"serieName\": \"franklin county\",\"color\": \"#71A1F4\"},{\"serieName\": \"fresno county\",\"color\": \"#2359B6\"},{\"serieName\": \"fulton county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"gallatin county\",\"color\": \"#2E75F0\"},{\"serieName\": \"greenville county\",\"color\": \"#721F27\"},{\"serieName\": \"guilford county\",\"color\": \"#F47E89\"},{\"serieName\": \"hall county\",\"color\": \"#B6313E\"},{\"serieName\": \"hamilton county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"harris county\",\"color\": \"#F04152\"},{\"serieName\": \"hartford county\",\"color\": \"#2F3947\"},{\"serieName\": \"hennepin county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"henrico county\",\"color\": \"#47515F\"},{\"serieName\": \"howard county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"jackson county\",\"color\": \"#747E8C\"},{\"serieName\": \"jefferson county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"johnson county\",\"color\": \"#FFA97E\"},{\"serieName\": \"kent county\",\"color\": \"#C26232\"},{\"serieName\": \"king county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"kitsap county\",\"color\": \"#FF8142\"},{\"serieName\": \"knox county\",\"color\": \"#422E75\"},{\"serieName\": \"lake county\",\"color\": \"#B094F8\"},{\"serieName\": \"lane county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"larimer county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"los angeles county\",\"color\": \"#8C62F5\"},{\"serieName\": \"madison county\",\"color\": \"#025B3C\"},{\"serieName\": \"maricopa county\",\"color\": \"#56D3A8\"},{\"serieName\": \"marin county\",\"color\": \"#049160\"},{\"serieName\": \"marion county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mecklenburg county\",\"color\": \"#06BF7F\"},{\"serieName\": \"mercer county\",\"color\": \"#785F1A\"},{\"serieName\": \"mesa county\",\"color\": \"#FCD977\"},{\"serieName\": \"middlesex county\",\"color\": \"#BF982A\"},{\"serieName\": \"missoula county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"monroe county\",\"color\": \"#FCC838\"},{\"serieName\": \"monterey county\",\"color\": \"#22636B\"},{\"serieName\": \"montgomery county\",\"color\": \"#82DFE9\"},{\"serieName\": \"morris county\",\"color\": \"#369FAA\"},{\"serieName\": \"multnomah county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"nassau county\",\"color\": \"#48D1E0\"},{\"serieName\": \"new castle county\",\"color\": \"#163772\"},{\"serieName\": \"new haven county\",\"color\": \"#71A1F4\"},{\"serieName\": \"new york city county\",\"color\": \"#2359B6\"},{\"serieName\": \"oakland county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"oklahoma county\",\"color\": \"#2E75F0\"},{\"serieName\": \"orange county\",\"color\": \"#721F27\"},{\"serieName\": \"pierce county\",\"color\": \"#F47E89\"},{\"serieName\": \"pima county\",\"color\": \"#B6313E\"},{\"serieName\": \"plymouth county\",\"color\": \"#F9B3B9\"},{\"serieName\": \"polk county\",\"color\": \"#F04152\"},{\"serieName\": \"prince william county\",\"color\": \"#2F3947\"},{\"serieName\": \"providence county\",\"color\": \"#A2ACBA\"},{\"serieName\": \"ramsey county\",\"color\": \"#47515F\"},{\"serieName\": \"richland county\",\"color\": \"#BEC6D0\"},{\"serieName\": \"sacramento county\",\"color\": \"#747E8C\"},{\"serieName\": \"salt lake county\",\"color\": \"#7A3D1F\"},{\"serieName\": \"san bernardino county\",\"color\": \"#FFA97E\"},{\"serieName\": \"san diego county\",\"color\": \"#C26232\"},{\"serieName\": \"san francisco county\",\"color\": \"#FFCCB3\"},{\"serieName\": \"san luis obispo county\",\"color\": \"#FF8142\"},{\"serieName\": \"san mateo county\",\"color\": \"#422E75\"},{\"serieName\": \"santa barbara county\",\"color\": \"#B094F8\"},{\"serieName\": \"santa clara county\",\"color\": \"#6A4ABA\"},{\"serieName\": \"santa fe county\",\"color\": \"#D1C0FB\"},{\"serieName\": \"shelby county\",\"color\": \"#8C62F5\"},{\"serieName\": \"snohomish county\",\"color\": \"#025B3C\"},{\"serieName\": \"sonoma county\",\"color\": \"#56D3A8\"},{\"serieName\": \"spokane county\",\"color\": \"#049160\"},{\"serieName\": \"st. louis county\",\"color\": \"#9BE5CB\"},{\"serieName\": \"suffolk county\",\"color\": \"#06BF7F\"},{\"serieName\": \"summit county\",\"color\": \"#785F1A\"},{\"serieName\": \"tarrant county\",\"color\": \"#FCD977\"},{\"serieName\": \"thurston county\",\"color\": \"#BF982A\"},{\"serieName\": \"travis county\",\"color\": \"#FDE9AF\"},{\"serieName\": \"ventura county\",\"color\": \"#FCC838\"},{\"serieName\": \"virginia beach city county\",\"color\": \"#22636B\"},{\"serieName\": \"wake county\",\"color\": \"#82DFE9\"},{\"serieName\": \"washington county\",\"color\": \"#369FAA\"},{\"serieName\": \"washoe county\",\"color\": \"#B5ECF2\"},{\"serieName\": \"washtenaw county\",\"color\": \"#48D1E0\"},{\"serieName\": \"waukesha county\",\"color\": \"#163772\"},{\"serieName\": \"wayne county\",\"color\": \"#71A1F4\"},{\"serieName\": \"westchester county\",\"color\": \"#2359B6\"},{\"serieName\": \"whatcom county\",\"color\": \"#ABC7F9\"},{\"serieName\": \"williamson county\",\"color\": \"#2E75F0\"},{\"serieName\": \"yellowstone county\",\"color\": \"#721F27\"}]}"
       display_mode: TABLE_MODE
-    viz_guid: 2ef289d7-063f-4b2d-8135-3c45292615e7
-  layout:
-    tiles:
-    - visualization_id: Viz_1
-      size: MEDIUM
-
--------
-obj_id: Test_LB_Pinelopi_1
-liveboard:
-  name: Test LB
-  visualizations:
-  - id: Viz_1
-    answer:
-      name: Total Total Sales by City
-      tables:
-      - id: Retail Sales
-        name: Retail Sales
-        obj_id: RetailSales-f88e8305
-      search_query: "[Total Sales] [City]"
-      answer_columns:
-      - name: City
-      - name: Total Total Sales
-      table:
-        table_columns:
-        - column_id: City
-          show_headline: false
-        - column_id: Total Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - City
-        - Total Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: City
-        - column_id: Total Total Sales
-        axis_configs:
-        - x:
-          - City
-          "y":
-          - Total Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Total Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"90752a41-4ce1-4d68-af2d-3b74a3c238ad\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Sales\"],\"isOpposite\": false}},{\"id\": \"54f56728-10ca-486e-b93c-64bdcbc0857d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"City\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Total Sales\",\"color\": \"#FF8142\"}]}"
-      display_mode: TABLE_MODE
-    viz_guid: 763a04cc-fe3b-4785-96bd-4ce6f96801db
-  - id: Viz_2
-    answer:
-      name: product
-      tables:
-      - id: (Sample) Retail - Apparel
-        name: (Sample) Retail - Apparel
-        obj_id: SampleRetail-Apparel-cd252e5c
-      search_query: "[product] [product].'Active boxer briefs' [product].'Active boy shorts' [product].'Active briefs'"
-      answer_columns:
-      - name: product
-      table:
-        table_columns:
-        - column_id: product
-          show_headline: false
-        ordered_column_ids:
-        - product
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}}]}"
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: product
-        axis_configs:
-        - "y":
-          - product
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b74202aa-6972-4e47-a269-be75816e642d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"product\"],\"isOpposite\": false}},{\"id\": \"b2668832-7937-4def-881a-af322c882c44\",\"properties\": {\"axisType\": \"X\"}}]}"
-      display_mode: TABLE_MODE
-    viz_guid: bdaf437f-d345-4b49-8fbe-b90bfa8c8120
-  - id: Viz_3
-    answer:
-      name: Total sales by region
-      tables:
-      - id: (Sample) Retail - Apparel
-        name: (Sample) Retail - Apparel
-        obj_id: SampleRetail-Apparel-cd252e5c
-      search_query: "[sales] [region]"
-      answer_columns:
-      - name: Total sales
-      - name: region
-      table:
-        table_columns:
-        - column_id: Total sales
-          show_headline: false
-        - column_id: region
-          show_headline: false
-        ordered_column_ids:
-        - region
-        - Total sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Total sales
-        - column_id: region
-        axis_configs:
-        - x:
-          - region
-          "y":
-          - Total sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"dfd16d5d-3dbb-4928-a1e7-91d4837ee5ab\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"c674c1a6-c263-44e2-9edd-391de2933ea3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#FCC838\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: 455af8ae-a8d9-4ea5-b1ba-6e836d223712
-  filters:
-  - column:
-    - (Sample) Retail - Apparel::item type
-    oper: in
-    values:
-    - bags
-    - dresses
-    - headwear
-    is_mandatory: false
-    is_single_value: false
-    display_name: ""
-  layout:
-    tiles:
-    - visualization_id: Viz_1
-      size: MEDIUM
-    - visualization_id: Viz_2
-      size: LARGE
-  ordered_chips:
-  - name: (Sample) Retail - Apparel::item type
-    type: FILTER
-
--------
-obj_id: grp1usersfirstLiveboard-df960e4d
-liveboard:
-  name: grp1user's first Liveboard
-  visualizations:
-  - id: Viz_1
-    answer:
-      name: "City, Monthly Sales Date"
-      tables:
-      - id: Retail Sales
-        name: Retail Sales
-        obj_id: RetailSales-f88e8305
-      search_query: "[City] [Sales Date] [Sales Date].monthly"
-      answer_columns:
-      - name: City
-      - name: Month(Sales Date)
-      table:
-        table_columns:
-        - column_id: City
-          show_headline: false
-        - column_id: Month(Sales Date)
-          show_headline: false
-        ordered_column_ids:
-        - City
-        - Month(Sales Date)
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Month(Sales Date)\",\"columnProperty\": {}}]}"
-      chart:
-        type: SCATTER
-        chart_columns:
-        - column_id: City
-        - column_id: Month(Sales Date)
-        axis_configs:
-        - x:
-          - Month(Sales Date)
-          "y":
-          - City
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Month(Sales Date)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"82ac603b-c4da-407d-a062-91033e5faa2d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"City\"],\"isOpposite\": false}},{\"id\": \"f9bbced8-833d-4c37-b6fa-5cca3fd63917\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sales Date)\"]}}]}"
-      display_mode: TABLE_MODE
-    viz_guid: 4b6c98ab-a2b1-4778-b3c6-210cfc52382a
-    action_object_associations:
-    - action_name: grp1CA
-      context: PRIMARY
-      enabled: true
+    viz_guid: 09c57138-eb6c-4976-b45e-35ffb16d9bff
   layout:
     tiles:
     - visualization_id: Viz_1
