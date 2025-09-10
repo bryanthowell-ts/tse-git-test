@@ -1,0 +1,44 @@
+obj_id: TestLB-10f9fb98
+liveboard:
+  name: Copy of Test LB 1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Total Sales by City
+      tables:
+      - id: Retail Sales
+        name: Retail Sales
+        obj_id: RetailSales-f88e8305
+      search_query: "[Total Sales] [City]"
+      answer_columns:
+      - name: City
+      - name: Total Total Sales
+      table:
+        table_columns:
+        - column_id: City
+          show_headline: false
+        - column_id: Total Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - City
+        - Total Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: City
+        - column_id: Total Total Sales
+        axis_configs:
+        - x:
+          - City
+          "y":
+          - Total Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Total Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"90752a41-4ce1-4d68-af2d-3b74a3c238ad\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Sales\"],\"isOpposite\": false}},{\"id\": \"54f56728-10ca-486e-b93c-64bdcbc0857d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"City\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Total Sales\",\"color\": \"#FF8142\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 2ef289d7-063f-4b2d-8135-3c45292615e7
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
