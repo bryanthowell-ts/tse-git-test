@@ -27,6 +27,7 @@ except requests.exceptions.HTTPError as e:
 
 # Get token for the specified org_name
 try:
+    print("Searching for org_id for {}".format(org_name))
     org_search_req = {
         "org_identifier": org_name
     }
@@ -35,10 +36,10 @@ except requests.exceptions.HTTPError as e:
     print(e)
     print(e.response.content)
     exit()
-    
+
 if len(search_resp) == 1:
     org_id = search_resp[0]['id']
-
+    print("org_id {} found".format(org_id))
     try:
         auth_resp = ts.auth_token_full(username=username, secret_key=secret_key,
                                        validity_time_in_sec=3000, org_id=org_id)
@@ -119,10 +120,19 @@ search_request = {
   "record_size" : 5,
     "record_offset": 0
 }
-tables = ts.metadata_search(request=search_request)
+
+print("Requesting object listing")
+try:
+    tables = ts.metadata_search(request=search_request)
+except requests.exceptions.HTTPError as e:
+    print(e)
+    print(e.response.content)
+    exit()
+
+print("{} objects retrieved".format(len(tables)))
 
 for t in tables:
     export_tml_with_obj_id(guid=t["metadata_id"], save_to_disk=True)
 
-print(json.dumps(tables, indent=2))
+print("Finished bringing all objects to disk")
 
