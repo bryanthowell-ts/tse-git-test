@@ -31,17 +31,22 @@ try:
         "org_identifier": org_name
     }
     search_resp = ts.orgs_search(request=org_search_req)
-    if len(search_resp) == 1:
-        org_id = search_resp[0]['id']
+except requests.exceptions.HTTPError as e:
+    print(e)
+    print(e.response.content)
+    exit()
+    
+if len(search_resp) == 1:
+    org_id = search_resp[0]['id']
 
-        try:
-            auth_resp = ts.auth_token_full(username=username, secret_key=secret_key,
-                                           validity_time_in_sec=3000, org_id=org_id)
-            ts.bearer_token = auth_resp['token']
-        except requests.exceptions.HTTPError as e:
-            print(e)
-            print(e.response.content)
-            exit()
+    try:
+        auth_resp = ts.auth_token_full(username=username, secret_key=secret_key,
+                                       validity_time_in_sec=3000, org_id=org_id)
+        ts.bearer_token = auth_resp['token']
+    except requests.exceptions.HTTPError as e:
+        print(e)
+        print(e.response.content)
+        exit()
 
 # Wrapper of Export TML of a single item, with lookup via GUID or obj_id, and saving to disk with
 # standard naming pattern
