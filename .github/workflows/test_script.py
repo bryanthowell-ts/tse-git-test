@@ -6,12 +6,42 @@ import json
 from thoughtspot_rest_api_v1 import *
 
 server = os.environ.get('TS_SERVER') # Passed into ENV from Workflow file, using GitHub secrets
-full_access_token = os.environ.get('TS_TOKEN') # Passed into ENV from Workflow file, using GitHub secrets
-
+# full_access_token = os.environ.get('TS_TOKEN') # Passed into ENV from Workflow file, using GitHub secrets
+username = os.environ.get('TS_USERNAME')
+secret_key = os.environ.get('TS_SECRET_KEY')
+org_name = os.environ.get('ORG_NAME')
 
 ts: TSRestApiV2 = TSRestApiV2(server_url=server)
-if full_access_token != "":
-    ts.bearer_token = full_access_token
+# if full_access_token != "":
+#    ts.bearer_token = full_access_token
+
+# First get Org_Id: 0 to request orgs list
+try:
+    auth_token_response = ts.auth_token_full(username=username, secret_key=secret_key,
+                                               validity_time_in_sec=3000, org_id=0)
+    ts.bearer_token = auth_token_response['token']
+except requests.exceptions.HTTPError as e:
+    print(e)
+    print(e.response.content)
+    exit()
+
+# Get token for the specified org_name
+try:
+    org_search_req = {
+        "org_identifier": org_name
+    }
+    search_resp = ts.orgs_search(request=org_search_req)
+    if len(search_resp) == 1:
+        org_id = search_resp[0]['id']
+
+        try:
+            auth_resp = ts.auth_token_full(username=username, secret_key=secret_key,
+                                           validity_time_in_sec=3000, org_id=org_id)
+            ts.bearer_token = auth_resp['token']
+        except requests.exceptions.HTTPError as e:
+            print(e)
+            print(e.response.content)
+            exit()
 
 # Wrapper of Export TML of a single item, with lookup via GUID or obj_id, and saving to disk with
 # standard naming pattern
