@@ -9,7 +9,7 @@ server = os.environ.get('TS_SERVER') # Passed into ENV from Workflow file, using
 # full_access_token = os.environ.get('TS_TOKEN') # Passed into ENV from Workflow file, using GitHub secrets
 username = os.environ.get('TS_USERNAME')
 secret_key = os.environ.get('TS_SECRET_KEY')
-org_name = os.environ.get('ORG_NAME')
+org_name = os.environ.get('TS_ORG_NAME')
 
 ts: TSRestApiV2 = TSRestApiV2(server_url=server)
 # if full_access_token != "":
