@@ -36,7 +36,7 @@ jobs:
        TS_SERVER: ${{ secrets.TS_SERVER }}
        TS_SECRET_KEY: ${{ secrets.TS_SECRET_KEY }}
        TS_USERNAME: ${{ secrets.TS_USERNAME }}
-       TS_ORG_NAME: ${{ env.TS_ORG_NAME }}
+       TS_ORG_NAME: ${{ github.event.inputs.TS_ORG_NAME }}
       run: |
         git config --local user.email "bryant.howell@thoughtspot.com"
         git config --local user.name "bryanthowell-ts"
