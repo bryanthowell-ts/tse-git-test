@@ -11,14 +11,14 @@ on:
         description: 'ThoughtSpot org name (not org_id)'
         required: true
         default: 'Primary'
-      FILTER_CONTENT_AUTHOR_NAME:
+      FILTER_AUTHOR_NAME:
         type: string
-        description: 'Provide ThoughtSpot username to limit downloads to content of specific author (owner)'
+        description: 'Filter to Author (Owner) Name'
         required: true
         default: "{None}"
       FILTER_TAG_NAME:
         type: string
-        description: 'Provide valid tag name in ThoughtSpot to limit downloads to content with that tag'
+        description: 'Filter on Tag name'
         required: true
         default: "{None}"
       
@@ -48,6 +48,8 @@ jobs:
        TS_SECRET_KEY: ${{ secrets.TS_SECRET_KEY }}
        TS_USERNAME: ${{ secrets.TS_USERNAME }}
        TS_ORG_NAME: ${{ github.event.inputs.TS_ORG_NAME }}
+       AUTHOR_FILTER: $$ {{ github.event.inputs.FILTER_AUTHOR_NAME }}
+       TAG_FILTER: $$ {{ github.event.inputs.FILTER_TAG_NAME }}
       run: |
         git config --local user.email "bryant.howell@thoughtspot.com"
         git config --local user.name "bryanthowell-ts"
