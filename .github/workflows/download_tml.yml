@@ -11,6 +11,17 @@ on:
         description: 'ThoughtSpot org name (not org_id)'
         required: true
         default: 'Primary'
+      FILTER_CONTENT_AUTHOR_NAME:
+        type: string
+        description: 'Provide ThoughtSpot username to limit downloads to content of specific author (owner)'
+        required: true
+        default: "{None}"
+      FILTER_TAG_NAME:
+        type: string
+        description: 'Provide valid tag name in ThoughtSpot to limit downloads to content with that tag'
+        required: true
+        default: "{None}"
+      
 
 permissions:
   contents: write
