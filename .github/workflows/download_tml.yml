@@ -48,8 +48,8 @@ jobs:
        TS_SECRET_KEY: ${{ secrets.TS_SECRET_KEY }}
        TS_USERNAME: ${{ secrets.TS_USERNAME }}
        TS_ORG_NAME: ${{ github.event.inputs.TS_ORG_NAME }}
-       AUTHOR_FILTER: $$ {{ github.event.inputs.FILTER_AUTHOR_NAME }}
-       TAG_FILTER: $$ {{ github.event.inputs.FILTER_TAG_NAME }}
+       AUTHOR_FILTER: ${{ github.event.inputs.FILTER_AUTHOR_NAME }}
+       TAG_FILTER: ${{ github.event.inputs.FILTER_TAG_NAME }}
       run: |
         git config --local user.email "bryant.howell@thoughtspot.com"
         git config --local user.name "bryanthowell-ts"
