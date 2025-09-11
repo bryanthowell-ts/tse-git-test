@@ -1,814 +1,438 @@
 Searching for org_id for Primary
 org_id 0 found
 Requesting object listing
-5 objects retrieved
-obj_id: EventsTest-faf930ef
+3 objects retrieved
+obj_id: data_challenge_metrics
 liveboard:
-  name: Events Test
+  name: Data Challenge Metrics
+  description: Liveboard for GitLab and Publish testing.
   visualizations:
   - id: Viz_1
     answer:
-      name: Total sales by state and store
+      name: Total Quantity Sold
       tables:
-      - id: (Sample) Retail - Apparel
-        name: (Sample) Retail - Apparel
-        obj_id: SampleRetail-Apparel-cd252e5c
-      search_query: "[latitude] [longitude] [county] [store] [sales] sort by [sales] descending [state]"
+      - id: Data Challenge Model
+        name: Data Challenge Model
+        obj_id: data_challenge_model
+      search_query: "[Quantity Sold] [Date] [Date].daily"
       answer_columns:
-      - name: Total sales
-      - name: county
-      - name: latitude
-      - name: longitude
-      - name: state
-      - name: store
+      - name: Day(Date)
+      - name: Total Quantity Sold
       table:
         table_columns:
-        - column_id: Total sales
+        - column_id: Day(Date)
           show_headline: false
-        - column_id: county
-          show_headline: false
-        - column_id: latitude
-          show_headline: false
-        - column_id: longitude
-          show_headline: false
-        - column_id: state
-          show_headline: false
-        - column_id: store
+        - column_id: Total Quantity Sold
           show_headline: false
         ordered_column_ids:
-        - latitude
-        - longitude
-        - county
-        - store
-        - state
-        - Total sales
+        - Day(Date)
+        - Total Quantity Sold
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Quantity Sold\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Day(Date)
+        - column_id: Total Quantity Sold
+        axis_configs:
+        - x:
+          - Day(Date)
+          "y":
+          - Total Quantity Sold
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Quantity Sold\",\"columnProperty\": {}},{\"columnId\": \"9a97fba3-69a3-4d5c-bddf-f16c64bf6f0a\",\"columnProperty\": {}},{\"columnId\": \"d4fe65e4-6844-4ab7-aad3-7033d3a55158\",\"columnProperty\": {}},{\"columnId\": \"Day(Date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"942dc7a1-16d0-4327-93a3-bde12811c141\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity Sold\"],\"isOpposite\": false}},{\"id\": \"c4137794-4d8c-4c80-a665-13bed9b23272\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity Sold\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 47098698-af41-4254-924c-a0bd4b82c23c
+  - id: Viz_2
+    answer:
+      name: Total Sales Amount by Product Name
+      tables:
+      - id: Data Challenge Model
+        name: Data Challenge Model
+        obj_id: data_challenge_model
+      search_query: "[Sales Amount] [Product Name]"
+      answer_columns:
+      - name: Product Name
+      - name: Total Sales Amount
+      table:
+        table_columns:
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Total Sales Amount
+          show_headline: false
+        ordered_column_ids:
+        - Product Name
+        - Total Sales Amount
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
-        type: STACKED_BAR
+        type: COLUMN
         chart_columns:
-        - column_id: Total sales
-        - column_id: county
-        - column_id: latitude
-        - column_id: longitude
-        - column_id: state
-        - column_id: store
+        - column_id: Product Name
+        - column_id: Total Sales Amount
         axis_configs:
         - x:
-          - state
+          - Product Name
           "y":
-          - Total sales
-          color:
-          - store
-          - latitude
-          - longitude
+          - Total Sales Amount
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true}}}\",\"pivotSummariesState\": {}},\"showLegend\": false},\"columnProperties\": [{\"columnId\": \"latitude\",\"columnProperty\": {}},{\"columnId\": \"longitude\",\"columnProperty\": {}},{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"state\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"41fd83a3-11c6-4c7c-b6f9-21b41346da66\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"7ae8ae43-4649-4145-840c-344a0ebc71d0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"state\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#B6313E\"},{\"serieName\": \"arizona (85226)\",\"color\": \"#A2ACBA\"},{\"serieName\": \"arizona (86001)\",\"color\": \"#47515F\"},{\"serieName\": \"california (91006)\",\"color\": \"#BEC6D0\"},{\"serieName\": \"california (94702)\",\"color\": \"#747E8C\"},{\"serieName\": \"colorado (80301)\",\"color\": \"#ffba98\"},{\"serieName\": \"colorado (80920)\",\"color\": \"#cc8765\"},{\"serieName\": \"connecticut (06110)\",\"color\": \"#ffcbb2\"},{\"serieName\": \"connecticut (06854)\",\"color\": \"#FFA97E\"},{\"serieName\": \"delaware (19702)\",\"color\": \"#9be5ed\"},{\"serieName\": \"georgia (30022)\",\"color\": \"#68b2ba\"},{\"serieName\": \"georgia (30329)\",\"color\": \"#b4ecf2\"},{\"serieName\": \"idaho (83704)\",\"color\": \"#82DFE9\"},{\"serieName\": \"illinois (60062)\",\"color\": \"#dacdfc\"},{\"serieName\": \"illinois (60642)\",\"color\": \"#a79ac9\"},{\"serieName\": \"indiana (46250)\",\"color\": \"#e3d9fd\"},{\"serieName\": \"iowa (50266)\",\"color\": \"#D1C0FB\"},{\"serieName\": \"maryland (21045)\",\"color\": \"#ffba98\"},{\"serieName\": \"massachusetts (01701)\",\"color\": \"#cc8765\"},{\"serieName\": \"massachusetts (02215)\",\"color\": \"#ffcbb2\"},{\"serieName\": \"michigan (48103)\",\"color\": \"#FFA97E\"},{\"serieName\": \"michigan (49512)\",\"color\": \"#483910\"},{\"serieName\": \"minnesota (55369)\",\"color\": \"#937f48\"},{\"serieName\": \"minnesota (55420)\",\"color\": \"#604c15\"},{\"serieName\": \"missouri (63144)\",\"color\": \"#ae9f76\"},{\"serieName\": \"montana (59106)\",\"color\": \"#785F1A\"},{\"serieName\": \"montana (59718)\",\"color\": \"#6d1d25\"},{\"serieName\": \"nevada (89052)\",\"color\": \"#c55a65\"},{\"serieName\": \"nevada (89145)\",\"color\": \"#922732\"},{\"serieName\": \"new hampshire (03860)\",\"color\": \"#d3838b\"},{\"serieName\": \"new jersey (07936)\",\"color\": \"#B6313E\"},{\"serieName\": \"arizona (85226), 33.3062223, -111.8413317\",\"color\": \"#A2ACBA\"},{\"serieName\": \"arizona (86001), 35.1987522, -111.6518229\",\"color\": \"#47515F\"},{\"serieName\": \"california (91006), 34.1362075, -118.0401497\",\"color\": \"#BEC6D0\"},{\"serieName\": \"california (94702), 37.8708393, -122.2728639\",\"color\": \"#747E8C\"},{\"serieName\": \"colorado (80301), 40.0149856, -105.2705456\",\"color\": \"#ffba98\"},{\"serieName\": \"colorado (80920), 38.8339578, -104.8253485\",\"color\": \"#cc8765\"},{\"serieName\": \"connecticut (06110), 41.7620447, -72.7420399\",\"color\": \"#ffcbb2\"},{\"serieName\": \"connecticut (06854), 41.1175966, -73.4078968\",\"color\": \"#FFA97E\"},{\"serieName\": \"delaware (19702), 40.735657, -74.1723667\",\"color\": \"#9be5ed\"},{\"serieName\": \"georgia (30022), 34.0709576, -84.2747329\",\"color\": \"#68b2ba\"},{\"serieName\": \"georgia (30329), 33.7490987, -84.3901849\",\"color\": \"#b4ecf2\"},{\"serieName\": \"idaho (83704), 43.6166163, -116.200886\",\"color\": \"#82DFE9\"},{\"serieName\": \"illinois (60062), 42.1299234, -87.8299476\",\"color\": \"#dacdfc\"},{\"serieName\": \"illinois (60642), 41.8755616, -87.6244212\",\"color\": \"#a79ac9\"},{\"serieName\": \"indiana (46250), 39.7683331, -86.1583502\",\"color\": \"#e3d9fd\"},{\"serieName\": \"iowa (50266), 41.5645337, -93.7595281\",\"color\": \"#D1C0FB\"},{\"serieName\": \"maryland (21045), 34.0007493, -81.0343313\",\"color\": \"#ffba98\"},{\"serieName\": \"massachusetts (01701), 42.2792625, -71.416172\",\"color\": \"#cc8765\"},{\"serieName\": \"massachusetts (02215), 42.3602534, -71.0582912\",\"color\": \"#ffcbb2\"},{\"serieName\": \"michigan (48103), 42.2681569, -83.7312291\",\"color\": \"#FFA97E\"},{\"serieName\": \"michigan (49512), 42.8694731, -85.6447492\",\"color\": \"#483910\"},{\"serieName\": \"minnesota (55369), 45.0984983, -93.4419222\",\"color\": \"#937f48\"},{\"serieName\": \"minnesota (55420), 39.1670396, -86.5342881\",\"color\": \"#604c15\"},{\"serieName\": \"missouri (63144), 38.6268039, -90.1994097\",\"color\": \"#ae9f76\"},{\"serieName\": \"montana (59106), 45.7874957, -108.49607\",\"color\": \"#785F1A\"},{\"serieName\": \"montana (59718), 45.6794293, -111.0440474\",\"color\": \"#6d1d25\"},{\"serieName\": \"nevada (89052), 32.182598, -95.7893178\",\"color\": \"#c55a65\"},{\"serieName\": \"nevada (89145), 36.1672559, -115.1485163\",\"color\": \"#922732\"},{\"serieName\": \"new hampshire (03860), 44.0536805, -71.1284041\",\"color\": \"#d3838b\"},{\"serieName\": \"new jersey (07936), 40.8200998, -74.3648731\",\"color\": \"#B6313E\"}],\"tooltipConfig\": {\"columnIds\": [\"store\",\"state\",\"Total sales\"]}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"4ff56068-b984-40cb-9b60-8e3c65e96801\",\"columnProperty\": {}},{\"columnId\": \"33ecaf98-5760-4878-b1fe-13013c48d7b3\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"b925e227-edec-4c60-86c6-310d06a86c49\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Amount\"],\"isOpposite\": false}},{\"id\": \"5a566fc7-8645-4412-9a4d-1782bfadd411\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Amount\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
-    viz_guid: c186bbef-bc17-4210-8a31-6d66b8088f1c
+    viz_guid: 84b3a94d-32de-4e93-88e8-8055b484019c
+  - id: Viz_3
+    answer:
+      name: Total Quantity Sold by Product Name
+      tables:
+      - id: Data Challenge Model
+        name: Data Challenge Model
+        obj_id: data_challenge_model
+      search_query: "[Quantity Sold] [Product Name]"
+      answer_columns:
+      - name: Product Name
+      - name: Total Quantity Sold
+      table:
+        table_columns:
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Total Quantity Sold
+          show_headline: false
+        ordered_column_ids:
+        - Product Name
+        - Total Quantity Sold
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Product Name
+        - column_id: Total Quantity Sold
+        axis_configs:
+        - x:
+          - Product Name
+          "y":
+          - Total Quantity Sold
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"07a2c8f9-2cac-4c1d-8588-c9d0af53f199\",\"columnProperty\": {}},{\"columnId\": \"638ade6c-982e-4c4a-90cd-ca49abf7c981\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity Sold\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"5ddcad50-f4d2-44d3-aa6a-29160f0b1128\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity Sold\"],\"isOpposite\": false}},{\"id\": \"128a4b2e-1e3b-4cbf-bd5d-08746b119a3d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"607b7922-584c-4953-ac32-b92671bc1d6b\",\"color\": \"#FF8142\"},{\"serieName\": \"Total Quantity Sold\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7edbe861-b521-49c2-9fa0-9652de2ea432
+  - id: Viz_4
+    answer:
+      name: Total Sales Amount by Daily Date
+      tables:
+      - id: Data Challenge Model
+        name: Data Challenge Model
+        obj_id: data_challenge_model
+      search_query: "[Sales Amount] [Date] [Date].daily"
+      answer_columns:
+      - name: Day(Date)
+      - name: Total Sales Amount
+      table:
+        table_columns:
+        - column_id: Day(Date)
+          show_headline: false
+        - column_id: Total Sales Amount
+          show_headline: false
+        ordered_column_ids:
+        - Day(Date)
+        - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Day(Date)
+        - column_id: Total Sales Amount
+        axis_configs:
+        - x:
+          - Day(Date)
+          "y":
+          - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"1fe0cb64-8859-4502-aeff-7cc01eff36a7\",\"columnProperty\": {}},{\"columnId\": \"2d731ab7-7fbe-42c7-b04a-1acbd665a9f8\",\"columnProperty\": {}},{\"columnId\": \"Day(Date)\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"77d78046-2799-4dfa-a589-4df0c1653c30\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Amount\"],\"isOpposite\": false}},{\"id\": \"40a2a3d9-cb04-4a24-a766-cb5b7ea2a142\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"607b7922-584c-4953-ac32-b92671bc1d6b\",\"color\": \"#FF8142\"},{\"serieName\": \"47acbc02-e141-44a3-bf83-70386caa217c\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Sales Amount\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5f0fdfd0-6eb8-4b29-ae2b-13ddd2a483d1
+  - id: Viz_5
+    answer:
+      name: Total Sales Amount by Is Holiday
+      tables:
+      - id: Data Challenge Model
+        name: Data Challenge Model
+        obj_id: data_challenge_model
+      search_query: "[Sales Amount] [Is Holiday]"
+      answer_columns:
+      - name: Is Holiday
+      - name: Total Sales Amount
+      table:
+        table_columns:
+        - column_id: Is Holiday
+          show_headline: false
+        - column_id: Total Sales Amount
+          show_headline: false
+        ordered_column_ids:
+        - Is Holiday
+        - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Is Holiday
+        - column_id: Total Sales Amount
+        axis_configs:
+        - x:
+          - Is Holiday
+          "y":
+          - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"24573c87-3d0e-4139-a0b4-73d79a9ddb85\",\"columnProperty\": {}},{\"columnId\": \"7a767111-c964-43b9-be2e-756befcdfdc9\",\"columnProperty\": {}},{\"columnId\": \"Is Holiday\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"6517ce6c-68c3-4c33-9172-77a3ad739d71\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Amount\"],\"isOpposite\": false}},{\"id\": \"201794ac-558c-4c17-a25f-600fcc02a678\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Is Holiday\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Amount\",\"color\": \"#06BF7F\"},{\"serieName\": \"0\",\"color\": \"#48D1E0\"},{\"serieName\": \"1\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 6c6c62b0-7e47-4a0e-ba33-22df379b261c
+  filters:
+  - column:
+    - Product Name
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
   layout:
     tiles:
     - visualization_id: Viz_1
+      size: SMALL
+    - visualization_id: Viz_4
+      size: SMALL
+    - visualization_id: Viz_5
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_2
+      size: MEDIUM
+    - visualization_id: Viz_3
+      size: MEDIUM
+  ordered_chips:
+  - name: Product Name
+    type: FILTER
 
 -------
-obj_id: NewTestDashboard-69905ca8
+obj_id: GolfTournaments-3ae9501a
 liveboard:
-  name: New Test Dashboard
+  name: Golf Tournaments
   visualizations:
   - id: Viz_1
     answer:
-      name: City Sales
+      name: Average Score To Par
+      description: Shows the average score compared to par.
       tables:
-      - id: (Sample) Retail - Apparel
-        name: (Sample) Retail - Apparel
-        obj_id: SampleRetail-Apparel-cd252e5c
-      search_query: "[city] [county]"
+      - id: Golf Tournaments
+        name: Golf Tournaments
+        obj_id: GolfTournaments-3b215b32
+      search_query: "[Score To Par]"
       answer_columns:
-      - name: city
-      - name: county
+      - name: Average Score To Par
       table:
         table_columns:
-        - column_id: city
-          show_headline: false
-        - column_id: county
+        - column_id: Average Score To Par
           show_headline: false
         ordered_column_ids:
-        - city
-        - county
+        - Average Score To Par
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Average Score To Par\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Average Score To Par
+        axis_configs:
+        - "y":
+          - Average Score To Par
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Average Score To Par\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0206d939-c7f0-4cbc-9e62-83172c8d6284\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Score To Par\"],\"isOpposite\": false}},{\"id\": \"cef325e5-7b47-4c63-9e4e-69b53928e8e0\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: a22bc1ce-2b52-48ad-8433-68259d66a312
+  - id: Viz_2
+    answer:
+      name: Average Score To Par by Golfer
+      description: Shows the average score compared to par for each golfer.
+      tables:
+      - id: Golf Tournaments
+        name: Golf Tournaments
+        obj_id: GolfTournaments-3b215b32
+      search_query: "[Score To Par] [Golfer] sort by [Score To Par]"
+      answer_columns:
+      - name: Average Score To Par
+      - name: Golfer
+      table:
+        table_columns:
+        - column_id: Average Score To Par
+          show_headline: false
+        - column_id: Golfer
+          show_headline: false
+        ordered_column_ids:
+        - Golfer
+        - Average Score To Par
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Average Score To Par
+        - column_id: Golfer
+        axis_configs:
+        - x:
+          - Golfer
+          "y":
+          - Average Score To Par
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Average Score To Par\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Golfer\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"58a46eea-8bf5-448f-8b18-70185347577a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Score To Par\"],\"isOpposite\": false}},{\"id\": \"fcfd5afa-4854-47fa-b01c-270cbd6ca864\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Golfer\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Average Score To Par\",\"color\": \"#B6313E\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 1f2596d1-ead6-47b3-85e4-37f98c787c79
+  - id: Viz_3
+    answer:
+      name: "Golfer, Finish Position, Tournament"
+      description: Shows the average score compared to par.
+      tables:
+      - id: Golf Tournaments
+        name: Golf Tournaments
+        obj_id: GolfTournaments-3b215b32
+      search_query: "[Golfer] [Finish Position] [Tournament] sort by [Finish Position]"
+      answer_columns:
+      - name: Finish Position
+      - name: Golfer
+      - name: Tournament
+      table:
+        table_columns:
+        - column_id: Finish Position
+          show_headline: false
+        - column_id: Golfer
+          show_headline: false
+        - column_id: Tournament
+          show_headline: false
+        ordered_column_ids:
+        - Golfer
+        - Finish Position
+        - Tournament
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
         type: SCATTER
         chart_columns:
-        - column_id: city
-        - column_id: county
+        - column_id: Finish Position
+        - column_id: Golfer
+        - column_id: Tournament
         axis_configs:
         - x:
-          - city
+          - Finish Position
           "y":
-          - county
+          - Tournament
+          category:
+          - Golfer
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"county\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"da9df516-17bc-4b95-8cf6-f787c28d8b68\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"county\"],\"isOpposite\": false}},{\"id\": \"f64aa1c4-cd75-4bce-b10f-30c3b2b3e443\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"71f12f24-9cbc-4783-a7ac-0af9187143c9\",\"color\": \"#06BF7F\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"d2fd155d-fafc-447e-bd65-e2ffd45373b8\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Golfer\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"58a46eea-8bf5-448f-8b18-70185347577a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"d2fd155d-fafc-447e-bd65-e2ffd45373b8\"],\"isOpposite\": false}},{\"id\": \"fcfd5afa-4854-47fa-b01c-270cbd6ca864\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Golfer\"]}}],\"systemSeriesColors\": [{\"serieName\": \"d2fd155d-fafc-447e-bd65-e2ffd45373b8\",\"color\": \"#B6313E\"}]}"
       display_mode: TABLE_MODE
-    viz_guid: 62ffdc03-5358-4aec-9550-a30b8b773b13
-  filters:
-  - column:
-    - city
-    is_mandatory: false
-    is_single_value: false
-    display_name: ""
-  layout:
-    tiles:
-    - visualization_id: Viz_1
-      size: MEDIUM_SMALL
-  ordered_chips:
-  - name: city
-    type: FILTER
-
--------
-obj_id: Vamshi_Bryant
-liveboard:
-  name: Copy of Vamshi's Liveboard
-  description: Vamshi's testing liveboard
-  visualizations:
-  - id: Viz_1
+    viz_guid: b5411c36-d276-434c-bcd7-08da977423b2
+  - id: Viz_4
     answer:
-      name: Total Active
+      name: Average Finish Position by Golfer
+      description: Shows the average score compared to par.
       tables:
-      - id: Movie Rental
-        name: Movie Rental
-        obj_id: MovieRental-dd4d3a01
-      search_query: "[Active] [Film Id] [Inventory Id]"
+      - id: Golf Tournaments
+        name: Golf Tournaments
+        obj_id: GolfTournaments-3b215b32
+      search_query: "[Golfer] average [Finish Position] sort by average [Finish Position] [Country]"
       answer_columns:
-      - name: Total Active
-      - name: Total Film Id
-      - name: Total Inventory Id
+      - name: Average Finish Position
+      - name: Country
+      - name: Golfer
       table:
         table_columns:
-        - column_id: Total Active
+        - column_id: Average Finish Position
           show_headline: false
-        - column_id: Total Film Id
+        - column_id: Country
           show_headline: false
-        - column_id: Total Inventory Id
+        - column_id: Golfer
           show_headline: false
         ordered_column_ids:
-        - Total Active
-        - Total Film Id
-        - Total Inventory Id
+        - Golfer
+        - Country
+        - Average Finish Position
         client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Active\",\"columnProperty\": {}},{\"columnId\": \"Total Film Id\",\"columnProperty\": {}},{\"columnId\": \"Total Inventory Id\",\"columnProperty\": {}}]}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Average Finish Position
+        - column_id: Country
+        - column_id: Golfer
+        axis_configs:
+        - x:
+          - Country
+          "y":
+          - Average Finish Position
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Golfer\",\"columnProperty\": {}},{\"columnId\": \"Average Finish Position\",\"columnProperty\": {}},{\"columnId\": \"Country\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"22be0e64-0fef-4cb9-bfdd-8f77f7b5add3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Finish Position\"],\"isOpposite\": false}},{\"id\": \"c3347a0b-566d-44b7-9ec5-dd8e7b4ae870\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Country\"]}}],\"systemSeriesColors\": [{\"serieName\": \"d2fd155d-fafc-447e-bd65-e2ffd45373b8\",\"color\": \"#B6313E\"},{\"serieName\": \"Average Finish Position\",\"color\": \"#B6313E\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: b48f5399-b3bc-4c04-b39b-5fcd4ee72f38
+  - id: Viz_5
+    answer:
+      name: Average Club Head Speed Mph
+      tables:
+      - id: Golf Tournaments
+        name: Golf Tournaments
+        obj_id: GolfTournaments-3b215b32
+      search_query: "average [Club Head Speed Mph]"
+      answer_columns:
+      - name: Average Club Head Speed Mph
+      table:
+        table_columns:
+        - column_id: Average Club Head Speed Mph
+          show_headline: false
+        ordered_column_ids:
+        - Average Club Head Speed Mph
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Average Club Head Speed Mph\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
-        - column_id: Total Active
-        - column_id: Total Film Id
-        - column_id: Total Inventory Id
+        - column_id: Average Club Head Speed Mph
         axis_configs:
         - "y":
-          - Total Active
+          - Average Club Head Speed Mph
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Active\",\"columnProperty\": {}},{\"columnId\": \"Total Film Id\",\"columnProperty\": {}},{\"columnId\": \"Total Inventory Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c306ac5f-7a5d-4415-96ea-d5611a9b04aa\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Active\"],\"isOpposite\": false}},{\"id\": \"8e775bf8-e262-4fef-aa9a-9898b5e002d6\",\"properties\": {\"axisType\": \"X\"}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Average Club Head Speed Mph\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2d751b04-648e-437c-81c9-e16ae507ab6b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Club Head Speed Mph\"],\"isOpposite\": false}},{\"id\": \"d5f482eb-6d35-425e-92a4-50b007a86173\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
-    viz_guid: 57d0bff1-07e1-49d1-bb5c-25db0429169a
-  - id: Viz_2
+    viz_guid: badbd0cc-f4bb-45c9-9cef-6011e4a31bcf
+  - id: Viz_6
     answer:
-      name: Total sales by SKU
+      name: '# Tournaments'
       tables:
-      - id: (Sample) Retail - Apparel
-        name: (Sample) Retail - Apparel
-        obj_id: SampleRetail-Apparel-cd252e5c
-      search_query: "sum [sales] [city]"
+      - id: Golf Tournaments
+        name: Golf Tournaments
+        obj_id: GolfTournaments-3b215b32
+      search_query: "unique count [Tournament]"
       answer_columns:
-      - name: Total sales
-      - name: city
+      - name: Unique Number of Tournament
       table:
         table_columns:
-        - column_id: Total sales
-          show_headline: false
-        - column_id: city
+        - column_id: Unique Number of Tournament
           show_headline: false
         ordered_column_ids:
-        - city
-        - Total sales
+        - Unique Number of Tournament
         client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of Tournament\",\"columnProperty\": {}}]}"
       chart:
-        type: COLUMN
+        type: KPI
         chart_columns:
-        - column_id: Total sales
-        - column_id: city
+        - column_id: Unique Number of Tournament
         axis_configs:
-        - x:
-          - city
-          "y":
-          - Total sales
+        - "y":
+          - Unique Number of Tournament
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5b4688d9-08aa-48b6-b75a-db4220849eee\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"61881d6c-8012-4614-9dd4-21526699ed3d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of Tournament\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5803ee9b-def6-4473-9860-1ff4679a193d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of Tournament\"],\"isOpposite\": false}},{\"id\": \"60fbf34f-e8d8-4a7c-a034-41a485c7236d\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
-    viz_guid: 1b2e1210-360d-4a0a-9dc4-999e3d9940fc
-  - id: Viz_3
-    answer:
-      name: Total sales by SKU
-      tables:
-      - id: (Sample) Retail - Apparel
-        name: (Sample) Retail - Apparel
-        obj_id: SampleRetail-Apparel-cd252e5c
-      search_query: "sum [sales] [city]"
-      answer_columns:
-      - name: Total sales
-      - name: city
-      table:
-        table_columns:
-        - column_id: Total sales
-          show_headline: false
-        - column_id: city
-          show_headline: false
-        ordered_column_ids:
-        - city
-        - Total sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Total sales
-        - column_id: city
-        axis_configs:
-        - x:
-          - city
-          "y":
-          - Total sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"cb64ad96-ad81-4e24-8deb-503f3e6eded1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"b4a69720-9ab7-47c9-9c83-dd4463f6c713\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#B6313E\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: 5d894a14-b2b5-4eda-8aac-9becb378447c
-    action_object_associations:
-    - action_name: Show Details
-      context: PRIMARY
-      enabled: true
-  - id: Viz_4
-    answer:
-      name: Total Replacement Cost by Customer Id
-      tables:
-      - id: Movie Rental
-        name: Movie Rental
-        obj_id: MovieRental-dd4d3a01
-      search_query: "sum [Replacement Cost] [Film Id] [Customer Id]"
-      answer_columns:
-      - name: Customer Id
-      - name: Total Film Id
-      - name: Total Replacement Cost
-      table:
-        table_columns:
-        - column_id: Customer Id
-          show_headline: false
-        - column_id: Total Film Id
-          show_headline: false
-        - column_id: Total Replacement Cost
-          show_headline: false
-        ordered_column_ids:
-        - Customer Id
-        - Total Replacement Cost
-        - Total Film Id
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Customer Id\",\"columnProperty\": {}},{\"columnId\": \"Total Replacement Cost\",\"columnProperty\": {}},{\"columnId\": \"Total Film Id\",\"columnProperty\": {}}]}"
-      chart:
-        type: ADVANCED_PIVOT_TABLE
-        chart_columns:
-        - column_id: Customer Id
-        - column_id: Total Film Id
-        - column_id: Total Replacement Cost
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer Id\",\"columnProperty\": {}},{\"columnId\": \"Total Replacement Cost\",\"columnProperty\": {}},{\"columnId\": \"Total Film Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"69d06751-24fb-4d8e-991b-426a903772a9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Replacement Cost\"],\"isOpposite\": false}},{\"id\": \"134064f7-a9f7-49e0-8c87-000fbec62e8a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Film Id\"],\"isOpposite\": true}},{\"id\": \"1f72d07b-5153-4713-a392-56b02abbe875\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer Id\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Replacement Cost\",\"color\": \"#785F1A\"},{\"serieName\": \"Total Film Id\",\"color\": \"#B6313E\"}]}"
-        custom_chart_config:
-        - key: basic
-          dimensions:
-          - key: rows
-            columns:
-            - Customer Id
-          - key: values
-            columns:
-            - Total Replacement Cost
-          - key: columns
-          - key: split-by-color
-      display_mode: CHART_MODE
-    viz_guid: e890d6c8-aab5-46fc-a66d-9b70e17f2136
+    viz_guid: 3f3d9ae7-6eed-4c9f-a84f-a163bd058b88
   filters:
   - column:
-    - Movie Rental::Customer Id
-    oper: in
-    values:
-    - "1"
-    - "10"
-    - "100"
-    - "101"
-    - "102"
-    - "103"
-    - "104"
-    - "105"
-    - "106"
-    - "107"
-    - "108"
-    - "109"
-    - "11"
-    - "110"
-    - "111"
-    - "112"
-    - "113"
-    - "114"
-    - "115"
-    - "116"
-    - "117"
-    - "118"
-    - "119"
-    - "12"
-    - "120"
-    - "121"
-    - "122"
-    - "123"
-    - "124"
-    - "125"
-    - "126"
-    - "127"
-    - "128"
-    - "129"
-    - "13"
-    - "130"
-    - "131"
-    - "132"
-    - "133"
-    - "134"
-    - "135"
-    - "136"
-    - "137"
-    - "138"
-    - "139"
-    - "14"
-    - "140"
-    - "141"
-    - "142"
-    - "143"
-    - "144"
-    - "145"
-    - "146"
-    - "147"
-    - "148"
-    - "149"
-    - "15"
-    - "150"
-    - "151"
-    - "152"
-    - "153"
-    - "154"
-    - "155"
-    - "156"
-    - "157"
-    - "158"
-    - "159"
-    - "16"
-    - "160"
-    - "161"
-    - "162"
-    - "163"
-    - "164"
-    - "165"
-    - "166"
-    - "167"
-    - "168"
-    - "169"
-    - "17"
-    - "170"
-    - "171"
-    - "172"
-    - "173"
-    - "174"
-    - "175"
-    - "176"
-    - "177"
-    - "178"
-    - "179"
-    - "18"
-    - "180"
-    - "181"
-    - "182"
-    - "183"
-    - "184"
-    - "185"
-    - "186"
-    - "187"
-    - "188"
-    - "189"
-    - "19"
-    - "190"
-    - "191"
-    - "192"
-    - "193"
-    - "194"
-    - "195"
-    - "196"
-    - "197"
-    - "198"
-    - "199"
-    - "2"
-    - "20"
-    - "200"
-    - "201"
-    - "202"
-    - "203"
-    - "204"
-    - "205"
-    - "206"
-    - "207"
-    - "208"
-    - "209"
-    - "21"
-    - "210"
-    - "211"
-    - "212"
-    - "213"
-    - "214"
-    - "215"
-    - "216"
-    - "217"
-    - "218"
-    - "219"
-    - "22"
-    - "220"
-    - "221"
-    - "222"
-    - "223"
-    - "224"
-    - "225"
-    - "226"
-    - "227"
-    - "228"
-    - "229"
-    - "23"
-    - "230"
-    - "231"
-    - "232"
-    - "233"
-    - "234"
-    - "235"
-    - "236"
-    - "237"
-    - "238"
-    - "239"
-    - "24"
-    - "240"
-    - "241"
-    - "242"
-    - "243"
-    - "244"
-    - "245"
-    - "246"
-    - "247"
-    - "248"
-    - "249"
-    - "25"
-    - "250"
-    - "251"
-    - "252"
-    - "253"
-    - "254"
-    - "255"
-    - "256"
-    - "257"
-    - "258"
-    - "259"
-    - "26"
-    - "260"
-    - "261"
-    - "262"
-    - "263"
-    - "264"
-    - "265"
-    - "266"
-    - "267"
-    - "268"
-    - "269"
-    - "27"
-    - "270"
-    - "271"
-    - "272"
-    - "273"
-    - "274"
-    - "275"
-    - "276"
-    - "277"
-    - "278"
-    - "279"
-    - "28"
-    - "280"
-    - "281"
-    - "282"
-    - "283"
-    - "284"
-    - "285"
-    - "286"
-    - "287"
-    - "288"
-    - "289"
-    - "29"
-    - "290"
-    - "291"
-    - "292"
-    - "293"
-    - "294"
-    - "295"
-    - "296"
-    - "297"
-    - "298"
-    - "299"
-    - "3"
-    - "30"
-    - "300"
-    - "301"
-    - "302"
-    - "303"
-    - "304"
-    - "305"
-    - "306"
-    - "307"
-    - "308"
-    - "309"
-    - "31"
-    - "310"
-    - "311"
-    - "312"
-    - "313"
-    - "314"
-    - "315"
-    - "316"
-    - "317"
-    - "318"
-    - "319"
-    - "32"
-    - "320"
-    - "321"
-    - "322"
-    - "323"
-    - "324"
-    - "325"
-    - "326"
-    - "327"
-    - "328"
-    - "329"
-    - "33"
-    - "330"
-    - "331"
-    - "332"
-    - "333"
-    - "334"
-    - "335"
-    - "336"
-    - "337"
-    - "338"
-    - "339"
-    - "34"
-    - "340"
-    - "341"
-    - "342"
-    - "343"
-    - "344"
-    - "345"
-    - "346"
-    - "347"
-    - "348"
-    - "349"
-    - "35"
-    - "350"
-    - "351"
-    - "352"
-    - "353"
-    - "354"
-    - "355"
-    - "356"
-    - "357"
-    - "358"
-    - "359"
-    - "36"
-    - "360"
-    - "361"
-    - "362"
-    - "363"
-    - "364"
-    - "365"
-    - "366"
-    - "367"
-    - "368"
-    - "369"
-    - "37"
-    - "370"
-    - "371"
-    - "372"
-    - "373"
-    - "374"
-    - "375"
-    - "376"
-    - "377"
-    - "378"
-    - "379"
-    - "38"
-    - "380"
-    - "381"
-    - "382"
-    - "383"
-    - "384"
-    - "385"
-    - "386"
-    - "387"
-    - "388"
-    - "389"
-    - "39"
-    - "390"
-    - "391"
-    - "392"
-    - "393"
-    - "394"
-    - "395"
-    - "396"
-    - "397"
-    - "398"
-    - "399"
-    - "4"
-    - "40"
-    - "400"
-    - "401"
-    - "402"
-    - "403"
-    - "404"
-    - "405"
-    - "406"
-    - "407"
-    - "408"
-    - "409"
-    - "41"
-    - "410"
-    - "411"
-    - "412"
-    - "413"
-    - "414"
-    - "415"
-    - "416"
-    - "417"
-    - "418"
-    - "419"
-    - "42"
-    - "420"
-    - "421"
-    - "422"
-    - "423"
-    - "424"
-    - "425"
-    - "426"
-    - "427"
-    - "428"
-    - "429"
-    - "43"
-    - "430"
-    - "431"
-    - "432"
-    - "433"
-    - "434"
-    - "435"
-    - "436"
-    - "437"
-    - "438"
-    - "439"
-    - "44"
-    - "440"
-    - "441"
-    - "442"
-    - "443"
-    - "444"
-    - "445"
-    - "446"
-    - "447"
-    - "448"
-    - "449"
-    - "45"
-    - "450"
-    - "451"
-    - "452"
-    - "453"
-    - "454"
-    - "455"
-    - "456"
-    - "457"
-    - "458"
-    - "459"
-    - "46"
-    - "460"
-    - "461"
-    - "462"
-    - "463"
-    - "464"
-    - "465"
-    - "466"
-    - "467"
-    - "468"
-    - "469"
-    - "47"
-    - "470"
-    - "471"
-    - "472"
-    - "473"
-    - "474"
-    - "475"
-    - "476"
-    - "477"
-    - "478"
-    - "479"
-    - "48"
-    - "480"
-    - "481"
-    - "482"
-    - "483"
-    - "484"
-    - "485"
-    - "486"
-    - "487"
-    - "488"
-    - "489"
-    - "49"
-    - "490"
-    - "491"
-    - "492"
-    - "493"
-    - "494"
-    - "495"
-    - "496"
-    - "497"
-    - "498"
-    - "499"
-    - "5"
-    - "50"
-    - "500"
-    - "51"
-    - "52"
-    - "53"
-    - "54"
-    - "55"
-    - "56"
-    - "57"
-    - "58"
-    - "59"
-    - "6"
-    - "60"
-    - "61"
-    - "62"
-    - "63"
-    - "64"
-    - "65"
-    - "66"
-    - "67"
-    - "68"
-    - "69"
-    - "7"
-    - "70"
-    - "71"
-    - "72"
-    - "73"
-    - "74"
-    - "75"
-    - "76"
-    - "77"
-    - "78"
-    - "79"
-    - "8"
-    - "80"
-    - "81"
-    - "82"
-    - "83"
-    - "84"
-    - "85"
-    - "86"
-    - "87"
-    - "88"
-    - "89"
-    - "9"
-    - "90"
-    - "91"
-    - "92"
-    - "93"
-    - "94"
-    - "95"
-    - "96"
-    - "97"
-    - "98"
-    - "99"
-    - "{null}"
+    - Tournament
     is_mandatory: false
     is_single_value: false
     display_name: ""
   - column:
-    - Movie Rental::Title
-    is_mandatory: false
-    is_single_value: false
-    display_name: ""
-  - column:
-    - Movie Rental::Store Id
+    - Golfer
     is_mandatory: false
     is_single_value: false
     display_name: ""
@@ -818,133 +442,80 @@ liveboard:
       x: 0
       "y": 0
       height: 2
-      width: 2
+      width: 3
     - visualization_id: Viz_2
       x: 0
-      "y": 2
+      "y": 8
       height: 8
-      width: 6
+      width: 12
     - visualization_id: Viz_3
+      x: 3
+      "y": 0
+      height: 8
+      width: 3
+    - visualization_id: Viz_4
       x: 6
       "y": 0
       height: 8
-      width: 6
-    - visualization_id: Viz_4
-      x: 6
-      "y": 8
-      height: 8
-      width: 6
+      width: 3
+    - visualization_id: Viz_5
+      x: 0
+      "y": 2
+      height: 2
+      width: 3
+    - visualization_id: Viz_6
+      x: 0
+      "y": 4
+      height: 2
+      width: 3
   ordered_chips:
-  - name: Movie Rental::Customer Id
+  - name: Tournament
     type: FILTER
-  - name: Movie Rental::Title
-    type: FILTER
-  - name: Movie Rental::Store Id
+  - name: Golfer
     type: FILTER
 
 -------
-obj_id: bryant.howellthoughtspot.comsfirstLiveboard-3c7c1f69
+obj_id: Billtest-2b81280e
 liveboard:
-  name: bryant.howell@thoughtspot.com's first Liveboard
+  name: Bill test
+  description: This is just to see what happens
   visualizations:
   - id: Viz_1
     answer:
-      name: "county, city, ProDucts"
+      name: Total sales by city
       tables:
       - id: (Sample) Retail - Apparel
         name: (Sample) Retail - Apparel
         obj_id: SampleRetail-Apparel-cd252e5c
-      search_query: "[county] [city] [product]"
+      search_query: "sum [sales] [city]"
       answer_columns:
+      - name: Total sales
       - name: city
-      - name: county
-      - name: product
-        custom_name: ProDucts
       table:
         table_columns:
+        - column_id: Total sales
+          show_headline: false
         - column_id: city
           show_headline: false
-        - column_id: county
-          show_headline: false
-        - column_id: product
-          show_headline: false
         ordered_column_ids:
-        - county
         - city
-        - product
+        - Total sales
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
-        type: SCATTER
+        type: COLUMN
         chart_columns:
+        - column_id: Total sales
         - column_id: city
-        - column_id: county
-        - column_id: product
         axis_configs:
         - x:
           - city
           "y":
-          - product
-          color:
-          - county
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"product\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f8b03930-3bda-4c7e-972d-23c9cc1959df\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"product\"],\"isOpposite\": false}},{\"id\": \"f14df291-a2d6-4912-92c2-4c88b0481949\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}]}"
-      display_mode: TABLE_MODE
-    viz_guid: c52225b1-b05d-4e09-bc50-5b87c7adffc3
-  layout:
-    tiles:
-    - visualization_id: Viz_1
-      x: 0
-      "y": 0
-      height: 8
-      width: 12
-
--------
-obj_id: BryantsNewLiveboardV1-302aa205
-liveboard:
-  name: Bryant's New Liveboard V1
-  visualizations:
-  - id: Viz_1
-    answer:
-      name: "Total sales by region, product"
-      tables:
-      - id: (Sample) Retail - Apparel
-        name: (Sample) Retail - Apparel
-        obj_id: SampleRetail-Apparel-cd252e5c
-      search_query: "top 1 for each [region] [product] sort by [sales]"
-      answer_columns:
-      - name: Total sales
-      - name: product
-      - name: region
-      table:
-        table_columns:
-        - column_id: Total sales
-          show_headline: false
-        - column_id: product
-          show_headline: false
-        - column_id: region
-          show_headline: false
-        ordered_column_ids:
-        - region
-        - product
-        - Total sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
-      chart:
-        type: BAR
-        chart_columns:
-        - column_id: Total sales
-        - column_id: product
-        - column_id: region
-        axis_configs:
-        - x:
-          - product
-          "y":
           - Total sales
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"694dc81e-048b-48f9-a4b5-32e658109b58\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"29a50b8d-f8ea-414f-863c-3ec626ecd0a0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c39b5957-8eda-49b4-9d50-5574bb03ecc5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"ea7f25c3-0f62-42dc-83cf-8f955f64394e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
-    viz_guid: 7621b86f-e0a9-48ed-a216-83490956aeff
+    viz_guid: e8586efd-901e-4942-b6cc-60c7e048c7b7
   layout:
     tiles:
     - visualization_id: Viz_1
