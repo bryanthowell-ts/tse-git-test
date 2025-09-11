@@ -5,11 +5,17 @@ import json
 
 from thoughtspot_rest_api_v1 import *
 
-server = os.environ.get('TS_SERVER') # Passed into ENV from Workflow file, using GitHub secrets
-# full_access_token = os.environ.get('TS_TOKEN') # Passed into ENV from Workflow file, using GitHub secrets
+#
+# Values passed into ENV from Workflow file, using GitHub Secrets and Workflow Variables
+#
+server = os.environ.get('TS_SERVER') 
 username = os.environ.get('TS_USERNAME')
 secret_key = os.environ.get('TS_SECRET_KEY')
 org_name = os.environ.get('TS_ORG_NAME')
+author_filter = os.environ.get('AUTHOR_FILTER')
+tag_filter = os.environ.get('TAG_FILTER')
+
+# full_access_token = os.environ.get('TS_TOKEN')  #  Tokens are tied to a particular Org, so useful in an environment with only a few Orgs but not single-tenant
 
 ts: TSRestApiV2 = TSRestApiV2(server_url=server)
 # if full_access_token != "":
@@ -120,6 +126,13 @@ search_request = {
   "record_size" : 5,
     "record_offset": 0
 }
+
+# Add filters if passed from workflow
+if author_filter != "{None}":
+    search_request["created_by_user_identifiers"] = [author_filter]
+
+if tag_filter != "{None}":
+    search_request["tag_identifiers"] = [tag_filter]
 
 print("Requesting object listing")
 try:
