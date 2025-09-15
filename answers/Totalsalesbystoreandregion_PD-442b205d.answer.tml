@@ -1,0 +1,42 @@
+obj_id: Totalsalesbystoreandregion_PD-442b205d
+answer:
+  name: Total sales by store and region_PD
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "[store] [region] [sales]"
+  answer_columns:
+  - name: Total sales
+  - name: region
+  - name: store
+  table:
+    table_columns:
+    - column_id: Total sales
+      show_headline: false
+    - column_id: region
+      show_headline: false
+    - column_id: store
+      show_headline: false
+    ordered_column_ids:
+    - store
+    - region
+    - Total sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: STACKED_COLUMN
+    chart_columns:
+    - column_id: Total sales
+    - column_id: region
+    - column_id: store
+    axis_configs:
+    - x:
+      - store
+      "y":
+      - Total sales
+      color:
+      - region
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c6204c73-0c10-4a8c-9d36-d84b56d7bb3a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"5a2ddf5b-b8e9-4b06-a2a0-565ea24fee75\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"store\"]}}],\"systemSeriesColors\": [{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE

@@ -1,0 +1,33 @@
+obj_id: WeekofmonthdateWeeklydate-4e59e8d6
+answer:
+  name: "Week of month date, Weekly date"
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "[date].'week of month' sort by [date] [date].weekly [date] between [date].10/01/2024 and [date].10/31/2024"
+  answer_columns:
+  - name: WEEK_OF_MONTH(date)
+  - name: Week(date)
+  table:
+    table_columns:
+    - column_id: WEEK_OF_MONTH(date)
+      show_headline: false
+    - column_id: Week(date)
+      show_headline: false
+    ordered_column_ids:
+    - WEEK_OF_MONTH(date)
+    - Week(date)
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: WEEK_OF_MONTH(date)
+    - column_id: Week(date)
+    axis_configs:
+    - "y":
+      - Week(date)
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"WEEK_OF_MONTH(date)\",\"columnProperty\": {}},{\"columnId\": \"Week(date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"48180dd6-3261-4b1f-8d8f-1bccaad0117c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Week(date)\"],\"isOpposite\": false}},{\"id\": \"905eb91a-361d-42ae-b3d4-ddd09933cd5f\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE

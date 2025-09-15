@@ -1,0 +1,142 @@
+obj_id: test-95efb549
+liveboard:
+  name: test
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total quantity purchased
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[city].boston [city].newark [city].bozeman"
+      answer_columns:
+      - name: city
+      table:
+        table_columns:
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - city
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: city
+        axis_configs:
+        - "y":
+          - city
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"99988a69-1408-4b81-8c58-4325822b0512\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"city\"],\"isOpposite\": false}},{\"id\": \"f1336582-40b2-44b6-8bd8-471b13a041b7\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: ec7e0252-62ce-42df-ae8b-0ec502021849
+  - id: Viz_2
+    answer:
+      name: Total quantity purchased
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[quantity purchased]"
+      answer_columns:
+      - name: Total quantity purchased
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        ordered_column_ids:
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total quantity purchased
+        axis_configs:
+        - "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"78170fbb-ad46-44d5-8fd1-0267abd923e2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"3ed4c86c-31fa-4eb2-b2cf-84493fe28d9c\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: af5796f5-1779-42c2-b8ce-5d117d9ef3cb
+  - id: Viz_3
+    answer:
+      name: Total quantity purchased
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[quantity purchased]"
+      answer_columns:
+      - name: Total quantity purchased
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        ordered_column_ids:
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total quantity purchased
+        axis_configs:
+        - "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"dfbb0970-7d85-470c-bf9e-bcac8d396f14\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"72f3abde-52b9-4cd3-8824-bbfa1a95260a\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 54dd1727-2bea-42c5-99f5-53957459dd3b
+  - id: Viz_4
+    answer:
+      name: Total quantity purchased
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[quantity purchased]"
+      answer_columns:
+      - name: Total quantity purchased
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        ordered_column_ids:
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total quantity purchased
+        axis_configs:
+        - "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b41db350-e045-45a7-878a-459dfa7b466e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"5f5f1a3f-bffa-45f8-b7db-1fb39d904ea9\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 171af1bb-4b84-4e33-97b4-91acb3d50613
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 2
+      width: 3
+    - visualization_id: Viz_2
+      x: 3
+      "y": 0
+      height: 2
+      width: 3
+    - visualization_id: Viz_3
+      x: 6
+      "y": 0
+      height: 2
+      width: 3
+    - visualization_id: Viz_4
+      x: 9
+      "y": 0
+      height: 2
+      width: 3

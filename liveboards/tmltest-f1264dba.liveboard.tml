@@ -1,0 +1,46 @@
+obj_id: tmltest-f1264dba
+liveboard:
+  name: tml test
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total O_TOTALPRICE by Monthly O_ORDERDATE
+      tables:
+      - id: CUST_ORDERS
+        name: CUST_ORDERS
+      search_query: "[O_ORDERDATE] [O_ORDERDATE].monthly [O_TOTALPRICE]"
+      answer_columns:
+      - name: Month(O_ORDERDATE)
+      - name: Total O_TOTALPRICE
+      table:
+        table_columns:
+        - column_id: Month(O_ORDERDATE)
+          headline_aggregation: MIN-MAX
+        - column_id: Total O_TOTALPRICE
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Month(O_ORDERDATE)
+        - Total O_TOTALPRICE
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(O_ORDERDATE)\",\"columnProperty\": {}},{\"columnId\": \"Total O_TOTALPRICE\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(O_ORDERDATE)
+        - column_id: Total O_TOTALPRICE
+        axis_configs:
+        - x:
+          - Month(O_ORDERDATE)
+          "y":
+          - Total O_TOTALPRICE
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Month(O_ORDERDATE)\",\"columnProperty\": {}},{\"columnId\": \"Total O_TOTALPRICE\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ea720534-3bfe-42b3-9a65-eafd8274f49e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total O_TOTALPRICE\"],\"isOpposite\": false}},{\"id\": \"4aa40970-1e09-47e8-94a6-2a2b640353ac\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(O_ORDERDATE)\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: c20061f9-a0f7-444b-84cb-df6d883dc15d
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 12

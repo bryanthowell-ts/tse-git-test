@@ -1,0 +1,87 @@
+obj_id: CopyofTotalsalesbystore-93c82b98
+answer:
+  name: Copy of Total sales by store
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "[store] [city] [county] [item type] [state] [SKU] [region] [product] [longitude] [latitude] [zip code]"
+  answer_columns:
+  - name: SKU
+  - name: city
+  - name: county
+  - name: item type
+  - name: latitude
+  - name: longitude
+  - name: product
+  - name: region
+  - name: state
+  - name: store
+  - name: zip code
+  table:
+    table_columns:
+    - column_id: SKU
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: city
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: county
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: item type
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: latitude
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: longitude
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: product
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: region
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: state
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: store
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: zip code
+      headline_aggregation: COUNT_DISTINCT
+    ordered_column_ids:
+    - store
+    - city
+    - county
+    - item type
+    - state
+    - SKU
+    - region
+    - product
+    - longitude
+    - latitude
+    - zip code
+    client_state: "{\"wrapTableHeader\":true}"
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}}]}"
+  chart:
+    type: SCATTER
+    chart_columns:
+    - column_id: SKU
+    - column_id: city
+    - column_id: county
+    - column_id: item type
+    - column_id: latitude
+    - column_id: longitude
+    - column_id: product
+    - column_id: region
+    - column_id: state
+    - column_id: store
+    - column_id: zip code
+    axis_configs:
+    - x:
+      - longitude
+      "y":
+      - latitude
+      color:
+      - region
+      - item type
+    client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"allLabels\":true},\"axisProperties\":{\"77d906b2-d265-44ec-9a89-6be4ebf0d171\":{\"linkedColumns\":[\"15b32c9d-8f22-4860-945b-e90cde078693\"],\"axisType\":\"Y\",\"isOpposite\":false},\"1dd345d1-bd8e-497b-bccd-3f696a00a346\":{\"linkedColumns\":[\"store\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"15b32c9d-8f22-4860-945b-e90cde078693\":\"#06BF7F\"},\"version\":\"V2.1\",\"columnProperties\":{\"store\":{},\"15b32c9d-8f22-4860-945b-e90cde078693\":{\"dataLabels\":true}}}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"longitude\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"latitude\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"region\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"5a6e0d96-a3e5-4e85-8b30-97ec5ebf95bc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"latitude\"],\"isOpposite\": false}},{\"id\": \"4d7a7df3-5344-4a6c-a576-fa9856b91ebc\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"longitude\"]}}],\"systemSeriesColors\": [{\"serieName\": \"15b32c9d-8f22-4860-945b-e90cde078693\",\"color\": \"#06BF7F\"},{\"serieName\": \"east, bags\",\"color\": \"#721F27\"},{\"serieName\": \"east, dresses\",\"color\": \"#F47E89\"},{\"serieName\": \"east, headwear\",\"color\": \"#B6313E\"},{\"serieName\": \"east, jackets\",\"color\": \"#F9B3B9\"},{\"serieName\": \"east, jeans\",\"color\": \"#F04152\"},{\"serieName\": \"east, pants\",\"color\": \"#2F3947\"},{\"serieName\": \"east, shirts\",\"color\": \"#A2ACBA\"},{\"serieName\": \"east, shorts\",\"color\": \"#47515F\"},{\"serieName\": \"east, skirts\",\"color\": \"#BEC6D0\"},{\"serieName\": \"east, socks\",\"color\": \"#747E8C\"},{\"serieName\": \"east, sweaters\",\"color\": \"#7A3D1F\"},{\"serieName\": \"east, sweatshirts\",\"color\": \"#FFA97E\"},{\"serieName\": \"east, swimwear\",\"color\": \"#C26232\"},{\"serieName\": \"east, underwear\",\"color\": \"#FFCCB3\"},{\"serieName\": \"east, vests\",\"color\": \"#FF8142\"},{\"serieName\": \"midwest, bags\",\"color\": \"#422E75\"},{\"serieName\": \"midwest, dresses\",\"color\": \"#B094F8\"},{\"serieName\": \"midwest, headwear\",\"color\": \"#6A4ABA\"},{\"serieName\": \"midwest, jackets\",\"color\": \"#D1C0FB\"},{\"serieName\": \"midwest, jeans\",\"color\": \"#8C62F5\"},{\"serieName\": \"midwest, pants\",\"color\": \"#025B3C\"},{\"serieName\": \"midwest, shirts\",\"color\": \"#56D3A8\"},{\"serieName\": \"midwest, shorts\",\"color\": \"#049160\"},{\"serieName\": \"midwest, skirts\",\"color\": \"#9BE5CB\"},{\"serieName\": \"midwest, socks\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest, sweaters\",\"color\": \"#785F1A\"},{\"serieName\": \"midwest, sweatshirts\",\"color\": \"#FCD977\"},{\"serieName\": \"midwest, swimwear\",\"color\": \"#BF982A\"},{\"serieName\": \"midwest, underwear\",\"color\": \"#FDE9AF\"},{\"serieName\": \"midwest, vests\",\"color\": \"#FCC838\"},{\"serieName\": \"south, bags\",\"color\": \"#22636B\"},{\"serieName\": \"south, dresses\",\"color\": \"#82DFE9\"},{\"serieName\": \"south, headwear\",\"color\": \"#369FAA\"},{\"serieName\": \"south, jackets\",\"color\": \"#B5ECF2\"},{\"serieName\": \"south, jeans\",\"color\": \"#48D1E0\"},{\"serieName\": \"south, pants\",\"color\": \"#163772\"},{\"serieName\": \"south, shirts\",\"color\": \"#71A1F4\"},{\"serieName\": \"south, shorts\",\"color\": \"#2359B6\"},{\"serieName\": \"south, skirts\",\"color\": \"#ABC7F9\"},{\"serieName\": \"south, socks\",\"color\": \"#2E75F0\"},{\"serieName\": \"south, sweaters\",\"color\": \"#721F27\"},{\"serieName\": \"south, sweatshirts\",\"color\": \"#F47E89\"},{\"serieName\": \"south, swimwear\",\"color\": \"#B6313E\"},{\"serieName\": \"south, underwear\",\"color\": \"#F9B3B9\"},{\"serieName\": \"south, vests\",\"color\": \"#F04152\"},{\"serieName\": \"southwest, bags\",\"color\": \"#2F3947\"},{\"serieName\": \"southwest, dresses\",\"color\": \"#A2ACBA\"},{\"serieName\": \"southwest, headwear\",\"color\": \"#47515F\"},{\"serieName\": \"southwest, jackets\",\"color\": \"#BEC6D0\"},{\"serieName\": \"southwest, jeans\",\"color\": \"#747E8C\"},{\"serieName\": \"southwest, pants\",\"color\": \"#7A3D1F\"},{\"serieName\": \"southwest, shirts\",\"color\": \"#FFA97E\"},{\"serieName\": \"southwest, shorts\",\"color\": \"#C26232\"},{\"serieName\": \"southwest, skirts\",\"color\": \"#FFCCB3\"},{\"serieName\": \"southwest, socks\",\"color\": \"#FF8142\"},{\"serieName\": \"southwest, sweaters\",\"color\": \"#422E75\"},{\"serieName\": \"southwest, sweatshirts\",\"color\": \"#B094F8\"},{\"serieName\": \"southwest, swimwear\",\"color\": \"#6A4ABA\"},{\"serieName\": \"southwest, underwear\",\"color\": \"#D1C0FB\"},{\"serieName\": \"southwest, vests\",\"color\": \"#8C62F5\"},{\"serieName\": \"west, bags\",\"color\": \"#025B3C\"},{\"serieName\": \"west, dresses\",\"color\": \"#56D3A8\"},{\"serieName\": \"west, headwear\",\"color\": \"#049160\"},{\"serieName\": \"west, jackets\",\"color\": \"#9BE5CB\"},{\"serieName\": \"west, jeans\",\"color\": \"#06BF7F\"},{\"serieName\": \"west, pants\",\"color\": \"#785F1A\"},{\"serieName\": \"west, shirts\",\"color\": \"#FCD977\"},{\"serieName\": \"west, shorts\",\"color\": \"#BF982A\"},{\"serieName\": \"west, skirts\",\"color\": \"#FDE9AF\"},{\"serieName\": \"west, socks\",\"color\": \"#FCC838\"},{\"serieName\": \"west, sweaters\",\"color\": \"#22636B\"},{\"serieName\": \"west, sweatshirts\",\"color\": \"#82DFE9\"},{\"serieName\": \"west, swimwear\",\"color\": \"#369FAA\"},{\"serieName\": \"west, underwear\",\"color\": \"#B5ECF2\"},{\"serieName\": \"west, vests\",\"color\": \"#48D1E0\"}]}"
+  display_mode: TABLE_MODE
+  action_object_associations:
+  - action_name: test
+    context: CONTEXT_MENU
+    enabled: true

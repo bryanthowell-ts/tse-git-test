@@ -1,0 +1,41 @@
+obj_id: TotalsalesbyWeeklydate-3e954a35
+answer:
+  name: Total sales by Weekly date
+  description: Top selling product in California over the last 3 months by week
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "sum [sales] [date].weekly [product] [state] = 'california' [date] = 'last 3 months' sort by sum [sales] descending"
+  answer_columns:
+  - name: Total sales
+  - name: Week(date)
+  - name: product
+  table:
+    table_columns:
+    - column_id: Total sales
+      show_headline: false
+    - column_id: Week(date)
+      show_headline: false
+    - column_id: product
+      show_headline: false
+    ordered_column_ids:
+    - Week(date)
+    - product
+    - Total sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Total sales
+    - column_id: Week(date)
+    - column_id: product
+    axis_configs:
+    - x:
+      - Week(date)
+      "y":
+      - Total sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(date)\",\"columnProperty\": {}},{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ae7a6fba-85ae-4e03-af47-b24e0d97e897\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"fc0e0ba5-73f0-4d53-b068-93ccf2ca6273\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#06BF7F\"}]}"
+  display_mode: CHART_MODE

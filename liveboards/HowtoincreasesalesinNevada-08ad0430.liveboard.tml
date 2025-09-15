@@ -1,0 +1,280 @@
+obj_id: HowtoincreasesalesinNevada-08ad0430
+liveboard:
+  name: How to increase sales in Nevada?
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: What is the total sales in Nevada?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [state] = 'nevada'"
+      answer_columns:
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total sales
+        axis_configs:
+        - "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"714a209f-5740-4e54-84e7-c0d9a668a65e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"ea3a6eac-ef3f-44bd-bc12-06e95dabbe47\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 4fd36f8d-7607-4bfd-a30c-1621841b6cb9
+  - id: Viz_2
+    answer:
+      name: Which products have the highest sales in Nevada?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [product] [state] = 'nevada' sort by [sales] descending"
+      answer_columns:
+      - name: Total sales
+      - name: product
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - product
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: product
+        axis_configs:
+        - x:
+          - product
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4e9c838c-9daf-40bb-afeb-2bbb6d16187f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"de5dac69-4e6f-45de-92ff-27ea8f2e3bf9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 39f00318-c059-4e31-a93c-0fa1b5e5a47a
+  - id: Viz_3
+    answer:
+      name: What is the quantity purchased for each product type in Nevada?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[quantity purchased] [item type] [state] = 'nevada'"
+      answer_columns:
+      - name: Total quantity purchased
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total quantity purchased
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1036308a-9195-457f-9274-87249eaef675\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"da76ca18-ed47-436b-b8df-0b998224510e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 81c8c456-c956-4839-809f-4a9f2ff8abb7
+  - id: Viz_4
+    answer:
+      name: Which stores in Nevada are underperforming in terms of sales?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      formulas:
+      - id: formula_sales below average
+        name: sales below average
+        expr: "sum ( [sales] ) < [formula_average sales]"
+        was_auto_generated: false
+      - id: formula_average sales
+        name: average sales
+        expr: "group_aggregate ( average ( [sales] ) , { } , query_filters ( ) )"
+        was_auto_generated: false
+      search_query: "[store] [state] = 'nevada' [formula_sales below average] = true"
+      answer_columns:
+      - name: store
+      table:
+        table_columns:
+        - column_id: store
+          show_headline: false
+        ordered_column_ids:
+        - store
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: store
+        axis_configs:
+        - "y":
+          - store
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e8e9b830-467b-4624-ae11-fdee2b0d10c4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"store\"],\"isOpposite\": false}},{\"id\": \"b05f7a2f-efd0-4e6e-a31c-10f3a456b4c4\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 2a0f0048-d629-4161-93ec-af28364f3a0e
+  - id: Viz_5
+    answer:
+      name: What are the monthly sales trends in Nevada for the year 2025?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [date].monthly [state] = 'nevada' [date] = '2025'"
+      answer_columns:
+      - name: Month(date)
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Month(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(date)
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(date)
+        - column_id: Total sales
+        axis_configs:
+        - x:
+          - Month(date)
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d18b2419-1a84-49f1-9929-edd1211212bf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"b2a4f98e-662b-48c6-bbab-8666d469f690\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: eaac9c09-7d24-4ff2-b6cb-28c8a616378f
+  - id: Viz_6
+    answer:
+      name: What is the average sales per store in Nevada?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "average [sales] [store] [state] = 'nevada'"
+      answer_columns:
+      - name: Average sales
+      - name: store
+      table:
+        table_columns:
+        - column_id: Average sales
+          show_headline: false
+        - column_id: store
+          show_headline: false
+        ordered_column_ids:
+        - store
+        - Average sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"Average sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Average sales
+        - column_id: store
+        axis_configs:
+        - x:
+          - store
+          "y":
+          - Average sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Average sales\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5152fb73-4f52-4054-ae93-3a628e50e81a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average sales\"],\"isOpposite\": false}},{\"id\": \"8dbdc089-36d8-485b-b683-28fffe54387e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"store\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 08bf5bf3-effa-4f52-8a73-ad01848d63a0
+  - id: Viz_7
+    answer:
+      name: How do different item types contribute to sales growth in Nevada?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      formulas:
+      - id: formula_sales growth
+        name: sales growth
+        expr: "( [formula_current sales] - [formula_previous sales] ) / [formula_previous sales] * 100"
+        was_auto_generated: false
+      - id: formula_current sales
+        name: current sales
+        expr: "group_aggregate ( sum ( [sales] ) , query_groups ( ) , query_filters ( ) + { diff_years ( [date] , today ( ) ) = 0 } )"
+        was_auto_generated: false
+      - id: formula_previous sales
+        name: previous sales
+        expr: "group_aggregate ( sum ( [sales] ) , query_groups ( ) , query_filters ( ) + { diff_years ( [date] , today ( ) ) = - 1 } )"
+        was_auto_generated: false
+      search_query: "[formula_sales growth] [item type] [state] = 'nevada'"
+      answer_columns:
+      - name: item type
+      - name: sales growth
+      table:
+        table_columns:
+        - column_id: item type
+          show_headline: false
+        - column_id: sales growth
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - sales growth
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"sales growth\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: item type
+        - column_id: sales growth
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - sales growth
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"sales growth\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7e465836-a407-4a55-ab7d-65c179f42643\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"sales growth\"],\"isOpposite\": false}},{\"id\": \"5b35ae9b-d284-4b15-8533-3fcb0390b938\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 13a1af43-cbb1-4f76-bb46-5788ab71ed59
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_2
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_3
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_4
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_5
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_6
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_7
+      size: MEDIUM_SMALL

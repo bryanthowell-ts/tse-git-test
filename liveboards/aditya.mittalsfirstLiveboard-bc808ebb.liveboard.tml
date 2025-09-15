@@ -1,0 +1,49 @@
+obj_id: aditya.mittalsfirstLiveboard-bc808ebb
+liveboard:
+  name: aditya.mittal's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total quantity purchased
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[quantity purchased]"
+      answer_columns:
+      - name: Total quantity purchased
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        ordered_column_ids:
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total quantity purchased
+        axis_configs:
+        - "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ff643bcd-e36c-4a05-a538-872fe1cbdcc5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"c1b8cf44-9aa3-444b-bc66-eb215824d32d\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: fb408637-8727-40c4-9726-20b78e74c285
+  - id: Viz_2
+    viz_guid: 4063f1cc-ebc7-4a6d-b801-f658fbc12c49
+    note_tile:
+      html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">tgrt</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 4
+      "y": 0
+      height: 2
+      width: 3
+    - visualization_id: Viz_2
+      x: 0
+      "y": 0
+      height: 4
+      width: 3

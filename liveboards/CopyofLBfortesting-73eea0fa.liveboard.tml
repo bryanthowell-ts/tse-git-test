@@ -1,0 +1,306 @@
+obj_id: CopyofLBfortesting-73eea0fa
+liveboard:
+  name: Copy of LB for testing
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Average Femininity Score and the standard deviation
+      tables:
+      - id: Feminity name survey
+        name: Feminity name survey
+      formulas:
+      - id: formula_max
+        name: max
+        expr: "group_average ( [Feminity Score] , [Image Id] ) + group_stddev ( [Feminity Score] , [Image Id] )"
+        was_auto_generated: false
+      - id: formula_min
+        name: min
+        expr: "group_average ( [Feminity Score] , [Image Id] ) - group_stddev ( [Feminity Score] , [Image Id] )"
+        was_auto_generated: false
+      search_query: "average [Feminity Score] [Image Id] [formula_min] [formula_max]"
+      answer_columns:
+      - name: Average Feminity Score
+      - name: Image Id
+      - name: max
+      - name: min
+      table:
+        table_columns:
+        - column_id: Average Feminity Score
+          show_headline: false
+        - column_id: Image Id
+          show_headline: false
+        - column_id: max
+          show_headline: false
+        - column_id: min
+          show_headline: false
+        ordered_column_ids:
+        - Image Id
+        - Average Feminity Score
+        - min
+        - max
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Image Id\",\"columnProperty\": {}},{\"columnId\": \"Average Feminity Score\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Average Feminity Score
+        - column_id: Image Id
+        - column_id: max
+        - column_id: min
+        axis_configs:
+        - x:
+          - Image Id
+          "y":
+          - Average Feminity Score
+          - min
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Image Id\",\"columnProperty\": {}},{\"columnId\": \"Average Feminity Score\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"min\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"62f067dd-5dd8-438e-9b69-bddfe5666ce5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Feminity Score\",\"min\"],\"isOpposite\": false}},{\"id\": \"fa37e7aa-172d-49f4-ab17-8c119db0e65d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Image Id\"]}}],\"seriesColors\": [{\"serieName\": \"712f56ce-9e14-4120-9fc3-53ee6add10d4\",\"color\": \"#F04152\"},{\"serieName\": \"a53b021e-b47f-4c42-b9e3-d93e5186f0f5\",\"color\": \"#06BF7F\"},{\"serieName\": \"Average Feminity Score\",\"color\": \"#FCC838\"},{\"serieName\": \"319f5a06-4115-4f85-b32e-52a23d35d1d6\",\"color\": \"#F04152\"},{\"serieName\": \"min\",\"color\": \"#06BF7F\"}],\"systemSeriesColors\": [{\"serieName\": \"712f56ce-9e14-4120-9fc3-53ee6add10d4\",\"color\": \"#F04152\"},{\"serieName\": \"a53b021e-b47f-4c42-b9e3-d93e5186f0f5\",\"color\": \"#06BF7F\"},{\"serieName\": \"Average Feminity Score\",\"color\": \"#FCC838\"},{\"serieName\": \"min\",\"color\": \"#2E75F0\"},{\"serieName\": \"319f5a06-4115-4f85-b32e-52a23d35d1d6\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 537ee8f7-33c4-4b84-ba97-c9587d4c4c35
+  - id: Viz_2
+    answer:
+      name: "Average Feminity Score, Maximum Feminity Score, Minimum Feminity Score by Image Id"
+      tables:
+      - id: Feminity name survey
+        name: Feminity name survey
+      table_paths:
+      - id: Feminity name survey_1
+        table: Feminity name survey
+      formulas:
+      - id: formula_max
+        name: max
+        expr: "group_average ( [Feminity name survey_1::Feminity Score] , [Feminity name survey_1::Image Id] ) + group_stddev ( [Feminity name survey_1::Feminity Score] , [Feminity name survey_1::Image Id] )"
+        was_auto_generated: false
+      - id: formula_min
+        name: min
+        expr: "group_average ( [Feminity name survey_1::Feminity Score] , [Feminity name survey_1::Image Id] ) - group_stddev ( [Feminity name survey_1::Feminity Score] , [Feminity name survey_1::Image Id] )"
+        was_auto_generated: false
+      search_query: "average [Feminity Score] [Image Id] max [Feminity Score] min [Feminity Score]"
+      answer_columns:
+      - name: Average Feminity Score
+      - name: Image Id
+      - name: Maximum Feminity Score
+      - name: Minimum Feminity Score
+      table:
+        table_columns:
+        - column_id: Average Feminity Score
+          show_headline: false
+        - column_id: Image Id
+          show_headline: false
+        - column_id: Maximum Feminity Score
+          show_headline: false
+        - column_id: Minimum Feminity Score
+          show_headline: false
+        ordered_column_ids:
+        - Image Id
+        - Average Feminity Score
+        - Maximum Feminity Score
+        - Minimum Feminity Score
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Image Id\",\"columnProperty\": {}},{\"columnId\": \"Average Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Maximum Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Minimum Feminity Score\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE_COLUMN
+        chart_columns:
+        - column_id: Average Feminity Score
+        - column_id: Image Id
+        - column_id: Maximum Feminity Score
+        - column_id: Minimum Feminity Score
+        axis_configs:
+        - x:
+          - Image Id
+          "y":
+          - Average Feminity Score
+          - Maximum Feminity Score
+          - Minimum Feminity Score
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Image Id\",\"columnProperty\": {}},{\"columnId\": \"Average Feminity Score\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Maximum Feminity Score\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Minimum Feminity Score\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"5f4805d5-2a30-406c-8bb0-5b13ae69878b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Image Id\"]}},{\"id\": \"8bf85ca7-3fcc-41a4-8ca7-e13b058e3e0b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Feminity Score\",\"Maximum Feminity Score\",\"Minimum Feminity Score\"],\"isOpposite\": false}}],\"seriesColors\": [{\"serieName\": \"712f56ce-9e14-4120-9fc3-53ee6add10d4\",\"color\": \"#F04152\"},{\"serieName\": \"a53b021e-b47f-4c42-b9e3-d93e5186f0f5\",\"color\": \"#06BF7F\"},{\"serieName\": \"Average Feminity Score\",\"color\": \"#FCC838\"}],\"systemSeriesColors\": [{\"serieName\": \"712f56ce-9e14-4120-9fc3-53ee6add10d4\",\"color\": \"#F04152\"},{\"serieName\": \"a53b021e-b47f-4c42-b9e3-d93e5186f0f5\",\"color\": \"#06BF7F\"},{\"serieName\": \"Average Feminity Score\",\"color\": \"#FCC838\"},{\"serieName\": \"Maximum Feminity Score\",\"color\": \"#2E75F0\"},{\"serieName\": \"Minimum Feminity Score\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: fa0c3781-e808-4cfc-993e-8f6d40dde275
+  - id: Viz_3
+    answer:
+      name: Total Count Feminity Score by Image Id and Feminity Score
+      tables:
+      - id: Feminity name survey
+        name: Feminity name survey
+      formulas:
+      - id: formula_max
+        name: max
+        expr: "group_average ( [Feminity Score] , [Image Id] ) + group_stddev ( [Feminity Score] , [Image Id] )"
+        was_auto_generated: false
+      - id: formula_min
+        name: min
+        expr: "group_average ( [Feminity Score] , [Image Id] ) - group_stddev ( [Feminity Score] , [Image Id] )"
+        was_auto_generated: false
+      search_query: "[Image Id] [Feminity Score] count [Feminity Score] sort by count [Feminity Score] descending"
+      answer_columns:
+      - name: Feminity Score
+      - name: Image Id
+      - name: Number of Feminity Score
+      table:
+        table_columns:
+        - column_id: Feminity Score
+          show_headline: false
+        - column_id: Image Id
+          show_headline: false
+        - column_id: Number of Feminity Score
+          show_headline: false
+        ordered_column_ids:
+        - Image Id
+        - Feminity Score
+        - Number of Feminity Score
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Image Id\",\"columnProperty\": {}},{\"columnId\": \"Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Number of Feminity Score\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Feminity Score
+        - column_id: Image Id
+        - column_id: Number of Feminity Score
+        axis_configs:
+        - x:
+          - Image Id
+          "y":
+          - Number of Feminity Score
+          color:
+          - Feminity Score
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Feminity Score\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Number of Feminity Score\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Image Id\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"d90228b0-6406-44cd-bca3-c32506e5e085\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Feminity Score\"],\"isOpposite\": false}},{\"id\": \"f51fb887-5552-479f-8476-d260a790bebd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Image Id\"]}}],\"seriesColors\": [{\"serieName\": \"712f56ce-9e14-4120-9fc3-53ee6add10d4\",\"color\": \"#F04152\"},{\"serieName\": \"a53b021e-b47f-4c42-b9e3-d93e5186f0f5\",\"color\": \"#06BF7F\"},{\"serieName\": \"ccce5485-0541-443f-956f-e9e5515b6dab\",\"color\": \"#FCC838\"}],\"systemSeriesColors\": [{\"serieName\": \"712f56ce-9e14-4120-9fc3-53ee6add10d4\",\"color\": \"#F04152\"},{\"serieName\": \"a53b021e-b47f-4c42-b9e3-d93e5186f0f5\",\"color\": \"#06BF7F\"},{\"serieName\": \"ccce5485-0541-443f-956f-e9e5515b6dab\",\"color\": \"#FCC838\"},{\"serieName\": \"2598dc61-9ed3-4e4c-8bce-8449dabdc177\",\"color\": \"#2E75F0\"},{\"serieName\": \"3d97ff37-4874-4298-8f2e-b615c0038df4\",\"color\": \"#48D1E0\"},{\"serieName\": \"Number of Feminity Score\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: e02f9ae9-6283-4a9c-a410-254ff2f02bee
+  - id: Viz_4
+    answer:
+      name: Feminity score distribution image 5
+      tables:
+      - id: Feminity name survey
+        name: Feminity name survey
+      search_query: "[Feminity Score] count [Feminity Score] [Image Id] = 5"
+      answer_columns:
+      - name: Feminity Score
+      - name: Number of Feminity Score
+      table:
+        table_columns:
+        - column_id: Feminity Score
+          show_headline: false
+        - column_id: Number of Feminity Score
+          show_headline: false
+        ordered_column_ids:
+        - Feminity Score
+        - Number of Feminity Score
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Number of Feminity Score\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Feminity Score
+        - column_id: Number of Feminity Score
+        axis_configs:
+        - x:
+          - Feminity Score
+          "y":
+          - Number of Feminity Score
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"showLinearRegressionLine\": false,\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Number of Feminity Score\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"43de90f2-82a4-45bb-ba85-2c0519cabbe8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Feminity Score\"],\"isOpposite\": false}},{\"id\": \"9fabdc74-be93-4f2f-926e-97e13d9270d2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Feminity Score\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Feminity Score\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7127067e-85f2-41c7-a98f-d82bab444cef
+  - id: Viz_5
+    answer:
+      name: Feminity score distribution image 10
+      tables:
+      - id: Feminity name survey
+        name: Feminity name survey
+      search_query: "[Feminity Score] count [Feminity Score] [Image Id] = 10"
+      answer_columns:
+      - name: Feminity Score
+      - name: Number of Feminity Score
+      table:
+        table_columns:
+        - column_id: Feminity Score
+          show_headline: false
+        - column_id: Number of Feminity Score
+          show_headline: false
+        ordered_column_ids:
+        - Feminity Score
+        - Number of Feminity Score
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Number of Feminity Score\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Feminity Score
+        - column_id: Number of Feminity Score
+        axis_configs:
+        - x:
+          - Feminity Score
+          "y":
+          - Number of Feminity Score
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"showLinearRegressionLine\": false,\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Number of Feminity Score\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"43de90f2-82a4-45bb-ba85-2c0519cabbe8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Feminity Score\"],\"isOpposite\": false}},{\"id\": \"9fabdc74-be93-4f2f-926e-97e13d9270d2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Feminity Score\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Feminity Score\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: c26b8008-c0ae-4f9b-a352-910029691a14
+  - id: Viz_6
+    answer:
+      name: Feminity score distribution image 1
+      tables:
+      - id: Feminity name survey
+        name: Feminity name survey
+      search_query: "[Feminity Score] count [Feminity Score] [Image Id] = 1"
+      answer_columns:
+      - name: Feminity Score
+      - name: Number of Feminity Score
+      table:
+        table_columns:
+        - column_id: Feminity Score
+          show_headline: false
+        - column_id: Number of Feminity Score
+          show_headline: false
+        ordered_column_ids:
+        - Feminity Score
+        - Number of Feminity Score
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Number of Feminity Score\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Feminity Score
+        - column_id: Number of Feminity Score
+        axis_configs:
+        - x:
+          - Feminity Score
+          "y":
+          - Number of Feminity Score
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"showLinearRegressionLine\": false,\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Feminity Score\",\"columnProperty\": {}},{\"columnId\": \"Number of Feminity Score\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"43de90f2-82a4-45bb-ba85-2c0519cabbe8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Feminity Score\"],\"isOpposite\": false}},{\"id\": \"9fabdc74-be93-4f2f-926e-97e13d9270d2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Feminity Score\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Feminity Score\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9d1f99d8-023c-40a8-9136-ee828bbe6988
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 7
+      width: 8
+    - visualization_id: Viz_2
+      x: 0
+      "y": 7
+      height: 8
+      width: 6
+    - visualization_id: Viz_3
+      x: 3
+      "y": 15
+      height: 8
+      width: 6
+    - visualization_id: Viz_4
+      x: 6
+      "y": 23
+      height: 8
+      width: 6
+    - visualization_id: Viz_5
+      x: 0
+      "y": 31
+      height: 8
+      width: 6
+    - visualization_id: Viz_6
+      x: 0
+      "y": 23
+      height: 8
+      width: 6

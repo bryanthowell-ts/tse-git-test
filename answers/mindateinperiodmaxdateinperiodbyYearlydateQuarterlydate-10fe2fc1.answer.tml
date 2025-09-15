@@ -1,0 +1,50 @@
+obj_id: mindateinperiodmaxdateinperiodbyYearlydateQuarterlydate-10fe2fc1
+answer:
+  name: "min date (in period), max date (in period) by Yearly date, Quarterly date, Monthly date"
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "[date] = '2024' [date].yearly [date].quarterly [date].monthly min [date] max [date] sort by [date] [date].yearly sort by [date] [date].quarterly sort by [date] [date].monthly calendar.calendar"
+  answer_columns:
+  - name: Maximum date
+    custom_name: max date (in period)
+  - name: Minimum date
+    custom_name: min date (in period)
+  - name: Month(date)
+  - name: Quarter(date)
+  - name: Year(date)
+  table:
+    table_columns:
+    - column_id: Maximum date
+      show_headline: false
+    - column_id: Minimum date
+      show_headline: false
+    - column_id: Month(date)
+      show_headline: false
+    - column_id: Quarter(date)
+      show_headline: false
+    - column_id: Year(date)
+      show_headline: false
+    ordered_column_ids:
+    - Year(date)
+    - Quarter(date)
+    - Month(date)
+    - Minimum date
+    - Maximum date
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Maximum date\",\"width\": 149.0},{\"columnId\": \"Minimum date\",\"width\": 154.0},{\"columnId\": \"Quarter(date)\",\"width\": 143.77777862548828}],\"theme\": \"ZEBRA\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Maximum date
+    - column_id: Minimum date
+    - column_id: Month(date)
+    - column_id: Quarter(date)
+    - column_id: Year(date)
+    axis_configs:
+    - "y":
+      - Minimum date
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(date)\",\"columnProperty\": {}},{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"Minimum date\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"73b1c991-00df-4f35-91d0-2c7ecbd2c942\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Minimum date\"],\"isOpposite\": false}},{\"id\": \"69572908-3421-471b-aab5-6af3b7dd63ed\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE

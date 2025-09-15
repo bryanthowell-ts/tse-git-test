@@ -1,0 +1,86 @@
+obj_id: cust_orders_predliveboard-f48cf38e
+liveboard:
+  name: cust_orders_pred liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Viz 1
+      tables:
+      - id: CUST_ORDERS_PRED
+        name: CUST_ORDERS_PRED
+      search_query: "[O_ORDERDATE] [O_ORDERDATE].yearly [O_TOTALPRICE]"
+      answer_columns:
+      - name: Total O_TOTALPRICE
+      - name: Year(O_ORDERDATE)
+      table:
+        table_columns:
+        - column_id: Total O_TOTALPRICE
+          headline_aggregation: SUM
+        - column_id: Year(O_ORDERDATE)
+          show_headline: false
+        ordered_column_ids:
+        - Year(O_ORDERDATE)
+        - Total O_TOTALPRICE
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Year(O_ORDERDATE)\",\"columnProperty\": {}},{\"columnId\": \"Total O_TOTALPRICE\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Total O_TOTALPRICE
+        - column_id: Year(O_ORDERDATE)
+        axis_configs:
+        - x:
+          - Year(O_ORDERDATE)
+          "y":
+          - Total O_TOTALPRICE
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Year(O_ORDERDATE)\",\"columnProperty\": {}},{\"columnId\": \"Total O_TOTALPRICE\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"8e9cf8f0-6fc7-4f4d-8123-1e6af1ac2466\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total O_TOTALPRICE\"],\"isOpposite\": false}},{\"id\": \"c7cc7991-86ef-44e4-8a80-5ae5e5c542df\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Year(O_ORDERDATE)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total O_TOTALPRICE\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: a7572808-b9f2-48ea-bc21-5cb400e5cf09
+  - id: Viz_2
+    answer:
+      name: Viz 2
+      tables:
+      - id: CUST_ORDERS_PRED
+        name: CUST_ORDERS_PRED
+      search_query: "[Market Segment] [O_TOTALPRICE]"
+      answer_columns:
+      - name: Market Segment
+      - name: Total O_TOTALPRICE
+      table:
+        table_columns:
+        - column_id: Market Segment
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total O_TOTALPRICE
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Market Segment
+        - Total O_TOTALPRICE
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Market Segment\",\"columnProperty\": {}},{\"columnId\": \"Total O_TOTALPRICE\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Market Segment
+        - column_id: Total O_TOTALPRICE
+        axis_configs:
+        - x:
+          - Market Segment
+          "y":
+          - Total O_TOTALPRICE
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Market Segment\",\"columnProperty\": {}},{\"columnId\": \"Total O_TOTALPRICE\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"01d28092-5940-43ec-9753-a0fa2014e0e6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total O_TOTALPRICE\"],\"isOpposite\": false}},{\"id\": \"0b5ed8ca-7eba-49da-9781-8a658129f202\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Market Segment\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3f24391c-36e6-4d12-95a0-039a2148cae0
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 4
+      width: 6
+    - visualization_id: Viz_2
+      x: 6
+      "y": 0
+      height: 4
+      width: 6

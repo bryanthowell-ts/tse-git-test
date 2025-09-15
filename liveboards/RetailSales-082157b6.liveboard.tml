@@ -1,0 +1,311 @@
+obj_id: RetailSales-082157b6
+liveboard:
+  name: Retail Sales
+  description: Retail sales example that seems to be unrelated to retail sales.
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Daily Active Users WIP
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "unique count [User] [Timestamp].daily"
+      answer_columns:
+      - name: Day(Timestamp)
+      - name: Unique Number of User
+      table:
+        table_columns:
+        - column_id: Day(Timestamp)
+          show_headline: false
+        - column_id: Unique Number of User
+          show_headline: false
+        ordered_column_ids:
+        - Day(Timestamp)
+        - Unique Number of User
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Day(Timestamp)
+        - column_id: Unique Number of User
+        axis_configs:
+        - x:
+          - Day(Timestamp)
+          "y":
+          - Unique Number of User
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Day(Timestamp)\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of User\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b0ee1c2e-7628-4a4c-8a12-1f0730858af4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User\"],\"isOpposite\": false}},{\"id\": \"8cad31c4-c5c9-46f0-9c2a-0532e73035a4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Timestamp)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Unique Number of User\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: 7915cf7e-2fa8-4686-9d58-ccb1b17e9cfe
+  - id: Viz_2
+    viz_guid: 6a7ab45e-9ea2-4250-bcae-aa603976088a
+    note_tile:
+      html_parsed_string: <h1><span>What's new in ThoughtSpot Cloud 9.7.0?</span></h1><p class="theme-module__editor-paragraph" dir="ltr"><br></p><p class="theme-module__editor-paragraph" dir="ltr"><br></p><iframe data-src-link="https://www.youtube.com/embed/dRdLSmktz0k?si=CgR6b_vCl9aHmaDt" width="1192" height="669" src="https://www.youtube.com/embed/dRdLSmktz0k?si=CgR6b_vCl9aHmaDt" frameborder="0" title="Embedded Page"></iframe><iframe data-src-link="https://docs.thoughtspot.com/cloud/latest/notes#new" width="1191" height="601" src="https://docs.thoughtspot.com/cloud/latest/notes#new" frameborder="0" title="Embedded Page"></iframe><p class="theme-module__editor-paragraph" dir="ltr"><br></p>
+  - id: Viz_3
+    answer:
+      name: Impressions
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "[Impressions] [Timestamp].daily"
+      answer_columns:
+      - name: Day(Timestamp)
+      - name: Total Impressions
+      table:
+        table_columns:
+        - column_id: Day(Timestamp)
+          show_headline: false
+        - column_id: Total Impressions
+          show_headline: false
+        ordered_column_ids:
+        - Day(Timestamp)
+        - Total Impressions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Impressions\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Day(Timestamp)
+        - column_id: Total Impressions
+        axis_configs:
+        - x:
+          - Day(Timestamp)
+          "y":
+          - Total Impressions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Day(Timestamp)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"43eb8e37-9337-4e21-8532-4edd0cbb7ee5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Impressions\"],\"isOpposite\": false}},{\"id\": \"f879d04d-8115-4e4f-85a9-a016bbb5ed79\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Timestamp)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Impressions\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: b0f2a7b4-98b6-41c7-bcd0-95ce1515bc14
+  - id: Viz_4
+    answer:
+      name: Searches
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "count [Incident Id] [User Action].answer_unsaved [Timestamp].daily"
+      answer_columns:
+      - name: Day(Timestamp)
+      - name: Number of Incident Id
+      table:
+        table_columns:
+        - column_id: Day(Timestamp)
+          show_headline: false
+        - column_id: Number of Incident Id
+          show_headline: false
+        ordered_column_ids:
+        - Day(Timestamp)
+        - Number of Incident Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Day(Timestamp)
+        - column_id: Number of Incident Id
+        axis_configs:
+        - x:
+          - Day(Timestamp)
+          "y":
+          - Number of Incident Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Number of Incident Id\",\"columnProperty\": {}},{\"columnId\": \"Day(Timestamp)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f7cef097-3eff-4265-a5b1-72aaae846400\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Incident Id\"],\"isOpposite\": false}},{\"id\": \"f02f987d-47d3-447d-84f8-d8c9f7d84c63\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Timestamp)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Incident Id\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 23253322-0b0c-4b71-8b39-135dd1950dff
+  - id: Viz_5
+    answer:
+      name: Edits
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "count [Incident Id] [User Action].answer_saved [User Action].answer_view_save [Timestamp].daily"
+      answer_columns:
+      - name: Day(Timestamp)
+      - name: Number of Incident Id
+      table:
+        table_columns:
+        - column_id: Day(Timestamp)
+          show_headline: false
+        - column_id: Number of Incident Id
+          show_headline: false
+        ordered_column_ids:
+        - Day(Timestamp)
+        - Number of Incident Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Day(Timestamp)
+        - column_id: Number of Incident Id
+        axis_configs:
+        - x:
+          - Day(Timestamp)
+          "y":
+          - Number of Incident Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotState\": {\"fields\": [{\"dataField\": \"Day(Timestamp)\",\"sortBy\": \"value\",\"sortBySummaryField\": \"Day(Timestamp)\",\"sortOrder\": \"asc\",\"expanded\": false,\"area\": \"row\"}]},\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Number of Incident Id\",\"columnProperty\": {}},{\"columnId\": \"Day(Timestamp)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e1b5cebf-7fa4-4bb1-a18f-8e922e63ce5b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Incident Id\"],\"isOpposite\": false}},{\"id\": \"621cb30a-28ea-47d0-9de6-cfde5b808e51\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Timestamp)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Incident Id\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: f677161b-304e-4e70-a04c-e1aa5d71d700
+  - id: Viz_6
+    answer:
+      name: Impressions Leaderboard
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Edits
+        name: Edits
+        expr: "count_if ( [User Action] in { 'answer_saved' , 'answer_view_save' } , [Incident Id] )"
+        was_auto_generated: false
+      - id: formula_Searches
+        name: Searches
+        expr: "count_if ( [User Action] = 'answer_unsaved' , [Incident Id] )"
+        was_auto_generated: false
+      search_query: "[User] max [Timestamp] [Impressions] sort by [Impressions] descending [formula_Searches] [formula_Edits]"
+      answer_columns:
+      - name: Edits
+      - name: Maximum Timestamp
+        custom_name: Latest Interact
+      - name: Searches
+      - name: Total Impressions
+        format:
+          category: NUMBER
+          numberFormatConfig:
+            unit: NONE
+            decimals: 2.0
+            negativeValueFormat: PREFIX_DASH
+            toSeparateThousands: true
+          isCategoryEditable: true
+      - name: User
+      table:
+        table_columns:
+        - column_id: Edits
+          show_headline: false
+        - column_id: Maximum Timestamp
+          show_headline: false
+        - column_id: Searches
+          show_headline: false
+        - column_id: Total Impressions
+          show_headline: false
+        - column_id: User
+          show_headline: false
+        ordered_column_ids:
+        - User
+        - Maximum Timestamp
+        - Total Impressions
+        - Searches
+        - Edits
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"User\",\"width\": 309.0},{\"columnId\": \"Maximum Timestamp\",\"width\": 158.52083587646484}],\"orderedColumnIds\": [\"User\",\"Maximum Timestamp\",\"Searches\",\"Edits\",\"Total Impressions\"]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Edits
+        - column_id: Maximum Timestamp
+        - column_id: Searches
+        - column_id: Total Impressions
+        - column_id: User
+        axis_configs:
+        - x:
+          - Maximum Timestamp
+          "y":
+          - Total Impressions
+          - Searches
+          - Edits
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Maximum Timestamp\",\"columnProperty\": {}},{\"columnId\": \"Searches\",\"columnProperty\": {}},{\"columnId\": \"Edits\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f9b1ea5e-04ee-4144-8bc4-23332081537e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Impressions\"],\"isOpposite\": false}},{\"id\": \"3728acb6-00b3-430e-8a8d-c83c71b866d5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Searches\"],\"isOpposite\": true}},{\"id\": \"1cc40b18-3f18-4771-a61d-40c95bb6dfe3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Edits\"],\"isOpposite\": true}},{\"id\": \"afb3571e-65c1-4afd-8cf2-4ac858fcd550\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Maximum Timestamp\"]}}],\"systemSeriesColors\": [{\"serieName\": \"6e804773-382b-4c93-a115-d8d2cc861d07\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
+      display_mode: TABLE_MODE
+    viz_guid: 1e89c9fc-87d4-428f-b9d1-2664673f2967
+  - id: Viz_7
+    viz_guid: 3b62461e-ae03-450c-b255-1759ec4c5593
+    note_tile:
+      html_parsed_string: <h1><span>Need access?</span></h1><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><iframe data-src-link="https://www.w3schools.com" width="665.2000122070312" height="336.11027617803165" src="https://www.w3schools.com" frameborder="0" title="Embedded Page"></iframe></p>
+  filters:
+  - column:
+    - Browser Type
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Hidden
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: Content
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 4
+        width: 7
+      - visualization_id: Viz_2
+        x: 7
+        "y": 0
+        height: 9
+        width: 5
+      - visualization_id: Viz_3
+        x: 0
+        "y": 4
+        height: 2
+        width: 2
+      - visualization_id: Viz_4
+        x: 2
+        "y": 4
+        height: 2
+        width: 3
+      - visualization_id: Viz_5
+        x: 5
+        "y": 4
+        height: 2
+        width: 2
+      - visualization_id: Viz_6
+        x: 0
+        "y": 6
+        height: 3
+        width: 7
+      id: fcb0ecde-6fa5-48e0-840f-7a6dd23ce673
+    - name: Need Help? 🤔
+      description: ""
+      tiles:
+      - visualization_id: Viz_7
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      id: f7c8d34a-802d-4428-a2a2-85da7dc46dc9
+  ordered_chips:
+  - name: Browser Type
+    type: FILTER
+  - name: Hidden
+    type: FILTER
+  views:
+  - view_guid: 3df6bab4-7257-43f0-96bf-8c32c91b107d
+    name: Chrome only
+    view_filters:
+    - column:
+      - Browser Type
+      oper: in
+      values:
+      - Chrome
+      - Chrome Mobile
+    - column:
+      - Hidden
+      oper: =
+    is_public: true
+  - view_guid: 336802db-b577-4ec5-81eb-07ffbf358191
+    name: FF view
+    view_filters:
+    - column:
+      - Browser Type
+      oper: in
+      values:
+      - Firefox
+      - Mobile Firefox
+    - column:
+      - Hidden
+      oper: =
+    is_public: false

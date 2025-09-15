@@ -1,0 +1,393 @@
+obj_id: CopyofSalesQuantitySoldOverview-42d9f890
+liveboard:
+  name: Copy of Sales & Quantity Sold Overview
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [date].quarterly"
+      answer_columns:
+      - name: Quarter(date)
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Quarter(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(date)
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Quarter(date)
+        - column_id: Total sales
+        axis_configs:
+        - x:
+          - Quarter(date)
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Quarter(date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"20eae7ad-164d-4fea-862e-96b528946507\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"0af1a150-60e7-4e29-ad32-75468dc0ba97\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 219d7180-e69f-478f-8dc0-9f048ae34292
+  - id: Viz_2
+    answer:
+      name: Total Quantity Purchased
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[quantity purchased] [date].quarterly"
+      answer_columns:
+      - name: Quarter(date)
+      - name: Total quantity purchased
+      table:
+        table_columns:
+        - column_id: Quarter(date)
+          show_headline: false
+        - column_id: Total quantity purchased
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(date)
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Quarter(date)
+        - column_id: Total quantity purchased
+        axis_configs:
+        - x:
+          - Quarter(date)
+          "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Quarter(date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9d7f039f-ba99-4e9e-8e35-203afd9ac3d6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"1b74f66c-3bc2-4e64-84ee-8d989d8e2028\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3b3cf33f-3919-4754-bbd5-c23d6c3cedd0
+  - id: Viz_3
+    answer:
+      name: Total Sales by Country
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[latitude] [longitude] [county] [sales]"
+      answer_columns:
+      - name: Total sales
+      - name: county
+      - name: latitude
+      - name: longitude
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: county
+          show_headline: false
+        - column_id: latitude
+          show_headline: false
+        - column_id: longitude
+          show_headline: false
+        ordered_column_ids:
+        - latitude
+        - longitude
+        - county
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_BUBBLE
+        chart_columns:
+        - column_id: Total sales
+        - column_id: county
+        - column_id: latitude
+        - column_id: longitude
+        axis_configs:
+        - x:
+          - latitude
+          - longitude
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0805263379760304E7,4923989.725609804],\"zoomLevel\": 4.8051274415102325,\"extent\": [-1.3711383836184911E7,2885785.7831463027,-7899142.9233356975,6962193.668073304]},\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"latitude\",\"columnProperty\": {}},{\"columnId\": \"longitude\",\"columnProperty\": {}},{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d6fedcc6-9738-4185-ad9e-b859a84afd39\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"dc551dd8-bc96-4fe3-8baf-287458cb48a3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"latitude\",\"longitude\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#F04152\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total sales\",\"colorMap\": [{\"serieName\": \"county\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: f3443cc1-8a58-4d1c-82d4-de3d22818e12
+  - id: Viz_4
+    answer:
+      name: Sales Trend
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [item type] [date] [date].monthly"
+      answer_columns:
+      - name: Month(date)
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Month(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Month(date)
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(date)
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - Month(date)
+          "y":
+          - Total sales
+          color:
+          - item type
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Month(date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6b2f3c0a-6d28-4720-9c68-5bdef13f932d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"fdb5e465-9e24-43ee-90c1-a04f4d36e15d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}],\"seriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#ABC7F9\"}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#ABC7F9\"},{\"serieName\": \"bags\",\"color\": \"#2E75F0\"},{\"serieName\": \"dresses\",\"color\": \"#48D1E0\"},{\"serieName\": \"headwear\",\"color\": \"#FCC838\"},{\"serieName\": \"jackets\",\"color\": \"#06BF7F\"},{\"serieName\": \"jeans\",\"color\": \"#8C62F5\"},{\"serieName\": \"pants\",\"color\": \"#FF8142\"},{\"serieName\": \"shirts\",\"color\": \"#ABC7F9\"},{\"serieName\": \"shorts\",\"color\": \"#B5ECF2\"},{\"serieName\": \"skirts\",\"color\": \"#FDE9AF\"},{\"serieName\": \"socks\",\"color\": \"#9BE5CB\"},{\"serieName\": \"sweaters\",\"color\": \"#D1C0FB\"},{\"serieName\": \"sweatshirts\",\"color\": \"#FFCCB3\"},{\"serieName\": \"swimwear\",\"color\": \"#2359B6\"},{\"serieName\": \"underwear\",\"color\": \"#369FAA\"},{\"serieName\": \"vests\",\"color\": \"#BF982A\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: c40f9bd7-b7c1-4ee6-a532-ed3dd4d7573a
+  - id: Viz_5
+    answer:
+      name: Quantity Sold Trend
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[quantity purchased] [date] [date].monthly"
+      answer_columns:
+      - name: Month(date)
+      - name: Total quantity purchased
+      table:
+        table_columns:
+        - column_id: Month(date)
+          show_headline: false
+        - column_id: Total quantity purchased
+          show_headline: false
+        ordered_column_ids:
+        - Month(date)
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(date)
+        - column_id: Total quantity purchased
+        axis_configs:
+        - x:
+          - Month(date)
+          "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"34f4213f-5cc8-4d0d-b290-5c45f49523d3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"e4af19aa-2434-4e36-afe8-17f9c15f6b38\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}],\"seriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#64CCC5\"}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: efd8eb88-1367-4660-88e7-40ce9ea785ba
+  - id: Viz_6
+    answer:
+      name: Sales by Cities
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[city] [sales]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c6fde6ce-d40a-40b5-8d27-7e460ca7f727\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"b3b11936-1c16-4aa1-bd93-e5c4b096a2a6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"seriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#369FAA\"}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 1edbf5da-19f9-49fc-b57a-aa859d831f59
+  - id: Viz_7
+    answer:
+      name: Sales by Item Types
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[item type] [quantity purchased]"
+      answer_columns:
+      - name: Total quantity purchased
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total quantity purchased
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e65eaea1-a521-4a9d-91af-309ea1721d99\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"b9cbe8de-057e-4c03-8fde-864d539749a8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}],\"seriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#64CCC5\"}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3f6273a0-662d-4326-aaf8-84b3bbb5f3e5
+  - id: Viz_8
+    answer:
+      name: Sales by Products
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[product] [sales]"
+      answer_columns:
+      - name: Total sales
+      - name: product
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - product
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: product
+        axis_configs:
+        - x:
+          - product
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"08c1e6d8-a390-487e-bc42-9eda03bdbf86\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"f4db6bca-0b94-40ef-a194-c9739095d253\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}],\"seriesColors\": [{\"serieName\": \"active boxer briefs\",\"color\": \"#721F27\"},{\"serieName\": \"active boy shorts\",\"color\": \"#F47E89\"},{\"serieName\": \"active briefs\",\"color\": \"#B6313E\"},{\"serieName\": \"active classic boxers\",\"color\": \"#F9B3B9\"},{\"serieName\": \"active mesh bra\",\"color\": \"#F04152\"},{\"serieName\": \"active sport boxer briefs\",\"color\": \"#2F3947\"},{\"serieName\": \"active sport briefs\",\"color\": \"#A2ACBA\"},{\"serieName\": \"adventure jacket\",\"color\": \"#47515F\"},{\"serieName\": \"all weather capris\",\"color\": \"#BEC6D0\"},{\"serieName\": \"all weather training top\",\"color\": \"#747E8C\"},{\"serieName\": \"all-around cardi\",\"color\": \"#7A3D1F\"},{\"serieName\": \"all-around polo\",\"color\": \"#FFA97E\"},{\"serieName\": \"all-around tank\",\"color\": \"#C26232\"},{\"serieName\": \"all-around tee\",\"color\": \"#FFCCB3\"},{\"serieName\": \"all-out capris\",\"color\": \"#FF8142\"},{\"serieName\": \"all-wear capris\",\"color\": \"#422E75\"},{\"serieName\": \"all-wear cargo shorts\",\"color\": \"#B094F8\"},{\"serieName\": \"all-wear shorts\",\"color\": \"#6A4ABA\"},{\"serieName\": \"amalfi coast top\",\"color\": \"#D1C0FB\"},{\"serieName\": \"andorra 1/4 zip jacket\",\"color\": \"#8C62F5\"},{\"serieName\": \"andorra hooded jacket\",\"color\": \"#025B3C\"},{\"serieName\": \"andorra jacket\",\"color\": \"#56D3A8\"},{\"serieName\": \"antibes bottom\",\"color\": \"#049160\"},{\"serieName\": \"atmosphere jacket\",\"color\": \"#9BE5CB\"},{\"serieName\": \"baby cow t-shirt\",\"color\": \"#06BF7F\"},{\"serieName\": \"baby farm t-shirt\",\"color\": \"#785F1A\"},{\"serieName\": \"baby micro deluxe cardigan\",\"color\": \"#FCD977\"},{\"serieName\": \"baby playtime t-shirt\",\"color\": \"#BF982A\"},{\"serieName\": \"baby rainbow bucket hat\",\"color\": \"#FDE9AF\"},{\"serieName\": \"baby reversible jacket\",\"color\": \"#FCC838\"},{\"serieName\": \"baby ruffles apron dress\",\"color\": \"#22636B\"},{\"serieName\": \"baby ruffles shorts\",\"color\": \"#82DFE9\"},{\"serieName\": \"baby seahorse t-shirt\",\"color\": \"#369FAA\"},{\"serieName\": \"baby striped cardigan\",\"color\": \"#B5ECF2\"},{\"serieName\": \"baby striped vest\",\"color\": \"#48D1E0\"},{\"serieName\": \"baby sunshade top\",\"color\": \"#163772\"},{\"serieName\": \"baja board shorts\",\"color\": \"#71A1F4\"},{\"serieName\": \"bali dress\",\"color\": \"#2359B6\"},{\"serieName\": \"bali skirt\",\"color\": \"#ABC7F9\"},{\"serieName\": \"banjo t-shirt\",\"color\": \"#2E75F0\"},{\"serieName\": \"baseball tank\",\"color\": \"#721F27\"},{\"serieName\": \"bi-plane t-shirt\",\"color\": \"#F47E89\"},{\"serieName\": \"big wave board shorts\",\"color\": \"#B6313E\"},{\"serieName\": \"big wave board shorts-21 in.\",\"color\": \"#F9B3B9\"},{\"serieName\": \"bird of paradise capris\",\"color\": \"#F04152\"},{\"serieName\": \"bird of paradise cross-back tank\",\"color\": \"#2F3947\"},{\"serieName\": \"bird of paradise dress\",\"color\": \"#A2ACBA\"},{\"serieName\": \"bird of paradise skirt\",\"color\": \"#47515F\"},{\"serieName\": \"blue marlin 2 t-shirt\",\"color\": \"#BEC6D0\"},{\"serieName\": \"blue marlin t-shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"board shorts\",\"color\": \"#7A3D1F\"},{\"serieName\": \"brazil board shorts\",\"color\": \"#FFA97E\"},{\"serieName\": \"bucket hat\",\"color\": \"#C26232\"},{\"serieName\": \"buenos aires pants\",\"color\": \"#FFCCB3\"},{\"serieName\": \"buenos aires shorts\",\"color\": \"#FF8142\"},{\"serieName\": \"buenos aires skirt\",\"color\": \"#422E75\"},{\"serieName\": \"california shorts\",\"color\": \"#B094F8\"},{\"serieName\": \"cannes bottom\",\"color\": \"#6A4ABA\"},{\"serieName\": \"cannes top\",\"color\": \"#D1C0FB\"},{\"serieName\": \"caribou t-shirt\",\"color\": \"#8C62F5\"},{\"serieName\": \"cassis bottom\",\"color\": \"#025B3C\"},{\"serieName\": \"chamonix hoody\",\"color\": \"#56D3A8\"},{\"serieName\": \"chamonix jacket\",\"color\": \"#049160\"},{\"serieName\": \"chapparal jacket\",\"color\": \"#9BE5CB\"},{\"serieName\": \"chapparal pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"climber jacket\",\"color\": \"#785F1A\"},{\"serieName\": \"clown fish t-shirt\",\"color\": \"#FCD977\"},{\"serieName\": \"cotton board shorts\",\"color\": \"#BF982A\"},{\"serieName\": \"cotton fleece hoody\",\"color\": \"#FDE9AF\"},{\"serieName\": \"cow skull t-shirt\",\"color\": \"#FCC838\"},{\"serieName\": \"daisy top\",\"color\": \"#22636B\"},{\"serieName\": \"down sweater\",\"color\": \"#82DFE9\"},{\"serieName\": \"down sweater vest\",\"color\": \"#369FAA\"},{\"serieName\": \"dragon t-shirt\",\"color\": \"#B5ECF2\"},{\"serieName\": \"dragonfly logo t-shirt\",\"color\": \"#48D1E0\"},{\"serieName\": \"drift shirt\",\"color\": \"#163772\"},{\"serieName\": \"duck pants\",\"color\": \"#71A1F4\"},{\"serieName\": \"duck shorts\",\"color\": \"#2359B6\"},{\"serieName\": \"earth day t-shirt\",\"color\": \"#ABC7F9\"},{\"serieName\": \"endurance ankle socks\",\"color\": \"#2E75F0\"},{\"serieName\": \"endurance quarter socks\",\"color\": \"#721F27\"},{\"serieName\": \"everyday socks\",\"color\": \"#F47E89\"},{\"serieName\": \"explore long sweatshirt\",\"color\": \"#B6313E\"},{\"serieName\": \"explore sweatshirt\",\"color\": \"#F9B3B9\"},{\"serieName\": \"eze top\",\"color\": \"#F04152\"},{\"serieName\": \"f1 full-zip jacket\",\"color\": \"#2F3947\"},{\"serieName\": \"f1 hoody\",\"color\": \"#A2ACBA\"},{\"serieName\": \"f2 jacket\",\"color\": \"#47515F\"},{\"serieName\": \"falcon t-shirt\",\"color\": \"#BEC6D0\"},{\"serieName\": \"fashion polo shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"fastback cap\",\"color\": \"#7A3D1F\"},{\"serieName\": \"fastback visor\",\"color\": \"#FFA97E\"},{\"serieName\": \"fisherman cap\",\"color\": \"#C26232\"},{\"serieName\": \"floral t-shirt\",\"color\": \"#FFCCB3\"},{\"serieName\": \"fly fishing silhouette t-shirt\",\"color\": \"#FF8142\"},{\"serieName\": \"fly fishing t-shirt\",\"color\": \"#422E75\"},{\"serieName\": \"full gear full-zip jacket\",\"color\": \"#B094F8\"},{\"serieName\": \"girl's beach skirt\",\"color\": \"#6A4ABA\"},{\"serieName\": \"girl's board capris\",\"color\": \"#D1C0FB\"},{\"serieName\": \"girl's board shorts\",\"color\": \"#8C62F5\"},{\"serieName\": \"girl's bunny t-shirt\",\"color\": \"#025B3C\"},{\"serieName\": \"girl's cotton tank dress\",\"color\": \"#56D3A8\"},{\"serieName\": \"girl's dolphin t-shirt\",\"color\": \"#049160\"},{\"serieName\": \"girl's flower shorts\",\"color\": \"#9BE5CB\"},{\"serieName\": \"glide pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"gone fishing t-shirt\",\"color\": \"#785F1A\"},{\"serieName\": \"hang glider t-shirt\",\"color\": \"#FCD977\"},{\"serieName\": \"havana capri leggings\",\"color\": \"#BF982A\"},{\"serieName\": \"heat wave shirt\",\"color\": \"#FDE9AF\"},{\"serieName\": \"heavy duty pants\",\"color\": \"#FCC838\"},{\"serieName\": \"heavy duty shorts\",\"color\": \"#22636B\"},{\"serieName\": \"heavy sweater jacket\",\"color\": \"#82DFE9\"},{\"serieName\": \"hi-tech hiking crew socks\",\"color\": \"#369FAA\"},{\"serieName\": \"hi-tech hw mountaineering socks\",\"color\": \"#B5ECF2\"},{\"serieName\": \"hi-tech lw endurance ped socks\",\"color\": \"#48D1E0\"},{\"serieName\": \"hi-tech shorts\",\"color\": \"#163772\"},{\"serieName\": \"high energy top\",\"color\": \"#71A1F4\"},{\"serieName\": \"high tide vest\",\"color\": \"#2359B6\"},{\"serieName\": \"hiking crew liner socks\",\"color\": \"#ABC7F9\"},{\"serieName\": \"hiking crew socks\",\"color\": \"#2E75F0\"},{\"serieName\": \"hip chest pack\",\"color\": \"#721F27\"},{\"serieName\": \"hip pack\",\"color\": \"#F47E89\"},{\"serieName\": \"hooded warrior sweatshirt\",\"color\": \"#B6313E\"},{\"serieName\": \"ibiza tank\",\"color\": \"#F9B3B9\"},{\"serieName\": \"ibiza top\",\"color\": \"#F04152\"},{\"serieName\": \"insulator pants\",\"color\": \"#2F3947\"},{\"serieName\": \"iris dress\",\"color\": \"#A2ACBA\"},{\"serieName\": \"iris pants\",\"color\": \"#47515F\"},{\"serieName\": \"iris skirt\",\"color\": \"#BEC6D0\"},{\"serieName\": \"italia t-shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"journeyman t-shirt\",\"color\": \"#7A3D1F\"},{\"serieName\": \"kat 1 bottoms\",\"color\": \"#FFA97E\"},{\"serieName\": \"kat 1 boxer briefs\",\"color\": \"#C26232\"},{\"serieName\": \"kat 1 crew\",\"color\": \"#FFCCB3\"},{\"serieName\": \"kat 1 graphic crew\",\"color\": \"#FF8142\"},{\"serieName\": \"kat 1 graphic t-shirt\",\"color\": \"#422E75\"},{\"serieName\": \"kat 1 graphic tee\",\"color\": \"#B094F8\"},{\"serieName\": \"kat 1 scoop\",\"color\": \"#6A4ABA\"},{\"serieName\": \"kat 1 t-shirt\",\"color\": \"#D1C0FB\"},{\"serieName\": \"kat 2 bottoms\",\"color\": \"#8C62F5\"},{\"serieName\": \"kat 2 cap sleeve\",\"color\": \"#025B3C\"},{\"serieName\": \"kat 2 crew\",\"color\": \"#56D3A8\"},{\"serieName\": \"kat 2 t-shirt\",\"color\": \"#049160\"},{\"serieName\": \"kat 2 v-neck\",\"color\": \"#9BE5CB\"},{\"serieName\": \"kat 2 zip neck\",\"color\": \"#06BF7F\"},{\"serieName\": \"kat 3 bottoms\",\"color\": \"#785F1A\"},{\"serieName\": \"kat 3 crew\",\"color\": \"#FCD977\"},{\"serieName\": \"kat 3 zip neck\",\"color\": \"#BF982A\"},{\"serieName\": \"kat 4 bottoms\",\"color\": \"#FDE9AF\"},{\"serieName\": \"kat 4 zip neck\",\"color\": \"#FCC838\"},{\"serieName\": \"killer whale t-shirt\",\"color\": \"#22636B\"},{\"serieName\": \"l/s hooded rashguard\",\"color\": \"#82DFE9\"},{\"serieName\": \"l/s island local shirt\",\"color\": \"#369FAA\"},{\"serieName\": \"l/s owl shirt\",\"color\": \"#B5ECF2\"},{\"serieName\": \"l/s rashguard\",\"color\": \"#48D1E0\"},{\"serieName\": \"l/s runshade top\",\"color\": \"#163772\"},{\"serieName\": \"l/s shark t-shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"l/s stringray t-shirt\",\"color\": \"#2359B6\"},{\"serieName\": \"l/s sunshine shirt\",\"color\": \"#ABC7F9\"},{\"serieName\": \"ladybug t-shirt\",\"color\": \"#2E75F0\"},{\"serieName\": \"lakefront shorts\",\"color\": \"#721F27\"},{\"serieName\": \"langkawi dress\",\"color\": \"#F47E89\"},{\"serieName\": \"langkawi pants\",\"color\": \"#B6313E\"},{\"serieName\": \"langkawi skirt\",\"color\": \"#F9B3B9\"},{\"serieName\": \"langkawi tank\",\"color\": \"#F04152\"},{\"serieName\": \"last call t-shirt\",\"color\": \"#2F3947\"},{\"serieName\": \"light surf trunks\",\"color\": \"#A2ACBA\"},{\"serieName\": \"light weight jacket\",\"color\": \"#47515F\"},{\"serieName\": \"logo hat\",\"color\": \"#BEC6D0\"},{\"serieName\": \"logo visor\",\"color\": \"#747E8C\"},{\"serieName\": \"london hoody\",\"color\": \"#7A3D1F\"},{\"serieName\": \"long shorts\",\"color\": \"#FFA97E\"},{\"serieName\": \"lost coast t-shirt\",\"color\": \"#C26232\"},{\"serieName\": \"lost trails jacket\",\"color\": \"#FFCCB3\"},{\"serieName\": \"lost trails shorts\",\"color\": \"#FF8142\"},{\"serieName\": \"lost trails vest\",\"color\": \"#422E75\"},{\"serieName\": \"malaga bottom\",\"color\": \"#B094F8\"},{\"serieName\": \"malaga skirt\",\"color\": \"#6A4ABA\"},{\"serieName\": \"maui shirt\",\"color\": \"#D1C0FB\"},{\"serieName\": \"merino casual pants\",\"color\": \"#8C62F5\"},{\"serieName\": \"merino comfort bottoms\",\"color\": \"#025B3C\"},{\"serieName\": \"merino comfort crew\",\"color\": \"#56D3A8\"},{\"serieName\": \"merino comfort dress\",\"color\": \"#049160\"},{\"serieName\": \"merino comfort polo\",\"color\": \"#9BE5CB\"},{\"serieName\": \"merino comfort t-shirt\",\"color\": \"#06BF7F\"},{\"serieName\": \"merino hip crew\",\"color\": \"#785F1A\"},{\"serieName\": \"merino hip t-shirt 1\",\"color\": \"#FCD977\"},{\"serieName\": \"merino hip t-shirt 2\",\"color\": \"#BF982A\"},{\"serieName\": \"merino hip tank\",\"color\": \"#FDE9AF\"},{\"serieName\": \"micro deluxe cardigan\",\"color\": \"#FCC838\"},{\"serieName\": \"micro smooth jacket\",\"color\": \"#22636B\"},{\"serieName\": \"micro smooth vest\",\"color\": \"#82DFE9\"},{\"serieName\": \"monaco tankini\",\"color\": \"#369FAA\"},{\"serieName\": \"moon hoody\",\"color\": \"#B5ECF2\"},{\"serieName\": \"moose t-shirt\",\"color\": \"#48D1E0\"},{\"serieName\": \"motorcycle t-shirt\",\"color\": \"#163772\"},{\"serieName\": \"mountaineer t-shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"mozambique bikini\",\"color\": \"#2359B6\"},{\"serieName\": \"mozambique bra (a/b)\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mozambique everyday bra (b/c)\",\"color\": \"#2E75F0\"},{\"serieName\": \"multi use shorts\",\"color\": \"#721F27\"},{\"serieName\": \"multi use skirt\",\"color\": \"#F47E89\"},{\"serieName\": \"multi-purpose pants\",\"color\": \"#B6313E\"},{\"serieName\": \"nice capris\",\"color\": \"#F9B3B9\"},{\"serieName\": \"nice gi shorts\",\"color\": \"#F04152\"},{\"serieName\": \"nice messenger shorts\",\"color\": \"#2F3947\"},{\"serieName\": \"nice pants\",\"color\": \"#A2ACBA\"},{\"serieName\": \"nice shorts\",\"color\": \"#47515F\"},{\"serieName\": \"nice shorts-11 in.\",\"color\": \"#BEC6D0\"},{\"serieName\": \"nice shorts-7 in.\",\"color\": \"#747E8C\"},{\"serieName\": \"nice trek pants\",\"color\": \"#7A3D1F\"},{\"serieName\": \"nice trek zip-off pants\",\"color\": \"#FFA97E\"},{\"serieName\": \"nice zip-off pants\",\"color\": \"#C26232\"},{\"serieName\": \"nylon twill pants\",\"color\": \"#FFCCB3\"},{\"serieName\": \"nylon twill shorts\",\"color\": \"#FF8142\"},{\"serieName\": \"nylon twill zip-off pants\",\"color\": \"#422E75\"},{\"serieName\": \"old school pants\",\"color\": \"#B094F8\"},{\"serieName\": \"old school shorts\",\"color\": \"#6A4ABA\"},{\"serieName\": \"on vacation t-shirt\",\"color\": \"#D1C0FB\"},{\"serieName\": \"one tree shirt\",\"color\": \"#8C62F5\"},{\"serieName\": \"one-stripe board shorts\",\"color\": \"#025B3C\"},{\"serieName\": \"organic cotton boxers\",\"color\": \"#56D3A8\"},{\"serieName\": \"organic logo t-shirt\",\"color\": \"#049160\"},{\"serieName\": \"oz t-shirt\",\"color\": \"#9BE5CB\"},{\"serieName\": \"pack vest\",\"color\": \"#06BF7F\"},{\"serieName\": \"pathwalker vest\",\"color\": \"#785F1A\"},{\"serieName\": \"peace sign capris\",\"color\": \"#FCD977\"},{\"serieName\": \"pinback top\",\"color\": \"#BF982A\"},{\"serieName\": \"plaid shirt\",\"color\": \"#FDE9AF\"},{\"serieName\": \"plaid shorts-5 in.\",\"color\": \"#FCC838\"},{\"serieName\": \"plaid shorts-7 in.\",\"color\": \"#22636B\"},{\"serieName\": \"planets t-shirt\",\"color\": \"#82DFE9\"},{\"serieName\": \"pocket pack\",\"color\": \"#369FAA\"},{\"serieName\": \"point break duffel 100\",\"color\": \"#B5ECF2\"},{\"serieName\": \"point break pack\",\"color\": \"#48D1E0\"},{\"serieName\": \"polo shirt\",\"color\": \"#163772\"},{\"serieName\": \"purple mountains shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"rain star jacket\",\"color\": \"#2359B6\"},{\"serieName\": \"rain star pants\",\"color\": \"#ABC7F9\"},{\"serieName\": \"rainbow jacket\",\"color\": \"#2E75F0\"},{\"serieName\": \"ranch organic polo\",\"color\": \"#721F27\"},{\"serieName\": \"ranch organic tank\",\"color\": \"#F47E89\"},{\"serieName\": \"ranch organic tee\",\"color\": \"#B6313E\"},{\"serieName\": \"ranch organic top\",\"color\": \"#F9B3B9\"},{\"serieName\": \"rashguard\",\"color\": \"#F04152\"},{\"serieName\": \"reef hoody\",\"color\": \"#2F3947\"},{\"serieName\": \"reef l/s shirt\",\"color\": \"#A2ACBA\"},{\"serieName\": \"reef shirt\",\"color\": \"#47515F\"},{\"serieName\": \"reg fit organic ctn jeans-long\",\"color\": \"#BEC6D0\"},{\"serieName\": \"reg fit organic ctn jeans-reg\",\"color\": \"#747E8C\"},{\"serieName\": \"reg fit organic ctn jeans-short\",\"color\": \"#7A3D1F\"},{\"serieName\": \"relax fit organic ctn jeans-long\",\"color\": \"#FFA97E\"},{\"serieName\": \"relax fit organic ctn jeans-reg\",\"color\": \"#C26232\"},{\"serieName\": \"relax fit organic ctn jeans-short\",\"color\": \"#FFCCB3\"},{\"serieName\": \"resort dress\",\"color\": \"#FF8142\"},{\"serieName\": \"resort top\",\"color\": \"#422E75\"},{\"serieName\": \"reversible jacket\",\"color\": \"#B094F8\"},{\"serieName\": \"rivermaster duffle\",\"color\": \"#6A4ABA\"},{\"serieName\": \"rivermaster jacket\",\"color\": \"#D1C0FB\"},{\"serieName\": \"rivermaster pants\",\"color\": \"#8C62F5\"},{\"serieName\": \"rivermaster shirt\",\"color\": \"#025B3C\"},{\"serieName\": \"rivermaster shorts\",\"color\": \"#56D3A8\"},{\"serieName\": \"rivermaster vest\",\"color\": \"#049160\"},{\"serieName\": \"rockwall jacket\",\"color\": \"#9BE5CB\"},{\"serieName\": \"rockwall pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"roma shorts\",\"color\": \"#785F1A\"},{\"serieName\": \"s/s a/c shirt\",\"color\": \"#FCD977\"},{\"serieName\": \"s/s blue sun shirt\",\"color\": \"#BF982A\"},{\"serieName\": \"s/s octopus shirt\",\"color\": \"#FDE9AF\"},{\"serieName\": \"s/s rashguard\",\"color\": \"#FCC838\"},{\"serieName\": \"s/s red house shirt\",\"color\": \"#22636B\"},{\"serieName\": \"s/s sherlock shirt\",\"color\": \"#82DFE9\"},{\"serieName\": \"s/s solid polo shirt\",\"color\": \"#369FAA\"},{\"serieName\": \"s/s stringray shirt\",\"color\": \"#B5ECF2\"},{\"serieName\": \"s/s tropical shirt\",\"color\": \"#48D1E0\"},{\"serieName\": \"save the whales t-shirt\",\"color\": \"#163772\"},{\"serieName\": \"seagull t-shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"seaside t-shirt\",\"color\": \"#2359B6\"},{\"serieName\": \"seychelles bottom\",\"color\": \"#ABC7F9\"},{\"serieName\": \"shark hemp shirt\",\"color\": \"#2E75F0\"},{\"serieName\": \"shelled insulator pants\",\"color\": \"#721F27\"},{\"serieName\": \"sherpa jacket\",\"color\": \"#F47E89\"},{\"serieName\": \"shooting star t-shirt\",\"color\": \"#B6313E\"},{\"serieName\": \"shop pants\",\"color\": \"#F9B3B9\"},{\"serieName\": \"short shorts\",\"color\": \"#F04152\"},{\"serieName\": \"sierra guide pants\",\"color\": \"#2F3947\"},{\"serieName\": \"sierra wind jacket\",\"color\": \"#A2ACBA\"},{\"serieName\": \"silhouette t-shirt\",\"color\": \"#47515F\"},{\"serieName\": \"sleeveless a/c shirt\",\"color\": \"#BEC6D0\"},{\"serieName\": \"small logo pkt t-shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"solid barbados bottom\",\"color\": \"#7A3D1F\"},{\"serieName\": \"solid beach bum bottom\",\"color\": \"#FFA97E\"},{\"serieName\": \"solid bermuda 1 piece\",\"color\": \"#C26232\"},{\"serieName\": \"solid bermuda top\",\"color\": \"#FFCCB3\"},{\"serieName\": \"solid kaui halter top\",\"color\": \"#FF8142\"},{\"serieName\": \"solid maui top\",\"color\": \"#422E75\"},{\"serieName\": \"solid pants\",\"color\": \"#B094F8\"},{\"serieName\": \"solid shorts\",\"color\": \"#6A4ABA\"},{\"serieName\": \"solid toro bottom\",\"color\": \"#D1C0FB\"},{\"serieName\": \"solid valencia bottom\",\"color\": \"#8C62F5\"},{\"serieName\": \"solo t-shirt\",\"color\": \"#025B3C\"},{\"serieName\": \"sport top\",\"color\": \"#56D3A8\"},{\"serieName\": \"spring dress\",\"color\": \"#049160\"},{\"serieName\": \"st tropez halter top\",\"color\": \"#9BE5CB\"},{\"serieName\": \"straight board shorts-19 in.\",\"color\": \"#06BF7F\"},{\"serieName\": \"stretch climber jacket\",\"color\": \"#785F1A\"},{\"serieName\": \"stretch polo\",\"color\": \"#FCD977\"},{\"serieName\": \"sunshine dress\",\"color\": \"#BF982A\"},{\"serieName\": \"surfer t-shirt\",\"color\": \"#FDE9AF\"},{\"serieName\": \"swordfish t-shirt\",\"color\": \"#FCC838\"},{\"serieName\": \"synch vest\",\"color\": \"#22636B\"},{\"serieName\": \"t5 jacket\",\"color\": \"#82DFE9\"},{\"serieName\": \"t5 pants\",\"color\": \"#369FAA\"},{\"serieName\": \"text logo t-shirt\",\"color\": \"#B5ECF2\"},{\"serieName\": \"thomas pants\",\"color\": \"#48D1E0\"},{\"serieName\": \"thrift shorts\",\"color\": \"#163772\"},{\"serieName\": \"titanic t-shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"tortoise shell jacket\",\"color\": \"#2359B6\"},{\"serieName\": \"tortoise shell pants\",\"color\": \"#ABC7F9\"},{\"serieName\": \"tough guy t-shirt\",\"color\": \"#2E75F0\"},{\"serieName\": \"track jacket\",\"color\": \"#721F27\"},{\"serieName\": \"trailblazer t-shirt\",\"color\": \"#F47E89\"},{\"serieName\": \"travel duffel\",\"color\": \"#B6313E\"},{\"serieName\": \"travel pack\",\"color\": \"#F9B3B9\"},{\"serieName\": \"trim brim hat\",\"color\": \"#F04152\"},{\"serieName\": \"tropical hemp dress\",\"color\": \"#2F3947\"},{\"serieName\": \"tropical hemp pants\",\"color\": \"#A2ACBA\"},{\"serieName\": \"tropical hemp skirt\",\"color\": \"#47515F\"},{\"serieName\": \"tropical hemp top\",\"color\": \"#BEC6D0\"},{\"serieName\": \"tropical island t-shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"trucker hat\",\"color\": \"#7A3D1F\"},{\"serieName\": \"two-tone cargo pants\",\"color\": \"#FFA97E\"},{\"serieName\": \"two-tone cargo shorts\",\"color\": \"#C26232\"},{\"serieName\": \"umbrella t-shirt\",\"color\": \"#FFCCB3\"},{\"serieName\": \"umbrella top\",\"color\": \"#FF8142\"},{\"serieName\": \"vampire bat t-shirt\",\"color\": \"#422E75\"},{\"serieName\": \"violet top\",\"color\": \"#B094F8\"},{\"serieName\": \"white hot t-shirt\",\"color\": \"#6A4ABA\"},{\"serieName\": \"windsurf board shorts\",\"color\": \"#D1C0FB\"},{\"serieName\": \"world tour t-shirt\",\"color\": \"#8C62F5\"},{\"serieName\": \"worldwide capris\",\"color\": \"#025B3C\"},{\"serieName\": \"worldwide pants\",\"color\": \"#56D3A8\"},{\"serieName\": \"worldwide shorts\",\"color\": \"#049160\"},{\"serieName\": \"yosemite jacket\",\"color\": \"#9BE5CB\"},{\"serieName\": \"smiley logo t-shirt\",\"color\": \"#06BF7F\"},{\"serieName\": \"Total sales\",\"color\": \"#0B666A\"}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"active boxer briefs\",\"color\": \"#721F27\"},{\"serieName\": \"active boy shorts\",\"color\": \"#F47E89\"},{\"serieName\": \"active briefs\",\"color\": \"#B6313E\"},{\"serieName\": \"active classic boxers\",\"color\": \"#F9B3B9\"},{\"serieName\": \"active mesh bra\",\"color\": \"#F04152\"},{\"serieName\": \"active sport boxer briefs\",\"color\": \"#2F3947\"},{\"serieName\": \"active sport briefs\",\"color\": \"#A2ACBA\"},{\"serieName\": \"adventure jacket\",\"color\": \"#47515F\"},{\"serieName\": \"all weather capris\",\"color\": \"#BEC6D0\"},{\"serieName\": \"all weather training top\",\"color\": \"#747E8C\"},{\"serieName\": \"all-around cardi\",\"color\": \"#7A3D1F\"},{\"serieName\": \"all-around polo\",\"color\": \"#FFA97E\"},{\"serieName\": \"all-around tank\",\"color\": \"#C26232\"},{\"serieName\": \"all-around tee\",\"color\": \"#FFCCB3\"},{\"serieName\": \"all-out capris\",\"color\": \"#FF8142\"},{\"serieName\": \"all-wear capris\",\"color\": \"#422E75\"},{\"serieName\": \"all-wear cargo shorts\",\"color\": \"#B094F8\"},{\"serieName\": \"all-wear shorts\",\"color\": \"#6A4ABA\"},{\"serieName\": \"amalfi coast top\",\"color\": \"#D1C0FB\"},{\"serieName\": \"andorra 1/4 zip jacket\",\"color\": \"#8C62F5\"},{\"serieName\": \"andorra hooded jacket\",\"color\": \"#025B3C\"},{\"serieName\": \"andorra jacket\",\"color\": \"#56D3A8\"},{\"serieName\": \"antibes bottom\",\"color\": \"#049160\"},{\"serieName\": \"atmosphere jacket\",\"color\": \"#9BE5CB\"},{\"serieName\": \"baby cow t-shirt\",\"color\": \"#06BF7F\"},{\"serieName\": \"baby farm t-shirt\",\"color\": \"#785F1A\"},{\"serieName\": \"baby micro deluxe cardigan\",\"color\": \"#FCD977\"},{\"serieName\": \"baby playtime t-shirt\",\"color\": \"#BF982A\"},{\"serieName\": \"baby rainbow bucket hat\",\"color\": \"#FDE9AF\"},{\"serieName\": \"baby reversible jacket\",\"color\": \"#FCC838\"},{\"serieName\": \"baby ruffles apron dress\",\"color\": \"#22636B\"},{\"serieName\": \"baby ruffles shorts\",\"color\": \"#82DFE9\"},{\"serieName\": \"baby seahorse t-shirt\",\"color\": \"#369FAA\"},{\"serieName\": \"baby striped cardigan\",\"color\": \"#B5ECF2\"},{\"serieName\": \"baby striped vest\",\"color\": \"#48D1E0\"},{\"serieName\": \"baby sunshade top\",\"color\": \"#163772\"},{\"serieName\": \"baja board shorts\",\"color\": \"#71A1F4\"},{\"serieName\": \"bali dress\",\"color\": \"#2359B6\"},{\"serieName\": \"bali skirt\",\"color\": \"#ABC7F9\"},{\"serieName\": \"banjo t-shirt\",\"color\": \"#2E75F0\"},{\"serieName\": \"baseball tank\",\"color\": \"#721F27\"},{\"serieName\": \"bi-plane t-shirt\",\"color\": \"#F47E89\"},{\"serieName\": \"big wave board shorts\",\"color\": \"#B6313E\"},{\"serieName\": \"big wave board shorts-21 in.\",\"color\": \"#F9B3B9\"},{\"serieName\": \"bird of paradise capris\",\"color\": \"#F04152\"},{\"serieName\": \"bird of paradise cross-back tank\",\"color\": \"#2F3947\"},{\"serieName\": \"bird of paradise dress\",\"color\": \"#A2ACBA\"},{\"serieName\": \"bird of paradise skirt\",\"color\": \"#47515F\"},{\"serieName\": \"blue marlin 2 t-shirt\",\"color\": \"#BEC6D0\"},{\"serieName\": \"blue marlin t-shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"board shorts\",\"color\": \"#7A3D1F\"},{\"serieName\": \"brazil board shorts\",\"color\": \"#FFA97E\"},{\"serieName\": \"bucket hat\",\"color\": \"#C26232\"},{\"serieName\": \"buenos aires pants\",\"color\": \"#FFCCB3\"},{\"serieName\": \"buenos aires shorts\",\"color\": \"#FF8142\"},{\"serieName\": \"buenos aires skirt\",\"color\": \"#422E75\"},{\"serieName\": \"california shorts\",\"color\": \"#B094F8\"},{\"serieName\": \"cannes bottom\",\"color\": \"#6A4ABA\"},{\"serieName\": \"cannes top\",\"color\": \"#D1C0FB\"},{\"serieName\": \"caribou t-shirt\",\"color\": \"#8C62F5\"},{\"serieName\": \"cassis bottom\",\"color\": \"#025B3C\"},{\"serieName\": \"chamonix hoody\",\"color\": \"#56D3A8\"},{\"serieName\": \"chamonix jacket\",\"color\": \"#049160\"},{\"serieName\": \"chapparal jacket\",\"color\": \"#9BE5CB\"},{\"serieName\": \"chapparal pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"climber jacket\",\"color\": \"#785F1A\"},{\"serieName\": \"clown fish t-shirt\",\"color\": \"#FCD977\"},{\"serieName\": \"cotton board shorts\",\"color\": \"#BF982A\"},{\"serieName\": \"cotton fleece hoody\",\"color\": \"#FDE9AF\"},{\"serieName\": \"cow skull t-shirt\",\"color\": \"#FCC838\"},{\"serieName\": \"daisy top\",\"color\": \"#22636B\"},{\"serieName\": \"down sweater\",\"color\": \"#82DFE9\"},{\"serieName\": \"down sweater vest\",\"color\": \"#369FAA\"},{\"serieName\": \"dragon t-shirt\",\"color\": \"#B5ECF2\"},{\"serieName\": \"dragonfly logo t-shirt\",\"color\": \"#48D1E0\"},{\"serieName\": \"drift shirt\",\"color\": \"#163772\"},{\"serieName\": \"duck pants\",\"color\": \"#71A1F4\"},{\"serieName\": \"duck shorts\",\"color\": \"#2359B6\"},{\"serieName\": \"earth day t-shirt\",\"color\": \"#ABC7F9\"},{\"serieName\": \"endurance ankle socks\",\"color\": \"#2E75F0\"},{\"serieName\": \"endurance quarter socks\",\"color\": \"#721F27\"},{\"serieName\": \"everyday socks\",\"color\": \"#F47E89\"},{\"serieName\": \"explore long sweatshirt\",\"color\": \"#B6313E\"},{\"serieName\": \"explore sweatshirt\",\"color\": \"#F9B3B9\"},{\"serieName\": \"eze top\",\"color\": \"#F04152\"},{\"serieName\": \"f1 full-zip jacket\",\"color\": \"#2F3947\"},{\"serieName\": \"f1 hoody\",\"color\": \"#A2ACBA\"},{\"serieName\": \"f2 jacket\",\"color\": \"#47515F\"},{\"serieName\": \"falcon t-shirt\",\"color\": \"#BEC6D0\"},{\"serieName\": \"fashion polo shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"fastback cap\",\"color\": \"#7A3D1F\"},{\"serieName\": \"fastback visor\",\"color\": \"#FFA97E\"},{\"serieName\": \"fisherman cap\",\"color\": \"#C26232\"},{\"serieName\": \"floral t-shirt\",\"color\": \"#FFCCB3\"},{\"serieName\": \"fly fishing silhouette t-shirt\",\"color\": \"#FF8142\"},{\"serieName\": \"fly fishing t-shirt\",\"color\": \"#422E75\"},{\"serieName\": \"full gear full-zip jacket\",\"color\": \"#B094F8\"},{\"serieName\": \"girl's beach skirt\",\"color\": \"#6A4ABA\"},{\"serieName\": \"girl's board capris\",\"color\": \"#D1C0FB\"},{\"serieName\": \"girl's board shorts\",\"color\": \"#8C62F5\"},{\"serieName\": \"girl's bunny t-shirt\",\"color\": \"#025B3C\"},{\"serieName\": \"girl's cotton tank dress\",\"color\": \"#56D3A8\"},{\"serieName\": \"girl's dolphin t-shirt\",\"color\": \"#049160\"},{\"serieName\": \"girl's flower shorts\",\"color\": \"#9BE5CB\"},{\"serieName\": \"glide pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"gone fishing t-shirt\",\"color\": \"#785F1A\"},{\"serieName\": \"hang glider t-shirt\",\"color\": \"#FCD977\"},{\"serieName\": \"havana capri leggings\",\"color\": \"#BF982A\"},{\"serieName\": \"heat wave shirt\",\"color\": \"#FDE9AF\"},{\"serieName\": \"heavy duty pants\",\"color\": \"#FCC838\"},{\"serieName\": \"heavy duty shorts\",\"color\": \"#22636B\"},{\"serieName\": \"heavy sweater jacket\",\"color\": \"#82DFE9\"},{\"serieName\": \"hi-tech hiking crew socks\",\"color\": \"#369FAA\"},{\"serieName\": \"hi-tech hw mountaineering socks\",\"color\": \"#B5ECF2\"},{\"serieName\": \"hi-tech lw endurance ped socks\",\"color\": \"#48D1E0\"},{\"serieName\": \"hi-tech shorts\",\"color\": \"#163772\"},{\"serieName\": \"high energy top\",\"color\": \"#71A1F4\"},{\"serieName\": \"high tide vest\",\"color\": \"#2359B6\"},{\"serieName\": \"hiking crew liner socks\",\"color\": \"#ABC7F9\"},{\"serieName\": \"hiking crew socks\",\"color\": \"#2E75F0\"},{\"serieName\": \"hip chest pack\",\"color\": \"#721F27\"},{\"serieName\": \"hip pack\",\"color\": \"#F47E89\"},{\"serieName\": \"hooded warrior sweatshirt\",\"color\": \"#B6313E\"},{\"serieName\": \"ibiza tank\",\"color\": \"#F9B3B9\"},{\"serieName\": \"ibiza top\",\"color\": \"#F04152\"},{\"serieName\": \"insulator pants\",\"color\": \"#2F3947\"},{\"serieName\": \"iris dress\",\"color\": \"#A2ACBA\"},{\"serieName\": \"iris pants\",\"color\": \"#47515F\"},{\"serieName\": \"iris skirt\",\"color\": \"#BEC6D0\"},{\"serieName\": \"italia t-shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"journeyman t-shirt\",\"color\": \"#7A3D1F\"},{\"serieName\": \"kat 1 bottoms\",\"color\": \"#FFA97E\"},{\"serieName\": \"kat 1 boxer briefs\",\"color\": \"#C26232\"},{\"serieName\": \"kat 1 crew\",\"color\": \"#FFCCB3\"},{\"serieName\": \"kat 1 graphic crew\",\"color\": \"#FF8142\"},{\"serieName\": \"kat 1 graphic t-shirt\",\"color\": \"#422E75\"},{\"serieName\": \"kat 1 graphic tee\",\"color\": \"#B094F8\"},{\"serieName\": \"kat 1 scoop\",\"color\": \"#6A4ABA\"},{\"serieName\": \"kat 1 t-shirt\",\"color\": \"#D1C0FB\"},{\"serieName\": \"kat 2 bottoms\",\"color\": \"#8C62F5\"},{\"serieName\": \"kat 2 cap sleeve\",\"color\": \"#025B3C\"},{\"serieName\": \"kat 2 crew\",\"color\": \"#56D3A8\"},{\"serieName\": \"kat 2 t-shirt\",\"color\": \"#049160\"},{\"serieName\": \"kat 2 v-neck\",\"color\": \"#9BE5CB\"},{\"serieName\": \"kat 2 zip neck\",\"color\": \"#06BF7F\"},{\"serieName\": \"kat 3 bottoms\",\"color\": \"#785F1A\"},{\"serieName\": \"kat 3 crew\",\"color\": \"#FCD977\"},{\"serieName\": \"kat 3 zip neck\",\"color\": \"#BF982A\"},{\"serieName\": \"kat 4 bottoms\",\"color\": \"#FDE9AF\"},{\"serieName\": \"kat 4 zip neck\",\"color\": \"#FCC838\"},{\"serieName\": \"killer whale t-shirt\",\"color\": \"#22636B\"},{\"serieName\": \"l/s hooded rashguard\",\"color\": \"#82DFE9\"},{\"serieName\": \"l/s island local shirt\",\"color\": \"#369FAA\"},{\"serieName\": \"l/s owl shirt\",\"color\": \"#B5ECF2\"},{\"serieName\": \"l/s rashguard\",\"color\": \"#48D1E0\"},{\"serieName\": \"l/s runshade top\",\"color\": \"#163772\"},{\"serieName\": \"l/s shark t-shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"l/s stringray t-shirt\",\"color\": \"#2359B6\"},{\"serieName\": \"l/s sunshine shirt\",\"color\": \"#ABC7F9\"},{\"serieName\": \"ladybug t-shirt\",\"color\": \"#2E75F0\"},{\"serieName\": \"lakefront shorts\",\"color\": \"#721F27\"},{\"serieName\": \"langkawi dress\",\"color\": \"#F47E89\"},{\"serieName\": \"langkawi pants\",\"color\": \"#B6313E\"},{\"serieName\": \"langkawi skirt\",\"color\": \"#F9B3B9\"},{\"serieName\": \"langkawi tank\",\"color\": \"#F04152\"},{\"serieName\": \"last call t-shirt\",\"color\": \"#2F3947\"},{\"serieName\": \"light surf trunks\",\"color\": \"#A2ACBA\"},{\"serieName\": \"light weight jacket\",\"color\": \"#47515F\"},{\"serieName\": \"logo hat\",\"color\": \"#BEC6D0\"},{\"serieName\": \"logo visor\",\"color\": \"#747E8C\"},{\"serieName\": \"london hoody\",\"color\": \"#7A3D1F\"},{\"serieName\": \"long shorts\",\"color\": \"#FFA97E\"},{\"serieName\": \"lost coast t-shirt\",\"color\": \"#C26232\"},{\"serieName\": \"lost trails jacket\",\"color\": \"#FFCCB3\"},{\"serieName\": \"lost trails shorts\",\"color\": \"#FF8142\"},{\"serieName\": \"lost trails vest\",\"color\": \"#422E75\"},{\"serieName\": \"malaga bottom\",\"color\": \"#B094F8\"},{\"serieName\": \"malaga skirt\",\"color\": \"#6A4ABA\"},{\"serieName\": \"maui shirt\",\"color\": \"#D1C0FB\"},{\"serieName\": \"merino casual pants\",\"color\": \"#8C62F5\"},{\"serieName\": \"merino comfort bottoms\",\"color\": \"#025B3C\"},{\"serieName\": \"merino comfort crew\",\"color\": \"#56D3A8\"},{\"serieName\": \"merino comfort dress\",\"color\": \"#049160\"},{\"serieName\": \"merino comfort polo\",\"color\": \"#9BE5CB\"},{\"serieName\": \"merino comfort t-shirt\",\"color\": \"#06BF7F\"},{\"serieName\": \"merino hip crew\",\"color\": \"#785F1A\"},{\"serieName\": \"merino hip t-shirt 1\",\"color\": \"#FCD977\"},{\"serieName\": \"merino hip t-shirt 2\",\"color\": \"#BF982A\"},{\"serieName\": \"merino hip tank\",\"color\": \"#FDE9AF\"},{\"serieName\": \"micro deluxe cardigan\",\"color\": \"#FCC838\"},{\"serieName\": \"micro smooth jacket\",\"color\": \"#22636B\"},{\"serieName\": \"micro smooth vest\",\"color\": \"#82DFE9\"},{\"serieName\": \"monaco tankini\",\"color\": \"#369FAA\"},{\"serieName\": \"moon hoody\",\"color\": \"#B5ECF2\"},{\"serieName\": \"moose t-shirt\",\"color\": \"#48D1E0\"},{\"serieName\": \"motorcycle t-shirt\",\"color\": \"#163772\"},{\"serieName\": \"mountaineer t-shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"mozambique bikini\",\"color\": \"#2359B6\"},{\"serieName\": \"mozambique bra (a/b)\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mozambique everyday bra (b/c)\",\"color\": \"#2E75F0\"},{\"serieName\": \"multi use shorts\",\"color\": \"#721F27\"},{\"serieName\": \"multi use skirt\",\"color\": \"#F47E89\"},{\"serieName\": \"multi-purpose pants\",\"color\": \"#B6313E\"},{\"serieName\": \"nice capris\",\"color\": \"#F9B3B9\"},{\"serieName\": \"nice gi shorts\",\"color\": \"#F04152\"},{\"serieName\": \"nice messenger shorts\",\"color\": \"#2F3947\"},{\"serieName\": \"nice pants\",\"color\": \"#A2ACBA\"},{\"serieName\": \"nice shorts\",\"color\": \"#47515F\"},{\"serieName\": \"nice shorts-11 in.\",\"color\": \"#BEC6D0\"},{\"serieName\": \"nice shorts-7 in.\",\"color\": \"#747E8C\"},{\"serieName\": \"nice trek pants\",\"color\": \"#7A3D1F\"},{\"serieName\": \"nice trek zip-off pants\",\"color\": \"#FFA97E\"},{\"serieName\": \"nice zip-off pants\",\"color\": \"#C26232\"},{\"serieName\": \"nylon twill pants\",\"color\": \"#FFCCB3\"},{\"serieName\": \"nylon twill shorts\",\"color\": \"#FF8142\"},{\"serieName\": \"nylon twill zip-off pants\",\"color\": \"#422E75\"},{\"serieName\": \"old school pants\",\"color\": \"#B094F8\"},{\"serieName\": \"old school shorts\",\"color\": \"#6A4ABA\"},{\"serieName\": \"on vacation t-shirt\",\"color\": \"#D1C0FB\"},{\"serieName\": \"one tree shirt\",\"color\": \"#8C62F5\"},{\"serieName\": \"one-stripe board shorts\",\"color\": \"#025B3C\"},{\"serieName\": \"organic cotton boxers\",\"color\": \"#56D3A8\"},{\"serieName\": \"organic logo t-shirt\",\"color\": \"#049160\"},{\"serieName\": \"oz t-shirt\",\"color\": \"#9BE5CB\"},{\"serieName\": \"pack vest\",\"color\": \"#06BF7F\"},{\"serieName\": \"pathwalker vest\",\"color\": \"#785F1A\"},{\"serieName\": \"peace sign capris\",\"color\": \"#FCD977\"},{\"serieName\": \"pinback top\",\"color\": \"#BF982A\"},{\"serieName\": \"plaid shirt\",\"color\": \"#FDE9AF\"},{\"serieName\": \"plaid shorts-5 in.\",\"color\": \"#FCC838\"},{\"serieName\": \"plaid shorts-7 in.\",\"color\": \"#22636B\"},{\"serieName\": \"planets t-shirt\",\"color\": \"#82DFE9\"},{\"serieName\": \"pocket pack\",\"color\": \"#369FAA\"},{\"serieName\": \"point break duffel 100\",\"color\": \"#B5ECF2\"},{\"serieName\": \"point break pack\",\"color\": \"#48D1E0\"},{\"serieName\": \"polo shirt\",\"color\": \"#163772\"},{\"serieName\": \"purple mountains shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"rain star jacket\",\"color\": \"#2359B6\"},{\"serieName\": \"rain star pants\",\"color\": \"#ABC7F9\"},{\"serieName\": \"rainbow jacket\",\"color\": \"#2E75F0\"},{\"serieName\": \"ranch organic polo\",\"color\": \"#721F27\"},{\"serieName\": \"ranch organic tank\",\"color\": \"#F47E89\"},{\"serieName\": \"ranch organic tee\",\"color\": \"#B6313E\"},{\"serieName\": \"ranch organic top\",\"color\": \"#F9B3B9\"},{\"serieName\": \"rashguard\",\"color\": \"#F04152\"},{\"serieName\": \"reef hoody\",\"color\": \"#2F3947\"},{\"serieName\": \"reef l/s shirt\",\"color\": \"#A2ACBA\"},{\"serieName\": \"reef shirt\",\"color\": \"#47515F\"},{\"serieName\": \"reg fit organic ctn jeans-long\",\"color\": \"#BEC6D0\"},{\"serieName\": \"reg fit organic ctn jeans-reg\",\"color\": \"#747E8C\"},{\"serieName\": \"reg fit organic ctn jeans-short\",\"color\": \"#7A3D1F\"},{\"serieName\": \"relax fit organic ctn jeans-long\",\"color\": \"#FFA97E\"},{\"serieName\": \"relax fit organic ctn jeans-reg\",\"color\": \"#C26232\"},{\"serieName\": \"relax fit organic ctn jeans-short\",\"color\": \"#FFCCB3\"},{\"serieName\": \"resort dress\",\"color\": \"#FF8142\"},{\"serieName\": \"resort top\",\"color\": \"#422E75\"},{\"serieName\": \"reversible jacket\",\"color\": \"#B094F8\"},{\"serieName\": \"rivermaster duffle\",\"color\": \"#6A4ABA\"},{\"serieName\": \"rivermaster jacket\",\"color\": \"#D1C0FB\"},{\"serieName\": \"rivermaster pants\",\"color\": \"#8C62F5\"},{\"serieName\": \"rivermaster shirt\",\"color\": \"#025B3C\"},{\"serieName\": \"rivermaster shorts\",\"color\": \"#56D3A8\"},{\"serieName\": \"rivermaster vest\",\"color\": \"#049160\"},{\"serieName\": \"rockwall jacket\",\"color\": \"#9BE5CB\"},{\"serieName\": \"rockwall pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"roma shorts\",\"color\": \"#785F1A\"},{\"serieName\": \"s/s a/c shirt\",\"color\": \"#FCD977\"},{\"serieName\": \"s/s blue sun shirt\",\"color\": \"#BF982A\"},{\"serieName\": \"s/s octopus shirt\",\"color\": \"#FDE9AF\"},{\"serieName\": \"s/s rashguard\",\"color\": \"#FCC838\"},{\"serieName\": \"s/s red house shirt\",\"color\": \"#22636B\"},{\"serieName\": \"s/s sherlock shirt\",\"color\": \"#82DFE9\"},{\"serieName\": \"s/s solid polo shirt\",\"color\": \"#369FAA\"},{\"serieName\": \"s/s stringray shirt\",\"color\": \"#B5ECF2\"},{\"serieName\": \"s/s tropical shirt\",\"color\": \"#48D1E0\"},{\"serieName\": \"save the whales t-shirt\",\"color\": \"#163772\"},{\"serieName\": \"seagull t-shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"seaside t-shirt\",\"color\": \"#2359B6\"},{\"serieName\": \"seychelles bottom\",\"color\": \"#ABC7F9\"},{\"serieName\": \"shark hemp shirt\",\"color\": \"#2E75F0\"},{\"serieName\": \"shelled insulator pants\",\"color\": \"#721F27\"},{\"serieName\": \"sherpa jacket\",\"color\": \"#F47E89\"},{\"serieName\": \"shooting star t-shirt\",\"color\": \"#B6313E\"},{\"serieName\": \"shop pants\",\"color\": \"#F9B3B9\"},{\"serieName\": \"short shorts\",\"color\": \"#F04152\"},{\"serieName\": \"sierra guide pants\",\"color\": \"#2F3947\"},{\"serieName\": \"sierra wind jacket\",\"color\": \"#A2ACBA\"},{\"serieName\": \"silhouette t-shirt\",\"color\": \"#47515F\"},{\"serieName\": \"sleeveless a/c shirt\",\"color\": \"#BEC6D0\"},{\"serieName\": \"small logo pkt t-shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"solid barbados bottom\",\"color\": \"#7A3D1F\"},{\"serieName\": \"solid beach bum bottom\",\"color\": \"#FFA97E\"},{\"serieName\": \"solid bermuda 1 piece\",\"color\": \"#C26232\"},{\"serieName\": \"solid bermuda top\",\"color\": \"#FFCCB3\"},{\"serieName\": \"solid kaui halter top\",\"color\": \"#FF8142\"},{\"serieName\": \"solid maui top\",\"color\": \"#422E75\"},{\"serieName\": \"solid pants\",\"color\": \"#B094F8\"},{\"serieName\": \"solid shorts\",\"color\": \"#6A4ABA\"},{\"serieName\": \"solid toro bottom\",\"color\": \"#D1C0FB\"},{\"serieName\": \"solid valencia bottom\",\"color\": \"#8C62F5\"},{\"serieName\": \"solo t-shirt\",\"color\": \"#025B3C\"},{\"serieName\": \"sport top\",\"color\": \"#56D3A8\"},{\"serieName\": \"spring dress\",\"color\": \"#049160\"},{\"serieName\": \"st tropez halter top\",\"color\": \"#9BE5CB\"},{\"serieName\": \"straight board shorts-19 in.\",\"color\": \"#06BF7F\"},{\"serieName\": \"stretch climber jacket\",\"color\": \"#785F1A\"},{\"serieName\": \"stretch polo\",\"color\": \"#FCD977\"},{\"serieName\": \"sunshine dress\",\"color\": \"#BF982A\"},{\"serieName\": \"surfer t-shirt\",\"color\": \"#FDE9AF\"},{\"serieName\": \"swordfish t-shirt\",\"color\": \"#FCC838\"},{\"serieName\": \"synch vest\",\"color\": \"#22636B\"},{\"serieName\": \"t5 jacket\",\"color\": \"#82DFE9\"},{\"serieName\": \"t5 pants\",\"color\": \"#369FAA\"},{\"serieName\": \"text logo t-shirt\",\"color\": \"#B5ECF2\"},{\"serieName\": \"thomas pants\",\"color\": \"#48D1E0\"},{\"serieName\": \"thrift shorts\",\"color\": \"#163772\"},{\"serieName\": \"titanic t-shirt\",\"color\": \"#71A1F4\"},{\"serieName\": \"tortoise shell jacket\",\"color\": \"#2359B6\"},{\"serieName\": \"tortoise shell pants\",\"color\": \"#ABC7F9\"},{\"serieName\": \"tough guy t-shirt\",\"color\": \"#2E75F0\"},{\"serieName\": \"track jacket\",\"color\": \"#721F27\"},{\"serieName\": \"trailblazer t-shirt\",\"color\": \"#F47E89\"},{\"serieName\": \"travel duffel\",\"color\": \"#B6313E\"},{\"serieName\": \"travel pack\",\"color\": \"#F9B3B9\"},{\"serieName\": \"trim brim hat\",\"color\": \"#F04152\"},{\"serieName\": \"tropical hemp dress\",\"color\": \"#2F3947\"},{\"serieName\": \"tropical hemp pants\",\"color\": \"#A2ACBA\"},{\"serieName\": \"tropical hemp skirt\",\"color\": \"#47515F\"},{\"serieName\": \"tropical hemp top\",\"color\": \"#BEC6D0\"},{\"serieName\": \"tropical island t-shirt\",\"color\": \"#747E8C\"},{\"serieName\": \"trucker hat\",\"color\": \"#7A3D1F\"},{\"serieName\": \"two-tone cargo pants\",\"color\": \"#FFA97E\"},{\"serieName\": \"two-tone cargo shorts\",\"color\": \"#C26232\"},{\"serieName\": \"umbrella t-shirt\",\"color\": \"#FFCCB3\"},{\"serieName\": \"umbrella top\",\"color\": \"#FF8142\"},{\"serieName\": \"vampire bat t-shirt\",\"color\": \"#422E75\"},{\"serieName\": \"violet top\",\"color\": \"#B094F8\"},{\"serieName\": \"white hot t-shirt\",\"color\": \"#6A4ABA\"},{\"serieName\": \"windsurf board shorts\",\"color\": \"#D1C0FB\"},{\"serieName\": \"world tour t-shirt\",\"color\": \"#8C62F5\"},{\"serieName\": \"worldwide capris\",\"color\": \"#025B3C\"},{\"serieName\": \"worldwide pants\",\"color\": \"#56D3A8\"},{\"serieName\": \"worldwide shorts\",\"color\": \"#049160\"},{\"serieName\": \"yosemite jacket\",\"color\": \"#9BE5CB\"},{\"serieName\": \"smiley logo t-shirt\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: b7370cc9-3694-41a8-9ad7-14542734fabe
+  filters:
+  - column:
+    - city
+    oper: in
+    values:
+    - Alpharetta
+    - Ann Arbor
+    - Arcadia
+    - Atlanta
+    - Berkeley
+    - Billings
+    - Bloomington
+    - Boise
+    - Boston
+    - Boulder
+    - Bozeman
+    - Chandler
+    - Chicago
+    - Colorado Springs
+    - Columbia
+    - East Hanover
+    - Flagstaff
+    - Framingham
+    - Henderson
+    - Indianapolis
+    - Kentwood
+    - Las Vegas
+    - Maple Grove
+    - Newark
+    - North Conway
+    - Northbrook
+    - Norwalk
+    - St. Louis
+    - West Des Moines
+    - West Hartford
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_2
+      x: 3
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_3
+      x: 0
+      "y": 15
+      height: 8
+      width: 12
+    - visualization_id: Viz_4
+      x: 6
+      "y": 4
+      height: 5
+      width: 6
+    - visualization_id: Viz_5
+      x: 6
+      "y": 0
+      height: 4
+      width: 6
+    - visualization_id: Viz_6
+      x: 0
+      "y": 9
+      height: 6
+      width: 6
+    - visualization_id: Viz_7
+      x: 0
+      "y": 4
+      height: 5
+      width: 6
+    - visualization_id: Viz_8
+      x: 6
+      "y": 9
+      height: 6
+      width: 6
+  ordered_chips:
+  - name: city
+    type: FILTER

@@ -1,0 +1,36 @@
+obj_id: sandbox-test-usersfirstLiveboard-6556e102
+liveboard:
+  name: sandbox-test-user's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Active
+      tables:
+      - id: Movie Rental
+        name: Movie Rental
+        obj_id: MovieRental-dd4d3a01
+      search_query: "[Active]"
+      answer_columns:
+      - name: Total Active
+      table:
+        table_columns:
+        - column_id: Total Active
+          show_headline: false
+        ordered_column_ids:
+        - Total Active
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Active\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Active
+        axis_configs:
+        - "y":
+          - Total Active
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Active\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"08bcb7b6-c527-4d2e-9a11-f6782ee7adee\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Active\"],\"isOpposite\": false}},{\"id\": \"eab3180c-ed4e-4476-a858-4e53c901090d\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9ac9b1f9-5d4b-438b-965c-6024463e5374
+  layout:
+    tiles:
+    - visualization_id: Viz_1

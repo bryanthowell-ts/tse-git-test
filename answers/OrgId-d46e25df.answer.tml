@@ -1,0 +1,27 @@
+obj_id: OrgId-d46e25df
+answer:
+  name: Org Id
+  tables:
+  - id: "TS: BI Server"
+    name: "TS: BI Server"
+  search_query: "[Org Id]"
+  answer_columns:
+  - name: Org Id
+  table:
+    table_columns:
+    - column_id: Org Id
+      show_headline: false
+    ordered_column_ids:
+    - Org Id
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Org Id\",\"width\": 158.67499923706055}]}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Org Id
+    axis_configs:
+    - "y":
+      - Org Id
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Org Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8c27f7a7-d514-4418-9a60-65ee94fba603\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Org Id\"],\"isOpposite\": false}},{\"id\": \"c5c95a0c-b8b0-42d2-9bbc-cbe323eda05d\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE

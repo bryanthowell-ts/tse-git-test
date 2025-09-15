@@ -1,0 +1,35 @@
+obj_id: Totalsalesbylongitude-700074c5
+answer:
+  name: Total sales by longitude
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "[longitude] [sales]"
+  answer_columns:
+  - name: Total sales
+  - name: longitude
+  table:
+    table_columns:
+    - column_id: Total sales
+      show_headline: false
+    - column_id: longitude
+      show_headline: false
+    ordered_column_ids:
+    - longitude
+    - Total sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Total sales
+    - column_id: longitude
+    axis_configs:
+    - x:
+      - longitude
+      "y":
+      - Total sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"longitude\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a27c95a4-529d-4bf1-92bd-8223c03e2d79\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"dd2d96aa-4304-4845-bfd6-5741ef03be5b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"longitude\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#747E8C\"}]}"
+  display_mode: TABLE_MODE

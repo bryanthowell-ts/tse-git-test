@@ -1,0 +1,45 @@
+guid: 235f049a-e201-4e67-9bf5-14fcf3f264cf
+view:
+  name: "TS: Daily Row Count External Table [Deprecated]"
+  description: |-
+    Aggregate Worksheet to keep track of following information for external table on a daily basis.
+    - Number of rows in external database.
+    - Flag to indicate whether a table is cached or not.
+  tables:
+  - id: "TS: External Table Stats WS [Deprecated]"
+    name: "TS: External Table Stats WS [Deprecated]"
+  formulas:
+  - id: formula_is_cached
+    name: is_cached
+    expr: "if ( sum ( if ( [TS: External Table Stats WS \\[Deprecated\\]_1::is_cached] ) then 1 else 0 ) > 0 ) then true else false"
+    was_auto_generated: false
+  search_query: "[TS: External Table Stats WS \\[Deprecated\\]_1::time].daily [TS: External Table Stats WS \\[Deprecated\\]_1::table_id] average [TS: External Table Stats WS \\[Deprecated\\]_1::num_rows] [TS: External Table Stats WS \\[Deprecated\\]_1::status] = 'true' [formula_is_cached]"
+  view_columns:
+  - name: date
+    search_output_column: Day(time)
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+  - name: table_id
+    search_output_column: table_id
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+  - name: is_cached
+    search_output_column: is_cached
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+  - name: row_count
+    search_output_column: Average num_rows
+    properties:
+      column_type: MEASURE
+      aggregation: AVERAGE
+      value_casing: UNKNOWN
+  joins_with:
+  - name: Daily Row Count - Table Info
+    destination:
+      name: "TS: External Table Info [Deprecated]"
+    "on": "[TS: Daily Row Count External Table [Deprecated]::table_id] = [TS: External Table Info [Deprecated]::table_id]"
+    type: INNER

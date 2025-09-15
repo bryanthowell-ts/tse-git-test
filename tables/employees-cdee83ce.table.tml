@@ -1,0 +1,56 @@
+obj_id: employees-cdee83ce
+table:
+  name: employees
+  db: neondb
+  schema: public
+  db_table: employees
+  connection:
+    name: vercel-db-conn_1708428825358
+  columns:
+  - name: employee_ID
+    db_column_name: employee_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: first_name
+    db_column_name: first_name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: last_name
+    db_column_name: last_name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: email
+    db_column_name: email
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: hire_date
+    db_column_name: hire_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: department_id
+    db_column_name: department_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  properties:
+    sage_config:
+      is_sage_enabled: true
