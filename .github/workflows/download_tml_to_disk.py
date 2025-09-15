@@ -182,6 +182,8 @@ def retrieve_objects(request, record_size_override=-1):
     if tag_filter != "{None}":
         search_request["tag_identifiers"] = [tag_filter]
 
+    search_request["record_size"] = record_size_override
+
     print("Requesting object listing")
     try:
         objs = ts.metadata_search(request=request)
