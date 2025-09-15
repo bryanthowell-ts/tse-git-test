@@ -101,21 +101,24 @@ def export_tml_with_obj_id(guid:Optional[str] = None,
         exit()
 
     # Get obj_id from the TML
-    lines = yaml_tml[0]['edoc'].splitlines()
-    if obj_id is None:
-        if lines[0].find('obj_id: ') != -1:
-            obj_id = lines[0].replace('obj_id: ', "")
-
-    obj_type = lines[1].replace(":", "")
-
-    if save_to_disk is True:
-        print(yaml_tml[0]['edoc'])
-        print("-------")
-
-        # Save the file with {obj_id}.{type}.{tml}
-        filename = "{}s/{}.{}.tml".format(obj_type, obj_id, obj_type)
-        with open(file=filename, mode='w') as f:
-            f.write(yaml_tml[0]['edoc'])
+    if 'edoc' in yaml_tml[0]:
+        lines = yaml_tml[0]['edoc'].splitlines()
+        if obj_id is None:
+            if lines[0].find('obj_id: ') != -1:
+                obj_id = lines[0].replace('obj_id: ', "")
+    
+        obj_type = lines[1].replace(":", "")
+    
+        if save_to_disk is True:
+            print(yaml_tml[0]['edoc'])
+            print("-------")
+    
+            # Save the file with {obj_id}.{type}.{tml}
+            filename = "{}s/{}.{}.tml".format(obj_type, obj_id, obj_type)
+            with open(file=filename, mode='w') as f:
+                f.write(yaml_tml[0]['edoc'])
+    else:
+        print("Skipped due to lack of edoc in yaml_tml response")
 
     return yaml_tml
 
