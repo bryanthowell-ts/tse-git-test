@@ -177,12 +177,12 @@ obj_type_select = {
 def retrieve_objects(request, record_size_override=-1): 
     # Add filters if passed from workflow
     if author_filter != "{None}":
-        search_request["created_by_user_identifiers"] = [author_filter]
+        request["created_by_user_identifiers"] = [author_filter]
     
     if tag_filter != "{None}":
-        search_request["tag_identifiers"] = [tag_filter]
+        request["tag_identifiers"] = [tag_filter]
 
-    search_request["record_size"] = record_size_override
+    request["record_size"] = record_size_override
 
     print("Requesting object listing")
     try:
