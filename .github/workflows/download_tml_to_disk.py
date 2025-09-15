@@ -189,7 +189,7 @@ def export_objects_to_disk(objects):
         export_tml_with_obj_id(guid=o["metadata_id"], save_to_disk=True)
 
 def download_objects():
-    if object_type = 'ALL':
+    if object_type == 'ALL':
         for type in obj_type_select:
             objs = retrieve_objects(request=obj_type_select[type], record_size_override=record_size)
             export_objects_to_disk(objects=objs)
