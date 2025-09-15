@@ -14,6 +14,8 @@ secret_key = os.environ.get('TS_SECRET_KEY')
 org_name = os.environ.get('TS_ORG_NAME')
 author_filter = os.environ.get('AUTHOR_FILTER')
 tag_filter = os.environ.get('TAG_FILTER')
+record_size = os.environ.get('RECORD_SIZE_LIMIT')
+object_type = os.environ.get('OBJECT_TYPE')
 
 # full_access_token = os.environ.get('TS_TOKEN')  #  Tokens are tied to a particular Org, so useful in an environment with only a few Orgs but not single-tenant
 
@@ -111,9 +113,8 @@ def export_tml_with_obj_id(guid:Optional[str] = None,
 
     return yaml_tml
 
-
-# Get Liveboards
-search_request = {
+# Request for LIVEBOARDS
+lb_search_request = {
     "metadata": [
     {
       "type": "LIVEBOARD"
@@ -123,29 +124,82 @@ search_request = {
     "field_name": "CREATED",
     "order": "DESC"
   },
-  "record_size" : 5,
+    "record_size" : -1,
     "record_offset": 0
 }
 
-# Add filters if passed from workflow
-if author_filter != "{None}":
-    search_request["created_by_user_identifiers"] = [author_filter]
+# Request for ANSWERS
+answer_search_request = {
+    "metadata": [
+    {
+      "type": "ANSWER"
+    }
+  ],
+  "sort_options": {
+    "field_name": "CREATED",
+    "order": "DESC"
+  },
+    "record_size" : -1,
+    "record_offset": 0
+}
 
-if tag_filter != "{None}":
-    search_request["tag_identifiers"] = [tag_filter]
+# Request for Data Objects (Tables, Models, etc.)
+# Not differentiated in request, all are "LOGICAL_TABLE
+data_object_search_request = {
+    "metadata": [
+    {
+      "type": "LOGICAL_TABLE"
+    }
+  ],
+  "sort_options": {
+    "field_name": "CREATED",
+    "order": "DESC"
+  },
+    "record_size" : -1,
+    "record_offset": 0
+}
 
-print("Requesting object listing")
-try:
-    tables = ts.metadata_search(request=search_request)
-except requests.exceptions.HTTPError as e:
-    print(e)
-    print(e.response.content)
-    exit()
+obj_type_select = {
+    'LIVEBOARD' : liveboard_search_request,
+    'ANSWER' : answer_search_request,
+    'DATA' : data_object_search_request
+}
 
-print("{} objects retrieved".format(len(tables)))
+def retrieve_objects(request, record_size_override=-1): 
+    # Add filters if passed from workflow
+    if author_filter != "{None}":
+        search_request["created_by_user_identifiers"] = [author_filter]
+    
+    if tag_filter != "{None}":
+        search_request["tag_identifiers"] = [tag_filter]
 
-for t in tables:
-    export_tml_with_obj_id(guid=t["metadata_id"], save_to_disk=True)
+    print("Requesting object listing")
+    try:
+        objs = ts.metadata_search(request=request)
+    except requests.exceptions.HTTPError as e:
+        print(e)
+        print(e.response.content)
+        exit()
 
-print("Finished bringing all objects to disk")
+    print("{} objects retrieved".format(len(tables)))
+    return objs
+
+def export_objects_to_disk(objects):
+    for o in objects:
+        export_tml_with_obj_id(guid=o["metadata_id"], save_to_disk=True)
+
+def download_objects():
+    if object_type = 'ALL':
+        for type in obj_type_select:
+            objs = retrieve_objects(request=obj_type_select[type], record_size_override=record_size)
+            export_objects_to_disk(objects=objs)
+            print("Finished bringing all {} objects to disk".format(type)
+    else:
+        # Only if valid value
+        if obj_type in obj_type_select:
+            objs = retrieve_objects(request=obj_type_select[type], record_size_override=record_size)
+            export_objects_to_disk(objects=objs)
+            print("Finished bringing all {} objects to disk".format(type)
+
+
 
