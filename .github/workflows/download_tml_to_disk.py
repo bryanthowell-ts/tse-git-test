@@ -91,8 +91,13 @@ def export_tml_with_obj_id(guid:Optional[str] = None,
         "include_obj_id": True
     }
 
-    yaml_tml = ts.metadata_tml_export(metadata_ids=[guid], edoc_format='YAML',
-                                      export_options=exp_opt)
+    try:
+        yaml_tml = ts.metadata_tml_export(metadata_ids=[guid], edoc_format='YAML',
+                                          export_options=exp_opt)
+    except requests.exceptions.HTTPError as e:
+        print(e)
+        print(e.response.content)
+        exit()
 
     # Get obj_id from the TML
     lines = yaml_tml[0]['edoc'].splitlines()
