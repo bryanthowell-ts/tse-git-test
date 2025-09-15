@@ -181,7 +181,7 @@ def retrieve_objects(request, record_size_override=-1):
         print(e.response.content)
         exit()
 
-    print("{} objects retrieved".format(len(tables)))
+    print("{} objects retrieved".format(len(objs)))
     return objs
 
 def export_objects_to_disk(objects):
