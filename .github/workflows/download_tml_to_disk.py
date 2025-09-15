@@ -160,7 +160,7 @@ data_object_search_request = {
 }
 
 obj_type_select = {
-    'LIVEBOARD' : liveboard_search_request,
+    'LIVEBOARD' : lb_search_request,
     'ANSWER' : answer_search_request,
     'DATA' : data_object_search_request
 }
