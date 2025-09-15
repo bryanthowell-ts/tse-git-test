@@ -11,6 +11,20 @@ on:
         description: 'ThoughtSpot org name (not org_id)'
         required: true
         default: 'Primary'
+      OBJECT_TYPE:
+        type: choice
+        description: Type of Objects to Download
+        options: 
+        - ALL
+        - LIVEBOARD
+        - ANSWER
+        - DATA
+        required: true
+      RECORD_SIZE_LIMIT:
+        type: number
+        description: Limit Number Objects Downloaded (-1 is All)
+        default: "-1"
+        required: true
       FILTER_AUTHOR_NAME:
         type: string
         description: 'Filter to Author (Owner) Name'
@@ -50,10 +64,12 @@ jobs:
        TS_ORG_NAME: ${{ github.event.inputs.TS_ORG_NAME }}
        AUTHOR_FILTER: ${{ github.event.inputs.FILTER_AUTHOR_NAME }}
        TAG_FILTER: ${{ github.event.inputs.FILTER_TAG_NAME }}
+       OBJECT_TYPE: ${{ github.event.inputs.OBJECT_TYPE }}
+       RECORD_SIZE_LIMIT: ${{ github.event.inputs.RECORD_SIZE_LIMIT }}
       run: |
         git config --local user.email "bryant.howell@thoughtspot.com"
         git config --local user.name "bryanthowell-ts"
-        python .github/workflows/test_script.py > newfile.txt
+        python .github/workflows/download_tml_to_disk.py > latest_download_run.log
         git add *
         git diff-index --quiet HEAD || git commit -a -m "Downloaded latest TML"
         git push
