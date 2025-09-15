@@ -188,18 +188,22 @@ def export_objects_to_disk(objects):
     for o in objects:
         export_tml_with_obj_id(guid=o["metadata_id"], save_to_disk=True)
 
+# Main function to pull and download the variuos object types
 def download_objects():
     if object_type == 'ALL':
         for type in obj_type_select:
             objs = retrieve_objects(request=obj_type_select[type], record_size_override=record_size)
             export_objects_to_disk(objects=objs)
-            print("Finished bringing all {} objects to disk".format(type)
+            print("Finished bringing all {} objects to disk".format(type))
     else:
         # Only if valid value
         if obj_type in obj_type_select:
             objs = retrieve_objects(request=obj_type_select[type], record_size_override=record_size)
             export_objects_to_disk(objects=objs)
-            print("Finished bringing all {} objects to disk".format(type)
+            print("Finished bringing all {} objects to disk".format(type))
+
+# Run the download routines based on the choices
+download_objects()
 
 
 
