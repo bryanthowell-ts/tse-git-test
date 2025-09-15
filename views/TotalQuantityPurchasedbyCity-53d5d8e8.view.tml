@@ -1,0 +1,30 @@
+obj_id: TotalQuantityPurchasedbyCity-53d5d8e8
+view:
+  name: Total Quantity Purchased by City
+  tables:
+  - id: test-sb-ws
+    name: test-sb-ws
+    obj_id: test-sb-ws-f34c700c
+  search_query: "[City] [Quantity Purchased] [Latitutde] [Longitude]"
+  view_columns:
+  - name: City
+    search_output_column: City
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Latitutde
+    search_output_column: Latitutde
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Longitude
+    search_output_column: Longitude
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Total Quantity Purchased
+    search_output_column: Total Quantity Purchased
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX

@@ -1857,17 +1857,3 @@ liveboard:
     type: FILTER
   - name: "TS: AI and BI Stats (Beta)::Time Saved per activity ( in mins )"
     type: PARAMETER
-  style:
-    style_properties:
-    - name: lb_border_type
-      value: CURVED
-    - name: lb_brand_color
-      value: LBC_A
-    - name: hide_group_title
-      value: "false"
-    - name: hide_group_description
-      value: "false"
-    - name: hide_group_tile_description
-      value: "false"
-    - name: hide_tile_description
-      value: "false"
