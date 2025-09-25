@@ -1,0 +1,42 @@
+obj_id: Swingspeedvsscore-3d557682
+answer:
+  name: Swing speed vs score
+  description: Shows the swing speed and golfer's average score compared to par.
+  tables:
+  - id: Golf Tournaments
+    name: Golf Tournaments
+    obj_id: GolfTournaments-3b215b32
+  search_query: "[Golfer] [Club Head Speed Mph] average [Score To Par]"
+  answer_columns:
+  - name: Average Score To Par
+  - name: Golfer
+  - name: Total Club Head Speed Mph
+  table:
+    table_columns:
+    - column_id: Average Score To Par
+      show_headline: false
+    - column_id: Golfer
+      show_headline: false
+    - column_id: Total Club Head Speed Mph
+      show_headline: false
+    ordered_column_ids:
+    - Golfer
+    - Total Club Head Speed Mph
+    - Average Score To Par
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Average Score To Par
+    - column_id: Golfer
+    - column_id: Total Club Head Speed Mph
+    axis_configs:
+    - x:
+      - Golfer
+      "y":
+      - Total Club Head Speed Mph
+      - Average Score To Par
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Golfer\",\"columnProperty\": {}},{\"columnId\": \"Total Club Head Speed Mph\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Average Score To Par\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a4674f62-d6eb-442c-8fe7-f0199a87388e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Club Head Speed Mph\"],\"isOpposite\": false}},{\"id\": \"879f6572-fa00-49c1-b9a7-1b0012dfd26c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Score To Par\"],\"isOpposite\": true}},{\"id\": \"6b9c4b95-e808-4b5e-b8da-951a62388295\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Golfer\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Club Head Speed Mph\",\"color\": \"#785F1A\"},{\"serieName\": \"76d460ad-cb61-44c7-97e6-73b8ff481031\",\"color\": \"#B6313E\"},{\"serieName\": \"Average Score To Par\",\"color\": \"#B6313E\"}]}"
+  display_mode: CHART_MODE

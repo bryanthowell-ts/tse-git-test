@@ -1,0 +1,223 @@
+obj_id: Testliveboard-3663d72d
+liveboard:
+  name: Test liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Active
+      tables:
+      - id: Movie Rental
+        name: Movie Rental
+        obj_id: MovieRental-dd4d3a01
+      search_query: "[Active]"
+      answer_columns:
+      - name: Total Active
+      table:
+        table_columns:
+        - column_id: Total Active
+          show_headline: false
+        ordered_column_ids:
+        - Total Active
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Active\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Active
+        axis_configs:
+        - "y":
+          - Total Active
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Active\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"02a48b01-9f21-466a-9b81-5fa080ad40df\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Active\"],\"isOpposite\": false}},{\"id\": \"0916d824-38b8-42bf-a65e-d23fda15598d\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 88f16ef2-34e7-4e19-af0b-2b7728907d6f
+  - id: Viz_2
+    answer:
+      name: Total Active
+      tables:
+      - id: Movie Rental
+        name: Movie Rental
+        obj_id: MovieRental-dd4d3a01
+      search_query: "[Active] [Film Id] [Create Date] [Create Date].detailed"
+      answer_columns:
+      - name: Create Date
+      - name: Total Active
+      - name: Total Film Id
+      table:
+        table_columns:
+        - column_id: Create Date
+          show_headline: false
+        - column_id: Total Active
+          show_headline: false
+        - column_id: Total Film Id
+          show_headline: false
+        ordered_column_ids:
+        - Create Date
+        - Total Active
+        - Total Film Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Create Date
+        - column_id: Total Active
+        - column_id: Total Film Id
+        axis_configs:
+        - x:
+          - Create Date
+          "y":
+          - Total Active
+          - Total Film Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Active\",\"columnProperty\": {}},{\"columnId\": \"Create Date\",\"columnProperty\": {}},{\"columnId\": \"Total Film Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7db41f52-865f-4ead-b5d8-19e0f4aa0fc7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Active\"],\"isOpposite\": false}},{\"id\": \"c32295fe-b005-4a7b-85c9-78cb3ef0c5b4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Film Id\"],\"isOpposite\": true}},{\"id\": \"2bb8ac02-c9aa-44d3-be8e-82ad9e1ba32c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Create Date\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Active\",\"color\": \"#B6313E\"},{\"serieName\": \"Total Film Id\",\"color\": \"#785F1A\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5e3c1c0c-9eec-45c4-99e3-9165dd0f09be
+  - id: Viz_3
+    answer:
+      name: "Total Active, Total Film Id by Title"
+      tables:
+      - id: Movie Rental
+        name: Movie Rental
+        obj_id: MovieRental-dd4d3a01
+      search_query: "[Active] [Film Id] [Title]"
+      answer_columns:
+      - name: Title
+      - name: Total Active
+      - name: Total Film Id
+      table:
+        table_columns:
+        - column_id: Title
+          show_headline: false
+        - column_id: Total Active
+          show_headline: false
+        - column_id: Total Film Id
+          show_headline: false
+        ordered_column_ids:
+        - Title
+        - Total Active
+        - Total Film Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Title
+        - column_id: Total Active
+        - column_id: Total Film Id
+        axis_configs:
+        - x:
+          - Title
+          "y":
+          - Total Active
+          - Total Film Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Active\",\"columnProperty\": {}},{\"columnId\": \"a6ed1a69-cd2b-4752-8be0-38c485607451\",\"columnProperty\": {}},{\"columnId\": \"Total Film Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7db41f52-865f-4ead-b5d8-19e0f4aa0fc7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Active\"],\"isOpposite\": false}},{\"id\": \"c32295fe-b005-4a7b-85c9-78cb3ef0c5b4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Film Id\"],\"isOpposite\": true}},{\"id\": \"2bb8ac02-c9aa-44d3-be8e-82ad9e1ba32c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"a6ed1a69-cd2b-4752-8be0-38c485607451\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Active\",\"color\": \"#B6313E\"},{\"serieName\": \"Total Film Id\",\"color\": \"#785F1A\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: e1261cf4-8b55-4bdf-a8c4-af8dfafbabbb
+  - id: Viz_4
+    answer:
+      name: Total Film Id by Activebool
+      tables:
+      - id: Movie Rental
+        name: Movie Rental
+        obj_id: MovieRental-dd4d3a01
+      search_query: "[Film Id] [Activebool]"
+      answer_columns:
+      - name: Activebool
+      - name: Total Film Id
+      table:
+        table_columns:
+        - column_id: Activebool
+          show_headline: false
+        - column_id: Total Film Id
+          show_headline: false
+        ordered_column_ids:
+        - Activebool
+        - Total Film Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Activebool
+        - column_id: Total Film Id
+        axis_configs:
+        - x:
+          - Activebool
+          "y":
+          - Total Film Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"a6a57dfd-e48b-4f0a-98fb-d270d29d9e05\",\"columnProperty\": {}},{\"columnId\": \"a6ed1a69-cd2b-4752-8be0-38c485607451\",\"columnProperty\": {}},{\"columnId\": \"Total Film Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7db41f52-865f-4ead-b5d8-19e0f4aa0fc7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"a6a57dfd-e48b-4f0a-98fb-d270d29d9e05\"],\"isOpposite\": false}},{\"id\": \"c32295fe-b005-4a7b-85c9-78cb3ef0c5b4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Film Id\"],\"isOpposite\": true}},{\"id\": \"2bb8ac02-c9aa-44d3-be8e-82ad9e1ba32c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"a6ed1a69-cd2b-4752-8be0-38c485607451\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a6a57dfd-e48b-4f0a-98fb-d270d29d9e05\",\"color\": \"#B6313E\"},{\"serieName\": \"Total Film Id\",\"color\": \"#785F1A\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 4d314f3e-14fb-4f3d-858a-8e106da16aff
+  - id: Viz_5
+    answer:
+      name: Total Film Id by Activebool
+      tables:
+      - id: Movie Rental
+        name: Movie Rental
+        obj_id: MovieRental-dd4d3a01
+      search_query: "[Film Id] [Activebool] [Staff-Store Id]"
+      answer_columns:
+      - name: Activebool
+      - name: Total Film Id
+      - name: Total Staff-Store Id
+      table:
+        table_columns:
+        - column_id: Activebool
+          show_headline: false
+        - column_id: Total Film Id
+          show_headline: false
+        - column_id: Total Staff-Store Id
+          show_headline: false
+        ordered_column_ids:
+        - Activebool
+        - Total Film Id
+        - Total Staff-Store Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Activebool
+        - column_id: Total Film Id
+        - column_id: Total Staff-Store Id
+        axis_configs:
+        - x:
+          - Activebool
+          "y":
+          - Total Film Id
+          - Total Staff-Store Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Film Id\",\"columnProperty\": {}},{\"columnId\": \"Activebool\",\"columnProperty\": {}},{\"columnId\": \"Total Staff-Store Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f95b1009-7332-4e77-88ea-97aba9509a38\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Film Id\"],\"isOpposite\": false}},{\"id\": \"5d5a2500-9ab4-4ca7-b1f8-372d04c94486\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Staff-Store Id\"],\"isOpposite\": true}},{\"id\": \"52876995-6665-4333-bdce-4316e97ac0d5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Activebool\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a6a57dfd-e48b-4f0a-98fb-d270d29d9e05\",\"color\": \"#B6313E\"},{\"serieName\": \"Total Film Id\",\"color\": \"#785F1A\"},{\"serieName\": \"Total Staff-Store Id\",\"color\": \"#B6313E\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: ce628af6-1e74-4ae7-b3b3-a5bd4624e26c
+  filters:
+  - column:
+    - Active
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Film Id
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: EXTRA_SMALL
+    - visualization_id: Viz_2
+      size: MEDIUM
+    - visualization_id: Viz_3
+      size: MEDIUM
+    - visualization_id: Viz_4
+      size: MEDIUM
+    - visualization_id: Viz_5
+      size: MEDIUM
+  ordered_chips:
+  - name: Active
+    type: FILTER
+  - name: Film Id
+    type: FILTER

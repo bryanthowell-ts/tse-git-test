@@ -1,0 +1,43 @@
+obj_id: systemsfirstLiveboard-07714415
+liveboard:
+  name: system's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Analyst Studio Usage
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [ThoughtSpot Query ID] [User Action] = 'scheduled' [User Action] = 'adhoc' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Unique Number of ThoughtSpot Query ID
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          headline_aggregation: MIN-MAX
+        - column_id: Unique Number of ThoughtSpot Query ID
+          headline_aggregation: AVERAGE
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Unique Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of ThoughtSpot Query ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Unique Number of ThoughtSpot Query ID
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Unique Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of ThoughtSpot Query ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a274ecea-68e7-4720-97b6-109f06df446e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of ThoughtSpot Query ID\"],\"isOpposite\": false}},{\"id\": \"f9fd900e-3615-4c7e-9750-a5095a7eb343\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 047a9d0c-ff95-46e7-baf5-c1a82cafdc9e
+  layout:
+    tiles:
+    - visualization_id: Viz_1

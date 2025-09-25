@@ -1,0 +1,44 @@
+obj_id: InappvsEmbedLiveboardViews-12f0f570
+answer:
+  name: In app vs Embed Liveboard Views
+  tables:
+  - id: "TS: BI Server"
+    name: "TS: BI Server"
+  search_query: "[User Action] [User Action].PINBOARD_EMBED_VIEW [User Action].PINBOARD_VIEW [Timestamp].'last 30 days' [Impressions] [Answer Book GUID] [Answer Book Name] sort by [Impressions] descending sort by [Answer Book Name]"
+  answer_columns:
+  - name: Answer Book GUID
+  - name: Answer Book Name
+  - name: Total Impressions
+  - name: User Action
+  table:
+    table_columns:
+    - column_id: Answer Book GUID
+      show_headline: false
+    - column_id: Answer Book Name
+      show_headline: false
+    - column_id: Total Impressions
+      show_headline: false
+    - column_id: User Action
+      show_headline: false
+    ordered_column_ids:
+    - User Action
+    - Answer Book GUID
+    - Answer Book Name
+    - Total Impressions
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Answer Book GUID\",\"width\": 312.0},{\"columnId\": \"Answer Book Name\",\"width\": 347.0},{\"columnId\": \"User Action\",\"width\": 234.0}]}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Answer Book GUID
+    - column_id: Answer Book Name
+    - column_id: Total Impressions
+    - column_id: User Action
+    axis_configs:
+    - x:
+      - Answer Book Name
+      "y":
+      - Total Impressions
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"User Action\",\"columnProperty\": {}},{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Answer Book GUID\",\"columnProperty\": {}},{\"columnId\": \"Answer Book Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"408eae76-808d-4940-8c68-94f811028300\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Impressions\"],\"isOpposite\": false}},{\"id\": \"7b2f9242-4023-49e0-ae62-467f171e17cc\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Answer Book Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Impressions\",\"color\": \"#FF8142\"}]}"
+  display_mode: TABLE_MODE

@@ -1,0 +1,33 @@
+obj_id: ConnectedtoBryant-5ad5c76d
+answer:
+  name: Connected to Bryant
+  tables:
+  - id: Bryant's Worksheet
+    name: Bryant's Worksheet
+    obj_id: BryantsWorksheet-26c563a3
+  search_query: "[Connection Name] [Table ID]"
+  answer_columns:
+  - name: Connection Name
+  - name: Table ID
+  table:
+    table_columns:
+    - column_id: Connection Name
+      show_headline: false
+    - column_id: Table ID
+      show_headline: false
+    ordered_column_ids:
+    - Connection Name
+    - Table ID
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Connection Name
+    - column_id: Table ID
+    axis_configs:
+    - "y":
+      - Connection Name
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Connection Name\",\"columnProperty\": {}},{\"columnId\": \"Table Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b2afb8af-dc51-47e3-ac2c-06423ed890f9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Connection Name\"],\"isOpposite\": false}},{\"id\": \"e8486d2e-bf31-40f1-ad45-5328f64fd3eb\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE

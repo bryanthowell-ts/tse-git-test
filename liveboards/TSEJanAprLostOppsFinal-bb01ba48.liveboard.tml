@@ -1,0 +1,341 @@
+obj_id: TSEJanAprLostOppsFinal-bb01ba48
+liveboard:
+  name: TSE JanApr Lost Opps Final
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Opps Lost
+      tables:
+      - id: TSE NovApr25 Losses Model
+        name: TSE NovApr25 Losses Model
+        obj_id: TSENovApr25LossesModel-f9383169
+      search_query: "count [Opportunity Id]"
+      answer_columns:
+      - name: Number of Opportunity Id
+      table:
+        table_columns:
+        - column_id: Number of Opportunity Id
+          show_headline: false
+        ordered_column_ids:
+        - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Number of Opportunity Id
+        axis_configs:
+        - "y":
+          - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3bf02967-86d8-4065-8773-0e376f7864c7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Opportunity Id\"],\"isOpposite\": false}},{\"id\": \"5507cafc-b4fb-4587-aa48-d18db3631456\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 43195d35-ffba-41eb-a592-884e572de63e
+  - id: Viz_2
+    answer:
+      name: M0/M1 Lost
+      tables:
+      - id: TSE NovApr25 Losses Model
+        name: TSE NovApr25 Losses Model
+        obj_id: TSENovApr25LossesModel-f9383169
+      search_query: "count [Opportunity Id] [Opportunity: Prior Stage].'m0 initial meeting set' [Opportunity: Prior Stage].'m1 new business meeting'"
+      answer_columns:
+      - name: Number of Opportunity Id
+      table:
+        table_columns:
+        - column_id: Number of Opportunity Id
+          show_headline: false
+        ordered_column_ids:
+        - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Number of Opportunity Id
+        axis_configs:
+        - "y":
+          - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"64450ce9-2b7a-4111-81bf-3e403feffe82\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Opportunity Id\"],\"isOpposite\": false}},{\"id\": \"05861172-52ec-4319-ae00-c86af7a90443\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 44da4d64-71f0-4468-b995-0a1b51319280
+  - id: Viz_3
+    answer:
+      name: Renewal Lost
+      tables:
+      - id: TSE NovApr25 Losses Model
+        name: TSE NovApr25 Losses Model
+        obj_id: TSENovApr25LossesModel-f9383169
+      search_query: "count [Opportunity Id] [Opportunity: Prior Stage].renewal"
+      answer_columns:
+      - name: Number of Opportunity Id
+      table:
+        table_columns:
+        - column_id: Number of Opportunity Id
+          show_headline: false
+        ordered_column_ids:
+        - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Number of Opportunity Id
+        axis_configs:
+        - "y":
+          - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b617b5e7-2f11-4ace-815d-6a99f97d7ed0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Opportunity Id\"],\"isOpposite\": false}},{\"id\": \"bf673907-7023-4a60-ac59-f122de8a0293\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3f378265-ceb3-4a11-8be7-cb843ac1bb21
+  - id: Viz_4
+    answer:
+      name: Lost at Stage
+      tables:
+      - id: TSE NovApr25 Losses Model
+        name: TSE NovApr25 Losses Model
+        obj_id: TSENovApr25LossesModel-f9383169
+      search_query: "count [Opportunity Id] [Opportunity: Prior Stage] [Opportunity: Prior Stage] != [Opportunity: Prior Stage].'closed dq/lost' [Opportunity: Prior Stage].renewal"
+      answer_columns:
+      - name: Number of Opportunity Id
+      - name: "Opportunity: Prior Stage"
+      table:
+        table_columns:
+        - column_id: Number of Opportunity Id
+          show_headline: false
+        - column_id: "Opportunity: Prior Stage"
+          show_headline: false
+        ordered_column_ids:
+        - "Opportunity: Prior Stage"
+        - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: AREA
+        chart_columns:
+        - column_id: Number of Opportunity Id
+        - column_id: "Opportunity: Prior Stage"
+        axis_configs:
+        - x:
+          - "Opportunity: Prior Stage"
+          "y":
+          - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"100\\\",\\\"label\\\":{\\\"fontSize\\\":\\\"12\\\",\\\"boldFontWeight\\\":false,\\\"underlineTextDecoration\\\":false,\\\"italicFontStyle\\\":false},\\\"value\\\":{\\\"fontSize\\\":\\\"12\\\",\\\"boldFontWeight\\\":false,\\\"underlineTextDecoration\\\":false,\\\"italicFontStyle\\\":false}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"2\\\",\\\"dashStyle\\\":\\\"Solid\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{\\\"gridLineWidth\\\":\\\"2\\\",\\\"gridLineDashStyle\\\":\\\"Solid\\\"},\\\"yAxis\\\":{\\\"gridLineColor\\\":\\\"\\\",\\\"gridLineWidth\\\":\\\"2\\\",\\\"gridLineDashStyle\\\":\\\"Solid\\\"}},\\\"answerLevelSettings\\\":{\\\"width\\\":\\\"50\\\",\\\"dashStyle\\\":\\\"Solid\\\",\\\"lineWidth\\\":\\\"\\\",\\\"markerType\\\":\\\"Circle\\\",\\\"markerRadius\\\":\\\"\\\",\\\"borderWidth\\\":\\\"0\\\",\\\"connectingLines\\\":false}}}\",\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"13e65989-2651-4a33-9bb3-4ce3248d61da\",\"columnProperty\": {}},{\"columnId\": \"6fa16cc9-dc45-4ad5-aca0-84d76d1145fc\",\"columnProperty\": {}},{\"columnId\": \"Opportunity: Prior Stage\",\"columnProperty\": {}},{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"e1f0a6b3-814c-4f58-b09e-3482341e3779\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Opportunity Id\"],\"isOpposite\": false}},{\"id\": \"bff541e9-24c4-4110-8d42-68e802a308e9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Opportunity: Prior Stage\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Opportunity Id\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9618bb34-5ec4-4f1b-af9e-8c0a1ccfdb13
+  - id: Viz_5
+    answer:
+      name: Loss Reason by Stage
+      tables:
+      - id: TSE NovApr25 Losses Model
+        name: TSE NovApr25 Losses Model
+        obj_id: TSENovApr25LossesModel-f9383169
+      search_query: "count [Opportunity Id] [Opportunity: Prior Stage] [Opportunity Disqualified/downsell Reason] sort by count [Opportunity Id] descending"
+      answer_columns:
+      - name: Number of Opportunity Id
+      - name: Opportunity Disqualified/downsell Reason
+      - name: "Opportunity: Prior Stage"
+      table:
+        table_columns:
+        - column_id: Number of Opportunity Id
+          show_headline: false
+        - column_id: Opportunity Disqualified/downsell Reason
+          show_headline: false
+        - column_id: "Opportunity: Prior Stage"
+          show_headline: false
+        ordered_column_ids:
+        - "Opportunity: Prior Stage"
+        - Opportunity Disqualified/downsell Reason
+        - Number of Opportunity Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Number of Opportunity Id
+        - column_id: Opportunity Disqualified/downsell Reason
+        - column_id: "Opportunity: Prior Stage"
+        axis_configs:
+        - x:
+          - Opportunity Disqualified/downsell Reason
+          "y":
+          - Number of Opportunity Id
+          color:
+          - "Opportunity: Prior Stage"
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {}},{\"columnId\": \"b0d83aa4-32fb-4d1f-97ff-c0c0bfe447e0\",\"columnProperty\": {}},{\"columnId\": \"fe05d3a9-d092-4d20-9cb8-de209c15f317\",\"columnProperty\": {}},{\"columnId\": \"Opportunity: Prior Stage\",\"columnProperty\": {}},{\"columnId\": \"Opportunity Disqualified/downsell Reason\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4d8a10c5-1af0-4349-b166-39a41ed6ddc0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Opportunity Id\"],\"isOpposite\": false}},{\"id\": \"cc93fc35-680c-4c3c-a155-9a687cf3b000\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Opportunity Disqualified/downsell Reason\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Opportunity Id\",\"color\": \"#2E75F0\"},{\"serieName\": \"closed dq/lost\",\"color\": \"#8C62F5\"},{\"serieName\": \"m0 initial meeting set\",\"color\": \"#56D3A8\"},{\"serieName\": \"m1 new business meeting\",\"color\": \"#06BF7F\"},{\"serieName\": \"renewal\",\"color\": \"#FCD977\"},{\"serieName\": \"s1 discovery\",\"color\": \"#FCC838\"},{\"serieName\": \"s2 pot\",\"color\": \"#82DFE9\"},{\"serieName\": \"s3 go/no-go with eb\",\"color\": \"#48D1E0\"},{\"serieName\": \"s4 validation\",\"color\": \"#71A1F4\"},{\"serieName\": \"s5 negotiate\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: dfb48fd2-c90f-4f65-b784-d175123cd5c8
+  - id: Viz_6
+    answer:
+      name: Copy of Loss Reason by Stage
+      tables:
+      - id: TSE NovApr25 Losses Model
+        name: TSE NovApr25 Losses Model
+        obj_id: TSENovApr25LossesModel-f9383169
+      search_query: "count [Opportunity Id] [Opportunity: Prior Stage] [Opportunity Disqualified/downsell Reason] [Opportunity Name] [Account Name] [Opp Link] [Opportunity Region] [Opportunity Type] [Secondary Loss/downsell Reason] [Days Open] [Opportunity Net Acv] [Competitors] [Opportunity Dq/downsell Comment] sort by [Opportunity Net Acv] descending [Account Owner]"
+      answer_columns:
+      - name: Account Name
+      - name: Account Owner
+      - name: Competitors
+      - name: Number of Opportunity Id
+      - name: Opp Link
+      - name: Opportunity Disqualified/downsell Reason
+      - name: Opportunity Dq/downsell Comment
+      - name: Opportunity Name
+      - name: Opportunity Region
+      - name: Opportunity Type
+      - name: "Opportunity: Prior Stage"
+      - name: Secondary Loss/downsell Reason
+      - name: Total Days Open
+      - name: Total Opportunity Net Acv
+      table:
+        table_columns:
+        - column_id: Account Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Account Owner
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Competitors
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Number of Opportunity Id
+          headline_aggregation: AVERAGE
+        - column_id: Opp Link
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Opportunity Disqualified/downsell Reason
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Opportunity Dq/downsell Comment
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Opportunity Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Opportunity Region
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Opportunity Type
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: "Opportunity: Prior Stage"
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Secondary Loss/downsell Reason
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Days Open
+          headline_aggregation: SUM
+        - column_id: Total Opportunity Net Acv
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - "Opportunity: Prior Stage"
+        - Opportunity Disqualified/downsell Reason
+        - Opportunity Name
+        - Account Name
+        - Opp Link
+        - Opportunity Region
+        - Opportunity Type
+        - Secondary Loss/downsell Reason
+        - Competitors
+        - Opportunity Dq/downsell Comment
+        - Account Owner
+        - Number of Opportunity Id
+        - Total Days Open
+        - Total Opportunity Net Acv
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Opportunity Dq/downsell Comment\",\"width\": 323.0},{\"columnId\": \"Opportunity Name\",\"width\": 257.0},{\"columnId\": \"Opp Link\",\"width\": 150.0}],\"wrapTableHeader\": true,\"theme\": \"ZEBRA\",\"density\": \"REGULAR\",\"orderedColumnIds\": [\"Account Name\",\"Account Owner\",\"Opportunity Name\",\"Total Opportunity Net Acv\",\"Total Days Open\",\"Opportunity: Prior Stage\",\"Opportunity Disqualified/downsell Reason\",\"Opportunity Dq/downsell Comment\",\"Opp Link\",\"Opportunity Region\",\"Opportunity Type\",\"Secondary Loss/downsell Reason\",\"Number of Opportunity Id\",\"Competitors\"]}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Account Name
+        - column_id: Account Owner
+        - column_id: Competitors
+        - column_id: Number of Opportunity Id
+        - column_id: Opp Link
+        - column_id: Opportunity Disqualified/downsell Reason
+        - column_id: Opportunity Dq/downsell Comment
+        - column_id: Opportunity Name
+        - column_id: Opportunity Region
+        - column_id: Opportunity Type
+        - column_id: "Opportunity: Prior Stage"
+        - column_id: Secondary Loss/downsell Reason
+        - column_id: Total Days Open
+        - column_id: Total Opportunity Net Acv
+        axis_configs:
+        - x:
+          - Opportunity Disqualified/downsell Reason
+          "y":
+          - Number of Opportunity Id
+          color:
+          - "Opportunity: Prior Stage"
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Number of Opportunity Id\",\"columnProperty\": {}},{\"columnId\": \"Opportunity: Prior Stage\",\"columnProperty\": {}},{\"columnId\": \"Opportunity Disqualified/downsell Reason\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4d8a10c5-1af0-4349-b166-39a41ed6ddc0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Opportunity Id\"],\"isOpposite\": false}},{\"id\": \"cc93fc35-680c-4c3c-a155-9a687cf3b000\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Opportunity Disqualified/downsell Reason\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Opportunity Id\",\"color\": \"#2E75F0\"},{\"serieName\": \"closed dq/lost\",\"color\": \"#8C62F5\"},{\"serieName\": \"m0 initial meeting set\",\"color\": \"#56D3A8\"},{\"serieName\": \"m1 new business meeting\",\"color\": \"#06BF7F\"},{\"serieName\": \"renewal\",\"color\": \"#FCD977\"},{\"serieName\": \"s1 discovery\",\"color\": \"#FCC838\"},{\"serieName\": \"s2 pot\",\"color\": \"#82DFE9\"},{\"serieName\": \"s3 go/no-go with eb\",\"color\": \"#48D1E0\"},{\"serieName\": \"s4 validation\",\"color\": \"#71A1F4\"},{\"serieName\": \"s5 negotiate\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 75c2b87b-55e5-4872-a7c1-588dce1676cc
+  filters:
+  - column:
+    - Opportunity Region
+    oper: in
+    values:
+    - apac anz
+    - apac japan
+    - emea benelux
+    - emea commercial
+    - emea dach
+    - emea nordic
+    - emea other
+    - emea western europe
+    - latam
+    - na central
+    - na commercial
+    - na east
+    - na west
+    - "{null}"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Opportunity Disqualified/downsell Reason
+    oper: in
+    values:
+    - commercial or security roadblocks
+    - competitor
+    - data readiness
+    - "decreased adoption: re-org/rif"
+    - insufficient internal support
+    - insufficient value/budget
+    - lack of use case fit
+    - loss to competition
+    - lost champion/exec sponsor
+    - low adoption
+    - meeting never happened
+    - meeting with wrong profile
+    - no cdw and no cdw plans or interest
+    - no identifiable use case or dataset
+    - no potential champion visible
+    - not sufficient pain
+    - out of business/dissolved
+    - price/commercial terms
+    - price/lost budget
+    - product gaps
+    - product gaps prevent moving forward
+    - security
+    - unresponsive post nbm
+    - waiting on cdw/dataset readiness
+    - "{null}"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: EXTRA_SMALL
+    - visualization_id: Viz_2
+      size: EXTRA_SMALL
+    - visualization_id: Viz_3
+      size: EXTRA_SMALL
+    - visualization_id: Viz_4
+      size: MEDIUM
+    - visualization_id: Viz_5
+      size: MEDIUM
+    - visualization_id: Viz_6
+      size: LARGE
+  ordered_chips:
+  - name: Opportunity Region
+    type: FILTER
+  - name: Opportunity Disqualified/downsell Reason
+    type: FILTER

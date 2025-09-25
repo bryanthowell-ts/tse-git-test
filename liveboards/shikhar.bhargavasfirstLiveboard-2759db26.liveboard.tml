@@ -1,0 +1,40 @@
+obj_id: shikhar.bhargavasfirstLiveboard-2759db26
+liveboard:
+  name: shikhar.bhargava's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total quantity purchased
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[quantity purchased]"
+      answer_columns:
+      - name: Total quantity purchased
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        ordered_column_ids:
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total quantity purchased
+        axis_configs:
+        - "y":
+          - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ed65e6ad-4fa4-4652-a2ec-a4aa82f3dca9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"0d8a058d-e841-4db1-bf49-8a39b22e3e09\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 01b0f567-751b-4307-b42b-2791e75d1ecb
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 2
+      width: 3

@@ -1,0 +1,434 @@
+obj_id: Whatdataisavailable-c07aac45
+liveboard:
+  name: What data is available?
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: What regions are included in the dataset?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[region]"
+      answer_columns:
+      - name: region
+      table:
+        table_columns:
+        - column_id: region
+          show_headline: false
+        ordered_column_ids:
+        - region
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: region
+        axis_configs:
+        - "y":
+          - region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c11e1c85-eb0e-4da5-98ad-e89e203f393a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"region\"],\"isOpposite\": false}},{\"id\": \"2dc58660-f2f3-4938-a38b-6ea9f6797211\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: e91158fa-1929-4bce-b83e-bf4bc5c442a5
+  - id: Viz_2
+    answer:
+      name: What is the date range of the available sales data?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      formulas:
+      - id: formula_earliest date
+        name: earliest date
+        expr: "min ( [date] )"
+        was_auto_generated: false
+      - id: formula_latest date
+        name: latest date
+        expr: "max ( [date] )"
+        was_auto_generated: false
+      search_query: "[formula_earliest date] [formula_earliest date].monthly [formula_latest date] [formula_latest date].monthly"
+      answer_columns:
+      - name: Month(earliest date)
+      - name: Month(latest date)
+      table:
+        table_columns:
+        - column_id: Month(earliest date)
+          show_headline: false
+        - column_id: Month(latest date)
+          show_headline: false
+        ordered_column_ids:
+        - Month(earliest date)
+        - Month(latest date)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(earliest date)\",\"columnProperty\": {}},{\"columnId\": \"Month(latest date)\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(earliest date)
+        - column_id: Month(latest date)
+        axis_configs:
+        - "y":
+          - Month(earliest date)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Month(earliest date)\",\"columnProperty\": {}},{\"columnId\": \"Month(latest date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"720c0496-8603-4cb2-83bc-02644ec6255c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Month(earliest date)\"],\"isOpposite\": false}},{\"id\": \"d74178d4-5613-43ed-b1b2-b1a266ffee70\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 390061cc-4f0f-4689-95cc-857cca04708f
+  - id: Viz_3
+    answer:
+      name: Which states and cities are represented in the dataset?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[city] [state]"
+      answer_columns:
+      - name: city
+      - name: state
+      table:
+        table_columns:
+        - column_id: city
+          show_headline: false
+        - column_id: state
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - state
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"state\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: city
+        - column_id: state
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - state
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"state\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7e6457e9-ee0b-41f9-a90e-b79faac9c9c7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"state\"],\"isOpposite\": false}},{\"id\": \"d3b55305-2d14-47c0-ad9c-421da99358fb\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: d9fe2f60-1ec9-4732-931a-bbf754795ec9
+  - id: Viz_4
+    answer:
+      name: What item types and products are available for sale?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[product] [item type]"
+      answer_columns:
+      - name: item type
+      - name: product
+      table:
+        table_columns:
+        - column_id: item type
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - product
+        - item type
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: item type
+        - column_id: product
+        axis_configs:
+        - x:
+          - product
+          "y":
+          - item type
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2dd2c85c-aba5-4b86-baf2-e63bde057cbb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"item type\"],\"isOpposite\": false}},{\"id\": \"58f5865c-6fc9-4f01-969d-853029e2039a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 45696657-389e-499e-a7bd-dbb5b0498559
+  - id: Viz_5
+    answer:
+      name: What metrics are recorded for sales and quantity purchased?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "sum [sales] average [sales] min [sales] max [sales] variance [sales] standard deviation [sales] sum [quantity purchased] average [quantity purchased] min [quantity purchased] max [quantity purchased] variance [quantity purchased] standard deviation [quantity purchased]"
+      answer_columns:
+      - name: Average quantity purchased
+      - name: Average sales
+      - name: Maximum quantity purchased
+      - name: Maximum sales
+      - name: Minimum quantity purchased
+      - name: Minimum sales
+      - name: Standard Deviation quantity purchased
+      - name: Standard Deviation sales
+      - name: Total quantity purchased
+      - name: Total sales
+      - name: Variance quantity purchased
+      - name: Variance sales
+      table:
+        table_columns:
+        - column_id: Average quantity purchased
+          show_headline: false
+        - column_id: Average sales
+          show_headline: false
+        - column_id: Maximum quantity purchased
+          show_headline: false
+        - column_id: Maximum sales
+          show_headline: false
+        - column_id: Minimum quantity purchased
+          show_headline: false
+        - column_id: Minimum sales
+          show_headline: false
+        - column_id: Standard Deviation quantity purchased
+          show_headline: false
+        - column_id: Standard Deviation sales
+          show_headline: false
+        - column_id: Total quantity purchased
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        - column_id: Variance quantity purchased
+          show_headline: false
+        - column_id: Variance sales
+          show_headline: false
+        ordered_column_ids:
+        - Total sales
+        - Average sales
+        - Minimum sales
+        - Maximum sales
+        - Variance sales
+        - Standard Deviation sales
+        - Total quantity purchased
+        - Average quantity purchased
+        - Minimum quantity purchased
+        - Maximum quantity purchased
+        - Variance quantity purchased
+        - Standard Deviation quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Average sales\",\"columnProperty\": {}},{\"columnId\": \"Minimum sales\",\"columnProperty\": {}},{\"columnId\": \"Maximum sales\",\"columnProperty\": {}},{\"columnId\": \"Variance sales\",\"columnProperty\": {}},{\"columnId\": \"Standard Deviation sales\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Average quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Minimum quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Maximum quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Variance quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Standard Deviation quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Average quantity purchased
+        - column_id: Average sales
+        - column_id: Maximum quantity purchased
+        - column_id: Maximum sales
+        - column_id: Minimum quantity purchased
+        - column_id: Minimum sales
+        - column_id: Standard Deviation quantity purchased
+        - column_id: Standard Deviation sales
+        - column_id: Total quantity purchased
+        - column_id: Total sales
+        - column_id: Variance quantity purchased
+        - column_id: Variance sales
+        axis_configs:
+        - "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Standard Deviation quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Variance sales\",\"columnProperty\": {}},{\"columnId\": \"Maximum sales\",\"columnProperty\": {}},{\"columnId\": \"Average sales\",\"columnProperty\": {}},{\"columnId\": \"Standard Deviation sales\",\"columnProperty\": {}},{\"columnId\": \"Average quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Minimum sales\",\"columnProperty\": {}},{\"columnId\": \"Variance quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Maximum quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Minimum quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2e4e68c5-a4ef-4d08-aeeb-bb9854919c96\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"55edc3b1-01a7-434d-b7d3-b49c0763ecae\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7aefabd1-00de-46b7-a59f-dcb3caafc74a
+  - id: Viz_6
+    answer:
+      name: What stores are included in each region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[store] [region]"
+      answer_columns:
+      - name: region
+      - name: store
+      table:
+        table_columns:
+        - column_id: region
+          show_headline: false
+        - column_id: store
+          show_headline: false
+        ordered_column_ids:
+        - store
+        - region
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"region\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: region
+        - column_id: store
+        axis_configs:
+        - x:
+          - store
+          "y":
+          - region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"99f7c858-0865-4457-9bc2-e21e8106fcca\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"region\"],\"isOpposite\": false}},{\"id\": \"157ae080-edb1-4b26-9b9b-fce79dc7d5f4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"store\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 88779fb2-6d0a-4f9e-be02-74ce0ddae1f6
+  - id: Viz_7
+    answer:
+      name: What ZIP codes are represented in the dataset?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[zip code]"
+      answer_columns:
+      - name: zip code
+      table:
+        table_columns:
+        - column_id: zip code
+          show_headline: false
+        ordered_column_ids:
+        - zip code
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"zip code\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: zip code
+        axis_configs:
+        - "y":
+          - zip code
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"zip code\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b38da3fd-188d-4be5-a423-09e09f852c89\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"zip code\"],\"isOpposite\": false}},{\"id\": \"0bd1284d-cecf-48d8-99e1-21f6ef81026b\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: f458bd6e-9f96-4838-a11a-7da1460f1ecd
+  - id: Viz_8
+    answer:
+      name: What counties are covered in each state?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[county] [state]"
+      answer_columns:
+      - name: county
+      - name: state
+      table:
+        table_columns:
+        - column_id: county
+          show_headline: false
+        - column_id: state
+          show_headline: false
+        ordered_column_ids:
+        - county
+        - state
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"state\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: county
+        - column_id: state
+        axis_configs:
+        - x:
+          - county
+          "y":
+          - state
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"state\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"39000d22-dcff-437b-b80b-1b557c3023ce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"state\"],\"isOpposite\": false}},{\"id\": \"a3a50114-ab03-4f3e-8b74-62b233d840e9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"county\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 5f6aadff-e356-4c48-bf3b-f87e87e42654
+  - id: Viz_9
+    answer:
+      name: What are the available SKUs and their corresponding products?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[product] [SKU]"
+      answer_columns:
+      - name: SKU
+      - name: product
+      table:
+        table_columns:
+        - column_id: SKU
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - product
+        - SKU
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"SKU\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: SKU
+        - column_id: product
+        axis_configs:
+        - x:
+          - product
+          "y":
+          - SKU
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"SKU\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3adda7be-e4bd-47c2-921e-f80befd11f33\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"SKU\"],\"isOpposite\": false}},{\"id\": \"117ec670-d6bf-408d-9647-66b30a43a74b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 6760f3b6-c1c6-46ad-b430-044ca3ad8295
+  - id: Viz_10
+    answer:
+      name: What are the latitude and longitude coordinates for each store?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[longitude] [store] [latitude]"
+      answer_columns:
+      - name: latitude
+      - name: longitude
+      - name: store
+      table:
+        table_columns:
+        - column_id: latitude
+          show_headline: false
+        - column_id: longitude
+          show_headline: false
+        - column_id: store
+          show_headline: false
+        ordered_column_ids:
+        - longitude
+        - store
+        - latitude
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"longitude\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"latitude\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: latitude
+        - column_id: longitude
+        - column_id: store
+        axis_configs:
+        - x:
+          - store
+          "y":
+          - latitude
+          category:
+          - longitude
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"latitude\",\"columnProperty\": {}},{\"columnId\": \"longitude\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b2f8b7ca-c6bf-4a77-b6b7-148e4ffa554c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"latitude\"],\"isOpposite\": false}},{\"id\": \"f29a1604-9fbc-453a-89dc-1947776a0ac8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"store\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 960677e0-f8fc-4b3c-a826-e08470dd59ec
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_2
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_3
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_4
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_5
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_6
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_7
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_8
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_9
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_10
+      size: MEDIUM_SMALL

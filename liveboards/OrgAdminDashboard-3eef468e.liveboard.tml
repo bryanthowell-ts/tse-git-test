@@ -1,0 +1,281 @@
+obj_id: OrgAdminDashboard-3eef468e
+liveboard:
+  name: Org Admin Dashboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Liveboards
+      description: Total count of liveboards
+      tables:
+      - id: Product Usage
+        name: Product Usage
+      search_query: "unique count [Pinboard name] [Pinboard Reported] [Pinboard Reported].monthly [Pinboard Reported].'last 30 days'"
+      answer_columns:
+      - name: Month(Pinboard Reported)
+      - name: Unique Number of Pinboard name
+      table:
+        table_columns:
+        - column_id: Month(Pinboard Reported)
+          show_headline: false
+        - column_id: Unique Number of Pinboard name
+          show_headline: false
+        ordered_column_ids:
+        - Month(Pinboard Reported)
+        - Unique Number of Pinboard name
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Pinboard Reported)
+        - column_id: Unique Number of Pinboard name
+        axis_configs:
+        - "y":
+          - Unique Number of Pinboard name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"7a8c8c30-5a30-42d8-98ed-c1c48a1069b7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of Pinboard name\"],\"isOpposite\": false}},{\"id\": \"f90c46fc-53b8-4284-a19b-ecd89b819174\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 206acd10-64ba-476f-9994-1ef1a6623724
+  - id: Viz_2
+    answer:
+      name: Models
+      description: Total count of Models
+      tables:
+      - id: Product Usage
+        name: Product Usage
+      search_query: "unique count [Worksheet name]"
+      answer_columns:
+      - name: Unique Number of Worksheet name
+      table:
+        table_columns:
+        - column_id: Unique Number of Worksheet name
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of Worksheet name
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of Worksheet name
+        axis_configs:
+        - "y":
+          - Unique Number of Worksheet name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"da0327fb-c554-45fb-b39b-78998c592fea\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of Worksheet name\"],\"isOpposite\": false}},{\"id\": \"09d31333-4307-47c9-a488-a5c654075aae\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5fe348af-8a0f-461a-b80d-9bc1503d2b4e
+  - id: Viz_3
+    answer:
+      name: Total Orgs
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "unique count [Org Id]"
+      answer_columns:
+      - name: Unique Number of Org Id
+      table:
+        table_columns:
+        - column_id: Unique Number of Org Id
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of Org Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of Org Id\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of Org Id
+        axis_configs:
+        - "y":
+          - Unique Number of Org Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of Org Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"faae0245-32fc-4078-bf13-3042130124da\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of Org Id\"],\"isOpposite\": false}},{\"id\": \"14a23950-ab85-4f66-8ae3-db9155b9addf\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 434b7cd9-d9a4-4727-9ffe-4c070c0cf7f4
+  - id: Viz_4
+    answer:
+      name: Test Orgs
+      description: Orgs consisting of TEST_
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "unique count [Org Id] [Org Name] contains 'test'"
+      answer_columns:
+      - name: Unique Number of Org Id
+      table:
+        table_columns:
+        - column_id: Unique Number of Org Id
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of Org Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of Org Id\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of Org Id
+        axis_configs:
+        - "y":
+          - Unique Number of Org Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of Org Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8dbf4b4e-128d-48ed-9cc2-ffe7ed6de59a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of Org Id\"],\"isOpposite\": false}},{\"id\": \"f57fa392-0f4f-421e-9c09-044337f96c6a\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: be5653d1-6476-4a36-bdb0-331e7aa62959
+  - id: Viz_5
+    answer:
+      name: Orgs Creation Trend
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "unique count [Org Id] [Timestamp] [Timestamp].monthly"
+      answer_columns:
+      - name: Month(Timestamp)
+      - name: Unique Number of Org Id
+      table:
+        table_columns:
+        - column_id: Month(Timestamp)
+          show_headline: false
+        - column_id: Unique Number of Org Id
+          show_headline: false
+        ordered_column_ids:
+        - Month(Timestamp)
+        - Unique Number of Org Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(Timestamp)
+        - column_id: Unique Number of Org Id
+        axis_configs:
+        - x:
+          - Month(Timestamp)
+          "y":
+          - Unique Number of Org Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": false},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"100\\\",\\\"label\\\":{\\\"fontSize\\\":\\\"12\\\",\\\"boldFontWeight\\\":false,\\\"underlineTextDecoration\\\":false,\\\"italicFontStyle\\\":false},\\\"value\\\":{\\\"fontSize\\\":\\\"12\\\",\\\"boldFontWeight\\\":false,\\\"underlineTextDecoration\\\":false,\\\"italicFontStyle\\\":false}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"2\\\",\\\"dashStyle\\\":\\\"Solid\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{\\\"gridLineWidth\\\":\\\"2\\\",\\\"gridLineDashStyle\\\":\\\"Dash\\\"},\\\"yAxis\\\":{\\\"gridLineColor\\\":\\\"\\\",\\\"gridLineWidth\\\":\\\"2\\\",\\\"gridLineDashStyle\\\":\\\"Dash\\\"}},\\\"answerLevelSettings\\\":{\\\"dashStyle\\\":\\\"Solid\\\",\\\"lineWidth\\\":\\\"\\\",\\\"markerType\\\":\\\"Circle\\\",\\\"markerRadius\\\":\\\"\\\",\\\"borderWidth\\\":\\\"0\\\",\\\"connectingLines\\\":false}}}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Month(Timestamp)\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of Org Id\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"GREATER_THAN_EQUAL_TO\",\"value\": \"50\",\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#785F1A\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Unique Number of Org Id\"}]}}}],\"axisProperties\": [{\"id\": \"a505fc26-b00f-4370-bb6e-fdfe4df19516\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Timestamp)\"]}},{\"id\": \"4bf1f0ca-773e-47df-bf58-dde24df11101\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of Org Id\"],\"name\": \"Org Count\",\"isOpposite\": false,\"dynamicTitle\": \"Org Count\"}}],\"systemSeriesColors\": [{\"serieName\": \"Unique Number of Org Id\",\"color\": \"#B6313E\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: ca2c9f9f-8f58-43b9-bdaa-bf2b412d063d
+  - id: Viz_6
+    answer:
+      name: Orgs Detailed Report
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Org type
+        name: Org type
+        expr: "if ( contains ( [Org Name] , 'test' ) and [Org Name] != 'primary' ) then 'Test org' else if ( [Org Name] = 'primary' ) then 'Internal' else 'Customer Org'"
+        was_auto_generated: false
+      search_query: "[Org Name] [Org Id] min [Timestamp] sort by min [Timestamp] [Timestamp].detailed unique count [User] [formula_Org type]"
+      answer_columns:
+      - name: Minimum Timestamp
+        custom_name: Creation Date
+        dynamic_title: Creation Date
+      - name: Org Id
+      - name: Org Name
+      - name: Org type
+      - name: Unique Number of User
+        custom_name: User count
+        dynamic_title: User count
+      table:
+        table_columns:
+        - column_id: Minimum Timestamp
+          show_headline: false
+        - column_id: Org Id
+          show_headline: false
+        - column_id: Org Name
+          show_headline: false
+        - column_id: Org type
+          show_headline: false
+        - column_id: Unique Number of User
+          show_headline: false
+        ordered_column_ids:
+        - Org Name
+        - Org Id
+        - Org type
+        - Minimum Timestamp
+        - Unique Number of User
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Minimum Timestamp\",\"width\": 190.95680236816406},{\"columnId\": \"Org Name\",\"width\": 167.0},{\"columnId\": \"Org type\",\"width\": 123.14933776855469}],\"columnProperties\": [{\"columnId\": \"Org Name\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS\",\"value\": \"Primary\",\"plotAsBand\": false,\"fontProperties\": {\"bold\": true,\"italic\": false,\"strikeThrough\": false,\"underline\": false},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#BEC6D0\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Org Name\",\"isHighlightRow\": true}]}}},{\"columnId\": \"Org Id\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Org type\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS\",\"value\": \"Internal\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#7d7397\",\"bold\": true,\"italic\": true,\"strikeThrough\": false,\"underline\": false},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Org type\",\"isHighlightRow\": false},{\"operator\": \"IS\",\"value\": \"Customer Org\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#4e868c\",\"bold\": true,\"italic\": true,\"strikeThrough\": false,\"underline\": false},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Org type\",\"isHighlightRow\": false}]}}},{\"columnId\": \"Unique Number of User\",\"columnProperty\": {\"conditionalFormatting\": {}}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Minimum Timestamp
+        - column_id: Org Id
+        - column_id: Org Name
+        - column_id: Org type
+        - column_id: Unique Number of User
+        axis_configs:
+        - x:
+          - Minimum Timestamp
+          "y":
+          - Unique Number of User
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": false},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"100\\\",\\\"label\\\":{\\\"fontSize\\\":\\\"12\\\",\\\"boldFontWeight\\\":false,\\\"underlineTextDecoration\\\":false,\\\"italicFontStyle\\\":false},\\\"value\\\":{\\\"fontSize\\\":\\\"12\\\",\\\"boldFontWeight\\\":false,\\\"underlineTextDecoration\\\":false,\\\"italicFontStyle\\\":false}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"2\\\",\\\"dashStyle\\\":\\\"Solid\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{\\\"gridLineWidth\\\":\\\"2\\\",\\\"gridLineDashStyle\\\":\\\"Dash\\\"},\\\"yAxis\\\":{\\\"gridLineColor\\\":\\\"\\\",\\\"gridLineWidth\\\":\\\"2\\\",\\\"gridLineDashStyle\\\":\\\"Dash\\\"}},\\\"answerLevelSettings\\\":{\\\"dashStyle\\\":\\\"Solid\\\",\\\"lineWidth\\\":\\\"\\\",\\\"markerType\\\":\\\"Circle\\\",\\\"markerRadius\\\":\\\"\\\",\\\"borderWidth\\\":\\\"0\\\",\\\"connectingLines\\\":false}}}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Minimum Timestamp\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of User\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a9050989-e0c3-4a24-b9cf-12f8ec154d5c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User\"],\"isOpposite\": false}},{\"id\": \"56a2a1c9-a6df-4f0c-8c21-41b8cd5ac7df\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Minimum Timestamp\"]}}],\"systemSeriesColors\": [{\"serieName\": \"8f5b7924-aa1e-4e6e-9ee8-c40763a7cc13\",\"color\": \"#B6313E\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: e09ca983-2036-4de2-8c12-2d3d10da7241
+  - id: Viz_7
+    answer:
+      name: Top Orgs by Users
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "top 10 [Org Name] unique count [User] [Org Name] != [Org Name].Primary [Org Name].Secondary"
+      answer_columns:
+      - name: Org Name
+      - name: Unique Number of User
+      table:
+        table_columns:
+        - column_id: Org Name
+          show_headline: false
+        - column_id: Unique Number of User
+          show_headline: false
+        ordered_column_ids:
+        - Org Name
+        - Unique Number of User
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Org Name
+        - column_id: Unique Number of User
+        axis_configs:
+        - x:
+          - Org Name
+          "y":
+          - Unique Number of User
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Org Name\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of User\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1ecab190-c567-44ec-92de-5955f6d93050\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User\"],\"isOpposite\": false}},{\"id\": \"db06d7d7-1161-42f5-9806-4d25f698672d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Org Name\"]}}],\"seriesColors\": [{\"serieName\": \"Unique Number of User\",\"color\": \"#937f48\"}],\"systemSeriesColors\": [{\"serieName\": \"Unique Number of User\",\"color\": \"#B6313E\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 6b8ecf96-04f1-463b-b1cc-4c71719e1b19
+  filters:
+  - column:
+    - "TS: BI Server::Org Name"
+    excluded_visualizations:
+    - Viz_4
+    - Viz_3
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_3
+      size: EXTRA_SMALL
+    - visualization_id: Viz_4
+      size: EXTRA_SMALL
+    - visualization_id: Viz_6
+      size: MEDIUM
+    - visualization_id: Viz_5
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_7
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_1
+      size: EXTRA_SMALL
+    - visualization_id: Viz_2
+      size: EXTRA_SMALL
+  ordered_chips:
+  - name: "TS: BI Server::Org Name"
+    type: FILTER

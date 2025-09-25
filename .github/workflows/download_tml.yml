@@ -1,0 +1,76 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Python application
+
+on: 
+  workflow_dispatch:
+    inputs:
+      TS_ORG_NAME:
+        type: string
+        description: 'ThoughtSpot org name (not org_id)'
+        required: true
+        default: 'Primary'
+      OBJECT_TYPE:
+        type: choice
+        description: Type of Objects to Download
+        options: 
+        - ALL
+        - LIVEBOARD
+        - ANSWER
+        - DATA
+        required: true
+      RECORD_SIZE_LIMIT:
+        type: number
+        description: Limit Number Objects Downloaded (-1 is All)
+        default: "-1"
+        required: true
+      FILTER_AUTHOR_NAME:
+        type: string
+        description: 'Filter to Author (Owner) Name'
+        required: true
+        default: "{None}"
+      FILTER_TAG_NAME:
+        type: string
+        description: 'Filter on Tag name'
+        required: true
+        default: "{None}"
+      
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install thoughtspot_rest_api_v1 
+        # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Test Commit and push files
+      env:
+       TS_SERVER: ${{ secrets.TS_SERVER }}
+       TS_SECRET_KEY: ${{ secrets.TS_SECRET_KEY }}
+       TS_USERNAME: ${{ secrets.TS_USERNAME }}
+       TS_ORG_NAME: ${{ github.event.inputs.TS_ORG_NAME }}
+       AUTHOR_FILTER: ${{ github.event.inputs.FILTER_AUTHOR_NAME }}
+       TAG_FILTER: ${{ github.event.inputs.FILTER_TAG_NAME }}
+       OBJECT_TYPE: ${{ github.event.inputs.OBJECT_TYPE }}
+       RECORD_SIZE_LIMIT: ${{ github.event.inputs.RECORD_SIZE_LIMIT }}
+      run: |
+        git config --local user.email "bryant.howell@thoughtspot.com"
+        git config --local user.name "bryanthowell-ts"
+        python .github/workflows/download_tml_to_disk.py > latest_download_run.log
+        git add *
+        git diff-index --quiet HEAD || git commit -a -m "Downloaded latest TML"
+        git push
+         

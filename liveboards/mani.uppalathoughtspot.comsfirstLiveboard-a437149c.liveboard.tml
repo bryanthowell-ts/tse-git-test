@@ -1,0 +1,35 @@
+obj_id: mani.uppalathoughtspot.comsfirstLiveboard-a437149c
+liveboard:
+  name: mani.uppala@thoughtspot.com's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Orgs
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      search_query: "unique count [Org Id]"
+      answer_columns:
+      - name: Unique Number of Org Id
+      table:
+        table_columns:
+        - column_id: Unique Number of Org Id
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of Org Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of Org Id\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of Org Id
+        axis_configs:
+        - "y":
+          - Unique Number of Org Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of Org Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d5065783-d8f8-4223-82bd-1c3265b2f2e0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of Org Id\"],\"isOpposite\": false}},{\"id\": \"211a2f94-6579-4e0b-9068-653a1d5e3a0c\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7c8b9576-4524-48f1-b5d8-214c14602624
+  layout:
+    tiles:
+    - visualization_id: Viz_1

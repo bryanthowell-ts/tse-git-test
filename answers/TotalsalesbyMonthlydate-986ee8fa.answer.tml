@@ -1,0 +1,60 @@
+obj_id: TotalsalesbyMonthlydate-986ee8fa
+answer:
+  name: Total sales by Monthly date
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "[sales] [date] [date].monthly [city] [product] [region] [store] [item type]"
+  answer_columns:
+  - name: Month(date)
+  - name: Total sales
+  - name: city
+  - name: item type
+  - name: product
+  - name: region
+  - name: store
+  table:
+    table_columns:
+    - column_id: Month(date)
+      show_headline: false
+    - column_id: Total sales
+      show_headline: false
+    - column_id: city
+      show_headline: false
+    - column_id: item type
+      show_headline: false
+    - column_id: product
+      show_headline: false
+    - column_id: region
+      show_headline: false
+    - column_id: store
+      show_headline: false
+    ordered_column_ids:
+    - Month(date)
+    - city
+    - product
+    - region
+    - store
+    - item type
+    - Total sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Month(date)
+    - column_id: Total sales
+    - column_id: city
+    - column_id: item type
+    - column_id: product
+    - column_id: region
+    - column_id: store
+    axis_configs:
+    - x:
+      - Month(date)
+      "y":
+      - Total sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5bfbd788-c456-463f-8d5c-a0aaceb687d5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"cf705eaf-d8c8-4bd1-af91-425a97e14d59\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#B6313E\"}]}"
+  display_mode: CHART_MODE

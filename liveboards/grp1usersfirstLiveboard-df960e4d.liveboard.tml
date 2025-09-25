@@ -1,0 +1,47 @@
+obj_id: grp1usersfirstLiveboard-df960e4d
+liveboard:
+  name: grp1user's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "City, Monthly Sales Date"
+      tables:
+      - id: Retail Sales
+        name: Retail Sales
+        obj_id: RetailSales-f88e8305
+      search_query: "[City] [Sales Date] [Sales Date].monthly"
+      answer_columns:
+      - name: City
+      - name: Month(Sales Date)
+      table:
+        table_columns:
+        - column_id: City
+          show_headline: false
+        - column_id: Month(Sales Date)
+          show_headline: false
+        ordered_column_ids:
+        - City
+        - Month(Sales Date)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Month(Sales Date)\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: City
+        - column_id: Month(Sales Date)
+        axis_configs:
+        - x:
+          - Month(Sales Date)
+          "y":
+          - City
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Month(Sales Date)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"82ac603b-c4da-407d-a062-91033e5faa2d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"City\"],\"isOpposite\": false}},{\"id\": \"f9bbced8-833d-4c37-b6fa-5cca3fd63917\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sales Date)\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 4b6c98ab-a2b1-4778-b3c6-210cfc52382a
+    action_object_associations:
+    - action_name: grp1CA
+      context: PRIMARY
+      enabled: true
+  layout:
+    tiles:
+    - visualization_id: Viz_1

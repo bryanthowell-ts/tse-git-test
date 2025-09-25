@@ -1,0 +1,125 @@
+obj_id: Test_LB_Pinelopi_1
+liveboard:
+  name: Test LB
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Total Sales by City
+      tables:
+      - id: Retail Sales
+        name: Retail Sales
+        obj_id: RetailSales-f88e8305
+      search_query: "[Total Sales] [City]"
+      answer_columns:
+      - name: City
+      - name: Total Total Sales
+      table:
+        table_columns:
+        - column_id: City
+          show_headline: false
+        - column_id: Total Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - City
+        - Total Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: City
+        - column_id: Total Total Sales
+        axis_configs:
+        - x:
+          - City
+          "y":
+          - Total Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Total Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"90752a41-4ce1-4d68-af2d-3b74a3c238ad\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Sales\"],\"isOpposite\": false}},{\"id\": \"54f56728-10ca-486e-b93c-64bdcbc0857d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"City\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Total Sales\",\"color\": \"#FF8142\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 763a04cc-fe3b-4785-96bd-4ce6f96801db
+  - id: Viz_2
+    answer:
+      name: product
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[product] [product].'Active boxer briefs' [product].'Active boy shorts' [product].'Active briefs'"
+      answer_columns:
+      - name: product
+      table:
+        table_columns:
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - product
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: product
+        axis_configs:
+        - "y":
+          - product
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b74202aa-6972-4e47-a269-be75816e642d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"product\"],\"isOpposite\": false}},{\"id\": \"b2668832-7937-4def-881a-af322c882c44\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: bdaf437f-d345-4b49-8fbe-b90bfa8c8120
+  - id: Viz_3
+    answer:
+      name: Total sales by region
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [region]"
+      answer_columns:
+      - name: Total sales
+      - name: region
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: region
+          show_headline: false
+        ordered_column_ids:
+        - region
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: region
+        axis_configs:
+        - x:
+          - region
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"dfd16d5d-3dbb-4928-a1e7-91d4837ee5ab\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"c674c1a6-c263-44e2-9edd-391de2933ea3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 455af8ae-a8d9-4ea5-b1ba-6e836d223712
+  filters:
+  - column:
+    - (Sample) Retail - Apparel::item type
+    oper: in
+    values:
+    - bags
+    - dresses
+    - headwear
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
+    - visualization_id: Viz_2
+      size: LARGE
+  ordered_chips:
+  - name: (Sample) Retail - Apparel::item type
+    type: FILTER

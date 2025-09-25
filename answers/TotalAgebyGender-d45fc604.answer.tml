@@ -1,0 +1,35 @@
+obj_id: TotalAgebyGender-d45fc604
+answer:
+  name: Total Age by Gender
+  tables:
+  - id: Telecom Demo - Updated_Customer_Churn_Dataset.csv
+    name: Telecom Demo - Updated_Customer_Churn_Dataset.csv
+    obj_id: TelecomDemo-Updated_Customer_Churn_Dataset.csv-39f2e96d
+  search_query: "[Age] [Gender]"
+  answer_columns:
+  - name: Gender
+  - name: Total Age
+  table:
+    table_columns:
+    - column_id: Gender
+      show_headline: false
+    - column_id: Total Age
+      show_headline: false
+    ordered_column_ids:
+    - Gender
+    - Total Age
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Gender
+    - column_id: Total Age
+    axis_configs:
+    - x:
+      - Gender
+      "y":
+      - Total Age
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Gender\",\"columnProperty\": {}},{\"columnId\": \"Total Age\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"09eb1bde-c188-43b1-8a97-50878cae1dfa\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"7c629171-5a81-45e4-8755-308889ed97be\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Gender\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#B6313E\"}]}"
+  display_mode: CHART_MODE

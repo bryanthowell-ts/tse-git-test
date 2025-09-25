@@ -1,0 +1,28 @@
+obj_id: TotalformulawithParam-cee4fa0f
+answer:
+  name: Total formula with Param
+  tables:
+  - id: Copy of test-sb-ws
+    name: Copy of test-sb-ws
+    obj_id: Copyoftest-sb-ws-7af000b7
+  search_query: "[formula with Param]"
+  answer_columns:
+  - name: Total formula with Param
+  table:
+    table_columns:
+    - column_id: Total formula with Param
+      show_headline: false
+    ordered_column_ids:
+    - Total formula with Param
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Total formula with Param
+    axis_configs:
+    - "y":
+      - Total formula with Param
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total formula with Param\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c0aad178-14db-4e34-8fe4-ca58f18c6ec6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total formula with Param\"],\"isOpposite\": false}},{\"id\": \"036d9162-b95c-4873-8bdb-99e25dd4ab69\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: CHART_MODE
