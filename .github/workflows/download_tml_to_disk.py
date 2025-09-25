@@ -209,9 +209,9 @@ def download_objects():
     else:
         # Only if valid value
         if object_type in obj_type_select:
-            objs = retrieve_objects(request=obj_type_select[type], record_size_override=record_size)
+            objs = retrieve_objects(request=obj_type_select[object_type], record_size_override=record_size)
             export_objects_to_disk(objects=objs)
-            print("Finished bringing all {} objects to disk".format(type))
+            print("Finished bringing all {} objects to disk".format(object_type))
 
 # Run the download routines based on the choices
 download_objects()
