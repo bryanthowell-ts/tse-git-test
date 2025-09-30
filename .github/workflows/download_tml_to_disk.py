@@ -115,8 +115,16 @@ def export_tml_with_obj_id(guid:Optional[str] = None,
     
             # Save the file with {obj_id}.{type}.{tml}
             filename = "{}s/{}.{}.tml".format(obj_type, obj_id, obj_type)
-            with open(file=filename, mode='w') as f:
-                f.write(yaml_tml[0]['edoc'])
+            try: 
+                with open(file=filename, mode='w') as f:
+                    f.write(yaml_tml[0]['edoc'])
+            # Catch if directory for type doesn't exist yet
+            except:
+                os.mkdir("{}s".format(obj_type))
+                with open(file=filename, mode='w') as f:
+                    f.write(yaml_tml[0]['edoc'])
+
+
     else:
         print("Skipped due to lack of edoc in yaml_tml response")
 
