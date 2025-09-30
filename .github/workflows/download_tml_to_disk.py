@@ -146,6 +146,11 @@ def export_tml_with_obj_id(guid:Optional[str] = None,
 
     return yaml_tml
 
+if last_run_epoch is None:
+    order_field = 'CREATED'
+else:
+    order_field = 'MODIFIED'
+
 # Request for LIVEBOARDS
 lb_search_request = {
     "metadata": [
@@ -154,7 +159,7 @@ lb_search_request = {
     }
   ],
   "sort_options": {
-    "field_name": "CREATED",
+    "field_name": order_field,
     "order": "DESC"
   },
     "record_size" : -1,
@@ -169,7 +174,7 @@ answer_search_request = {
     }
   ],
   "sort_options": {
-    "field_name": "CREATED",
+    "field_name": order_field,
     "order": "DESC"
   },
     "record_size" : -1,
@@ -185,7 +190,7 @@ data_object_search_request = {
     }
   ],
   "sort_options": {
-    "field_name": "CREATED",
+    "field_name": order_field,
     "order": "DESC"
   },
     "record_size" : -1,
@@ -221,7 +226,12 @@ def retrieve_objects(request, record_size_override=-1):
 
 def export_objects_to_disk(objects):
     for o in objects:
-        export_tml_with_obj_id(guid=o["metadata_id"], save_to_disk=True)
+        if last_run_epoch is None:
+            export_tml_with_obj_id(guid=o["metadata_id"], save_to_disk=True)
+        else:
+            if o["metadata_header"]["modified"] > last_run_epoch:
+                export_tml_with_obj_id(guid=o["metadata_id"], save_to_disk=True)
+
 
 # Main function to pull and download the variuos object types
 def download_objects():
@@ -240,7 +250,7 @@ def download_objects():
 # Run the download routines based on the choices
 download_objects()
 
-current_epoch_time_utc_int = int(time.time())
+current_epoch_time_utc_int = int(time.time()) * 1000  # ThoughtSpot uses JavaScript style long epoch
 print("Current epoch")
 print(current_epoch_time_utc_int)
 try: 
