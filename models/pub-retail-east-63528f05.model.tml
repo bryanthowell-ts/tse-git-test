@@ -1,0 +1,88 @@
+obj_id: pub-retail-east-63528f05
+model:
+  name: pub-retail-east
+  model_tables:
+  - name: retail-sales-east
+    obj_id: retail-sales-east-064d3225
+  columns:
+  - name: City
+    column_id: retail-sales-east::city
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: County
+    column_id: retail-sales-east::county
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Item Type
+    column_id: retail-sales-east::item type
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Latitude
+    column_id: retail-sales-east::latitude
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Longitude
+    column_id: retail-sales-east::longitude
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Monthly Date
+    column_id: retail-sales-east::Monthly date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Product
+    column_id: retail-sales-east::product
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Region
+    column_id: retail-sales-east::region
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Sku
+    column_id: retail-sales-east::SKU
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: State
+    column_id: retail-sales-east::state
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Store
+    column_id: retail-sales-east::store
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Total Quantity Purchased
+    column_id: retail-sales-east::Total quantity purchased
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Total Sales
+    column_id: retail-sales-east::Total sales
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Zip Code
+    column_id: retail-sales-east::zip code
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: false

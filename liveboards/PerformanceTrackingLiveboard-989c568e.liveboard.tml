@@ -1,0 +1,726 @@
+obj_id: PerformanceTrackingLiveboard-989c568e
+liveboard:
+  name: Copy of Performance Tracking Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: User Queries and Latency
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_30-59sec+ latency
+        name: 30-59sec+ latency
+        expr: "group_aggregate ( count ( [Incident Id] ) , query_groups ( ) , { [formula_latency in seconds] > 29 and [formula_latency in seconds] < 59 } )"
+        was_auto_generated: false
+      - id: formula_60 sec+ latency
+        name: 60 sec+ latency
+        expr: "group_aggregate ( count ( [Incident Id] ) , query_groups ( ) , { [formula_latency in seconds] > 59 } )"
+        was_auto_generated: false
+      - id: formula_latency in seconds
+        name: latency in seconds
+        expr: "safe_divide ( [Latency (us)] , 1000000 )"
+        was_auto_generated: false
+      search_query: "[Timestamp] count [Incident Id] [Timestamp].daily unique count [User] average [formula_latency in seconds] [Timestamp].'last 2 months' [Timestamp].'this month' [URL].data/reportbook [URL].tspublic/v1/pinboarddata [URL].data/answerbook/export [URL].answer"
+      answer_columns:
+      - name: Average latency in seconds
+      - name: Day(Timestamp)
+      - name: Number of Incident Id
+      - name: Unique Number of User
+      table:
+        table_columns:
+        - column_id: Average latency in seconds
+          headline_aggregation: AVERAGE
+        - column_id: Day(Timestamp)
+          headline_aggregation: MIN-MAX
+        - column_id: Number of Incident Id
+          headline_aggregation: AVERAGE
+        - column_id: Unique Number of User
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Day(Timestamp)
+        - Number of Incident Id
+        - Unique Number of User
+        - Average latency in seconds
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Average latency in seconds
+        - column_id: Day(Timestamp)
+        axis_configs:
+        - x:
+          - Day(Timestamp)
+          "y":
+          - Average latency in seconds
+        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0,\"isZoomed\":false,\"showLinearRegressionLine\":true},\"axisProperties\":{\"8901dec7-0fee-4c9a-ba68-dd44cb04189e\":{\"linkedColumns\":[\"Average latency in seconds\"],\"axisType\":\"Y\",\"isOpposite\":false},\"a1cdfcae-f821-43b7-8924-7c216237cc45\":{\"linkedColumns\":[\"Day(Timestamp)\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Average latency in seconds\":\"#8C62F5\",\"highcharts-regression\":\"#06BF7F\"},\"version\":\"V2.2\",\"columnProperties\":{\"Day(Timestamp)\":{},\"Number of Incident Id\":{},\"Average latency in seconds\":{\"dataLabels\":false}}}"
+      display_mode: CHART_MODE
+    viz_guid: b63c4ed8-4c4f-48ce-bbb2-abd168f452e9
+  - id: Viz_2
+    answer:
+      name: Average Latency Trend
+      description: Last 60 Days
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_30-59sec+ latency
+        name: 30-59sec+ latency
+        expr: "group_aggregate ( count ( [Incident Id] ) , query_groups ( ) , { [formula_latency in seconds] > 29 and [formula_latency in seconds] < 59 } )"
+        was_auto_generated: false
+      - id: formula_60 sec+ latency
+        name: 60 sec+ latency
+        expr: "group_aggregate ( count ( [Incident Id] ) , query_groups ( ) , { [formula_latency in seconds] > 59 } )"
+        was_auto_generated: false
+      - id: formula_latency in seconds
+        name: latency in seconds
+        expr: "safe_divide ( [Latency (us)] , 1000000 )"
+        was_auto_generated: false
+      search_query: "[Timestamp] [Timestamp].weekly count [Incident Id] [Timestamp].weekly unique count [User] average [formula_latency in seconds] [Timestamp].'last 60 days' [Timestamp].today [URL] = [URL].data/reportbook [URL].tspublic/v1/pinboarddata [URL].data/answerbook/export [URL].answer"
+      answer_columns:
+      - name: Average latency in seconds
+      - name: Number of Incident Id
+      - name: Unique Number of User
+      - name: Week(Timestamp)
+      table:
+        table_columns:
+        - column_id: Average latency in seconds
+          headline_aggregation: AVERAGE
+        - column_id: Number of Incident Id
+          headline_aggregation: AVERAGE
+        - column_id: Unique Number of User
+          headline_aggregation: TABLE_AGGR
+        - column_id: Week(Timestamp)
+          headline_aggregation: MIN-MAX
+        ordered_column_ids:
+        - Week(Timestamp)
+        - Number of Incident Id
+        - Unique Number of User
+        - Average latency in seconds
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Average latency in seconds
+        - column_id: Week(Timestamp)
+        axis_configs:
+        - x:
+          - Week(Timestamp)
+          "y":
+          - Average latency in seconds
+        client_state: "{\"seriesColors\":{\"Average latency in seconds\":\"#f04152\",\"highcharts-regression\":\"#2E75F0\"},\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":1.0,\"isZoomed\":false,\"showLinearRegressionLine\":true},\"axisProperties\":{\"8901dec7-0fee-4c9a-ba68-dd44cb04189e\":{\"linkedColumns\":[\"Average latency in seconds\"],\"axisType\":\"Y\",\"isOpposite\":false},\"a1cdfcae-f821-43b7-8924-7c216237cc45\":{\"linkedColumns\":[\"Week(Timestamp)\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Average latency in seconds\":\"#2E75F0\",\"highcharts-regression\":\"#2E75F0\"},\"version\":\"V2.2\",\"columnProperties\":{\"Week(Timestamp)\":{},\"Number of Incident Id\":{},\"Average latency in seconds\":{\"dataLabels\":false}}}"
+      display_mode: CHART_MODE
+    viz_guid: 70dbb266-c296-41cc-bf6b-c7bbad37e606
+  - id: Viz_3
+    answer:
+      name: Data Query Latency Ratio (secs) Last 7 days
+      description: |-
+        0 = % requests in "zero to one second"
+        1 = % requests in "one to two seconds"
+        etc.
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Latency Bucket (seconds)
+        name: Latency Bucket (seconds)
+        expr: "if ( floor ( log2 ( [Latency (us)] / 1000000 ) ) < 0 ) then 0 else exp2 ( floor ( log2 ( [Latency (us)] / 1000000 ) ) )"
+        was_auto_generated: false
+      - id: formula_Request Percentage
+        name: Request Percentage
+        expr: "( safe_divide ( count ( [Incident Id] ) , group_count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error Percentage
+        name: Error Percentage
+        expr: "( safe_divide ( sum ( [formula_Error] ) , count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error
+        name: Error
+        expr: "if ( ( [HTTP Response Code] / 100 ) >= 4 ) then 1 else 0"
+        was_auto_generated: false
+      - id: formula_Is Data Query
+        name: Is Data Query
+        expr: "if ( [Database Latency (us)] > 0 ) then true else false"
+        was_auto_generated: false
+      - id: formula_Is Data Query Ad-hoc
+        name: Is Data Query Ad-hoc
+        expr: "if ( [URL] = 'data/reportbook' ) then true else false"
+        was_auto_generated: false
+      - id: formula_Latency (Seconds)
+        name: Latency (Seconds)
+        expr: "[Latency (us)] / 1000000"
+        was_auto_generated: false
+      search_query: "[formula_Request Percentage] by [formula_Latency Bucket (seconds)] [Timestamp].'last 7 days'"
+      answer_columns:
+      - name: Latency Bucket (seconds)
+      - name: Request Percentage
+      table:
+        table_columns:
+        - column_id: Latency Bucket (seconds)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Request Percentage
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Latency Bucket (seconds)
+        - Request Percentage
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Latency Bucket (seconds)\",\"columnProperty\": {}},{\"columnId\": \"Request Percentage\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Latency Bucket (seconds)
+        - column_id: Request Percentage
+        axis_configs:
+        - x:
+          - Latency Bucket (seconds)
+          "y":
+          - Request Percentage
+        client_state: "{\"seriesColors\":{\"Request Percentage\":\"#b5ecf2\"},\"chartProperties\":{\"gridLines\":{\"yGridlineEnabled\":true},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0,\"allLabels\":true},\"axisProperties\":{\"2d08db99-7958-49d7-856f-3ef549faec31\":{\"linkedColumns\":[\"Request Percentage\"],\"axisType\":\"Y\",\"isOpposite\":false,\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":1.0},\"isCategoryEditable\":true}},\"bc1b6daf-5782-4dd6-8305-ec479daa5e54\":{\"linkedColumns\":[\"Latency Bucket (seconds)\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Request Percentage\":\"#747E8C\"},\"version\":\"V3\",\"columnProperties\":{\"Latency Bucket (seconds)\":{},\"Request Percentage\":{\"dataLabels\":true,\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Latency Bucket (seconds)\",\"columnProperty\": {}},{\"columnId\": \"Request Percentage\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"2d08db99-7958-49d7-856f-3ef549faec31\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Request Percentage\"],\"format\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 1.0},\"isCategoryEditable\": true},\"isOpposite\": false}},{\"id\": \"bc1b6daf-5782-4dd6-8305-ec479daa5e54\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Latency Bucket (seconds)\"]}}],\"seriesColors\": [{\"serieName\": \"Request Percentage\",\"color\": \"#b5ecf2\"}],\"systemSeriesColors\": [{\"serieName\": \"Request Percentage\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: e0725e30-c50b-486c-b5eb-5b226665bc72
+  - id: Viz_4
+    answer:
+      name: Data Query Latency Ratio (secs) Last 30 days
+      description: |-
+        0 = % requests in "zero to one second"
+        1 = % requests in "one to two seconds"
+        etc.
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Latency Bucket (seconds)
+        name: Latency Bucket (seconds)
+        expr: "if ( floor ( log2 ( [Latency (us)] / 1000000 ) ) < 0 ) then 0 else exp2 ( floor ( log2 ( [Latency (us)] / 1000000 ) ) )"
+        was_auto_generated: false
+      - id: formula_Request Percentage
+        name: Request Percentage
+        expr: "( safe_divide ( count ( [Incident Id] ) , group_count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error Percentage
+        name: Error Percentage
+        expr: "( safe_divide ( sum ( [formula_Error] ) , count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error
+        name: Error
+        expr: "if ( ( [HTTP Response Code] / 100 ) >= 4 ) then 1 else 0"
+        was_auto_generated: false
+      - id: formula_Is Data Query
+        name: Is Data Query
+        expr: "if ( [Database Latency (us)] > 0 ) then true else false"
+        was_auto_generated: false
+      - id: formula_Is Data Query Ad-hoc
+        name: Is Data Query Ad-hoc
+        expr: "if ( [URL] = 'data/reportbook' ) then true else false"
+        was_auto_generated: false
+      - id: formula_Latency (Seconds)
+        name: Latency (Seconds)
+        expr: "[Latency (us)] / 1000000"
+        was_auto_generated: false
+      search_query: "[formula_Request Percentage] by [formula_Latency Bucket (seconds)] [Timestamp].'last 30 days'"
+      answer_columns:
+      - name: Latency Bucket (seconds)
+      - name: Request Percentage
+      table:
+        table_columns:
+        - column_id: Latency Bucket (seconds)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Request Percentage
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Latency Bucket (seconds)
+        - Request Percentage
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Latency Bucket (seconds)\",\"columnProperty\": {}},{\"columnId\": \"Request Percentage\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Latency Bucket (seconds)
+        - column_id: Request Percentage
+        axis_configs:
+        - x:
+          - Latency Bucket (seconds)
+          "y":
+          - Request Percentage
+        client_state: "{\"seriesColors\":{\"Request Percentage\":\"#b5ecf2\"},\"chartProperties\":{\"gridLines\":{\"yGridlineEnabled\":true},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0,\"allLabels\":true},\"axisProperties\":{\"2d08db99-7958-49d7-856f-3ef549faec31\":{\"linkedColumns\":[\"Request Percentage\"],\"axisType\":\"Y\",\"isOpposite\":false,\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":1.0},\"isCategoryEditable\":true}},\"bc1b6daf-5782-4dd6-8305-ec479daa5e54\":{\"linkedColumns\":[\"Latency Bucket (seconds)\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Request Percentage\":\"#747E8C\"},\"version\":\"V3\",\"columnProperties\":{\"Latency Bucket (seconds)\":{},\"Request Percentage\":{\"dataLabels\":true,\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Latency Bucket (seconds)\",\"columnProperty\": {}},{\"columnId\": \"Request Percentage\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"2d08db99-7958-49d7-856f-3ef549faec31\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Request Percentage\"],\"format\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 1.0},\"isCategoryEditable\": true},\"isOpposite\": false}},{\"id\": \"bc1b6daf-5782-4dd6-8305-ec479daa5e54\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Latency Bucket (seconds)\"]}}],\"seriesColors\": [{\"serieName\": \"Request Percentage\",\"color\": \"#b5ecf2\"}],\"systemSeriesColors\": [{\"serieName\": \"Request Percentage\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: e655de37-0c83-4aa0-a4cf-32d0b0e827d8
+  - id: Viz_5
+    answer:
+      name: Average Data Request Latency - Last 90 Days
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Latency (Seconds)
+        name: Latency (Seconds)
+        expr: "[Latency (us)] / 1000000"
+        was_auto_generated: false
+      - id: formula_Error Percentage
+        name: Error Percentage
+        expr: "( safe_divide ( sum ( [formula_Error] ) , count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error
+        name: Error
+        expr: "if ( ( [HTTP Response Code] / 100 ) >= 4 ) then 1 else 0"
+        was_auto_generated: false
+      - id: formula_Is Data Query
+        name: Is Data Query
+        expr: "if ( [Database Latency (us)] > 0 ) then true else false"
+        was_auto_generated: false
+      - id: formula_Is Data Query Ad-hoc
+        name: Is Data Query Ad-hoc
+        expr: "if ( [URL] = 'data/reportbook' ) then true else false"
+        was_auto_generated: false
+      - id: formula_Latency Bucket (seconds)
+        name: Latency Bucket (seconds)
+        expr: "if ( floor ( log2 ( [Latency (us)] / 1000000 ) ) < 0 ) then 0 else exp2 ( floor ( log2 ( [Latency (us)] / 1000000 ) ) )"
+        was_auto_generated: false
+      - id: formula_Request Percentage
+        name: Request Percentage
+        expr: "( safe_divide ( count ( [Incident Id] ) , group_count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      search_query: "[Timestamp].'last 90 days' average [formula_Latency (Seconds)] [Timestamp].daily"
+      answer_columns:
+      - name: Average Latency (Seconds)
+      - name: Day(Timestamp)
+      table:
+        table_columns:
+        - column_id: Average Latency (Seconds)
+          headline_aggregation: TABLE_AGGR
+        - column_id: Day(Timestamp)
+          headline_aggregation: MIN-MAX
+        ordered_column_ids:
+        - Day(Timestamp)
+        - Average Latency (Seconds)
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Day(Timestamp)\",\"columnProperty\": {}},{\"columnId\": \"Average Latency (Seconds)\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Average Latency (Seconds)
+          conditional_formatting:
+            rule:
+            - range:
+                min: 8.0
+                max: 0.0
+              color: '#ff0000'
+              plotAsBand: false
+        - column_id: Day(Timestamp)
+        axis_configs:
+        - x:
+          - Day(Timestamp)
+          "y":
+          - Average Latency (Seconds)
+        client_state: "{\"seriesColors\":{\"Average Latency (Seconds)\":\"#a2acba\",\"highcharts-regression\":\"#48D1E0\"},\"chartProperties\":{\"gridLines\":{\"yGridlineEnabled\":true},\"showRoundedNumbers\":true,\"responsiveLayoutPreference\":1.0,\"showLinearRegressionLine\":true,\"chartSpecific\":{\"markersEnabled\":false}},\"axisProperties\":{\"12f27d39-0bff-4611-a882-3de48f648348\":{\"linkedColumns\":[\"Average Latency (Seconds)\"],\"axisType\":\"Y\",\"isOpposite\":false},\"ae9bb4a7-9ad1-46e5-bbcd-f36f516064dc\":{\"linkedColumns\":[\"Day(Timestamp)\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Average Latency (Seconds)\":\"#48D1E0\",\"highcharts-regression\":\"#48D1E0\"},\"version\":\"V3\",\"columnProperties\":{\"Day(Timestamp)\":{},\"Average Latency (Seconds)\":{},\"5b468997-5cdc-42d7-9da2-fe9608f6e425\":{\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"showLinearRegressionLine\": true,\"chartSpecific\": {\"markersEnabled\": false,\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Day(Timestamp)\",\"columnProperty\": {}},{\"columnId\": \"Average Latency (Seconds)\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 8.0,\"max\": 0.0},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#ff0000\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false}]}}}],\"axisProperties\": [{\"id\": \"12f27d39-0bff-4611-a882-3de48f648348\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Latency (Seconds)\"],\"isOpposite\": false}},{\"id\": \"ae9bb4a7-9ad1-46e5-bbcd-f36f516064dc\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Timestamp)\"]}}],\"seriesColors\": [{\"serieName\": \"Average Latency (Seconds)\",\"color\": \"#a2acba\"},{\"serieName\": \"highcharts-regression\",\"color\": \"#48D1E0\"}],\"systemSeriesColors\": [{\"serieName\": \"Average Latency (Seconds)\",\"color\": \"#48D1E0\"},{\"serieName\": \"highcharts-regression\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d2d3b90d-f3fd-4ad2-8248-07e76109c93d
+  - id: Viz_6
+    answer:
+      name: Data Requests Hourly - Last 30 Days
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Error Percentage
+        name: Error Percentage
+        expr: "( safe_divide ( sum ( [formula_Error] ) , count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error
+        name: Error
+        expr: "if ( ( [HTTP Response Code] / 100 ) >= 4 ) then 1 else 0"
+        was_auto_generated: false
+      - id: formula_Is Data Query
+        name: Is Data Query
+        expr: "if ( [Database Latency (us)] > 0 ) then true else false"
+        was_auto_generated: false
+      - id: formula_Is Data Query Ad-hoc
+        name: Is Data Query Ad-hoc
+        expr: "if ( [URL] = 'data/reportbook' ) then true else false"
+        was_auto_generated: false
+      - id: formula_Latency (Seconds)
+        name: Latency (Seconds)
+        expr: "[Latency (us)] / 1000000"
+        was_auto_generated: false
+      - id: formula_Latency Bucket (seconds)
+        name: Latency Bucket (seconds)
+        expr: "if ( floor ( log2 ( [Latency (us)] / 1000000 ) ) < 0 ) then 0 else exp2 ( floor ( log2 ( [Latency (us)] / 1000000 ) ) )"
+        was_auto_generated: false
+      - id: formula_Request Percentage
+        name: Request Percentage
+        expr: "( safe_divide ( count ( [Incident Id] ) , group_count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      search_query: "[Timestamp].'last 30 days' count [Incident Id] [Timestamp].hourly"
+      answer_columns:
+      - name: Hour(Timestamp)
+      - name: Number of Incident Id
+      table:
+        table_columns:
+        - column_id: Hour(Timestamp)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Number of Incident Id
+          headline_aggregation: AVERAGE
+        ordered_column_ids:
+        - Hour(Timestamp)
+        - Number of Incident Id
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Hour(Timestamp)\",\"columnProperty\": {}},{\"columnId\": \"Number of Incident Id\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Hour(Timestamp)
+        - column_id: Number of Incident Id
+        axis_configs:
+        - x:
+          - Hour(Timestamp)
+          "y":
+          - Number of Incident Id
+        client_state: "{\"seriesColors\":{\"Number of Incident Id\":\"#a2acba\",\"highcharts-regression\":\"#06BF7F\"},\"chartProperties\":{\"gridLines\":{\"yGridlineEnabled\":true},\"showRoundedNumbers\":true,\"responsiveLayoutPreference\":1.0,\"showLinearRegressionLine\":true,\"chartSpecific\":{}},\"axisProperties\":{\"31bc072d-c0fa-459a-807b-e332ae471352\":{\"linkedColumns\":[\"Number of Incident Id\"],\"axisType\":\"Y\",\"isOpposite\":false},\"1be22914-500f-47d6-b5b2-4c71d72cef25\":{\"linkedColumns\":[\"Hour(Timestamp)\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Number of Incident Id\":\"#48D1E0\",\"highcharts-regression\":\"#06BF7F\"},\"version\":\"V3\",\"columnProperties\":{\"Hour(Timestamp)\":{},\"Number of Incident Id\":{},\"5b468997-5cdc-42d7-9da2-fe9608f6e425\":{\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"showLinearRegressionLine\": true,\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Hour(Timestamp)\",\"columnProperty\": {}},{\"columnId\": \"Number of Incident Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"31bc072d-c0fa-459a-807b-e332ae471352\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Incident Id\"],\"isOpposite\": false}},{\"id\": \"1be22914-500f-47d6-b5b2-4c71d72cef25\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Hour(Timestamp)\"]}}],\"seriesColors\": [{\"serieName\": \"Number of Incident Id\",\"color\": \"#a2acba\"},{\"serieName\": \"highcharts-regression\",\"color\": \"#06BF7F\"}],\"systemSeriesColors\": [{\"serieName\": \"Number of Incident Id\",\"color\": \"#48D1E0\"},{\"serieName\": \"highcharts-regression\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 66416e90-2880-4197-bae7-cdb61f6fb40d
+  - id: Viz_7
+    answer:
+      name: '% Data Errors Daily - Last 30 Days'
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Error Percentage
+        name: Error Percentage
+        expr: "( safe_divide ( sum ( [formula_Error] ) , count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error
+        name: Error
+        expr: "if ( ( [HTTP Response Code] / 100 ) >= 4 ) then 1 else 0"
+        was_auto_generated: false
+      - id: formula_Is Data Query
+        name: Is Data Query
+        expr: "if ( [Database Latency (us)] > 0 ) then true else false"
+        was_auto_generated: false
+      - id: formula_Is Data Query Ad-hoc
+        name: Is Data Query Ad-hoc
+        expr: "if ( [URL] = 'data/reportbook' ) then true else false"
+        was_auto_generated: false
+      - id: formula_Latency (Seconds)
+        name: Latency (Seconds)
+        expr: "[Latency (us)] / 1000000"
+        was_auto_generated: false
+      - id: formula_Latency Bucket (seconds)
+        name: Latency Bucket (seconds)
+        expr: "if ( floor ( log2 ( [Latency (us)] / 1000000 ) ) < 0 ) then 0 else exp2 ( floor ( log2 ( [Latency (us)] / 1000000 ) ) )"
+        was_auto_generated: false
+      - id: formula_Request Percentage
+        name: Request Percentage
+        expr: "( safe_divide ( count ( [Incident Id] ) , group_count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      search_query: "[Timestamp].'last 30 days' [Timestamp].daily [formula_Error Percentage]"
+      answer_columns:
+      - name: Day(Timestamp)
+      - name: Error Percentage
+      table:
+        table_columns:
+        - column_id: Day(Timestamp)
+          headline_aggregation: MIN-MAX
+        - column_id: Error Percentage
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Day(Timestamp)
+        - Error Percentage
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Day(Timestamp)
+        - column_id: Error Percentage
+        axis_configs:
+        - x:
+          - Day(Timestamp)
+          "y":
+          - Error Percentage
+        client_state: "{\"seriesColors\":{\"d45b70cc-6e4f-4670-9c6f-890ee30182d4\":\"#a2acba\",\"highcharts-regression\":\"#06BF7F\",\"Error Percentage\":\"#f47e89\"},\"chartProperties\":{\"gridLines\":{\"yGridlineEnabled\":true},\"showRoundedNumbers\":true,\"responsiveLayoutPreference\":1.0,\"showLinearRegressionLine\":true,\"chartSpecific\":{}},\"axisProperties\":{\"48149eb9-328d-4fa1-a565-8160c8493a35\":{\"linkedColumns\":[\"Error Percentage\"],\"axisType\":\"Y\",\"isOpposite\":false,\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}},\"4f0f58d2-13cc-402b-8695-c95a909fff38\":{\"linkedColumns\":[\"Day(Timestamp)\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"d45b70cc-6e4f-4670-9c6f-890ee30182d4\":\"#48D1E0\",\"highcharts-regression\":\"#06BF7F\",\"Error Percentage\":\"#06BF7F\"},\"version\":\"V3\",\"columnProperties\":{\"Day(Timestamp)\":{},\"Error Percentage\":{\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}},\"5b468997-5cdc-42d7-9da2-fe9608f6e425\":{\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}}}}"
+      display_mode: CHART_MODE
+    viz_guid: ef64defb-1f5e-41ec-900f-573683eae486
+  - id: Viz_8
+    answer:
+      name: Average Latency (Seconds) by User - Last 90 days
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Latency (Seconds)
+        name: Latency (Seconds)
+        expr: "[Latency (us)] / 1000000"
+        was_auto_generated: false
+      - id: formula_Error Percentage
+        name: Error Percentage
+        expr: "( safe_divide ( sum ( [formula_Error] ) , count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error
+        name: Error
+        expr: "if ( ( [HTTP Response Code] / 100 ) >= 4 ) then 1 else 0"
+        was_auto_generated: false
+      - id: formula_Is Data Query
+        name: Is Data Query
+        expr: "if ( [Database Latency (us)] > 0 ) then true else false"
+        was_auto_generated: false
+      - id: formula_Is Data Query Ad-hoc
+        name: Is Data Query Ad-hoc
+        expr: "if ( [URL] = 'data/reportbook' ) then true else false"
+        was_auto_generated: false
+      - id: formula_Latency Bucket (seconds)
+        name: Latency Bucket (seconds)
+        expr: "if ( floor ( log2 ( [Latency (us)] / 1000000 ) ) < 0 ) then 0 else exp2 ( floor ( log2 ( [Latency (us)] / 1000000 ) ) )"
+        was_auto_generated: false
+      - id: formula_Request Percentage
+        name: Request Percentage
+        expr: "( safe_divide ( count ( [Incident Id] ) , group_count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      search_query: "[Timestamp].'last 90 days' average [formula_Latency (Seconds)] [User] sort by average [formula_Latency (Seconds)] descending"
+      answer_columns:
+      - name: Average Latency (Seconds)
+      - name: User
+      table:
+        table_columns:
+        - column_id: Average Latency (Seconds)
+          headline_aggregation: TABLE_AGGR
+        - column_id: User
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - User
+        - Average Latency (Seconds)
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Average Latency (Seconds)\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Average Latency (Seconds)
+          conditional_formatting:
+            rule:
+            - range:
+                min: 0.0
+                max: 4.0
+              color: '#bec6d0'
+              plotAsBand: false
+            - range:
+                min: 4.0
+                max: 6.0
+              color: '#ffa97e'
+              plotAsBand: false
+            - range:
+                min: 6.0
+                max: 0.0
+              color: '#f47e89'
+              plotAsBand: false
+        - column_id: User
+        axis_configs:
+        - x:
+          - User
+          "y":
+          - Average Latency (Seconds)
+        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"responsiveLayoutPreference\":2.0,\"chartSpecific\":{}},\"axisProperties\":{\"62e0feac-552d-4907-97a5-a3bfd2ce6594\":{\"linkedColumns\":[\"Average Latency (Seconds)\"],\"axisType\":\"Y\",\"isOpposite\":false},\"aed572ba-5caa-49d4-b66f-80b6259f8bad\":{\"linkedColumns\":[\"User\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Average Latency (Seconds)\":\"#48D1E0\"},\"version\":\"V3\",\"columnProperties\":{\"User\":{},\"Average Latency (Seconds)\":{},\"5b468997-5cdc-42d7-9da2-fe9608f6e425\":{\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}},\"ba865695-eb3f-43dc-8f30-a4f9eec34d56\":{\"format\":{\"category\":\"PERCENTAGE\",\"percentageFormatConfig\":{\"decimals\":2.0},\"isCategoryEditable\":true}}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_OFF\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Average Latency (Seconds)\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 0.0,\"max\": 4.0},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#bec6d0\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false},{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 4.0,\"max\": 6.0},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#ffa97e\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false},{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 6.0,\"max\": 0.0},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#f47e89\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false}]}}}],\"axisProperties\": [{\"id\": \"62e0feac-552d-4907-97a5-a3bfd2ce6594\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Latency (Seconds)\"],\"isOpposite\": false}},{\"id\": \"aed572ba-5caa-49d4-b66f-80b6259f8bad\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Average Latency (Seconds)\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 1cc9e9fc-5fe0-4761-9cc7-dc66c0d71cd0
+  - id: Viz_9
+    answer:
+      name: Pinboard Latency - Last 7 Days
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Error Percentage
+        name: Error Percentage
+        expr: "( safe_divide ( sum ( [formula_Error] ) , count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error
+        name: Error
+        expr: "if ( ( [HTTP Response Code] / 100 ) >= 4 ) then 1 else 0"
+        was_auto_generated: false
+      - id: formula_Is Data Query
+        name: Is Data Query
+        expr: "if ( [Database Latency (us)] > 0 ) then true else false"
+        was_auto_generated: false
+      - id: formula_Is Data Query Ad-hoc
+        name: Is Data Query Ad-hoc
+        expr: "if ( [URL] = 'data/reportbook' ) then true else false"
+        was_auto_generated: false
+      - id: formula_Latency (Seconds)
+        name: Latency (Seconds)
+        expr: "[Latency (us)] / 1000000"
+        was_auto_generated: false
+      - id: formula_Latency Bucket (seconds)
+        name: Latency Bucket (seconds)
+        expr: "if ( floor ( log2 ( [Latency (us)] / 1000000 ) ) < 0 ) then 0 else exp2 ( floor ( log2 ( [Latency (us)] / 1000000 ) ) )"
+        was_auto_generated: false
+      - id: formula_Request Percentage
+        name: Request Percentage
+        expr: "( safe_divide ( count ( [Incident Id] ) , group_count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      search_query: "[Timestamp] [Timestamp].detailed [Incident Id] [URL] = 'data/reportbook' [User] [Answer Book Name] average [formula_Latency (Seconds)] sort by average [formula_Latency (Seconds)] descending [Timestamp].'last 7 days' [User] != '{null}'"
+      answer_columns:
+      - name: Answer Book Name
+      - name: Average Latency (Seconds)
+      - name: Incident Id
+      - name: Timestamp
+      - name: User
+      table:
+        table_columns:
+        - column_id: Answer Book Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Average Latency (Seconds)
+          headline_aggregation: TABLE_AGGR
+        - column_id: Incident Id
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Timestamp
+          headline_aggregation: MIN-MAX
+        - column_id: User
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Timestamp
+        - Incident Id
+        - User
+        - Answer Book Name
+        - Average Latency (Seconds)
+        client_state: "{\"widthState\":{\"0ba432e8-1c24-4ef5-9e5e-226122898f89\":131.0,\"Incident Id\":308.0,\"Answer Book Name\":282.0,\"User\":315.0},\"wrapTableHeader\":true}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Average Latency (Seconds)
+        - column_id: Timestamp
+        axis_configs:
+        - x:
+          - Timestamp
+          "y":
+          - Average Latency (Seconds)
+        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"responsiveLayoutPreference\":1.0,\"chartSpecific\":{}},\"axisProperties\":{\"08c96e94-89cc-445f-8cfc-2d527b90f259\":{\"linkedColumns\":[\"Average Latency (Seconds)\"],\"axisType\":\"Y\",\"isOpposite\":false},\"92718a56-4bf5-4730-b5c5-942f564fa6fe\":{\"linkedColumns\":[\"Timestamp\"],\"axisType\":\"X\"}},\"version\":\"V3\",\"columnProperties\":{\"Timestamp\":{},\"Incident Id\":{},\"User\":{},\"Answer Book Name\":{},\"Average Latency (Seconds)\":{}}}"
+      display_mode: TABLE_MODE
+    viz_guid: 1ce28be6-0cc9-43cd-872e-b40fa9110178
+  - id: Viz_10
+    answer:
+      name: Search Latency - Last 7 Days
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+      formulas:
+      - id: formula_Error Percentage
+        name: Error Percentage
+        expr: "( safe_divide ( sum ( [formula_Error] ) , count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      - id: formula_Error
+        name: Error
+        expr: "if ( ( [HTTP Response Code] / 100 ) >= 4 ) then 1 else 0"
+        was_auto_generated: false
+      - id: formula_Is Data Query
+        name: Is Data Query
+        expr: "if ( [Database Latency (us)] > 0 ) then true else false"
+        was_auto_generated: false
+      - id: formula_Is Data Query Ad-hoc
+        name: Is Data Query Ad-hoc
+        expr: "if ( [URL] = 'data/reportbook' ) then true else false"
+        was_auto_generated: false
+      - id: formula_Latency (Seconds)
+        name: Latency (Seconds)
+        expr: "[Latency (us)] / 1000000"
+        was_auto_generated: false
+      - id: formula_Latency Bucket (seconds)
+        name: Latency Bucket (seconds)
+        expr: "if ( floor ( log2 ( [Latency (us)] / 1000000 ) ) < 0 ) then 0 else exp2 ( floor ( log2 ( [Latency (us)] / 1000000 ) ) )"
+        was_auto_generated: false
+      - id: formula_Request Percentage
+        name: Request Percentage
+        expr: "( safe_divide ( count ( [Incident Id] ) , group_count ( [Incident Id] ) ) )"
+        was_auto_generated: false
+      search_query: "[Timestamp] [Timestamp].detailed [Incident Id] [User] [Answer Book Name] average [formula_Latency (Seconds)] sort by average [formula_Latency (Seconds)] descending [Timestamp].'last 7 days' [User] != '{null}' [Query Text] [Query Text] != '{null}' [URL]"
+      answer_columns:
+      - name: Answer Book Name
+      - name: Average Latency (Seconds)
+      - name: Incident Id
+      - name: Query Text
+      - name: Timestamp
+      - name: URL
+      - name: User
+      table:
+        table_columns:
+        - column_id: Answer Book Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Average Latency (Seconds)
+          conditional_formatting:
+            rule:
+            - range:
+                min: 4.0
+                max: 6.0
+              color: '#ffa97e'
+              plotAsBand: false
+            - range:
+                min: 6.0
+                max: 0.0
+              color: '#f47e89'
+              plotAsBand: false
+          headline_aggregation: TABLE_AGGR
+        - column_id: Incident Id
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Query Text
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Timestamp
+          headline_aggregation: MIN-MAX
+        - column_id: URL
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: User
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Timestamp
+        - Incident Id
+        - User
+        - Answer Book Name
+        - Query Text
+        - URL
+        - Average Latency (Seconds)
+        client_state: "{\"widthState\":{\"0ba432e8-1c24-4ef5-9e5e-226122898f89\":131.0,\"Incident Id\":176.0,\"User\":187.0,\"Answer Book Name\":180.0,\"Query Text\":249.0},\"wrapTableHeader\":true}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Average Latency (Seconds)
+        - column_id: Timestamp
+        axis_configs:
+        - x:
+          - Timestamp
+          "y":
+          - Average Latency (Seconds)
+        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"responsiveLayoutPreference\":1.0,\"chartSpecific\":{}},\"axisProperties\":{\"08c96e94-89cc-445f-8cfc-2d527b90f259\":{\"linkedColumns\":[\"Average Latency (Seconds)\"],\"axisType\":\"Y\",\"isOpposite\":false},\"92718a56-4bf5-4730-b5c5-942f564fa6fe\":{\"linkedColumns\":[\"Timestamp\"],\"axisType\":\"X\"}},\"version\":\"V3\",\"columnProperties\":{\"Timestamp\":{},\"Incident Id\":{},\"User\":{},\"Answer Book Name\":{},\"Query Text\":{},\"URL\":{},\"Average Latency (Seconds)\":{}}}"
+      display_mode: TABLE_MODE
+    viz_guid: 138b0777-c979-4046-8054-74d9e71319ca
+  filters:
+  - column:
+    - Org Name
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_2
+      size: SMALL
+    - visualization_id: Viz_3
+      size: MEDIUM
+    - visualization_id: Viz_4
+      size: MEDIUM
+    - visualization_id: Viz_5
+      size: MEDIUM
+    - visualization_id: Viz_6
+      size: MEDIUM
+    - visualization_id: Viz_7
+      size: MEDIUM
+    - visualization_id: Viz_8
+      size: MEDIUM
+    - visualization_id: Viz_9
+      size: LARGE
+    - visualization_id: Viz_10
+      size: LARGE
+  ordered_chips:
+  - name: Org Name
+    type: FILTER

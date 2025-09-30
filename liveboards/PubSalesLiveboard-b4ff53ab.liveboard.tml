@@ -1,0 +1,176 @@
+obj_id: PubSalesLiveboard-b4ff53ab
+liveboard:
+  name: Pub Sales Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Pub Sales by Product
+      tables:
+      - id: pub-retail-east
+        name: pub-retail-east
+        obj_id: pub-retail-east-63528f05
+      search_query: "[Product] [Total Sales]"
+      answer_columns:
+      - name: Product
+      - name: Total Total Sales
+      table:
+        table_columns:
+        - column_id: Product
+          show_headline: false
+        - column_id: Total Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Product
+        - Total Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Product
+        - column_id: Total Total Sales
+        axis_configs:
+        - x:
+          - Product
+          "y":
+          - Total Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product\",\"columnProperty\": {}},{\"columnId\": \"45a72e7f-8143-4aaf-8364-330cc0520adb\",\"columnProperty\": {}},{\"columnId\": \"74f5453a-5c95-441b-b4cd-afebface821c\",\"columnProperty\": {}},{\"columnId\": \"Total Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"87cb483e-144f-45b7-98f0-9e1bef8bb679\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Sales\"],\"isOpposite\": false}},{\"id\": \"bdc7409f-42c3-4edf-b32f-4e936f9cd91e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a4f535c7-4025-4962-8e78-a4d3f8039716\",\"color\": \"#B6313E\"},{\"serieName\": \"520140cb-c23d-4dbb-be13-bd01bfbbb27d\",\"color\": \"#B6313E\"},{\"serieName\": \"Total Total Sales\",\"color\": \"#B6313E\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Pub Sales by Product
+    viz_guid: e1f70f26-60df-4a68-8a37-d40cc9bf1bbf
+  - id: Viz_2
+    answer:
+      name: Pub Quantity by Product
+      tables:
+      - id: pub-retail-east
+        name: pub-retail-east
+        obj_id: pub-retail-east-63528f05
+      search_query: "[Product] [Total Quantity Purchased]"
+      answer_columns:
+      - name: Product
+      - name: Total Total Quantity Purchased
+      table:
+        table_columns:
+        - column_id: Product
+          show_headline: false
+        - column_id: Total Total Quantity Purchased
+          show_headline: false
+        ordered_column_ids:
+        - Product
+        - Total Total Quantity Purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Product
+        - column_id: Total Total Quantity Purchased
+        axis_configs:
+        - x:
+          - Product
+          "y":
+          - Total Total Quantity Purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product\",\"columnProperty\": {}},{\"columnId\": \"a01d38a6-5254-4657-bc1a-637076a87323\",\"columnProperty\": {}},{\"columnId\": \"3e1f024d-64d3-4cc2-b237-555e8a3a4aaf\",\"columnProperty\": {}},{\"columnId\": \"Total Total Quantity Purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2fa5e9f5-3b07-4d75-a054-8a13c142f1ac\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Quantity Purchased\"],\"isOpposite\": false}},{\"id\": \"d4fa1ae4-67fd-4945-a4ea-82fb4e5a6bf1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a4f535c7-4025-4962-8e78-a4d3f8039716\",\"color\": \"#B6313E\"},{\"serieName\": \"520140cb-c23d-4dbb-be13-bd01bfbbb27d\",\"color\": \"#B6313E\"},{\"serieName\": \"7393093e-61dd-498a-bd14-350efe9de401\",\"color\": \"#B6313E\"},{\"serieName\": \"Total Total Quantity Purchased\",\"color\": \"#B6313E\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Pub Quantity by Product
+    viz_guid: 539e4b9c-0257-44c0-acf2-7a68513a2763
+  - id: Viz_3
+    answer:
+      name: Total Total Sales by Region
+      tables:
+      - id: pub-retail-east
+        name: pub-retail-east
+        obj_id: pub-retail-east-63528f05
+      search_query: "[Region] [Total Sales]"
+      answer_columns:
+      - name: Region
+      - name: Total Total Sales
+      table:
+        table_columns:
+        - column_id: Region
+          show_headline: false
+        - column_id: Total Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Region
+        - Total Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Region
+        - column_id: Total Total Sales
+        axis_configs:
+        - x:
+          - Region
+          "y":
+          - Total Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Total Sales\",\"columnProperty\": {}},{\"columnId\": \"06e437d2-e1b1-4dd1-83d1-01d5ac1031a2\",\"columnProperty\": {}},{\"columnId\": \"69462754-82b3-4988-870f-e0428c83a9f9\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"fcfe4e4c-92d5-45b5-b6fd-338ec7f9f9ed\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Sales\"],\"isOpposite\": false}},{\"id\": \"42e97193-542f-46f1-85c9-43f15f8f3417\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Total Sales\",\"color\": \"#B6313E\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 13376336-fd00-4e24-b933-f59fe092553d
+  - id: Viz_4
+    answer:
+      name: Total sales by HTML Tag Test
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      formulas:
+      - id: formula_HTML Tag Test
+        name: HTML Tag Test
+        expr: "concat ( \"<span data-random='\" , to_string ( [sales] ) , \"'>\" , [item type] , \"</span>\" )"
+        was_auto_generated: false
+      - id: formula_HTML Test
+        name: HTML Test
+        expr: "concat ( \"{caption}\" , [item type] , \"{/caption}\" , \"./#/insights/answer?foo=\" , to_string ( [sales] ) )"
+        was_auto_generated: false
+      search_query: "[sales] [formula_HTML Tag Test]"
+      answer_columns:
+      - name: HTML Tag Test
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: HTML Tag Test
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - HTML Tag Test
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: HTML Tag Test
+        - column_id: Total sales
+        axis_configs:
+        - x:
+          - HTML Tag Test
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"HTML Tag Test\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2e4ba6c2-2b95-401d-90fa-b88a01132097\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"6456d71b-1a1e-4f83-a837-c689caf47e85\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"HTML Tag Test\"]}}],\"systemSeriesColors\": [{\"serieName\": \"52522263-bae0-44a4-bcb6-8882130fe270\",\"color\": \"#B6313E\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 279f7c68-d8f1-499f-8d28-64ed5e2a1489
+  filters:
+  - column:
+    - pub-retail-east::City
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
+    - visualization_id: Viz_2
+      size: MEDIUM
+    - visualization_id: Viz_3
+      size: MEDIUM
+  ordered_chips:
+  - name: pub-retail-east::City
+    type: FILTER
