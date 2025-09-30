@@ -2,6 +2,7 @@ import os
 import requests.exceptions
 import csv
 import json
+import time
 
 from thoughtspot_rest_api_v1 import *
 
@@ -16,6 +17,19 @@ author_filter = os.environ.get('AUTHOR_FILTER')
 tag_filter = os.environ.get('TAG_FILTER')
 record_size = os.environ.get('RECORD_SIZE_LIMIT')
 object_type = os.environ.get('OBJECT_TYPE')
+
+#
+# Last run file for limiting file download
+#
+
+last_run_filename = "last_download_runtime.txt"
+last_run_epoch = None
+try: 
+    with open(file=last_run_filename, mode='r') as f:
+        last_run_epoch = int(f.readlines()[0])
+except:
+    pass
+
 
 # full_access_token = os.environ.get('TS_TOKEN')  #  Tokens are tied to a particular Org, so useful in an environment with only a few Orgs but not single-tenant
 
@@ -226,5 +240,11 @@ def download_objects():
 # Run the download routines based on the choices
 download_objects()
 
+current_epoch_time_utc_int = int(time.time())
+try: 
+    with open(file=last_run_filename, mode='w') as f:
+        f.write(current_epoch_time_utc_int)
+except:
+    pass
 
 
