@@ -241,9 +241,11 @@ def download_objects():
 download_objects()
 
 current_epoch_time_utc_int = int(time.time())
+print("Current epoch")
+print(current_epoch_time_utc_int)
 try: 
     with open(file=last_run_filename, mode='w') as f:
-        f.write(current_epoch_time_utc_int)
+        f.write(str(current_epoch_time_utc_int))
 except:
     pass
 
