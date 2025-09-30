@@ -130,7 +130,7 @@ def export_tml_with_obj_id(guid:Optional[str] = None,
             # Save the file with {obj_type}s/{obj_id}.{type}.{tml}
             # Feel free to change directory naming structure to not have 's' at end
             directory = "{}s".format(obj_type)
-            filename = "{}s/{}.{}.tml".format(directory, obj_id, obj_type)
+            filename = "{}/{}.{}.tml".format(directory, obj_id, obj_type)
             try: 
                 with open(file=filename, mode='w') as f:
                     f.write(yaml_tml[0]['edoc'])
