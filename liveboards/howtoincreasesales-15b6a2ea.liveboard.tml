@@ -1,0 +1,227 @@
+obj_id: howtoincreasesales-15b6a2ea
+liveboard:
+  name: how to increase sales ?
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: What are the total sales for each product?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [product]"
+      answer_columns:
+      - name: Total sales
+      - name: product
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - product
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: product
+        axis_configs:
+        - x:
+          - product
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a0b20f18-6e12-4946-951c-0aa4092618cf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"516c0328-e583-4c56-bd6e-421ca75ee6ac\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 32abc2f1-d126-4eef-acdd-5d85ed748fb7
+  - id: Viz_2
+    answer:
+      name: Which regions have the highest and lowest sales?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      formulas:
+      - id: formula_is region with highest sales
+        name: is region with highest sales
+        expr: "[formula_total sales] = [formula_max region sales]"
+        was_auto_generated: false
+      - id: formula_is region with lowest sales
+        name: is region with lowest sales
+        expr: "[formula_total sales] = [formula_min region sales]"
+        was_auto_generated: false
+      - id: formula_total sales
+        name: total sales
+        expr: "sum ( [sales] )"
+        was_auto_generated: false
+      - id: formula_max region sales
+        name: max region sales
+        expr: "group_aggregate ( sum ( [sales] ) , { } , { } )"
+        was_auto_generated: false
+      - id: formula_min region sales
+        name: min region sales
+        expr: "group_aggregate ( sum ( [sales] ) , { } , { } )"
+        was_auto_generated: false
+      search_query: "[formula_total sales] [formula_is region with lowest sales] [region] [formula_is region with highest sales]"
+      answer_columns:
+      - name: is region with highest sales
+      - name: is region with lowest sales
+      - name: region
+      - name: total sales
+      table:
+        table_columns:
+        - column_id: is region with highest sales
+          show_headline: false
+        - column_id: is region with lowest sales
+          show_headline: false
+        - column_id: region
+          show_headline: false
+        - column_id: total sales
+          show_headline: false
+        ordered_column_ids:
+        - region
+        - is region with lowest sales
+        - is region with highest sales
+        - total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"is region with lowest sales\",\"columnProperty\": {}},{\"columnId\": \"is region with highest sales\",\"columnProperty\": {}},{\"columnId\": \"total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: is region with highest sales
+        - column_id: is region with lowest sales
+        - column_id: region
+        - column_id: total sales
+        axis_configs:
+        - x:
+          - region
+          "y":
+          - total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"is region with highest sales\",\"columnProperty\": {}},{\"columnId\": \"is region with lowest sales\",\"columnProperty\": {}},{\"columnId\": \"total sales\",\"columnProperty\": {}},{\"columnId\": \"region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ba275a9a-bb34-42c7-b444-a1ab82f86908\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"total sales\"],\"isOpposite\": false}},{\"id\": \"5c821c1e-23a4-48ca-a9f3-fa1e3243fc6f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"region\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: e5f3cd67-2782-48bb-9582-18591fe196a7
+  - id: Viz_3
+    answer:
+      name: How do sales vary over different dates?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [date] [date].monthly"
+      answer_columns:
+      - name: Month(date)
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Month(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(date)
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(date)
+        - column_id: Total sales
+        axis_configs:
+        - x:
+          - Month(date)
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Month(date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8a5fd836-610c-4d3e-9eb2-2fcb42b931db\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"def05946-3e04-42f3-b76b-b0da6aabaa07\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 24839b69-e588-4787-9879-c4f6703a97bc
+  - id: Viz_4
+    answer:
+      name: What is the sales performance of each store?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [store]"
+      answer_columns:
+      - name: Total sales
+      - name: store
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: store
+          show_headline: false
+        ordered_column_ids:
+        - store
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: store
+        axis_configs:
+        - x:
+          - store
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d13f3d41-a2f2-47c6-8794-0be1efef76a8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"e3232a3c-f370-4982-a75d-3573763a2d9b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"store\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 6e9ea38b-ca52-48e2-af7c-35f64b4d0127
+  - id: Viz_5
+    answer:
+      name: Which item types contribute the most to total sales?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "top 1 [item type] [sales] sort by [sales]"
+      answer_columns:
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9e857ac9-b665-482c-b800-19b2d1b9f963\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"2ea3dde3-dea8-4bb2-9c38-b214fd36d783\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: ef5a2f3e-4c27-4e93-bee0-b3eb51d95ff1
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_2
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_3
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_4
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_5
+      size: MEDIUM_SMALL

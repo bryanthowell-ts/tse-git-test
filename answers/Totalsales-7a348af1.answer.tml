@@ -1,0 +1,28 @@
+obj_id: Totalsales-7a348af1
+answer:
+  name: Total sales
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "[sales]"
+  answer_columns:
+  - name: Total sales
+  table:
+    table_columns:
+    - column_id: Total sales
+      show_headline: false
+    ordered_column_ids:
+    - Total sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Total sales
+    axis_configs:
+    - "y":
+      - Total sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f52d243f-5bca-4e26-b490-4a59c119125d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"e86c2ecc-fd53-4a59-8523-6c438cee24fb\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: CHART_MODE

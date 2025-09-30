@@ -1,0 +1,36 @@
+obj_id: Totalsalesbyproduct-fe1b9ecb
+answer:
+  name: Copy of Total sales by product
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "top 1 [product] [sales] sort by [sales]"
+  answer_columns:
+  - name: Total sales
+  - name: product
+  table:
+    table_columns:
+    - column_id: Total sales
+      show_headline: false
+    - column_id: product
+      show_headline: false
+    ordered_column_ids:
+    - product
+    - Total sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: BAR
+    chart_columns:
+    - column_id: Total sales
+    - column_id: product
+    axis_configs:
+    - x:
+      - product
+      "y":
+      - Total sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"716d6b3c-7a93-49b6-9348-bba12d07e9cf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"ec187062-a37c-4ad5-a350-a0ec537586b1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#B6313E\"}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Copy of Total sales by product

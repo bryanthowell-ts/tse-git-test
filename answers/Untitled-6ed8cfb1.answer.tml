@@ -1,0 +1,28 @@
+obj_id: Untitled-6ed8cfb1
+answer:
+  name: Rating
+  tables:
+  - id: Movie Rental
+    name: Movie Rental
+    obj_id: MovieRental-dd4d3a01
+  search_query: "[Rating]"
+  answer_columns:
+  - name: Rating
+  table:
+    table_columns:
+    - column_id: Rating
+      show_headline: false
+    ordered_column_ids:
+    - Rating
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Rating
+    axis_configs:
+    - "y":
+      - Rating
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Rating\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"307c201b-1bbd-4391-88ca-768ea8ccbf94\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Rating\"],\"isOpposite\": false}},{\"id\": \"a389f700-1b75-4e5b-8792-50ea74773580\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE
