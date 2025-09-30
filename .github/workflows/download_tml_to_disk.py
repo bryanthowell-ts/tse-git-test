@@ -2,6 +2,7 @@ import os
 import requests.exceptions
 import csv
 import json
+import time
 
 from thoughtspot_rest_api_v1 import *
 
@@ -16,6 +17,19 @@ author_filter = os.environ.get('AUTHOR_FILTER')
 tag_filter = os.environ.get('TAG_FILTER')
 record_size = os.environ.get('RECORD_SIZE_LIMIT')
 object_type = os.environ.get('OBJECT_TYPE')
+
+#
+# Last run file for limiting file download
+#
+
+last_run_filename = "last_download_runtime.txt"
+last_run_epoch = None
+try: 
+    with open(file=last_run_filename, mode='r') as f:
+        last_run_epoch = int(f.readlines()[0])
+except:
+    pass
+
 
 # full_access_token = os.environ.get('TS_TOKEN')  #  Tokens are tied to a particular Org, so useful in an environment with only a few Orgs but not single-tenant
 
@@ -113,14 +127,16 @@ def export_tml_with_obj_id(guid:Optional[str] = None,
             print(yaml_tml[0]['edoc'])
             print("-------")
     
-            # Save the file with {obj_id}.{type}.{tml}
-            filename = "{}s/{}.{}.tml".format(obj_type, obj_id, obj_type)
+            # Save the file with {obj_type}s/{obj_id}.{type}.{tml}
+            # Feel free to change directory naming structure to not have 's' at end
+            directory = "{}s".format(obj_type)
+            filename = "{}s/{}.{}.tml".format(directory, obj_id, obj_type)
             try: 
                 with open(file=filename, mode='w') as f:
                     f.write(yaml_tml[0]['edoc'])
             # Catch if directory for type doesn't exist yet
             except:
-                os.mkdir("{}s".format(obj_type))
+                os.mkdir(directory)
                 with open(file=filename, mode='w') as f:
                     f.write(yaml_tml[0]['edoc'])
 
@@ -224,5 +240,11 @@ def download_objects():
 # Run the download routines based on the choices
 download_objects()
 
+current_epoch_time_utc_int = int(time.time())
+try: 
+    with open(file=last_run_filename, mode='w') as f:
+        f.write(current_epoch_time_utc_int)
+except:
+    pass
 
 
