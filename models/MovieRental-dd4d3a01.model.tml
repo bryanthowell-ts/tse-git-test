@@ -1,0 +1,277 @@
+obj_id: MovieRental-dd4d3a01
+model:
+  name: Movie Rental
+  description: movie rental dataset
+  model_tables:
+  - name: language
+  - name: film
+    joins:
+    - with: language
+      referencing_join: film_language_id_fkey
+  - name: inventory
+    joins:
+    - with: film
+      referencing_join: inventory_film_id_fkey
+  - name: rental
+    joins:
+    - with: customer
+      referencing_join: rental_customer_id_fkey
+    - with: inventory
+      referencing_join: rental_inventory_id_fkey
+    - with: staff
+      referencing_join: rental_staff_id_key
+  - name: customer
+  - name: staff
+  formulas:
+  - id: formula_Rental revenue
+    name: Rental revenue
+    expr: '[film::rental_rate] * [film::rental_duration]'
+  columns:
+  - name: Language Id
+    column_id: language::language_id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Rental revenue
+    formula_id: formula_Rental revenue
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      currency_type:
+        iso_code: USD
+  - name: Name
+    column_id: language::name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Last Update
+    column_id: language::last_update
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Customer Id
+    column_id: customer::customer_id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Store Id
+    column_id: customer::store_id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: First Name
+    column_id: customer::first_name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Last Name
+    column_id: customer::last_name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Email
+    column_id: customer::email
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Address Id
+    column_id: customer::address_id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Activebool
+    column_id: customer::activebool
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Create Date
+    column_id: customer::create_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Customer-Last Update
+    column_id: customer::last_update
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Active
+    column_id: customer::active
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Staff Id
+    column_id: staff::staff_id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Staff-First Name
+    column_id: staff::first_name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Staff-Last Name
+    column_id: staff::last_name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Staff-Address Id
+    column_id: staff::address_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Staff-Email
+    column_id: staff::email
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Staff-Store Id
+    column_id: staff::store_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Staff-Active
+    column_id: staff::active
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Username
+    column_id: staff::username
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Password
+    column_id: staff::password
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Staff-Last Update
+    column_id: staff::last_update
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Inventory Id
+    column_id: inventory::inventory_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Film Id
+    column_id: inventory::film_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Inventory-Store Id
+    column_id: inventory::store_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Inventory-Last Update
+    column_id: inventory::last_update
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Rental Id
+    column_id: rental::rental_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Rental Date
+    column_id: rental::rental_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Rental-Inventory Id
+    column_id: rental::inventory_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Rental-Customer Id
+    column_id: rental::customer_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Return Date
+    column_id: rental::return_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Rental-Staff Id
+    column_id: rental::staff_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Rental-Last Update
+    column_id: rental::last_update
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Film-Film Id
+    column_id: film::film_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Title
+    column_id: film::title
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Description
+    column_id: film::description
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Film-Language Id
+    column_id: film::language_id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Rental Duration
+    column_id: film::rental_duration
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Rental Rate
+    column_id: film::rental_rate
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Length
+    column_id: film::length
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Replacement Cost
+    column_id: film::replacement_cost
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Rating
+    column_id: film::rating
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Film-Last Update
+    column_id: film::last_update
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: true

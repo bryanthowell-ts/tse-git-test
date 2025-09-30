@@ -1,0 +1,15 @@
+obj_id: Test_LB_1
+liveboard:
+  name: Test Liveboard
+  visualizations:
+  - id: Viz_1
+    viz_guid: 15109c22-b509-475c-8b0e-a2449a72079d
+    note_tile:
+      html_parsed_string: <h2>Test Summary</h2><p>This is a test liveboard created during MCP testing.</p>
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 12

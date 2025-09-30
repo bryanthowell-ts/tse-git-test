@@ -1,0 +1,421 @@
+obj_id: productcategoriessalesandgrowthratesintheSouthregion-43e6fb38
+liveboard:
+  name: product categories sales and growth rates in the South region
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: What are the total sales for each product category in the South region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [item type] [region] = 'south'"
+      answer_columns:
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"310042eb-3ee5-4c49-ab56-717f7bbe49ed\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"8b33b3bb-4ab0-4b1b-bc43-5466f4d5ef76\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 28086731-5171-4125-a7b4-8ea3aa3183cc
+  - id: Viz_2
+    answer:
+      name: What is the monthly sales trend for product categories in the South region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [date].monthly [item type] [region] = 'south'"
+      answer_columns:
+      - name: Month(date)
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Month(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - Month(date)
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(date)
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - Month(date)
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"824bc7c5-fca1-4e5c-be71-d68b74b8f9f6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"c5304f8e-8915-4427-aea9-a8701c56952c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5494d51e-4249-469d-a1b2-d6d222026181
+  - id: Viz_3
+    answer:
+      name: What is the year-over-year growth rate of sales for each product category in the South region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "growth of [sales] by [date] [date].yearly [item type] [region] = 'south'"
+      answer_columns:
+      - name: Growth of Total sales
+      - name: Year(date)
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Growth of Total sales
+          show_headline: false
+        - column_id: Year(date)
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Year(date)
+        - Growth of Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Year(date)\",\"columnProperty\": {}},{\"columnId\": \"Growth of Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Growth of Total sales
+        - column_id: Year(date)
+        - column_id: item type
+        axis_configs:
+        - x:
+          - Year(date)
+          "y":
+          - Growth of Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Growth of Total sales\",\"columnProperty\": {}},{\"columnId\": \"Year(date)\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6d0bbf07-2efb-474f-a20e-aa7da1781ab5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Growth of Total sales\"],\"isOpposite\": false}},{\"id\": \"ef0c0177-9e44-475d-8af5-e57146ab8eff\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Year(date)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: af0a930a-0c48-4484-b369-c66f9c3818e8
+  - id: Viz_4
+    answer:
+      name: Which product categories have the highest sales in the South region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [item type] [region] = 'south' sort by [sales] descending"
+      answer_columns:
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"43752068-8492-4b69-8804-7e630639ccd5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"aba72317-e090-4292-8144-634e8e28a93f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 20121ef4-aa2f-4ee3-b7ed-177a9548bca6
+  - id: Viz_5
+    answer:
+      name: How have sales for different product categories evolved over time in the South region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [date].monthly [item type] [region] = 'south'"
+      answer_columns:
+      - name: Month(date)
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Month(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - Month(date)
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(date)
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - Month(date)
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"de702236-b9f6-4ce5-acde-542629408632\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"9a058e4e-e96f-4bf6-a7e1-b21de9edf354\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 1947ab84-4e06-4ef6-906e-9ffab85ad708
+  - id: Viz_6
+    answer:
+      name: What is the average quantity purchased for each product category in the South region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "average [quantity purchased] by [item type] [region] = 'south'"
+      answer_columns:
+      - name: Average quantity purchased
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Average quantity purchased
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Average quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Average quantity purchased\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Average quantity purchased
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Average quantity purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Average quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"daddea3b-fa42-4bce-828c-bc685abf8c8c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average quantity purchased\"],\"isOpposite\": false}},{\"id\": \"2d34b59b-03fc-4925-a25c-ba0657fba4cd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 19aa3fa8-5c10-4f53-a3ca-08dff496d596
+  - id: Viz_7
+    answer:
+      name: Which stores in the South region have the highest sales for each product category?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "top 1 for each [item type] [store] [region] = 'south' sort by [sales]"
+      answer_columns:
+      - name: Total sales
+      - name: item type
+      - name: store
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        - column_id: store
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - store
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Total sales
+        - column_id: item type
+        - column_id: store
+        axis_configs:
+        - x:
+          - store
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"87b78f52-1676-4850-b04f-52166b151a98\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"5c0a74d6-d26b-4497-b6e0-98dc044f5107\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"store\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: a2b5b831-111a-42dc-8180-baa1c2c929b7
+  - id: Viz_8
+    answer:
+      name: How does the average price per unit vary across different product categories in the South region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      formulas:
+      - id: formula_average price per unit
+        name: average price per unit
+        expr: "group_aggregate ( sum ( [sales] ) , query_groups ( ) , query_filters ( ) ) / group_aggregate ( sum ( [quantity purchased] ) , query_groups ( ) , query_filters ( ) )"
+        was_auto_generated: false
+      search_query: "[formula_average price per unit] [item type] [region] = 'south'"
+      answer_columns:
+      - name: average price per unit
+      - name: item type
+      table:
+        table_columns:
+        - column_id: average price per unit
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - average price per unit
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"average price per unit\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: average price per unit
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - average price per unit
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"average price per unit\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f7c592f2-4654-443a-99b9-fc2756c3d73c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"average price per unit\"],\"isOpposite\": false}},{\"id\": \"2639ffbc-9e92-40cd-83a2-274d5cd83150\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 00cb073b-7874-4773-86d3-92edc0a600d3
+  - id: Viz_9
+    answer:
+      name: What is the distribution of sales by county within the South region for each product category?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "[sales] [item type] [county] [region] = 'south'"
+      answer_columns:
+      - name: Total sales
+      - name: county
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: county
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - county
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: county
+        - column_id: item type
+        axis_configs:
+        - x:
+          - county
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0d803d72-b568-4dee-a0a0-a2f70afd7292\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"267fbf4d-ff65-4a62-89ef-cdb37cd23e7e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"county\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 8f132e2a-0d10-4ef5-8eea-6470db73fdc6
+  - id: Viz_10
+    answer:
+      name: Which product categories are experiencing a decline in sales in the South region?
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        obj_id: SampleRetail-Apparel-cd252e5c
+      search_query: "growth of [sales] by [date] [date].quarterly [item type] [region] = 'south'"
+      answer_columns:
+      - name: Growth of Total sales
+      - name: Quarter(date)
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Growth of Total sales
+          show_headline: false
+        - column_id: Quarter(date)
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Quarter(date)
+        - Growth of Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Quarter(date)\",\"columnProperty\": {}},{\"columnId\": \"Growth of Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Growth of Total sales
+        - column_id: Quarter(date)
+        - column_id: item type
+        axis_configs:
+        - x:
+          - Quarter(date)
+          "y":
+          - Growth of Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Quarter(date)\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Growth of Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2f65fed6-66c8-45fa-a2a8-b969fbe94c23\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Growth of Total sales\"],\"isOpposite\": false}},{\"id\": \"e415ebf7-02c5-45c2-9f07-12cd4c95310d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(date)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: e8fa7123-30b2-4021-96fa-4eadff7f0cbb
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_2
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_3
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_4
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_5
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_6
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_7
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_8
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_9
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_10
+      size: MEDIUM_SMALL

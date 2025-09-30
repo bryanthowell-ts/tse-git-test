@@ -1,0 +1,72 @@
+obj_id: BryantsWorksheet-c1ed08f5
+model:
+  name: Bryant's Worksheet
+  description: To test out custom action stuff
+  model_tables:
+  - name: 'TS: External Table Info [Deprecated]'
+  formulas:
+  - id: formula_Test Formula
+    name: Test Formula
+    expr: '[Bryant Param] = [Bryant Param]'
+  columns:
+  - name: Table ID
+    column_id: 'TS: External Table Info [Deprecated]::table_id'
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Table Number
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Test Formula
+    formula_id: formula_Test Formula
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Connection ID
+    column_id: 'TS: External Table Info [Deprecated]::connection_id'
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Link Id
+      - Linkage Id
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Connection Name
+    column_id: 'TS: External Table Info [Deprecated]::connection_name'
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Link Name
+      - Linkage Name
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Connection Type
+    column_id: 'TS: External Table Info [Deprecated]::connection_type'
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Link Type
+      - Linkage Type
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Qualified Ext Table Name
+    column_id: 'TS: External Table Info [Deprecated]::qualified_ext_table_name'
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Qualified External Table Name
+      - Qualified Outer Table Name
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: false
+  parameters:
+  - id: 3f41acd2-ed3d-4e6e-996d-43387e244ffe
+    name: Bryant Param
+    data_type: CHAR
+    default_value: something
+    description: ''
+    is_hidden: true

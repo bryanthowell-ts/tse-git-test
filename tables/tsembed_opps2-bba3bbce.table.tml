@@ -1,0 +1,326 @@
+obj_id: tsembed_opps2-bba3bbce
+table:
+  name: tsembed_opps2
+  db: as_embed_1_primary
+  schema: rad
+  db_table: tsembed_opps2
+  connection:
+    name: AnalystStudio_connection
+    obj_id: AnalystStudio_connection-83b7fc7c
+  columns:
+  - name: Id
+    db_column_name: Id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: IsDeleted
+    db_column_name: IsDeleted
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: AccountId
+    db_column_name: AccountId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Name
+    db_column_name: Name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Description
+    db_column_name: Description
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: StageName
+    db_column_name: StageName
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: StageSortOrder
+    db_column_name: StageSortOrder
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: Amount
+    db_column_name: Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: Probability
+    db_column_name: Probability
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: ExpectedRevenue
+    db_column_name: ExpectedRevenue
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: TotalOpportunityQuantity
+    db_column_name: TotalOpportunityQuantity
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CloseDate
+    db_column_name: CloseDate
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  - name: Type
+    db_column_name: Type
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: NextStep
+    db_column_name: NextStep
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: LeadSource
+    db_column_name: LeadSource
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: IsClosed
+    db_column_name: IsClosed
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: IsWon
+    db_column_name: IsWon
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: ForecastCategory
+    db_column_name: ForecastCategory
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ForecastCategoryName
+    db_column_name: ForecastCategoryName
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CampaignId
+    db_column_name: CampaignId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: HasOpportunityLineItem
+    db_column_name: HasOpportunityLineItem
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Pricebook2Id
+    db_column_name: Pricebook2Id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: OwnerId
+    db_column_name: OwnerId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CreatedDate
+    db_column_name: CreatedDate
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  - name: CreatedById
+    db_column_name: CreatedById
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: LastModifiedDate
+    db_column_name: LastModifiedDate
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  - name: LastModifiedById
+    db_column_name: LastModifiedById
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SystemModstamp
+    db_column_name: SystemModstamp
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  - name: LastActivityDate
+    db_column_name: LastActivityDate
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: LastStageChangeDate
+    db_column_name: LastStageChangeDate
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: FiscalYear
+    db_column_name: FiscalYear
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: FiscalQuarter
+    db_column_name: FiscalQuarter
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: ContactId
+    db_column_name: ContactId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PrimaryPartnerAccountId
+    db_column_name: PrimaryPartnerAccountId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PartnerAccountId
+    db_column_name: PartnerAccountId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ContractId
+    db_column_name: ContractId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: LastAmountChangedHistoryId
+    db_column_name: LastAmountChangedHistoryId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: LastCloseDateChangedHistoryId
+    db_column_name: LastCloseDateChangedHistoryId
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: DeliveryInstallationStatus__c
+    db_column_name: DeliveryInstallationStatus__c
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: TrackingNumber__c
+    db_column_name: TrackingNumber__c
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: OrderNumber__c
+    db_column_name: OrderNumber__c
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: CurrentGenerators__c
+    db_column_name: CurrentGenerators__c
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: MainCompetitors__c
+    db_column_name: MainCompetitors__c
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  dataset_id: b12bc5d80b2e
+  properties:
+    spotter_config:
+      is_spotter_enabled: false

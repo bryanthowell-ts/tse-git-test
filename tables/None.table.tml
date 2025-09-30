@@ -1,0 +1,38 @@
+guid: 1d0cf007-ebba-4854-a08f-1d83453bfeeb
+table:
+  name: Feminity name survey
+  description: "This is a data about a survey done regarding perception of femininity of names. Each person was shown 10 images, each with an animated human character and a list of 10 names. For each character image they had to label the most appropriate name. The images were in an order such that the first image was most feminine while the last one was the most masculine. The list of names also had a score of femininity attached to them. The column personId represents each person surveyed. ImageId represent each image. And the femininity score represents the score corresponding to the name chosen by that person. A total of 80 people were surveyed."
+  db: TESTDEV
+  schema: SRW
+  db_table: official assign a name (responses) - sheet2_b65e0acb-d56d-4dc5-9a3a-8b29139e6c2c
+  connection:
+    name: SF
+  columns:
+  - name: Person Id
+    description: Id of the surveyed person
+    db_column_name: Person Id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Image Id
+    description: "Id of the image from 1 - 10. 1 is the most feminine, while 10 is the least."
+    db_column_name: Image Id
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Feminity Score
+    description: The weight/score corresponding to the name chosen by the person. Higher the score more feminine the name.
+    db_column_name: Feminity Score
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      is_additive: true
+    db_column_properties:
+      data_type: INT64
+  properties:
+    spotter_config:
+      is_spotter_enabled: true
