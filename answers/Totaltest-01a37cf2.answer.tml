@@ -1,0 +1,34 @@
+obj_id: Totaltest-01a37cf2
+answer:
+  name: Total test
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  formulas:
+  - id: formula_test
+    name: test
+    expr: "[sales] * 5"
+    was_auto_generated: false
+  search_query: "[formula_test]"
+  answer_columns:
+  - name: Total test
+  table:
+    table_columns:
+    - column_id: Total test
+      show_headline: false
+    ordered_column_ids:
+    - Total test
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total test\",\"columnProperty\": {}}]}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Total test
+    axis_configs:
+    - "y":
+      - Total test
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total test\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"837ba24e-b38f-4dd2-bd14-793988ee9b09\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total test\"],\"isOpposite\": false}},{\"id\": \"434cca33-0115-4daf-a9e0-0c1b7cf0b73a\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Total test

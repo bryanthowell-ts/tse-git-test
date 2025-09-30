@@ -1,0 +1,36 @@
+obj_id: PubSalesbyProduct-d013e592
+answer:
+  name: Pub Quantity by Product
+  tables:
+  - id: pub-retail-east
+    name: pub-retail-east
+    obj_id: pub-retail-east-63528f05
+  search_query: "[Product] [Total Quantity Purchased]"
+  answer_columns:
+  - name: Product
+  - name: Total Total Quantity Purchased
+  table:
+    table_columns:
+    - column_id: Product
+      show_headline: false
+    - column_id: Total Total Quantity Purchased
+      show_headline: false
+    ordered_column_ids:
+    - Product
+    - Total Total Quantity Purchased
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Product
+    - column_id: Total Total Quantity Purchased
+    axis_configs:
+    - x:
+      - Product
+      "y":
+      - Total Total Quantity Purchased
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Total Quantity Purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2fa5e9f5-3b07-4d75-a054-8a13c142f1ac\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Quantity Purchased\"],\"isOpposite\": false}},{\"id\": \"d4fa1ae4-67fd-4945-a4ea-82fb4e5a6bf1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a4f535c7-4025-4962-8e78-a4d3f8039716\",\"color\": \"#B6313E\"},{\"serieName\": \"520140cb-c23d-4dbb-be13-bd01bfbbb27d\",\"color\": \"#B6313E\"},{\"serieName\": \"7393093e-61dd-498a-bd14-350efe9de401\",\"color\": \"#B6313E\"},{\"serieName\": \"Total Total Quantity Purchased\",\"color\": \"#B6313E\"}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Pub Quantity by Product

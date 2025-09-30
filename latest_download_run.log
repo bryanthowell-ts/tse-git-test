@@ -4,6 +4,69 @@ Requesting object listing
 10 objects retrieved
 [
   {
+    "edoc": "obj_id: VisualTest1-27b08877\nanswer:\n  name: Visual Test 1\n  tables:\n  - id: (Sample) Retail - Apparel\n    name: (Sample) Retail - Apparel\n    obj_id: SampleRetail-Apparel-cd252e5c\n  search_query: \"[region] [product] [sales] [quantity purchased]\"\n  answer_columns:\n  - name: Total quantity purchased\n  - name: Total sales\n  - name: product\n  - name: region\n  table:\n    table_columns:\n    - column_id: Total quantity purchased\n      show_headline: false\n    - column_id: Total sales\n      show_headline: false\n    - column_id: product\n      show_headline: false\n    - column_id: region\n      show_headline: false\n    ordered_column_ids:\n    - region\n    - product\n    - Total sales\n    - Total quantity purchased\n    client_state: \"\"\n    client_state_v2: \"{\\\"tableVizPropVersion\\\": \\\"V1\\\"}\"\n  chart:\n    type: LINE\n    chart_columns:\n    - column_id: Total quantity purchased\n    - column_id: Total sales\n    - column_id: product\n    - column_id: region\n    axis_configs:\n    - x:\n      - product\n      \"y\":\n      - Total sales\n      - Total quantity purchased\n    client_state: \"\"\n    client_state_v2: \"{\\\"version\\\": \\\"V4DOT2\\\",\\\"chartProperties\\\": {\\\"responsiveLayoutPreference\\\": \\\"AUTO_OFF\\\",\\\"chartSpecific\\\": {\\\"customProps\\\": \\\"{\\\\\\\"advancedProperties\\\\\\\":[]}\\\",\\\"pivotSummariesState\\\": {}},\\\"legendPosition\\\": \\\"TOP_LEGEND\\\"},\\\"columnProperties\\\": [{\\\"columnId\\\": \\\"region\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"product\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"Total sales\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"Total quantity purchased\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"Measure names\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"Measure values\\\",\\\"columnProperty\\\": {}}],\\\"axisProperties\\\": [{\\\"id\\\": \\\"050530ce-419e-4bc4-9856-6776afbf14eb\\\",\\\"properties\\\": {\\\"axisType\\\": \\\"Y\\\",\\\"linkedColumns\\\": [\\\"Total sales\\\"],\\\"isOpposite\\\": false}},{\\\"id\\\": \\\"0e21e467-6a3d-4046-b9b5-04f9a26f6314\\\",\\\"properties\\\": {\\\"axisType\\\": \\\"Y\\\",\\\"linkedColumns\\\": [\\\"Total quantity purchased\\\"],\\\"isOpposite\\\": true}},{\\\"id\\\": \\\"65af1f0e-16d5-40ba-8d5e-e1b4bc516c27\\\",\\\"properties\\\": {\\\"axisType\\\": \\\"X\\\",\\\"linkedColumns\\\": [\\\"product\\\"]}}],\\\"seriesColors\\\": [{\\\"serieName\\\": \\\"Total sales\\\",\\\"color\\\": \\\"#9be5ed\\\"},{\\\"serieName\\\": \\\"Total quantity purchased\\\",\\\"color\\\": \\\"#F47E89\\\"}],\\\"systemSeriesColors\\\": [{\\\"serieName\\\": \\\"Total sales\\\",\\\"color\\\": \\\"#B6313E\\\"},{\\\"serieName\\\": \\\"Total quantity purchased\\\",\\\"color\\\": \\\"#785F1A\\\"}]}\"\n  display_mode: CHART_MODE\n  dynamic_name: Visual Test 1\n",
+    "info": {
+      "filename": "Visual Test 1.answer.tml",
+      "name": "Visual Test 1",
+      "id": "27b08877-51bc-4715-a233-6718508252b6",
+      "type": "answer",
+      "status": {
+        "status_code": "OK"
+      }
+    }
+  }
+]
+obj_id: VisualTest1-27b08877
+answer:
+  name: Visual Test 1
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    obj_id: SampleRetail-Apparel-cd252e5c
+  search_query: "[region] [product] [sales] [quantity purchased]"
+  answer_columns:
+  - name: Total quantity purchased
+  - name: Total sales
+  - name: product
+  - name: region
+  table:
+    table_columns:
+    - column_id: Total quantity purchased
+      show_headline: false
+    - column_id: Total sales
+      show_headline: false
+    - column_id: product
+      show_headline: false
+    - column_id: region
+      show_headline: false
+    ordered_column_ids:
+    - region
+    - product
+    - Total sales
+    - Total quantity purchased
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Total quantity purchased
+    - column_id: Total sales
+    - column_id: product
+    - column_id: region
+    axis_configs:
+    - x:
+      - product
+      "y":
+      - Total sales
+      - Total quantity purchased
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"customProps\": \"{\\\"advancedProperties\\\":[]}\",\"pivotSummariesState\": {}},\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"050530ce-419e-4bc4-9856-6776afbf14eb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"0e21e467-6a3d-4046-b9b5-04f9a26f6314\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": true}},{\"id\": \"65af1f0e-16d5-40ba-8d5e-e1b4bc516c27\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}],\"seriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#9be5ed\"},{\"serieName\": \"Total quantity purchased\",\"color\": \"#F47E89\"}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#B6313E\"},{\"serieName\": \"Total quantity purchased\",\"color\": \"#785F1A\"}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Visual Test 1
+
+-------
+[
+  {
     "edoc": "obj_id: Totaltest-01a37cf2\nanswer:\n  name: Total test\n  tables:\n  - id: (Sample) Retail - Apparel\n    name: (Sample) Retail - Apparel\n    obj_id: SampleRetail-Apparel-cd252e5c\n  formulas:\n  - id: formula_test\n    name: test\n    expr: \"[sales] * 5\"\n    was_auto_generated: false\n  search_query: \"[formula_test]\"\n  answer_columns:\n  - name: Total test\n  table:\n    table_columns:\n    - column_id: Total test\n      show_headline: false\n    ordered_column_ids:\n    - Total test\n    client_state: \"\"\n    client_state_v2: \"{\\\"tableVizPropVersion\\\": \\\"V1\\\",\\\"columnProperties\\\": [{\\\"columnId\\\": \\\"Total test\\\",\\\"columnProperty\\\": {}}]}\"\n  chart:\n    type: KPI\n    chart_columns:\n    - column_id: Total test\n    axis_configs:\n    - \"y\":\n      - Total test\n    client_state: \"\"\n    client_state_v2: \"{\\\"version\\\": \\\"V4DOT2\\\",\\\"chartProperties\\\": {\\\"gridLines\\\": {},\\\"responsiveLayoutPreference\\\": \\\"USER_PREFERRED_ON\\\",\\\"chartSpecific\\\": {\\\"dataFieldArea\\\": \\\"column\\\"}},\\\"columnProperties\\\": [{\\\"columnId\\\": \\\"Total test\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"Measure names\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"Measure values\\\",\\\"columnProperty\\\": {}}],\\\"axisProperties\\\": [{\\\"id\\\": \\\"837ba24e-b38f-4dd2-bd14-793988ee9b09\\\",\\\"properties\\\": {\\\"axisType\\\": \\\"Y\\\",\\\"linkedColumns\\\": [\\\"Total test\\\"],\\\"isOpposite\\\": false}},{\\\"id\\\": \\\"434cca33-0115-4daf-a9e0-0c1b7cf0b73a\\\",\\\"properties\\\": {\\\"axisType\\\": \\\"X\\\"}}]}\"\n  display_mode: CHART_MODE\n  dynamic_name: Total test\n",
     "info": {
       "filename": "Total test.answer.tml",
@@ -438,50 +501,6 @@ answer:
       - Total sales
     client_state: ""
     client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ab579e15-4f56-46ff-92a4-af46cdc4ea54\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"6e1f71f0-cf83-493d-b66e-b6ab5db9f334\",\"properties\": {\"axisType\": \"X\"}}]}"
-  display_mode: CHART_MODE
-
--------
-[
-  {
-    "edoc": "obj_id: Totalsales-7a348af1\nanswer:\n  name: Total sales\n  tables:\n  - id: (Sample) Retail - Apparel\n    name: (Sample) Retail - Apparel\n    obj_id: SampleRetail-Apparel-cd252e5c\n  search_query: \"[sales]\"\n  answer_columns:\n  - name: Total sales\n  table:\n    table_columns:\n    - column_id: Total sales\n      show_headline: false\n    ordered_column_ids:\n    - Total sales\n    client_state: \"\"\n    client_state_v2: \"{\\\"tableVizPropVersion\\\": \\\"V1\\\"}\"\n  chart:\n    type: KPI\n    chart_columns:\n    - column_id: Total sales\n    axis_configs:\n    - \"y\":\n      - Total sales\n    client_state: \"\"\n    client_state_v2: \"{\\\"version\\\": \\\"V4DOT2\\\",\\\"chartProperties\\\": {\\\"chartSpecific\\\": {\\\"pivotSummariesState\\\": {}}},\\\"columnProperties\\\": [{\\\"columnId\\\": \\\"Total sales\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"Measure names\\\",\\\"columnProperty\\\": {}},{\\\"columnId\\\": \\\"Measure values\\\",\\\"columnProperty\\\": {}}],\\\"axisProperties\\\": [{\\\"id\\\": \\\"f52d243f-5bca-4e26-b490-4a59c119125d\\\",\\\"properties\\\": {\\\"axisType\\\": \\\"Y\\\",\\\"linkedColumns\\\": [\\\"Total sales\\\"],\\\"isOpposite\\\": false}},{\\\"id\\\": \\\"e86c2ecc-fd53-4a59-8523-6c438cee24fb\\\",\\\"properties\\\": {\\\"axisType\\\": \\\"X\\\"}}]}\"\n  display_mode: CHART_MODE\n",
-    "info": {
-      "filename": "Total sales.answer.tml",
-      "name": "Total sales",
-      "id": "7a348af1-c3fe-4921-b1a0-ffe8c7052841",
-      "type": "answer",
-      "status": {
-        "status_code": "OK"
-      }
-    }
-  }
-]
-obj_id: Totalsales-7a348af1
-answer:
-  name: Total sales
-  tables:
-  - id: (Sample) Retail - Apparel
-    name: (Sample) Retail - Apparel
-    obj_id: SampleRetail-Apparel-cd252e5c
-  search_query: "[sales]"
-  answer_columns:
-  - name: Total sales
-  table:
-    table_columns:
-    - column_id: Total sales
-      show_headline: false
-    ordered_column_ids:
-    - Total sales
-    client_state: ""
-    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-  chart:
-    type: KPI
-    chart_columns:
-    - column_id: Total sales
-    axis_configs:
-    - "y":
-      - Total sales
-    client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f52d243f-5bca-4e26-b490-4a59c119125d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"e86c2ecc-fd53-4a59-8523-6c438cee24fb\",\"properties\": {\"axisType\": \"X\"}}]}"
   display_mode: CHART_MODE
 
 -------
