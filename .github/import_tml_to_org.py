@@ -70,6 +70,9 @@ if len(search_resp) == 1:
 # We will build an upload with ALL of them, and let ThoughtSpot use the 'etags'
 
 # If filename listed, upload just that file
+#
+# FINISH 
+#
 if object_filename != gh_action_none:
     # Assume everything is named {obj_id}.{obj_type}.tml
     try: 
@@ -77,3 +80,27 @@ if object_filename != gh_action_none:
             tml_str= f.read()
     except:
         pass
+# Get all files in a directory 
+else:
+    directories_to_import = directories_for_objects[object_type]
+    tml_strings = []
+    for dir in directories_to_import:
+        files_in_dir = os.listdir(dir)
+        print(files_in_dir)
+        for filename in files_in_dir:
+            full_file_path = "{}/{}".format(dir, filename)
+            try: 
+                with open(file=full_file_path, mode='r') as f:
+                    tml_str= f.read()
+                    tml_strings.append(tml_str)
+            except:
+                pass
+    
+    # Publish the TMLs
+    # Switch to Async
+    try:
+        results = ts.metadata_tml_import(metadata_tmls=tml_strings, import_policy="ALL_OR_NOTHING", create_new=False)
+    except requests.exceptions.HTTPError as e:
+        print(e)
+        print(e.response.content)
+        exit()
