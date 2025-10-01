@@ -6,6 +6,7 @@ import time
 
 from thoughtspot_rest_api_v1 import *
 
+gh_action_none = "{None}"
 #
 # Values passed into ENV from Workflow file, using GitHub Secrets and Workflow Variables
 #
@@ -205,10 +206,10 @@ obj_type_select = {
 
 def retrieve_objects(request, record_size_override=-1): 
     # Add filters if passed from workflow
-    if author_filter != "{None}":
+    if author_filter != gh_action_none:
         request["created_by_user_identifiers"] = [author_filter]
     
-    if tag_filter != "{None}":
+    if tag_filter != gh_action_none:
         request["tag_identifiers"] = [tag_filter]
 
     request["record_size"] = record_size_override
