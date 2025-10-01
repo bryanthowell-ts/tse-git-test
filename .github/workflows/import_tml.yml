@@ -12,10 +12,13 @@ on:
         type: choice
         description: Type of Objects to Download
         options: 
-        - ALL
+        - DATA_MODEL
+        - CONTENT
+        - TABLE
+        - MODEL
         - LIVEBOARD
         - ANSWER
-        - DATA
+        - CONNECTION
         required: true
 
 permissions:
