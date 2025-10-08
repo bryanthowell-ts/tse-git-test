@@ -1,0 +1,83 @@
+obj_id: Translations-55ecab54
+liveboard:
+  name: Data Translations - Snow
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Amount by Name, Stagename, AI Translate"
+      tables:
+      - id: TSEMBED
+        name: TSEMBED
+        obj_id: TSEMBED-5f92ed57
+      formulas:
+      - id: formula_Language Selected
+        name: Language Selected
+        expr: "[Language] "
+        was_auto_generated: false
+      - id: formula_AI Translate Amount
+        name: AI Translate Amount
+        expr: "sql_string_op ( 'SNOWFLAKE.CORTEX.TRANSLATE({0}, {1}, {2})' , [Amount]  , 'en' , [Language Selected 2] )"
+        was_auto_generated: false
+      search_query: "[Name] [Stagename] [Amount] [formula_Language Selected] [AI Translate Name] [AI Translate Stage Name]"
+      answer_columns:
+      - name: AI Translate Name
+      - name: AI Translate Stage Name
+      - name: Language Selected
+      - name: Name
+      - name: Stagename
+      - name: Total Amount
+      table:
+        table_columns:
+        - column_id: AI Translate Name
+          show_headline: false
+        - column_id: AI Translate Stage Name
+          show_headline: false
+        - column_id: Language Selected
+          show_headline: false
+        - column_id: Name
+          show_headline: false
+        - column_id: Stagename
+          show_headline: false
+        - column_id: Total Amount
+          show_headline: false
+        ordered_column_ids:
+        - Name
+        - Stagename
+        - Language Selected
+        - AI Translate Name
+        - AI Translate Stage Name
+        - Total Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"orderedColumnIds\": [\"Name\",\"AI Translate Name\",\"Stagename\",\"AI Translate Stage Name\",\"Language Selected\",\"Total Amount\"]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: AI Translate Name
+        - column_id: AI Translate Stage Name
+        - column_id: Language Selected
+        - column_id: Name
+        - column_id: Stagename
+        - column_id: Total Amount
+        axis_configs:
+        - x:
+          - AI Translate Stage Name
+          "y":
+          - Total Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Name\",\"columnProperty\": {}},{\"columnId\": \"Stagename\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"AI Translate Stage Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"34546424-f12a-4a5e-b0c6-9fd93f512ebc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Amount\"],\"isOpposite\": false}},{\"id\": \"0d7f3c5a-559b-4292-8a0b-fa4eb74bd69c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"AI Translate Stage Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Amount\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+      parameter_values:
+      - key: Language
+        value: fr
+    viz_guid: fe0c1985-7fa8-4635-b2d3-9db0c977f669
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+  parameter_overrides:
+  - key: b27b5367-22fd-44a3-87d3-54e4ecc191ea
+    value:
+      name: TSEMBED::Language
+      override_value: fr
+  ordered_chips:
+  - name: TSEMBED::Language
+    type: PARAMETER

@@ -1,0 +1,732 @@
+obj_id: QP-WebCampaign-6c926609
+liveboard:
+  name: Copy of QP - Web Campaign
+  description: Revamp of the Web Campaign Conversion liveboard for use in the TSE Quick Pitch demo.
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Conversions by Age Group
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Conversions] by [Age Group] by [Campaign Name]"
+      answer_columns:
+      - name: Age Group
+      - name: Campaign Name
+      - name: Conversions
+      table:
+        table_columns:
+        - column_id: Age Group
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Campaign Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Conversions
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Age Group
+        - Campaign Name
+        - Conversions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Age Group\",\"columnProperty\": {}},{\"columnId\": \"Campaign Name\",\"columnProperty\": {}},{\"columnId\": \"Conversions\",\"columnProperty\": {}}]}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Age Group
+        - column_id: Campaign Name
+        - column_id: Conversions
+        axis_configs:
+        - x:
+          - Age Group
+          "y":
+          - Conversions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": false},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"Campaign Name\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Age Group\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Conversions\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"72b34c03-9017-47eb-87a2-c8e67e5e358c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions\"],\"isOpposite\": false}},{\"id\": \"22f96ddf-763b-4596-b306-bb2d48753dac\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Age Group\"]}}],\"seriesColors\": [{\"serieName\": \"a) 18-24\",\"color\": \"#B2BEB5\"},{\"serieName\": \"b) 25-34\",\"color\": \"#7393B3\"},{\"serieName\": \"c) 35-44\",\"color\": \"#36454F\"},{\"serieName\": \"d) 45-54\",\"color\": \"#A9A9A9\"},{\"serieName\": \"e) 55-64\",\"color\": \"#6082B6\"},{\"serieName\": \"f) 65+\",\"color\": \"#708090\"}],\"systemSeriesColors\": [{\"serieName\": \"a) 18-24\",\"color\": \"#06BF7F\"},{\"serieName\": \"b) 25-34\",\"color\": \"#FCC838\"},{\"serieName\": \"c) 35-44\",\"color\": \"#82DFE9\"},{\"serieName\": \"d) 45-54\",\"color\": \"#48D1E0\"},{\"serieName\": \"e) 55-64\",\"color\": \"#71A1F4\"},{\"serieName\": \"f) 65+\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 305d89bc-21f6-45de-b198-5cb5c1721624
+  - id: Viz_2
+    answer:
+      name: Conversions by County
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Conversions] by [County]"
+      answer_columns:
+      - name: Conversions
+      - name: County
+      table:
+        table_columns:
+        - column_id: Conversions
+          headline_aggregation: SUM
+        - column_id: County
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - County
+        - Conversions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Conversions\",\"columnProperty\": {}}]}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Conversions
+        - column_id: County
+        axis_configs:
+        - x:
+          - County
+          "y":
+          - Conversions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0670099156844398E7,4583154.878015455],\"zoomLevel\": 5.154761023008765,\"extent\": [-1.4422886271899385E7,2832000.703133239,-6917312.041789411,6334309.052897671]},\"chartSpecific\": {\"customProps\": \"{\\\"tileType\\\":\\\"light-v9\\\",\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true}}}\"},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Conversions\",\"columnProperty\": {\"dataLabels\": false,\"conditionalFormatting\": {\"rows\": [{\"backgroundFormatType\": \"GRADIENT\",\"gradientBackgroundAttrs\": {\"colors\": [\"#B5ECF2\",\"#2770EF\",\"#B6313E\"],\"backgroundFormatRange\": [1.0,438.5,876.0]},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false}]}}}],\"axisProperties\": [{\"id\": \"f7b8c352-be4a-4e20-928f-5f4990851ecf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions\"],\"isOpposite\": false}},{\"id\": \"d59b0207-3f64-4da8-b064-1845cd04e934\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"County\"]}}],\"multiColorSeriesColors\": [{\"serieName\": \"Conversions\",\"colorMap\": [{\"serieName\": \"County\",\"color\": [\"#ff8a5f\",\"#c41c04\"]}]}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Conversions\",\"colorMap\": [{\"serieName\": \"County\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}],\"tooltipConfig\": {\"columnIds\": [\"County\",\"Conversions\"]}}"
+      display_mode: CHART_MODE
+    viz_guid: 0b9068cd-c59b-44d0-830e-f7e168d35bd6
+  - id: Viz_3
+    answer:
+      name: Conversions
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Conversions] by [Date].month [Date].yearly"
+      answer_columns:
+      - name: Conversions
+      - name: Month(Date)
+      - name: Year(Date)
+      table:
+        table_columns:
+        - column_id: Conversions
+          headline_aggregation: SUM
+        - column_id: Month(Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Year(Date)
+          headline_aggregation: MIN-MAX
+        ordered_column_ids:
+        - Month(Date)
+        - Year(Date)
+        - Conversions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Conversions\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Conversions
+        - column_id: Month(Date)
+        - column_id: Year(Date)
+        axis_configs:
+        - x:
+          - Month(Date)
+          "y":
+          - Conversions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"d2da8bc6-3c95-4347-835f-6c2926183c4d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions\"],\"isOpposite\": false}},{\"id\": \"0e2fe266-25ef-4d0d-830f-d11b19b2aa2d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Date)\"]}}],\"seriesColors\": [{\"serieName\": \"Conversions\",\"color\": \"#47515F\"}],\"systemSeriesColors\": [{\"serieName\": \"Conversions\",\"color\": \"#48D1E0\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#FF8142\",\"#F04152\",\"#747E8C\"]}"
+      display_mode: CHART_MODE
+    viz_guid: aa03746e-9176-4828-9399-41847226ba65
+  - id: Viz_4
+    answer:
+      name: Total Sales
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Amount] by [Date].month [Date].yearly"
+      answer_columns:
+      - name: Month(Date)
+      - name: Total Amount
+      - name: Year(Date)
+      table:
+        table_columns:
+        - column_id: Month(Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Amount
+          headline_aggregation: SUM
+        - column_id: Year(Date)
+          headline_aggregation: MIN-MAX
+        ordered_column_ids:
+        - Month(Date)
+        - Year(Date)
+        - Total Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Amount\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Date)
+        - column_id: Total Amount
+        - column_id: Year(Date)
+        axis_configs:
+        - x:
+          - Month(Date)
+          "y":
+          - Total Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"f41d11c0-db64-4004-9030-ccc2f35fdbdb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Amount\"],\"isOpposite\": false}},{\"id\": \"aa4c1d75-35dd-4615-8054-44c8f1c97227\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Date)\"]}}],\"seriesColors\": [{\"serieName\": \"Total Amount\",\"color\": \"#47515F\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Amount\",\"color\": \"#06BF7F\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#FF8142\",\"#F04152\",\"#747E8C\"]}"
+      display_mode: CHART_MODE
+    viz_guid: f3bc6f63-6fc6-449b-bae1-a7ae294c3f3b
+  - id: Viz_5
+    answer:
+      name: Average Cost Per Click
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "average [Cost Per Click] by [Date].month [Date].yearly"
+      answer_columns:
+      - name: Average Cost Per Click
+      - name: Month(Date)
+      - name: Year(Date)
+      table:
+        table_columns:
+        - column_id: Average Cost Per Click
+          headline_aggregation: TABLE_AGGR
+        - column_id: Month(Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Year(Date)
+          headline_aggregation: MIN-MAX
+        ordered_column_ids:
+        - Month(Date)
+        - Year(Date)
+        - Average Cost Per Click
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Average Cost Per Click\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Average Cost Per Click
+        - column_id: Month(Date)
+        - column_id: Year(Date)
+        axis_configs:
+        - x:
+          - Month(Date)
+          "y":
+          - Average Cost Per Click
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"7c80bf74-3c8b-4694-bf82-7f225415242b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Cost Per Click\"],\"isOpposite\": false}},{\"id\": \"4549be11-4a9d-4e46-9798-608cea4e1648\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Date)\"]}}],\"seriesColors\": [{\"serieName\": \"Average Cost Per Click\",\"color\": \"#47515F\"}],\"systemSeriesColors\": [{\"serieName\": \"Average Cost Per Click\",\"color\": \"#8C62F5\"}],\"customColorSelectorArray\": [\"#FF8142\",\"#06BF7F\",\"#F04152\",\"#747E8C\"]}"
+      display_mode: CHART_MODE
+    viz_guid: 6ee10b13-cbed-4b1b-b284-160b0e0a7500
+  - id: Viz_6
+    answer:
+      name: Average Cost Per Acquisition
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "average [Cost Per Acquisition] by [Date].month [Date].yearly"
+      answer_columns:
+      - name: Average Cost Per Acquisition
+      - name: Month(Date)
+      - name: Year(Date)
+      table:
+        table_columns:
+        - column_id: Average Cost Per Acquisition
+          headline_aggregation: TABLE_AGGR
+        - column_id: Month(Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Year(Date)
+          headline_aggregation: MIN-MAX
+        ordered_column_ids:
+        - Month(Date)
+        - Year(Date)
+        - Average Cost Per Acquisition
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Average Cost Per Acquisition\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Average Cost Per Acquisition
+        - column_id: Month(Date)
+        - column_id: Year(Date)
+        axis_configs:
+        - x:
+          - Month(Date)
+          "y":
+          - Average Cost Per Acquisition
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\",\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true}}}\"}},\"axisProperties\": [{\"id\": \"be718c65-aa03-4620-82bd-d8e8d6c2078a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Cost Per Acquisition\"],\"isOpposite\": false}},{\"id\": \"1745af06-83c7-47da-868b-8b1ce09a53a9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Date)\"]}}],\"seriesColors\": [{\"serieName\": \"Average Cost Per Acquisition\",\"color\": \"#47515F\"}],\"systemSeriesColors\": [{\"serieName\": \"Average Cost Per Acquisition\",\"color\": \"#06BF7F\"}],\"customColorSelectorArray\": [\"#FF8142\",\"#06BF7F\",\"#F04152\",\"#747E8C\"],\"tooltipConfig\": {\"columnIds\": [\"Month(Date)\",\"Average Cost Per Acquisition\"]}}"
+      display_mode: CHART_MODE
+    viz_guid: c019a9db-e014-4f01-b4e7-af77dfa95b14
+  - id: Viz_7
+    answer:
+      name: "Total Impressions, Conversions by Channel, Region, Gender, State, Website and Campaign Name"
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Campaign Name] [Channel] [Gender] [Region] [State] [Website] [Impressions] [Conversions] [Amount] [Clickthrough Rate (%)]"
+      answer_columns:
+      - name: Campaign Name
+      - name: Channel
+      - name: Clickthrough Rate (%)
+      - name: Conversions
+      - name: Gender
+      - name: Region
+      - name: State
+      - name: Total Amount
+      - name: Total Impressions
+      - name: Website
+      table:
+        table_columns:
+        - column_id: Campaign Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Channel
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Clickthrough Rate (%)
+          headline_aggregation: TABLE_AGGR
+        - column_id: Conversions
+          headline_aggregation: SUM
+        - column_id: Gender
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Region
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: State
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Amount
+          headline_aggregation: SUM
+        - column_id: Total Impressions
+          headline_aggregation: SUM
+        - column_id: Website
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Campaign Name
+        - Channel
+        - Gender
+        - Region
+        - State
+        - Website
+        - Total Impressions
+        - Conversions
+        - Total Amount
+        - Clickthrough Rate (%)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIVOT_TABLE
+        chart_columns:
+        - column_id: Campaign Name
+        - column_id: Channel
+        - column_id: Clickthrough Rate (%)
+        - column_id: Conversions
+        - column_id: Gender
+        - column_id: Region
+        - column_id: State
+        - column_id: Total Amount
+        - column_id: Total Impressions
+        - column_id: Website
+        axis_configs:
+        - x:
+          - Channel
+          - Region
+          - Gender
+          - State
+          - Website
+          "y":
+          - Total Impressions
+          - Conversions
+          color:
+          - Campaign Name
+        - "y":
+          - Total Impressions
+          - Conversions
+        - x:
+          - Channel
+          "y":
+          - Total Impressions
+          - Conversions
+        - x:
+          - Channel
+          - Region
+          "y":
+          - Total Impressions
+          - Conversions
+        - "y":
+          - Total Impressions
+          - Conversions
+          color:
+          - Campaign Name
+        - x:
+          - Channel
+          "y":
+          - Total Impressions
+          - Conversions
+          color:
+          - Campaign Name
+        - x:
+          - Channel
+          - Region
+          "y":
+          - Total Impressions
+          - Conversions
+          color:
+          - Campaign Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotState\": {\"rowExpandedPaths\": [{\"paths\": [\"Search Engine\"]},{\"paths\": [\"Social Media\"]}]},\"isHeatmapOverlayed\": true,\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Campaign Name\",\"columnProperty\": {}},{\"columnId\": \"Channel\",\"columnProperty\": {}},{\"columnId\": \"Gender\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"State\",\"columnProperty\": {}},{\"columnId\": \"Website\",\"columnProperty\": {}},{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Conversions\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}},{\"columnId\": \"Clickthrough Rate (%)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"82c3a7c2-941a-481d-947e-71bb53051920\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Impressions\"],\"isOpposite\": false}},{\"id\": \"0a709f0a-5ba4-42c8-bdae-abac12267c18\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions\"],\"isOpposite\": true}},{\"id\": \"145e0d63-cce7-4393-bdb6-d374a0bf6e55\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Channel\",\"Region\",\"Gender\",\"State\",\"Website\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 55c80554-b3e5-4857-9af1-d8beac84eec5
+  - id: Viz_8
+    answer:
+      name: Conversions by Region
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Conversions] [Region]"
+      answer_columns:
+      - name: Conversions
+      - name: Region
+      table:
+        table_columns:
+        - column_id: Conversions
+          headline_aggregation: SUM
+        - column_id: Region
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Region
+        - Conversions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Conversions\",\"columnProperty\": {}}]}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Conversions
+        - column_id: Region
+        axis_configs:
+        - x:
+          - Region
+          "y":
+          - Conversions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": false},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"Conversions\",\"columnProperty\": {\"dataLabels\": false}},{\"columnId\": \"Region\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"c64fec4c-999a-4f18-adb7-f626c0d80abf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions\"],\"isOpposite\": false}},{\"id\": \"d234eb4f-8ae7-4bdd-b158-8eb38110457d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Region\"]}}],\"seriesColors\": [{\"serieName\": \"a) 18-24\",\"color\": \"#B2BEB5\"},{\"serieName\": \"b) 25-34\",\"color\": \"#7393B3\"},{\"serieName\": \"c) 35-44\",\"color\": \"#36454F\"},{\"serieName\": \"d) 45-54\",\"color\": \"#A9A9A9\"},{\"serieName\": \"e) 55-64\",\"color\": \"#6082B6\"},{\"serieName\": \"f) 65+\",\"color\": \"#708090\"},{\"serieName\": \"east\",\"color\": \"#B2BEB5\"},{\"serieName\": \"midwest\",\"color\": \"#7393B3\"},{\"serieName\": \"south\",\"color\": \"#36454F\"},{\"serieName\": \"west\",\"color\": \"#899499\"},{\"serieName\": \"southwest\",\"color\": \"#708090\"}],\"systemSeriesColors\": [{\"serieName\": \"a) 18-24\",\"color\": \"#B2BEB5\"},{\"serieName\": \"b) 25-34\",\"color\": \"#7393B3\"},{\"serieName\": \"c) 35-44\",\"color\": \"#36454F\"},{\"serieName\": \"d) 45-54\",\"color\": \"#A9A9A9\"},{\"serieName\": \"e) 55-64\",\"color\": \"#6082B6\"},{\"serieName\": \"f) 65+\",\"color\": \"#708090\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 906f05f4-67c5-43de-9d87-5fc0e02fd231
+  - id: Viz_9
+    answer:
+      name: Total  Cost Per Acquisition
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "average [Cost Per Acquisition] by [Campaign Name] sort by average [Cost Per Acquisition] descending [Region] [Date] [Date].monthly [Age Group] [Channel] [Cost]"
+      answer_columns:
+      - name: Age Group
+      - name: Average Cost Per Acquisition
+      - name: Campaign Name
+      - name: Channel
+      - name: Month(Date)
+      - name: Region
+      - name: Total Cost
+      table:
+        table_columns:
+        - column_id: Age Group
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Average Cost Per Acquisition
+          headline_aggregation: TABLE_AGGR
+        - column_id: Campaign Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Channel
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Month(Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Region
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Cost
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Campaign Name
+        - Region
+        - Month(Date)
+        - Age Group
+        - Channel
+        - Average Cost Per Acquisition
+        - Total Cost
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Campaign Name\",\"columnProperty\": {}},{\"columnId\": \"Average Cost Per Acquisition\",\"columnProperty\": {}}]}"
+      chart:
+        type: CUSTOM_CHART
+        chart_columns:
+        - column_id: Age Group
+        - column_id: Average Cost Per Acquisition
+        - column_id: Campaign Name
+        - column_id: Channel
+        - column_id: Month(Date)
+        - column_id: Region
+        - column_id: Total Cost
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"Campaign Name\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Region\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Average Cost Per Acquisition\",\"columnProperty\": {\"dataLabels\": false}},{\"columnId\": \"Month(Date)\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"c3670a22-dec7-4369-b8b6-a32f4af618b1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Cost Per Acquisition\"],\"isOpposite\": false}},{\"id\": \"620ca718-ca4a-44cb-ab09-7cfc5b0421f9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Campaign Name\",\"Region\",\"Month(Date)\"]}}],\"seriesColors\": [{\"serieName\": \"Average Cost Per Acquisition\",\"color\": \"#708090\"},{\"serieName\": \"west\",\"color\": \"#899499\"},{\"serieName\": \"southwest\",\"color\": \"#708090\"},{\"serieName\": \"south\",\"color\": \"#36454F\"},{\"serieName\": \"midwest\",\"color\": \"#7393B3\"},{\"serieName\": \"east\",\"color\": \"#B2BEB5\"}],\"systemSeriesColors\": [{\"serieName\": \"Average Cost Per Acquisition\",\"color\": \"#708090\"},{\"serieName\": \"west\",\"color\": \"#899499\"},{\"serieName\": \"southwest\",\"color\": \"#708090\"},{\"serieName\": \"south\",\"color\": \"#36454F\"},{\"serieName\": \"midwest\",\"color\": \"#7393B3\"},{\"serieName\": \"east\",\"color\": \"#B2BEB5\"},{\"serieName\": \"east, jun 2024\",\"color\": \"#721F27\"},{\"serieName\": \"east, jul 2024\",\"color\": \"#F47E89\"},{\"serieName\": \"east, aug 2024\",\"color\": \"#B6313E\"},{\"serieName\": \"east, sep 2024\",\"color\": \"#F9B3B9\"},{\"serieName\": \"east, oct 2024\",\"color\": \"#F04152\"},{\"serieName\": \"east, nov 2024\",\"color\": \"#2F3947\"},{\"serieName\": \"east, dec 2024\",\"color\": \"#A2ACBA\"},{\"serieName\": \"east, jan 2025\",\"color\": \"#47515F\"},{\"serieName\": \"east, feb 2025\",\"color\": \"#BEC6D0\"},{\"serieName\": \"east, mar 2025\",\"color\": \"#747E8C\"},{\"serieName\": \"east, apr 2025\",\"color\": \"#7A3D1F\"},{\"serieName\": \"east, may 2025\",\"color\": \"#FFA97E\"},{\"serieName\": \"east, jun 2025\",\"color\": \"#C26232\"},{\"serieName\": \"east, jul 2025\",\"color\": \"#FFCCB3\"},{\"serieName\": \"midwest, jun 2024\",\"color\": \"#FF8142\"},{\"serieName\": \"midwest, jul 2024\",\"color\": \"#422E75\"},{\"serieName\": \"midwest, aug 2024\",\"color\": \"#B094F8\"},{\"serieName\": \"midwest, sep 2024\",\"color\": \"#6A4ABA\"},{\"serieName\": \"midwest, oct 2024\",\"color\": \"#D1C0FB\"},{\"serieName\": \"midwest, nov 2024\",\"color\": \"#8C62F5\"},{\"serieName\": \"midwest, dec 2024\",\"color\": \"#025B3C\"},{\"serieName\": \"midwest, jan 2025\",\"color\": \"#56D3A8\"},{\"serieName\": \"midwest, feb 2025\",\"color\": \"#049160\"},{\"serieName\": \"midwest, mar 2025\",\"color\": \"#9BE5CB\"},{\"serieName\": \"midwest, apr 2025\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest, may 2025\",\"color\": \"#785F1A\"},{\"serieName\": \"midwest, jun 2025\",\"color\": \"#FCD977\"},{\"serieName\": \"midwest, jul 2025\",\"color\": \"#BF982A\"},{\"serieName\": \"south, jun 2024\",\"color\": \"#FDE9AF\"},{\"serieName\": \"south, jul 2024\",\"color\": \"#FCC838\"},{\"serieName\": \"south, aug 2024\",\"color\": \"#22636B\"},{\"serieName\": \"south, sep 2024\",\"color\": \"#82DFE9\"},{\"serieName\": \"south, oct 2024\",\"color\": \"#369FAA\"},{\"serieName\": \"south, nov 2024\",\"color\": \"#B5ECF2\"},{\"serieName\": \"south, dec 2024\",\"color\": \"#48D1E0\"},{\"serieName\": \"south, jan 2025\",\"color\": \"#163772\"},{\"serieName\": \"south, feb 2025\",\"color\": \"#71A1F4\"},{\"serieName\": \"south, mar 2025\",\"color\": \"#2359B6\"},{\"serieName\": \"south, apr 2025\",\"color\": \"#ABC7F9\"},{\"serieName\": \"south, may 2025\",\"color\": \"#2E75F0\"},{\"serieName\": \"south, jun 2025\",\"color\": \"#721F27\"},{\"serieName\": \"south, jul 2025\",\"color\": \"#F47E89\"},{\"serieName\": \"southwest, jun 2024\",\"color\": \"#B6313E\"},{\"serieName\": \"southwest, jul 2024\",\"color\": \"#F9B3B9\"},{\"serieName\": \"southwest, aug 2024\",\"color\": \"#F04152\"},{\"serieName\": \"southwest, sep 2024\",\"color\": \"#2F3947\"},{\"serieName\": \"southwest, oct 2024\",\"color\": \"#A2ACBA\"},{\"serieName\": \"southwest, nov 2024\",\"color\": \"#47515F\"},{\"serieName\": \"southwest, dec 2024\",\"color\": \"#BEC6D0\"},{\"serieName\": \"southwest, jan 2025\",\"color\": \"#747E8C\"},{\"serieName\": \"southwest, feb 2025\",\"color\": \"#7A3D1F\"},{\"serieName\": \"southwest, mar 2025\",\"color\": \"#FFA97E\"},{\"serieName\": \"southwest, apr 2025\",\"color\": \"#C26232\"},{\"serieName\": \"southwest, may 2025\",\"color\": \"#FFCCB3\"},{\"serieName\": \"southwest, jun 2025\",\"color\": \"#FF8142\"},{\"serieName\": \"southwest, jul 2025\",\"color\": \"#422E75\"},{\"serieName\": \"west, jun 2024\",\"color\": \"#B094F8\"},{\"serieName\": \"west, jul 2024\",\"color\": \"#6A4ABA\"},{\"serieName\": \"west, aug 2024\",\"color\": \"#D1C0FB\"},{\"serieName\": \"west, sep 2024\",\"color\": \"#8C62F5\"},{\"serieName\": \"west, oct 2024\",\"color\": \"#025B3C\"},{\"serieName\": \"west, nov 2024\",\"color\": \"#56D3A8\"},{\"serieName\": \"west, dec 2024\",\"color\": \"#049160\"},{\"serieName\": \"west, jan 2025\",\"color\": \"#9BE5CB\"},{\"serieName\": \"west, feb 2025\",\"color\": \"#06BF7F\"},{\"serieName\": \"west, mar 2025\",\"color\": \"#785F1A\"},{\"serieName\": \"west, apr 2025\",\"color\": \"#FCD977\"},{\"serieName\": \"west, may 2025\",\"color\": \"#BF982A\"},{\"serieName\": \"west, jun 2025\",\"color\": \"#FDE9AF\"},{\"serieName\": \"west, jul 2025\",\"color\": \"#FCC838\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: fields
+            columns:
+            - Campaign Name
+            - Region
+            - Month(Date)
+            - Average Cost Per Acquisition
+        custom_chart_name: Muze Studio (rad)
+        custom_visual_props: "{\"clientState\":\"{\\\"version\\\":1,\\\"playground\\\":{\\\"version\\\":\\\"v1\\\",\\\"code\\\":{\\\"jsCodeBase64\\\":\\\"Y29uc3QgeyBtdXplLCBnZXREYXRhRnJvbVNlYXJjaFF1ZXJ5IH0gPSB2aXo7CmNvbnN0IGh0bWwgPSBtdXplLk9wZXJhdG9ycy5odG1sOwpjb25zdCBkYXRhID0gZ2V0RGF0YUZyb21TZWFyY2hRdWVyeSgpOwoKLy8g8J+UjSBEZXZlbG9wZXIgRGVidWcKY29uc3QgeyBzY2hlbWEsIGRhdGE6IHJhd0RhdGEgfSA9IGRhdGEuZ2V0RGF0YSgpOwpjb25zb2xlLmxvZygi4pyFIFNjaGVtYToiLCBzY2hlbWEpOwpjb25zb2xlLmxvZygi4pyFIEZpcnN0IDUgUm93czoiLCByYXdEYXRhLnNsaWNlKDAsIDUpKTsKCi8vIPCflKcgQmFzaWMgQ29uZmlnCmNvbnN0IENPTFVNTlMgPSBbIlRvdGFsIENvc3QiLCAiUmVnaW9uIl07CmNvbnN0IFJPV1MgPSBbIkNoYW5uZWwiLCAiQWdlIEdyb3VwIl07CmNvbnN0IENPTE9SX0JZID0gIlJlZ2lvbiI7CmNvbnN0IEVYQ0xVREVEX0ZJRUxEUyA9IFsiX19pZF9fIiwgIk1lYXN1cmUgbmFtZXMiLCAiTWVhc3VyZSB2YWx1ZXMiXTsKCi8vIPCfkqwgVG9vbHRpcCBmb3JtYXR0ZXIgKGNsZWFuIGFuZCBjdXN0b21pemFibGUpCmNvbnN0IGZvcm1hdFRvb2x0aXAgPSAoZGF0YVN0b3JlKSA9PiB7CiAgY29uc3QgZG0gPSBkYXRhU3RvcmUuZGF0YU1vZGVsOwogIGNvbnN0IHsgZGF0YSwgc2NoZW1hIH0gPSBkbS5nZXREYXRhKCk7CgogIGxldCBodG1sU3RyID0gYDxkaXYgY2xhc3M9InRzLXRvb2x0aXAiPmA7CgogIGRhdGFbMF0uZm9yRWFjaCgodmFsLCBpKSA9PiB7CiAgICBjb25zdCBsYWJlbCA9IHNjaGVtYVtpXT8ubmFtZTsKICAgIGlmICghRVhDTFVERURfRklFTERTLmluY2x1ZGVzKGxhYmVsKSkgewogICAgICBodG1sU3RyICs9IGAKICAgICAgICA8ZGl2IGNsYXNzPSJ0cy10b29sdGlwLXJvdyI+CiAgICAgICAgICA8c3BhbiBjbGFzcz0idHMtdG9vbHRpcC1sYWJlbCI+JHtsYWJlbH08L3NwYW4+CiAgICAgICAgICA8c3BhbiBjbGFzcz0idHMtdG9vbHRpcC12YWx1ZSI+JHt2YWx9PC9zcGFuPgogICAgICAgIDwvZGl2PmA7CiAgICB9CiAgfSk7CgogIGh0bWxTdHIgKz0gYDwvZGl2PmA7CiAgcmV0dXJuIGh0bWwoW2h0bWxTdHJdKTsKfTsKCi8vIPCfk4ogUmVuZGVyIENoYXJ0Cm11emUKICAuY2FudmFzKCkKICAuY29sdW1ucyhDT0xVTU5TKQogIC5yb3dzKFJPV1MpCiAgLmxheWVycyhbCiAgICB7CiAgICAgIG1hcms6ICJiYXIiLAogICAgICBlbmNvZGluZzogeyBjb2xvcjogQ09MT1JfQlkgfSwKICAgIH0sCiAgXSkKICAuY29uZmlnKHsKICAgIGludGVyYWN0aW9uOiB7CiAgICAgIHRvb2x0aXA6IHsKICAgICAgICBmb3JtYXR0ZXI6IGZvcm1hdFRvb2x0aXAsCiAgICAgIH0sCiAgICB9LAogICAgYm9yZGVyOiB7CiAgICAgIHNob3dSb3dCb3JkZXJzOiBmYWxzZSwKICAgICAgc2hvd0NvbEJvcmRlcnM6IGZhbHNlLAogICAgICBzaG93VmFsdWVCb3JkZXJzOiB7IHRvcDogZmFsc2UsIGJvdHRvbTogdHJ1ZSwgbGVmdDogdHJ1ZSwgcmlnaHQ6IGZhbHNlIH0sCiAgICB9LAogICAgcm93czogewogICAgICBmYWNldHM6IHsgc2hvdzogdHJ1ZSB9LAogICAgICBoZWFkZXJzOiB7IHNob3c6IHRydWUgfSwKICAgIH0sCiAgICBncmlkTGluZXM6IHsKICAgICAgeDogeyBzaG93OiBmYWxzZSB9LAogICAgICB5OiB7IHNob3c6IGZhbHNlIH0sCiAgICB9LAogICAgYXhlczogewogICAgICB4OiB7CiAgICAgICAgc2hvd0F4aXNOYW1lOiBmYWxzZSwKICAgICAgICB0aWNrSW50ZXJ2YWw6IHsgc3RlcDogQ09MT1JfQlkgfSwKICAgICAgfSwKICAgIH0sCiAgICBsZWdlbmQ6IHsKICAgICAgY29sb3I6IHsKICAgICAgICByYW5nZTogWyIjQjJCRUI1IiwgIiM3MzkzQjMiLCAiIzM2NDU0RiIsICIjNzA4MDkwIiwgIiM4OTk0OTkiXSwKICAgICAgICBwb3NpdGlvbjogInRvcCIsCiAgICAgIH0sCiAgICB9LAogICAgdW5pZm9ybUF4aXNEb21haW5zOiBmYWxzZSwKICB9KQogIC5kYXRhKGRhdGEpCiAgLm1vdW50KCIjY2hhcnQiKTsK\\\",\\\"cssCodeBase64\\\":\\\"aHRtbCwgYm9keSB7CiAgICBtYXJnaW46IDA7CiAgICBwYWRkaW5nOiAwOwp9CgojY2hhcnQgewogICAgd2lkdGg6IDEwMHZ3OwogICAgaGVpZ2h0OiAxMDB2aDsKfQoKLnRzLXRvb2x0aXAgewogIHBvc2l0aW9uOiBhYnNvbHV0ZTsgICAgICAgICAgICAgICAgLyogY3JpdGljYWw6IG11c3QgZmxvYXQgYWJvdmUgY2FudmFzICovCiAgei1pbmRleDogOTk5OTsgICAgICAgICAgICAgICAgICAgICAvKiBlbnN1cmUgaXQncyBhYm92ZSBjaGFydCBsYXllcnMgKi8KICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDY5LCA3NCwgODQsIDAuOTUpOyAgLyogc2VtaS10cmFuc3BhcmVudCBibGFjayAqLwogIGNvbG9yOiAjZmZmOwogIHBhZGRpbmc6IDEycHggMTZweDsKICBib3JkZXItcmFkaXVzOiA2cHg7CiAgcG9pbnRlci1ldmVudHM6IG5vbmU7CiAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLCBzYW5zLXNlcmlmOwogIGZvbnQtc2l6ZTogMTNweDsKICBtYXgtd2lkdGg6IDI2MHB4OwogIGJhY2tkcm9wLWZpbHRlcjogYmx1cigycHgpOyAgICAgICAvKiBvcHRpb25hbCBmcm9zdGVkLWdsYXNzIGVmZmVjdCAqLwp9CgoudHMtdG9vbHRpcC1yb3cgewogIGRpc3BsYXk6IGZsZXg7CiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuOwogIG1hcmdpbi1ib3R0b206IDZweDsKfQoKLnRzLXRvb2x0aXAtbGFiZWwgewogIC8qIGNvbG9yOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNyk7ICovCiAgY29sb3I6ICNmZmY7Cn0KCi50cy10b29sdGlwLXZhbHVlIHsKICBmb250LXdlaWdodDogNTAwOwogIGNvbG9yOiAjZmZmOwp9Cg==\\\",\\\"htmlCodeBase64\\\":\\\"PGRpdiBpZD0iY2hhcnQiPjwvZGl2Pg==\\\"},\\\"splitSizes\\\":[55,45]}}\"}"
+      display_mode: CHART_MODE
+      dynamic_name: Total  Cost Per Acquisition
+    viz_guid: bf4d24bc-bb99-42cc-bc14-57ddd877515d
+  - id: Viz_10
+    answer:
+      name: MoM Conversions by Channel
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Conversions] [Region] [Region].east [Region].midwest [Region].south [Region].southwest [Region].west [Region].{null} [Date].'this month' vs [Date].'last month' [Channel]"
+      answer_columns:
+      - name: Channel
+      - name: Conversions(last month)
+      - name: Conversions(this month)
+      - name: Region
+      table:
+        table_columns:
+        - column_id: Channel
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Conversions(last month)
+          headline_aggregation: TABLE_AGGR
+        - column_id: Conversions(this month)
+          headline_aggregation: TABLE_AGGR
+        - column_id: Region
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Region
+        - Channel
+        - Conversions(last month)
+        - Conversions(this month)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: CUSTOM_CHART
+        chart_columns:
+        - column_id: Channel
+        - column_id: Conversions(last month)
+        - column_id: Conversions(this month)
+        - column_id: Region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": false},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"Region\",\"columnProperty\": {\"dataLabels\": false}},{\"columnId\": \"Conversions(last month)\",\"columnProperty\": {\"dataLabels\": false}},{\"columnId\": \"Conversions(this month)\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"0513045f-4a9a-4845-86f4-d1dd556d7a7c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions(last month)\"],\"isOpposite\": false}},{\"id\": \"68d51280-c636-4bde-a2f1-f2fce5660aa1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions(this month)\"],\"isOpposite\": true}},{\"id\": \"9aead290-e88a-48c8-9e57-787b95109081\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Region\"]}}],\"seriesColors\": [{\"serieName\": \"a) 18-24\",\"color\": \"#B2BEB5\"},{\"serieName\": \"b) 25-34\",\"color\": \"#7393B3\"},{\"serieName\": \"c) 35-44\",\"color\": \"#36454F\"},{\"serieName\": \"d) 45-54\",\"color\": \"#A9A9A9\"},{\"serieName\": \"e) 55-64\",\"color\": \"#6082B6\"},{\"serieName\": \"f) 65+\",\"color\": \"#708090\"},{\"serieName\": \"east\",\"color\": \"#B2BEB5\"},{\"serieName\": \"midwest\",\"color\": \"#7393B3\"},{\"serieName\": \"south\",\"color\": \"#36454F\"},{\"serieName\": \"west\",\"color\": \"#899499\"},{\"serieName\": \"southwest\",\"color\": \"#708090\"}],\"systemSeriesColors\": [{\"serieName\": \"a) 18-24\",\"color\": \"#B2BEB5\"},{\"serieName\": \"b) 25-34\",\"color\": \"#7393B3\"},{\"serieName\": \"c) 35-44\",\"color\": \"#36454F\"},{\"serieName\": \"d) 45-54\",\"color\": \"#A9A9A9\"},{\"serieName\": \"e) 55-64\",\"color\": \"#6082B6\"},{\"serieName\": \"f) 65+\",\"color\": \"#708090\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: fields
+            columns:
+            - Region
+            - Conversions(last month)
+            - Conversions(this month)
+        custom_chart_name: Muze Studio (rad)
+        custom_visual_props: "{\"clientState\":\"{\\\"version\\\":1,\\\"playground\\\":{\\\"version\\\":\\\"v1\\\",\\\"code\\\":{\\\"jsCodeBase64\\\":\\\"Y29uc3QgeyBtdXplLCBnZXREYXRhRnJvbVNlYXJjaFF1ZXJ5IH0gPSB2aXo7CmNvbnN0IGRhdGEgPSBnZXREYXRhRnJvbVNlYXJjaFF1ZXJ5KCk7CmNvbnN0IGh0bWwgPSBtdXplLk9wZXJhdG9ycy5odG1sOwoKCi8vIOKchSBFeHRyYWN0IHNjaGVtYSBhbmQgcmF3RGF0YSBmcm9tIHRoZSBEYXRhTW9kZWwKY29uc3QganNvbkRhdGEgPSBkYXRhLmdldERhdGEoKTsKY29uc3QgcmF3RGF0YSA9IGpzb25EYXRhLmRhdGE7CmNvbnN0IHNjaGVtYSA9IGpzb25EYXRhLnNjaGVtYTsKCmNvbnNvbGUubG9nKCLinIUgU2NoZW1hOiIsIHNjaGVtYSk7CmNvbnNvbGUubG9nKCLinIUgUmF3IERhdGEgU2FtcGxlOiIsIHJhd0RhdGEuc2xpY2UoMCwgMjApKTsKCmNvbnN0IFJvd0ZpZWxkID0gWyJSZWdpb24iLCAiQ2hhbm5lbCJdOwpjb25zdCBDb2x1bW5GaWVsZDEgPSAiQ29udmVyc2lvbnModGhpcyBtb250aCkiOwpjb25zdCBDb2x1bW5GaWVsZDIgPSAiQ29udmVyc2lvbnMobGFzdCBtb250aCkiOwpjb25zdCBDb2xvckZpZWxkID0gIlJlZ2lvbiI7CmNvbnN0IFhheGlzTmFtZSA9ICJNb250aGx5IFBlcmZvcm1hbmNlIHZzIExhc3QgWWVhciI7CgptdXplCiAuY2FudmFzKCkKIC5yb3dzKFtSb3dGaWVsZF0pCiAuY29sdW1ucyhbCiAgIG11emUuT3BlcmF0b3JzLnNoYXJlKENvbHVtbkZpZWxkMSwgQ29sdW1uRmllbGQyKSwKIF0pCiAubGF5ZXJzKFsKICAgewogICAgIG1hcms6ICJiYXIiLAogICAgIGVuY29kaW5nOiB7CiAgICAgICAgc2l6ZToge3ZhbHVlOiAoKSA9PiAuNix9LAogICAgICAgIHg6IENvbHVtbkZpZWxkMSwKICAgICAgICAvL2NvbG9yOiB7dmFsdWU6ICgpID0+ICIjMjY2ODY3Iix9LAogICAgICAgIGNvbG9yOiBDb2xvckZpZWxkLAogICAgIAogICAgIH0sCiAgICAgCiAgIH0sCiAgIHsKICAgIG1hcms6ICJiYXIiLAogICAgZW5jb2Rpbmc6IHsKICAgICAgICB4OiBDb2x1bW5GaWVsZDIsCiAgICAgICAgY29sb3I6IHsgdmFsdWU6ICgpID0+ICIjREFBNTIwIiB9LAogICAgICAgIHNpemU6IHsgdmFsdWU6ICgpID0+IDAuMDA2IH0sICAgLy8gdGhpY2tuZXNzCiAgICB9LAogICAgfSwKICAgIHsKICAgIG1hcms6ICJhcmMiLAogICAgZW5jb2Rpbmc6IHsKICAgICAgICB4OiBDb2x1bW5GaWVsZDIsCiAgICAgICAgY29sb3I6IHsgdmFsdWU6ICgpID0+ICIjREFBNTIwIiB9LAogICAgICAgIHNpemU6IHsgdmFsdWU6ICgpID0+IDAuMn0sICAgLy8gdGhpY2tuZXNzCiAgICB9LAogICAgfQoKIF0pCiAuY29uZmlnKHsKICAgIC8vcm93czoge2JhbmQ6IHtwYWRkaW5nOiAwLjMsfSx9LAogICAgaW50ZXJhY3Rpb246IHsKICAgICAgdG9vbHRpcDogewogICAgICAgIGZvcm1hdHRlcjogKGRhdGFTdG9yZSkgPT4gewogICAgICAgICAgY29uc3QgZG0gPSBkYXRhU3RvcmUuZGF0YU1vZGVsOwogICAgICAgICAgY29uc3QgZGF0YSA9IGRtLmdldERhdGEoKS5kYXRhOwogICAgICAgICAgY29uc3Qgc2NoZW1hID0gZG0uZ2V0RGF0YSgpLnNjaGVtYTsKICAgICAgICAgIGNvbnN0IGV4Y2x1ZGVkRmllbGRzID0gWyJfX2lkX18iLCAiTWVhc3VyZSBuYW1lcyIsICJNZWFzdXJlIHZhbHVlcyJdOwoKICAgICAgICAgIC8vIEJ1aWxkIG5pY2UgdG9vbHRpcCBsYXlvdXQgdXNpbmcgcmF3IHZhbHVlcwogICAgICAgICAgbGV0IHRvb2x0aXBIVE1MID0gYDxkaXYgY2xhc3M9InRzLXRvb2x0aXAiPmA7CgogICAgICAgICAgZGF0YVswXS5mb3JFYWNoKCh2YWwsIGkpID0+IHsKICAgICAgICAgICAgY29uc3QgbGFiZWwgPSBzY2hlbWFbaV0/Lm5hbWUgfHwgYEZpZWxkICR7aX1gOwogICAgICAgICAgICBpZiAoIWV4Y2x1ZGVkRmllbGRzLmluY2x1ZGVzKGxhYmVsKSkgewogICAgICAgICAgICAgICAgdG9vbHRpcEhUTUwgKz0gYAogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idHMtdG9vbHRpcC1yb3ciPgogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ0cy10b29sdGlwLWxhYmVsIj4ke2xhYmVsfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0idHMtdG9vbHRpcC12YWx1ZSI+JHt2YWx9PC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+YDsKICAgICAgICAgICAgfQogICAgICAgICAgICB9KTsKCiAgICAgICAgICB0b29sdGlwSFRNTCArPSBgPC9kaXY+YDsKICAgICAgICAgIHJldHVybiBodG1sKFt0b29sdGlwSFRNTF0pOyAvLyBpbXBvcnRhbnQ6IGh0bWxgYCB0YWdnZWQgdGVtcGxhdGUKICAgICAgICB9LAogICAgICB9LAogICAgfSwKICAgIGJvcmRlcjogewogICAgICBzaG93Um93Qm9yZGVyczogeyB0b3A6IGZhbHNlLCBib3R0b206IGZhbHNlLCBsZWZ0OiBmYWxzZSwgcmlnaHQ6IGZhbHNlIH0sCiAgICAgIHNob3dDb2xCb3JkZXJzOiB7IHRvcDogZmFsc2UsIGJvdHRvbTogZmFsc2UsIGxlZnQ6IGZhbHNlLCByaWdodDogZmFsc2UgfSwKICAgICAgc2hvd1ZhbHVlQm9yZGVyczogeyB0b3A6IGZhbHNlLCBib3R0b206IGZhbHNlLCBsZWZ0OiBmYWxzZSwgcmlnaHQ6IGZhbHNlIH0sCiAgICB9LAogICAgcm93czogewogICAgICBmYWNldHM6IHsgc2hvdzogdHJ1ZSB9LAogICAgICBoZWFkZXJzOiB7IHNob3c6IHRydWUgfSwKICAgIH0sCiAgICBncmlkTGluZXM6IHsKICAgICAgeDogeyBzaG93OiBmYWxzZSB9LAogICAgICB5OiB7IHNob3c6IGZhbHNlIH0sCiAgICB9LAogICAgYXhlczogewogICAgICB4OiB7CiAgICAgICAgc2hvd0F4aXNOYW1lOiBmYWxzZSwKICAgICAgICAvL3RpY2tJbnRlcnZhbDogeyBzdGVwOiBTdGVwRmllbGQgfSwKICAgICAgfSwKICAgIH0sCiAgICBsZWdlbmQ6IHsKICAgICAgY29sb3I6IHsKICAgICAgICByYW5nZTogWyIjQjJCRUI1IiwgIiM3MzkzQjMiLCAiIzM2NDU0RiIsICIjNzA4MDkwIiwgIiM4OTk0OTkiXSwKICAgICAgICBwb3NpdGlvbjogInRvcCIsCiAgICAgIH0sCiAgICB9LAogICAgdW5pZm9ybUF4aXNEb21haW5zOiBmYWxzZSwKICB9KQogLmRhdGEoZGF0YSkKIC5tb3VudCgiI2NoYXJ0Iik7IC8vIG1vdW50IHlvdXIgY2hhcnQKCiAg\\\",\\\"cssCodeBase64\\\":\\\"aHRtbCwgYm9keSB7CiAgbWFyZ2luOiAwOwogIHBhZGRpbmc6IDA7Cm92ZXJmbG93OiBoaWRkZW47Cn0KCiNjaGFydCB7CiAgd2lkdGg6IDEwMHZ3OwogIGhlaWdodDogMTAwdmg7Cn0KCi8qIFRvb2x0aXAgY29udGFpbmVyIChwb3NpdGlvbmluZyBpcyBoYW5kbGVkIGJ5IE11emU7IGFic29sdXRlIGlzIGZpbmUpICovCi50cy10b29sdGlwIHsKICBwb3NpdGlvbjogYWJzb2x1dGU7CiAgei1pbmRleDogOTk5OTsKICBiYWNrZ3JvdW5kOiByZ2JhKDM0LCAzOSwgNDMsIDAuODUpOyAgLyogZGFya2VyLCBzbGlnaHRseSBtb3JlIG9wYXF1ZSBmb3IgbGVnaWJpbGl0eSAqLwogIGNvbG9yOiAjZmZmOwogIHBhZGRpbmc6IDEwcHggMTJweDsKICBib3JkZXItcmFkaXVzOiA4cHg7CiAgcG9pbnRlci1ldmVudHM6IG5vbmU7CiAgZm9udC1mYW1pbHk6IHZhcigtLXRzLXZhci1yb290LWZvbnQtZmFtaWx5LCAiUm9ib3RvIiwgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYpOwogIGZvbnQtc2l6ZTogMTJweDsKICBsaW5lLWhlaWdodDogMS4zNTsKICBtYXgtd2lkdGg6IDMyMHB4OyAgICAgICAgICAgICAgICAgICAgLyogYSBiaXQgd2lkZXIgZm9yIDItY29sdW1uIGxhYmVsL3ZhbHVlICovCiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDJweCk7CiAgYm94LXNoYWRvdzogMCA2cHggMTZweCByZ2JhKDAsMCwwLDAuMjUpOwogIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogIHRyYW5zZm9ybTogdHJhbnNsYXRlWigwKTsgICAgICAgICAgICAvKiBjcmlzcCBvbiBIaURQSSAqLwp9CgovKiBPcHRpb25hbCB0aXRsZSBsaW5lICh1c2UgaXQgaWYgeW91IGluY2x1ZGUgYSBoZWFkaW5nIGxpa2UgUmVnaW9uKSAqLwoudHMtdG9vbHRpcCAudHMtdG9vbHRpcC10aXRsZSB7CiAgZm9udC13ZWlnaHQ6IDYwMDsKICBtYXJnaW4tYm90dG9tOiA2cHg7CiAgb3BhY2l0eTogMC45NTsKfQoKLyogTGFiZWwvdmFsdWUgcm93cyAqLwoudHMtdG9vbHRpcC1yb3cgewogIGRpc3BsYXk6IGdyaWQ7CiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiBhdXRvIDFmcjsgICAgIC8qIGxhYmVsIHwgdmFsdWUgKi8KICBnYXA6IDEwcHg7CiAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICBwYWRkaW5nOiAzcHggMDsKfQoKLyogTGFiZWxzIHNsaWdodGx5IG11dGVkICovCi50cy10b29sdGlwLWxhYmVsIHsKICBjb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjc1KTsKICB3aGl0ZS1zcGFjZTogbm93cmFwOwp9CgovKiBWYWx1ZXMgcmlnaHQtYWxpZ25lZCwgdGFidWxhciBudW1lcmFscyBmb3IgbmVhdCBjb2x1bW5zICovCi50cy10b29sdGlwLXZhbHVlIHsKICB0ZXh0LWFsaWduOiByaWdodDsKICBmb250LXZhcmlhbnQtbnVtZXJpYzogdGFidWxhci1udW1zOwogIGNvbG9yOiAjZmZmOwogIGZvbnQtd2VpZ2h0OiA1MDA7Cn0KCi8qIFRpbnkgY29sb3IgY2hpcHMgdG8gbWF0Y2ggeW91ciBtYXJrcyAqLwoudHMtY2hpcCB7CiAgZGlzcGxheTogaW5saW5lLWJsb2NrOwogIHdpZHRoOiA5cHg7CiAgaGVpZ2h0OiA5cHg7CiAgYm9yZGVyLXJhZGl1czogMnB4OwogIG1hcmdpbi1yaWdodDogNnB4OwogIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpOwp9Ci50cy1jaGlwLnJlZCB7IGJhY2tncm91bmQ6IHJlZDsgfQoudHMtY2hpcC5ibGFjayB7IGJhY2tncm91bmQ6IGJsYWNrOyB9CgovKiBUaGluIHNlcGFyYXRvciB5b3UgY2FuIGluc2VydCBpZiB5b3UgYWRkIG1vcmUgY29udGV4dCByb3dzIGxhdGVyICovCi50cy10b29sdGlwLXNlcCB7CiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsMC4xMik7CiAgbWFyZ2luOiA2cHggMDsKfQoK\\\",\\\"htmlCodeBase64\\\":\\\"PGRpdiBpZD0iY2hhcnQiPjwvZGl2Pg==\\\"},\\\"splitSizes\\\":[55,45]}}\"}"
+      display_mode: CHART_MODE
+      dynamic_name: MoM Conversions by Channel
+    viz_guid: dabcd1f6-8c03-42ad-b2e2-8fc1678f108c
+  - id: Viz_11
+    answer:
+      name: Conversions by County
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Conversions] by [County]"
+      answer_columns:
+      - name: Conversions
+      - name: County
+      table:
+        table_columns:
+        - column_id: Conversions
+          headline_aggregation: SUM
+        - column_id: County
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - County
+        - Conversions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Conversions\",\"columnProperty\": {}}]}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Conversions
+        - column_id: County
+        axis_configs:
+        - x:
+          - County
+          "y":
+          - Conversions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0670099156844398E7,4583154.878015455],\"zoomLevel\": 5.154761023008765,\"extent\": [-1.4422886271899385E7,2832000.703133239,-6917312.041789411,6334309.052897671]},\"chartSpecific\": {\"customProps\": \"{\\\"tileType\\\":\\\"light-v9\\\",\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true}}}\"},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Conversions\",\"columnProperty\": {\"dataLabels\": false,\"conditionalFormatting\": {\"rows\": [{\"backgroundFormatType\": \"GRADIENT\",\"gradientBackgroundAttrs\": {\"colors\": [\"#B5ECF2\",\"#2770EF\",\"#B6313E\"],\"backgroundFormatRange\": [1.0,438.5,876.0]},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false}]}}}],\"axisProperties\": [{\"id\": \"f7b8c352-be4a-4e20-928f-5f4990851ecf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions\"],\"isOpposite\": false}},{\"id\": \"d59b0207-3f64-4da8-b064-1845cd04e934\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"County\"]}}],\"multiColorSeriesColors\": [{\"serieName\": \"Conversions\",\"colorMap\": [{\"serieName\": \"County\",\"color\": [\"#ff8a5f\",\"#c41c04\"]}]}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Conversions\",\"colorMap\": [{\"serieName\": \"County\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}],\"tooltipConfig\": {\"columnIds\": [\"County\",\"Conversions\"]}}"
+      display_mode: CHART_MODE
+    viz_guid: 4c69d1cf-7038-465a-8545-0dee3bf6586c
+  - id: Viz_12
+    answer:
+      name: Conversions by Age Group
+      tables:
+      - id: Web Marketing
+        name: Web Marketing
+        obj_id: WebMarketing_Model
+      search_query: "[Conversions] by [Age Group] by [Campaign Name]"
+      answer_columns:
+      - name: Age Group
+      - name: Campaign Name
+      - name: Conversions
+      table:
+        table_columns:
+        - column_id: Age Group
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Campaign Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Conversions
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Age Group
+        - Campaign Name
+        - Conversions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Age Group\",\"columnProperty\": {}},{\"columnId\": \"Campaign Name\",\"columnProperty\": {}},{\"columnId\": \"Conversions\",\"columnProperty\": {}}]}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Age Group
+        - column_id: Campaign Name
+        - column_id: Conversions
+        axis_configs:
+        - x:
+          - Age Group
+          "y":
+          - Conversions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": false},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"Campaign Name\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Age Group\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Conversions\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"72b34c03-9017-47eb-87a2-c8e67e5e358c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Conversions\"],\"isOpposite\": false}},{\"id\": \"22f96ddf-763b-4596-b306-bb2d48753dac\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Age Group\"]}}],\"seriesColors\": [{\"serieName\": \"a) 18-24\",\"color\": \"#B2BEB5\"},{\"serieName\": \"b) 25-34\",\"color\": \"#7393B3\"},{\"serieName\": \"c) 35-44\",\"color\": \"#36454F\"},{\"serieName\": \"d) 45-54\",\"color\": \"#A9A9A9\"},{\"serieName\": \"e) 55-64\",\"color\": \"#6082B6\"},{\"serieName\": \"f) 65+\",\"color\": \"#708090\"}],\"systemSeriesColors\": [{\"serieName\": \"a) 18-24\",\"color\": \"#06BF7F\"},{\"serieName\": \"b) 25-34\",\"color\": \"#FCC838\"},{\"serieName\": \"c) 35-44\",\"color\": \"#82DFE9\"},{\"serieName\": \"d) 45-54\",\"color\": \"#48D1E0\"},{\"serieName\": \"e) 55-64\",\"color\": \"#71A1F4\"},{\"serieName\": \"f) 65+\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: c6fe760a-6460-44dc-ae66-6d57456cb694
+  groups:
+  - id: Group_1
+    name: Group 1
+    visualizations:
+    - Viz_4
+    - Viz_3
+    group_guid: d7e79927-439a-4591-adbe-cabb7014cab1
+  - id: Group_2
+    name: Group 2
+    visualizations:
+    - Viz_5
+    - Viz_6
+    group_guid: 34311894-7ced-4d93-8908-d18b963ab609
+  filters:
+  - column:
+    - Region
+    oper: in
+    values:
+    - midwest
+    - "{null}"
+    - East
+    - South
+    - Southwest
+    - West
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Date
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: Campaign
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 6
+        "y": 18
+        height: 4
+        width: 3
+      - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_8
+        x: 9
+        "y": 18
+        height: 4
+        width: 3
+      - visualization_id: Viz_9
+        x: 6
+        "y": 8
+        height: 10
+        width: 6
+      - visualization_id: Viz_10
+        x: 0
+        "y": 8
+        height: 10
+        width: 6
+      - visualization_id: Viz_12
+        x: 0
+        "y": 8
+        height: 10
+        width: 6
+      - visualization_id: Group_1
+        x: 6
+        "y": 0
+        height: 4
+        width: 6
+      - visualization_id: Group_2
+        x: 6
+        "y": 4
+        height: 4
+        width: 6
+      - visualization_id: Viz_11
+        x: 0
+        "y": 18
+        height: 8
+        width: 6
+      id: 0aa92a0d-39a2-4d44-a3e4-8f42efd8cc99
+      group_layouts:
+      - id: Group_1
+        tiles:
+        - visualization_id: Viz_3
+          x: 6
+          "y": 0
+          height: 6
+          width: 6
+        - visualization_id: Viz_4
+          x: 0
+          "y": 0
+          height: 6
+          width: 6
+      - id: Group_2
+        tiles:
+        - visualization_id: Viz_5
+          x: 0
+          "y": 0
+          height: 6
+          width: 6
+        - visualization_id: Viz_6
+          x: 6
+          "y": 0
+          height: 6
+          width: 6
+    - name: Crosstab
+      description: ""
+      tiles:
+      - visualization_id: Viz_7
+        x: 0
+        "y": 0
+        height: 8
+        width: 12
+      id: 0cebded6-61bd-4716-9892-cdfeafb951f3
+  ordered_chips:
+  - name: Region
+    type: FILTER
+  - name: Date
+    type: FILTER
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_A
+    - name: hide_group_title
+      value: "true"
+    - name: hide_group_description
+      value: "false"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "true"

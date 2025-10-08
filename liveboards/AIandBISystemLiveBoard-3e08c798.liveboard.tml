@@ -1,0 +1,1900 @@
+obj_id: AIandBISystemLiveBoard-3e08c798
+liveboard:
+  name: AI and BI System LiveBoard
+  description: The LiveBoard showcases usage and adoption metrics. The datasource powering the LiveBoard is QueryStats.
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Monthly Active Users
+      description: Last Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] [Query Start Time].'last month'"
+      answer_columns:
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3191a12c-7fbe-470d-9a88-fa83ff6871a7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"09051c65-8781-41cc-a862-28d69e579a09\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: e04e506b-469a-425a-bcc7-11a33ebdd15f
+  - id: Viz_2
+    answer:
+      name: Total Active Users
+      description: All Time
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID]"
+      answer_columns:
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"13e88647-34d1-4477-971e-ce2ecc671b11\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"bd0a4030-e490-45b5-aae4-cc7ca2cbe9b3\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: f2a4d681-59f5-4bac-8f04-1ac2500531ba
+  - id: Viz_3
+    answer:
+      name: Annual Active Users
+      description: Last Year
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] [Query Start Time].'last year'"
+      answer_columns:
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3dd44b24-6183-474d-8cfe-195ac91e34cb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"ce4918df-b4f6-433d-a9d6-44893becda82\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: f7fa8434-dca5-4c44-8339-48aa2cc1e0e0
+  - id: Viz_4
+    answer:
+      name: Quarterly Active Users
+      description: Last Quarter
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] [Query Start Time].'last quarter'"
+      answer_columns:
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"20848b1e-b9fd-40e1-a8cf-0bfb2cc97b8b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"1f004672-caae-4f03-952f-509a1ab0b39b\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: f9576fc1-0743-4e32-837d-e0f03d8d721b
+  - id: Viz_5
+    answer:
+      name: Daily Active Users
+      description: Yesterday
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] [Query Start Time].'last day'"
+      answer_columns:
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d4296cbb-9d40-4730-8a3b-766da01341b4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"196b1cbd-b78b-473a-b4af-ccc1fd2d643c\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: be517534-13be-4934-a0c3-44db3e33d780
+  - id: Viz_6
+    answer:
+      name: Hourly Active Query Users
+      description: Per Day of Week in Filtered Range
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] by [Query Start Time].'day of week' by [Query Start Time].'hour of day' sort by [Query Start Time] [Query Start Time].'day of week' descending"
+      answer_columns:
+      - name: Day of Week(Query Start Time)
+      - name: HOUR_OF_DAY(Query Start Time)
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Day of Week(Query Start Time)
+          show_headline: false
+        - column_id: HOUR_OF_DAY(Query Start Time)
+          show_headline: false
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Day of Week(Query Start Time)
+        - HOUR_OF_DAY(Query Start Time)
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_AREA
+        chart_columns:
+        - column_id: Day of Week(Query Start Time)
+        - column_id: HOUR_OF_DAY(Query Start Time)
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - x:
+          - HOUR_OF_DAY(Query Start Time)
+          "y":
+          - Unique Number of User ID
+          color:
+          - Day of Week(Query Start Time)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": false,\"allLabels\": false,\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"Day of Week(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"HOUR_OF_DAY(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"60c8e902-f0ae-4de5-a370-02c7adc47517\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"4337f6c0-bdaa-4ba7-9ce5-45b6c8bc7c5d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"HOUR_OF_DAY(Query Start Time)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"monday\",\"color\": \"#06BF7F\"},{\"serieName\": \"tuesday\",\"color\": \"#FCD977\"},{\"serieName\": \"wednesday\",\"color\": \"#FCC838\"},{\"serieName\": \"thursday\",\"color\": \"#f36775\"},{\"serieName\": \"friday\",\"color\": \"#F04152\"},{\"serieName\": \"saturday\",\"color\": \"#5891f3\"},{\"serieName\": \"sunday\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 943da184-f18c-4865-a1d8-7f27cd0e1473
+  - id: Viz_7
+    answer:
+      name: Weekly Active Users
+      description: Last Week
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] [Query Start Time].'last week'"
+      answer_columns:
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"72e3ed54-c8ef-4b12-9853-6d22fda17dc1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"116b657a-b07e-47a3-ae6c-47ddf69e770d\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 4a8f4642-052a-464d-8d74-bfe1985b02f5
+  - id: Viz_8
+    answer:
+      name: Top 20 Models
+      description: By Usage and Number of Users
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "count [Model ID] [Model] top 20 [Model] != '{empty}' [User Count]"
+      answer_columns:
+      - name: Model
+      - name: Number of Model ID
+      - name: User Count
+      table:
+        table_columns:
+        - column_id: Model
+          show_headline: false
+        - column_id: Number of Model ID
+          show_headline: false
+        - column_id: User Count
+          show_headline: false
+        ordered_column_ids:
+        - Model
+        - Number of Model ID
+        - User Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: TREEMAP
+        chart_columns:
+        - column_id: Model
+        - column_id: Number of Model ID
+        - column_id: User Count
+        axis_configs:
+        - x:
+          - Model
+          "y":
+          - User Count
+          size: Number of Model ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Model\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Number of Model ID\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"a0967f30-ebdd-4370-961f-937277ab31d7\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"d5ad3471-94ae-4abf-8f90-65ab24f01ede\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"User Count\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"570a1848-c011-4fc8-bf71-00893a960a02\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User Count\"],\"isOpposite\": false}},{\"id\": \"b4530172-ecb7-4f44-b86d-eb4be9b4511b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Model\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Model ID\",\"color\": \"#F04152\"},{\"serieName\": \"{null}\",\"color\": \"#47515F\"},{\"serieName\": \"{empty}\",\"color\": \"#BEC6D0\"},{\"serieName\": \"(sample) retail - apparel\",\"color\": \"#747E8C\"},{\"serieName\": \"ag - car\",\"color\": \"#FFA97E\"},{\"serieName\": \"activity and churn\",\"color\": \"#C26232\"},{\"serieName\": \"adoption metrics\",\"color\": \"#FFCCB3\"},{\"serieName\": \"australian property sales\",\"color\": \"#FF8142\"},{\"serieName\": \"car prices\",\"color\": \"#B094F8\"},{\"serieName\": \"cars sales\",\"color\": \"#6A4ABA\"},{\"serieName\": \"dunder mifflin multi timezone\",\"color\": \"#D1C0FB\"},{\"serieName\": \"dunder mifflin sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"dunder mifflin sales & inventory\",\"color\": \"#56D3A8\"},{\"serieName\": \"gtm\",\"color\": \"#049160\"},{\"serieName\": \"gtm  waterfall\",\"color\": \"#9BE5CB\"},{\"serieName\": \"gtm community knowledge articles\",\"color\": \"#06BF7F\"},{\"serieName\": \"golden_ws\",\"color\": \"#FCD977\"},{\"serieName\": \"holiday work calendar ws\",\"color\": \"#BF982A\"},{\"serieName\": \"product usage\",\"color\": \"#FDE9AF\"},{\"serieName\": \"production atlas node stats\",\"color\": \"#FCC838\"},{\"serieName\": \"sfdc survey\",\"color\": \"#f36775\"},{\"serieName\": \"ts: bi server\",\"color\": \"#c03442\"},{\"serieName\": \"ts: query stats worksheet\",\"color\": \"#f68d97\"},{\"serieName\": \"ts: spotter analytics\",\"color\": \"#F04152\"},{\"serieName\": \"tekion demo ws\",\"color\": \"#5891f3\"},{\"serieName\": \"[ag] embrace query stats ws\",\"color\": \"#255ec0\"},{\"serieName\": \"krishna's insurance model\",\"color\": \"#82acf6\"},{\"serieName\": \"nikhil_ws\",\"color\": \"#2E75F0\"},{\"serieName\": \"gtm callhome stats\",\"color\": \"#47515F\"},{\"serieName\": \"ts: ai and bi stats (beta)\",\"color\": \"#747E8C\"},{\"serieName\": \"cortex analyst demo\",\"color\": \"#422E75\"},{\"serieName\": \"slapfive\",\"color\": \"#56D3A8\"},{\"serieName\": \"acm model\",\"color\": \"#049160\"},{\"serieName\": \"banking without formulas\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mixpanel daily events\",\"color\": \"#785F1A\"},{\"serieName\": \"[migration] gtm campaigns\",\"color\": \"#FCD977\"},{\"serieName\": \"gtm community\",\"color\": \"#BF982A\"},{\"serieName\": \"sleep health & lifestyle\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mobile network analysis\",\"color\": \"#FCC838\"},{\"serieName\": \"csm community points\",\"color\": \"#902731\"},{\"serieName\": \"gtm campaigns\",\"color\": \"#f36775\"},{\"serieName\": \"ts: insights created\",\"color\": \"#c03442\"},{\"serieName\": \"copy of test_dp\",\"color\": \"#f68d97\"},{\"serieName\": \"ws_golden\",\"color\": \"#F04152\"},{\"serieName\": \"thoughtspot u\",\"color\": \"#5891f3\"},{\"serieName\": \"gtm - sage enabled\",\"color\": \"#255ec0\"},{\"serieName\": \"gtm customer field operations\",\"color\": \"#82acf6\"},{\"serieName\": \"ts: embrace query worksheet\",\"color\": \"#2E75F0\"},{\"serieName\": \"ts: usage productivity\",\"color\": \"#721F27\"},{\"serieName\": \"ts: row count worksheet\",\"color\": \"#B6313E\"},{\"serieName\": \"sale-gbq\",\"color\": \"#2F3947\"},{\"serieName\": \"model-rs\",\"color\": \"#A2ACBA\"},{\"serieName\": \"titanic_ws\",\"color\": \"#47515F\"},{\"serieName\": \"ws-mzk\",\"color\": \"#BEC6D0\"},{\"serieName\": \"superstore\",\"color\": \"#747E8C\"},{\"serieName\": \"User Count\",\"color\": \"#48d1e0\"}]}"
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+    viz_guid: 1e6d71a7-d59e-49a2-8a55-4b80e4550f2d
+  - id: Viz_9
+    answer:
+      name: Liveboard Impressions
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[Impressions] [Object Type] = 'liveboard' [Query Start Time].monthly"
+      answer_columns:
+      - name: Impressions
+      - name: Month(Query Start Time)
+      table:
+        table_columns:
+        - column_id: Impressions
+          show_headline: false
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Impressions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Impressions
+        - column_id: Month(Query Start Time)
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Impressions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Impressions\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"91db86f3-5584-41d5-b370-beff57ea2af6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Impressions\"],\"isOpposite\": false}},{\"id\": \"16701ef1-bc46-4e59-83f7-b2b33c5a88ee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"seriesColors\": [{\"serieName\": \"Impressions\",\"color\": \"#06BF7F\"}],\"systemSeriesColors\": [{\"serieName\": \"Impressions\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 192d2657-6bf6-4498-ad08-486ad5729c43
+  - id: Viz_10
+    answer:
+      name: Top 10 User Champions
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Leaderboard Rank
+        name: Leaderboard Rank
+        expr: "rank ( [formula_Leaderboard Score] , 'desc' )"
+        properties:
+          column_type: ATTRIBUTE
+        was_auto_generated: false
+      - id: formula_Leaderboard Score
+        name: Leaderboard Score
+        expr: "0 + ( [formula_Searches (5x)] * 5 ) + ( [formula_Answers (3x)] * 3 ) + ( [formula_Liveboards (1x)] * 1 ) + ( [formula_Data exports (-5x)] * - 5 ) + ( [formula_Spotter (6x)] * 6 ) + ( [formula_Drill Down (2x)] * 2 ) + ( [formula_KPI Monitor (2x)] * 2 )"
+        was_auto_generated: false
+      - id: formula_Answers (3x)
+        name: Answers (3x)
+        expr: "unique_count_if ( [Object Type] = 'answer' , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      - id: formula_Data exports (-5x)
+        name: Data exports (-5x)
+        expr: "unique_count_if ( [User Action] = 'download' , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      - id: formula_Drill Down (2x)
+        name: Drill Down (2x)
+        expr: "unique_count_if ( [User Action] = 'drill_down' , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      - id: formula_KPI Monitor (2x)
+        name: KPI Monitor (2x)
+        expr: "unique_count_if ( [User Action] = 'kpi_monitor' , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      - id: formula_Liveboards (1x)
+        name: Liveboards (1x)
+        expr: "unique_count_if ( [Object Type] = 'liveboard' , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      - id: formula_Searches (5x)
+        name: Searches (5x)
+        expr: "unique_count_if ( [User Action] = 'search_data' , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      - id: formula_Spotter (6x)
+        name: Spotter (6x)
+        expr: "unique_count_if ( [User Action] = 'spotter' , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      search_query: "[User] top 10 [formula_Leaderboard Score] [User] != [User].{empty} [User].{null}"
+      answer_columns:
+      - name: Leaderboard Score
+      - name: User
+      table:
+        table_columns:
+        - column_id: Leaderboard Score
+          show_headline: false
+        - column_id: User
+          show_headline: false
+        ordered_column_ids:
+        - User
+        - Leaderboard Score
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"orderedColumnIds\": [\"User\"]}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Leaderboard Score
+        - column_id: User
+        axis_configs:
+        - x:
+          - User
+          "y":
+          - Leaderboard Score
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Leaderboard Score\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"58fc45b1-e798-47d0-b369-95ff1d9977ab\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Leaderboard Score\"],\"isOpposite\": false}},{\"id\": \"91f2ef6a-9855-4e51-81cb-bd7e87bd190d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User\"]}}],\"seriesColors\": [{\"serieName\": \"0717f82b-d46a-4bde-ac41-2c025ce80948\",\"color\": \"#747E8C\"},{\"serieName\": \"7e9e873d-7491-4e89-abc7-499952952b46\",\"color\": \"#FCC838\"},{\"serieName\": \"c73ba3db-7b98-4ee2-9e7c-4b9b65552a37\",\"color\": \"#48D1E0\"},{\"serieName\": \"f11301b7-373a-4ab1-abb1-08a3d90236c3\",\"color\": \"#2E75F0\"},{\"serieName\": \"Leaderboard Score\",\"color\": \"#56D3A8\"}],\"systemSeriesColors\": [{\"serieName\": \"0717f82b-d46a-4bde-ac41-2c025ce80948\",\"color\": \"#747E8C\"},{\"serieName\": \"7e9e873d-7491-4e89-abc7-499952952b46\",\"color\": \"#FCC838\"},{\"serieName\": \"c73ba3db-7b98-4ee2-9e7c-4b9b65552a37\",\"color\": \"#48D1E0\"},{\"serieName\": \"f11301b7-373a-4ab1-abb1-08a3d90236c3\",\"color\": \"#2E75F0\"},{\"serieName\": \"Leaderboard Score\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: a87b259b-d7c3-4beb-a564-14c6bf0869da
+  - id: Viz_11
+    answer:
+      name: Top 10 Liveboard Users
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[Object Type] = 'liveboard' top 10 [User] [Impressions]"
+      answer_columns:
+      - name: Impressions
+      - name: User
+      table:
+        table_columns:
+        - column_id: Impressions
+          show_headline: false
+        - column_id: User
+          show_headline: false
+        ordered_column_ids:
+        - User
+        - Impressions
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Impressions
+        - column_id: User
+        axis_configs:
+        - x:
+          - User
+          "y":
+          - Impressions
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Impressions\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"131fc1a1-a358-4188-8f34-b94db6f8e8e7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Impressions\"],\"isOpposite\": false}},{\"id\": \"e91598af-4a72-43d7-b802-467649e4059b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User\"]}}],\"seriesColors\": [{\"serieName\": \"fa7a5e18-5cc5-4edb-9260-b35aad577dfe\",\"color\": \"#B094F8\"}],\"systemSeriesColors\": [{\"serieName\": \"fa7a5e18-5cc5-4edb-9260-b35aad577dfe\",\"color\": \"#B094F8\"},{\"serieName\": \"9a83830c-47f8-44fd-969a-222cf010c038\",\"color\": \"#747E8C\"},{\"serieName\": \"b4c3bda2-cee5-4462-afd8-0e591e16dac1\",\"color\": \"#48D1E0\"},{\"serieName\": \"Impressions\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 1f08505c-3d17-44e1-a166-f513c3e17987
+  - id: Viz_12
+    answer:
+      name: Top 50 Power User Engagement
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Day Touches
+        name: Day Touches
+        expr: "unique count ( day ( [Query Start Time] ) )"
+        was_auto_generated: false
+      - id: formula_User activity
+        name: User activity
+        expr: "count_if ( [User Action] != 'null' , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      search_query: "[formula_Day Touches] [User] [formula_User activity] top 50 ranked by [formula_User activity]"
+      answer_columns:
+      - name: Day Touches
+      - name: User
+      - name: User activity
+      table:
+        table_columns:
+        - column_id: Day Touches
+          show_headline: false
+        - column_id: User
+          show_headline: false
+        - column_id: User activity
+          show_headline: false
+        ordered_column_ids:
+        - User
+        - Day Touches
+        - User activity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Day Touches\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Day Touches
+        - column_id: User
+        - column_id: User activity
+        axis_configs:
+        - x:
+          - User
+          "y":
+          - Day Touches
+          - User activity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"showStackedLabels\": true,\"allLabels\": true,\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Day Touches\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"User activity\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"c5153e92-11e5-42c3-8487-0f1c28bfe1b6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Day Touches\"],\"isOpposite\": false}},{\"id\": \"1f349a1e-f6fa-41fa-94fd-4b40b582dc3a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User activity\"],\"isOpposite\": true}},{\"id\": \"3925f4b1-a9be-462e-8eae-6f655cfb6a36\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Day Touches\",\"color\": \"#FCC838\"},{\"serieName\": \"774cbfaa-ae93-41d9-b503-c3f88c389d1a\",\"color\": \"#2E75F0\"},{\"serieName\": \"a37407d7-7907-47a0-a99f-0962ff1fe96f\",\"color\": \"#FCC838\"},{\"serieName\": \"User activity\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d90efbc2-0e23-4d6d-bf00-b8de19cdc6e7
+  - id: Viz_13
+    answer:
+      name: User Time Saved in Hours
+      description: Time Saved is defined as the Number of Activities *  Time Saved per Activity (adjust using the parameter above)
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Hours Saved
+        name: Hours Saved
+        expr: "( [formula_Billable Queries] * ifnull ( [Time Saved per activity ( in mins )] , 10 ) ) / 60"
+        was_auto_generated: false
+      - id: formula_Billable Queries
+        name: Billable Queries
+        expr: "unique_count_if ( [Is Billable] , [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      search_query: "[formula_Billable Queries] [Query Start Time] [Query Start Time].'last 6 months' [Query Start Time].monthly [formula_Hours Saved] [User Action] [User Action].drill_down [User Action].explore [User Action].search_data [User Action].spotiq_auto_analyze [User Action].spotter"
+      answer_columns:
+      - name: Billable Queries
+        custom_name: Number of Activities
+        dynamic_title: Number of Activities
+      - name: Hours Saved
+      - name: Month(Query Start Time)
+      - name: User Action
+      table:
+        table_columns:
+        - column_id: Billable Queries
+          show_headline: false
+        - column_id: Hours Saved
+          show_headline: false
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: User Action
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - User Action
+        - Billable Queries
+        - Hours Saved
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Billable Queries\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Billable Queries
+        - column_id: Hours Saved
+        - column_id: Month(Query Start Time)
+        - column_id: User Action
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Hours Saved
+          color:
+          - User Action
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true}}}\",\"dataFieldArea\": \"column\"},\"showStackedLabels\": true,\"allLabels\": true,\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"Billable Queries\",\"columnProperty\": {}},{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"User Action\",\"columnProperty\": {}},{\"columnId\": \"Hours Saved\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"4e996580-62a6-4acb-b770-ff8cc7bf7321\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Hours Saved\"],\"isOpposite\": false}},{\"id\": \"565c5310-0c35-4629-85d0-bf627fd98d6e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"explore\",\"color\": \"#48D1E0\"},{\"serieName\": \"search_data\",\"color\": \"#2E75F0\"},{\"serieName\": \"drill_down\",\"color\": \"#06BF7F\"},{\"serieName\": \"spotter\",\"color\": \"#FCC838\"}],\"tooltipConfig\": {\"columnIds\": [\"User Action\",\"Month(Query Start Time)\",\"Billable Queries\",\"Hours Saved\"]}}"
+      display_mode: CHART_MODE
+    viz_guid: 5954501d-15e6-4e76-b022-9c65ebd3bd9d
+  - id: Viz_14
+    answer:
+      name: Excellent Query Performance
+      description: '% Queries <1s'
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Result Cache
+        name: Result Cache
+        expr: "count_if ( ( [Query Latency (External)] * 1000 ) <= 1 , [ThoughtSpot Query ID] ) / count ( [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      search_query: "[formula_Result Cache] [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Result Cache
+        format:
+          category: PERCENTAGE
+          percentageFormatConfig:
+            decimals: 2.0
+          isCategoryEditable: true
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Result Cache
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Result Cache
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Result Cache\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Result Cache
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Result Cache
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"CUSTOM\\\",\\\"genericCompareValue\\\":\\\"1\\\"}\",\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Result Cache\",\"columnProperty\": {}},{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"820bbc0c-ed4f-4a3d-8528-2cf3b6372616\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Result Cache\"],\"isOpposite\": false}},{\"id\": \"850da40e-95f5-4937-b8c7-090bcb5580fb\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"seriesColors\": [{\"serieName\": \"Result Cache\",\"color\": \"#06BF7F\"}],\"systemSeriesColors\": [{\"serieName\": \"Result Cache\",\"color\": \"#8C62F5\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#F04152\",\"#06BF7F\",\"#F04152\"]}"
+      display_mode: CHART_MODE
+    viz_guid: 346e7e4d-2125-4a1d-963d-975b8ea309c4
+  - id: Viz_15
+    answer:
+      name: Query Errors
+      description: "Per Month (exl. timeouts, database errors, etc)"
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[Query Errors] [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Query Errors
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Query Errors
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Query Errors
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Query Errors
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Query Errors
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Query Errors\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d2a93fd4-1dfb-4baa-8898-307b8fbd523b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Query Errors\"],\"isOpposite\": false}},{\"id\": \"31292642-f345-4f2c-ac4c-9c7295b1682a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"],\"name\": \"Month\"}}],\"seriesColors\": [{\"serieName\": \"Query Errors\",\"color\": \"#F04152\"}],\"systemSeriesColors\": [{\"serieName\": \"Query Errors\",\"color\": \"#8C62F5\"}],\"customColorSelectorArray\": [\"#F04152\",\"#06BF7F\",\"#F04152\",\"#06BF7F\"]}"
+      display_mode: CHART_MODE
+    viz_guid: cd98b457-9ded-4f03-9ee2-8771c4612828
+  - id: Viz_16
+    answer:
+      name: Slow Query Performance
+      description: '% Queries > 30s'
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_User experience
+        name: User experience
+        expr: "count_if ( ( [Query Latency (External)] * 1000 ) > 30 , [ThoughtSpot Query ID] ) / count ( [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      search_query: "[formula_User experience] [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: User experience
+        format:
+          category: PERCENTAGE
+          percentageFormatConfig:
+            decimals: 2.0
+          isCategoryEditable: true
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: User experience
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - User experience
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"User experience\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: User experience
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - User experience
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"User experience\",\"columnProperty\": {}},{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ac0e727d-c8a2-4144-bcb9-12d508038973\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User experience\"],\"isOpposite\": false}},{\"id\": \"107c1a3d-065e-4936-82dd-772edf605fee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"seriesColors\": [{\"serieName\": \"User experience\",\"color\": \"#F04152\"}],\"systemSeriesColors\": [{\"serieName\": \"User experience\",\"color\": \"#8C62F5\"}],\"customColorSelectorArray\": [\"#F04152\",\"#06BF7F\",\"#F04152\",\"#06BF7F\"]}"
+      display_mode: CHART_MODE
+    viz_guid: 66b355fd-2275-4e2b-88c1-3b69fe31bfd7
+  - id: Viz_17
+    answer:
+      name: Good Query Performance
+      description: '% Queries < 15s'
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Search Latency
+        name: Search Latency
+        expr: "count_if ( ( [Query Latency (External)] * 1000 ) < 15 , [ThoughtSpot Query ID] ) / count ( [ThoughtSpot Query ID] )"
+        was_auto_generated: false
+      search_query: "[formula_Search Latency] [User Action] = 'search_data' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Search Latency
+        format:
+          category: PERCENTAGE
+          percentageFormatConfig:
+            decimals: 2.0
+          isCategoryEditable: true
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Search Latency
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Search Latency
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Search Latency\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Search Latency
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Search Latency
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Search Latency\",\"columnProperty\": {}},{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a85ecd3c-cfd0-4a16-8e9d-72b299681327\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Search Latency\"],\"isOpposite\": false}},{\"id\": \"136f3cd9-ae96-43b3-bc5b-331df079d2bb\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"seriesColors\": [{\"serieName\": \"Search Latency\",\"color\": \"#FCC838\"}],\"systemSeriesColors\": [{\"serieName\": \"Search Latency\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: eae90932-2a5d-455e-833e-a50b98a060b2
+  - id: Viz_18
+    answer:
+      name: Average Query Performance by User Action
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "average [Query Latency (External)] [User Action] [User Action].spotter [User Action].search_data [User Action].liveboard_view [User Action].spotiq_auto_analyze [User Action].apis\\' [User Action].kpi_monitor [User Action].drill_down [User Action].explore [User Action] != '{null}' [Query Start Time].monthly"
+      answer_columns:
+      - name: Average Query Latency (External)
+      - name: Month(Query Start Time)
+      - name: User Action
+      table:
+        table_columns:
+        - column_id: Average Query Latency (External)
+          show_headline: false
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: User Action
+          show_headline: false
+        ordered_column_ids:
+        - User Action
+        - Month(Query Start Time)
+        - Average Query Latency (External)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Average Query Latency (External)
+        - column_id: Month(Query Start Time)
+        - column_id: User Action
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Average Query Latency (External)
+          color:
+          - User Action
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"answer_view\",\"drill_down\",\"explore\",\"kpi_monitor\",\"spotter\"],\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"User Action\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Average Query Latency (External)\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"946c9da0-e45d-4280-b4e4-d2157c589390\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Query Latency (External)\"],\"isOpposite\": false}},{\"id\": \"1536778e-3a1e-4818-b4b0-dc8acee7cd88\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"seriesColors\": [{\"serieName\": \"Average Query Latency (External)\",\"color\": \"#82DFE9\"}],\"systemSeriesColors\": [{\"serieName\": \"Average Query Latency (External)\",\"color\": \"#82DFE9\"},{\"serieName\": \"answer_view\",\"color\": \"#2E75F0\"},{\"serieName\": \"drill_down\",\"color\": \"#48D1E0\"},{\"serieName\": \"explore\",\"color\": \"#FCC838\"},{\"serieName\": \"kpi_monitor\",\"color\": \"#06BF7F\"},{\"serieName\": \"liveboard_view\",\"color\": \"#8C62F5\"},{\"serieName\": \"search_data\",\"color\": \"#FF8142\"},{\"serieName\": \"spotter\",\"color\": \"#ABC7F9\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 28db03d3-db96-4c6f-a1e8-73736e56ad25
+  - id: Viz_19
+    viz_guid: 44955038-f0e2-467b-88f7-95cd5990bb7e
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><u><span class=\"theme-module__editor-text-underline\" style=\"white-space: pre-wrap;\">Known Limitations</span></u></h2><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><b><strong class=\"theme-module__editor-text-bold\" style=\"font-weight: 700; white-space: pre-wrap;\">1/ </strong></b><i><b><strong class=\"theme-module__editor-text-bold theme-module__editor-text-italic\" style=\"font-weight: 700; white-space: pre-wrap;\">Group Level information on usage and adoption will be included in the later versions</strong></b></i></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><b><strong class=\"theme-module__editor-text-bold\" style=\"font-weight: 700; white-space: pre-wrap;\">2/ </strong></b><i><b><strong class=\"theme-module__editor-text-bold theme-module__editor-text-italic\" style=\"font-weight: 700; white-space: pre-wrap;\">The liveboard does not report deprecated objects and API usage. This will be included in the later versions.</strong></b></i></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><b><strong class=\"theme-module__editor-text-bold\" style=\"font-weight: 700; white-space: pre-wrap;\">3/ </strong></b><i><b><strong class=\"theme-module__editor-text-bold theme-module__editor-text-italic\" style=\"font-weight: 700; white-space: pre-wrap;\">The liveboard reports active users based on query consumption alone</strong></b></i></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><u><span class=\"theme-module__editor-text-underline\" style=\"white-space: pre-wrap;\">Data Sources</span></u></h2><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><b><strong class=\"theme-module__editor-text-bold\" style=\"font-weight: 700; white-space: pre-wrap;\">1/ Querystats</strong></b><span style=\"white-space: pre-wrap;\"> </span></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><i><em class=\"theme-module__editor-text-italic\" style=\"white-space: pre-wrap;\">Contains data related to billable query consumption for customers on the query-based consumption pricing model.</em></i></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><b><strong class=\"theme-module__editor-text-bold\" style=\"font-weight: 700; white-space: pre-wrap;\">2/ ThoughtSpot Dependencies</strong></b><span style=\"white-space: pre-wrap;\"> </span></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><i><em class=\"theme-module__editor-text-italic\" style=\"white-space: pre-wrap;\">Objects which are can be created from Worksheets are considered as dependencies. (primarily these are Liveboards and Answers)</em></i></p><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p>"
+  - id: Viz_20
+    answer:
+      name: First Filtered Query Date
+      description: In Filtered Range
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Day
+        name: Day
+        expr: "date ( [Query Start Time] )"
+        was_auto_generated: false
+      search_query: "min [formula_Day]"
+      answer_columns:
+      - name: Minimum Day
+      table:
+        table_columns:
+        - column_id: Minimum Day
+          show_headline: false
+        ordered_column_ids:
+        - Minimum Day
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Minimum Day
+        axis_configs:
+        - "y":
+          - Minimum Day
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"e36e4af5-5e88-4b44-a70d-929af9915e77\",\"columnProperty\": {}},{\"columnId\": \"9b6a26c7-db0d-43af-b413-d06f83efef9b\",\"columnProperty\": {}},{\"columnId\": \"Minimum Day\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a49918db-a07f-41da-bd96-6e73b5d68748\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Minimum Day\"],\"isOpposite\": false}},{\"id\": \"ae52a96f-1c63-49a3-bdf9-c5d68f34f773\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: d926eafe-8d41-4a16-8f5b-4cb2e0ec8a72
+  - id: Viz_21
+    answer:
+      name: Last Filtered Query Date
+      description: In Filtered Range
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Day
+        name: Day
+        expr: "date ( [Query Start Time] )"
+        was_auto_generated: false
+      search_query: "max [formula_Day]"
+      answer_columns:
+      - name: Maximum Day
+      table:
+        table_columns:
+        - column_id: Maximum Day
+          show_headline: false
+        ordered_column_ids:
+        - Maximum Day
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Maximum Day
+        axis_configs:
+        - "y":
+          - Maximum Day
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"86cbf734-3405-48c3-8259-62cd1061691f\",\"columnProperty\": {}},{\"columnId\": \"7ab6c52c-be3c-441e-a21e-552e4a827d0a\",\"columnProperty\": {}},{\"columnId\": \"Maximum Day\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eef0440a-4808-44de-85c9-ea2eea08be8c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Maximum Day\"],\"isOpposite\": false}},{\"id\": \"8bba87de-c2b8-40f4-bf87-4e52d1da386a\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 0fc4a775-dc06-4812-9d44-2827f652e368
+  - id: Viz_22
+    answer:
+      name: Monthly Active Users
+      description: In Filtered Range
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}},{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"74fef19e-1a44-47a6-a205-6843790d5cd7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"88294aca-484c-45b4-80d9-fae116cb365c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"seriesColors\": [{\"serieName\": \"Unique Number of User ID\",\"color\": \"#71A1F4\"}],\"systemSeriesColors\": [{\"serieName\": \"Unique Number of User ID\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 558fe725-4360-473c-b829-b6dfa8ec9bc0
+  - id: Viz_23
+    answer:
+      name: First Query Date
+      description: Overall
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Day
+        name: Day
+        expr: "date ( [Query Start Time] )"
+        was_auto_generated: false
+      search_query: "min [formula_Day]"
+      answer_columns:
+      - name: Minimum Day
+      table:
+        table_columns:
+        - column_id: Minimum Day
+          show_headline: false
+        ordered_column_ids:
+        - Minimum Day
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Minimum Day
+        axis_configs:
+        - "y":
+          - Minimum Day
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"e36e4af5-5e88-4b44-a70d-929af9915e77\",\"columnProperty\": {}},{\"columnId\": \"9b6a26c7-db0d-43af-b413-d06f83efef9b\",\"columnProperty\": {}},{\"columnId\": \"Minimum Day\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a49918db-a07f-41da-bd96-6e73b5d68748\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Minimum Day\"],\"isOpposite\": false}},{\"id\": \"ae52a96f-1c63-49a3-bdf9-c5d68f34f773\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: ced3b529-9aab-4f9f-819b-59e1bb9fedfe
+  - id: Viz_24
+    answer:
+      name: Last Query Date
+      description: Overall
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      formulas:
+      - id: formula_Day
+        name: Day
+        expr: "date ( [Query Start Time] )"
+        was_auto_generated: false
+      search_query: "max [formula_Day]"
+      answer_columns:
+      - name: Maximum Day
+      table:
+        table_columns:
+        - column_id: Maximum Day
+          show_headline: false
+        ordered_column_ids:
+        - Maximum Day
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Maximum Day
+        axis_configs:
+        - "y":
+          - Maximum Day
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"86cbf734-3405-48c3-8259-62cd1061691f\",\"columnProperty\": {}},{\"columnId\": \"7ab6c52c-be3c-441e-a21e-552e4a827d0a\",\"columnProperty\": {}},{\"columnId\": \"Maximum Day\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eef0440a-4808-44de-85c9-ea2eea08be8c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Maximum Day\"],\"isOpposite\": false}},{\"id\": \"8bba87de-c2b8-40f4-bf87-4e52d1da386a\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: bb1c2e2e-b05d-48ce-9b64-37461e9746b7
+  - id: Viz_25
+    answer:
+      name: Daily Active Users
+      description: In Filtered Range
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] [Query Start Time].daily"
+      answer_columns:
+      - name: Day(Query Start Time)
+      - name: Unique Number of User ID
+      table:
+        table_columns:
+        - column_id: Day(Query Start Time)
+          show_headline: false
+        - column_id: Unique Number of User ID
+          show_headline: false
+        ordered_column_ids:
+        - Day(Query Start Time)
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Day(Query Start Time)
+        - column_id: Unique Number of User ID
+        axis_configs:
+        - x:
+          - Day(Query Start Time)
+          "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}},{\"columnId\": \"Day(Query Start Time)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c729cdf7-5be0-40c1-8c1d-e068aaeeae2c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"ab887f0d-e77f-4875-9444-de070d6e1cfa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Query Start Time)\"]}}],\"seriesColors\": [{\"serieName\": \"Unique Number of User ID\",\"color\": \"#71A1F4\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 38d9ab99-7129-4e9a-ada4-a01ff47c5a23
+  - id: Viz_26
+    answer:
+      name: Weekly Active Users
+      description: In Filtered Range
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [User ID] [Query Start Time].weekly"
+      answer_columns:
+      - name: Unique Number of User ID
+      - name: Week(Query Start Time)
+      table:
+        table_columns:
+        - column_id: Unique Number of User ID
+          show_headline: false
+        - column_id: Week(Query Start Time)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Query Start Time)
+        - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Unique Number of User ID
+        - column_id: Week(Query Start Time)
+        axis_configs:
+        - x:
+          - Week(Query Start Time)
+          "y":
+          - Unique Number of User ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Unique Number of User ID\",\"columnProperty\": {}},{\"columnId\": \"Week(Query Start Time)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bede3995-8158-4d3c-b77b-2b39acf553ca\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of User ID\"],\"isOpposite\": false}},{\"id\": \"e80a6331-0ee8-47d8-a467-c67dae714fa4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Query Start Time)\"]}}],\"seriesColors\": [{\"serieName\": \"Unique Number of User ID\",\"color\": \"#71A1F4\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: bb358f0b-204d-40b1-bc1a-0d2523d88c9b
+  - id: Viz_27
+    answer:
+      name: Liveboard Usage
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [Object ID] [Object Type] = 'liveboard' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Unique Number of Object ID
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Unique Number of Object ID
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Unique Number of Object ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Unique Number of Object ID
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Unique Number of Object ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of Object ID\",\"columnProperty\": {}},{\"columnId\": \"5053836e-78a2-4ea5-a5a2-813426d3a461\",\"columnProperty\": {}},{\"columnId\": \"8cd5ac8e-a363-4509-9996-e3ff9117ed21\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f8fbc743-3537-4513-bac4-9f049615fad1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of Object ID\"],\"isOpposite\": false}},{\"id\": \"073fd00d-2b50-4320-b736-eda7637a8e3e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Unique Number of Object ID\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Liveboard Usage
+    viz_guid: 7e65c233-c8e9-45aa-b614-298e44d5d809
+  - id: Viz_28
+    answer:
+      name: Answer Usage
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "count [Object ID] [Object Type] = 'answer' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Number of Object ID
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Number of Object ID
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Number of Object ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Number of Object ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Number of Object ID
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Number of Object ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Number of Object ID\",\"columnProperty\": {}},{\"columnId\": \"604098af-5e28-42fb-a24a-3317635b1d73\",\"columnProperty\": {}},{\"columnId\": \"f2a49c79-eb43-4322-8d77-72147779d234\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eb400779-6b57-4ded-a4fe-06047374b700\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Object ID\"],\"isOpposite\": false}},{\"id\": \"f6cf96f2-b279-4fc1-8e40-99d45edc92e0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Answer Usage
+    viz_guid: ccc91635-dceb-428c-85bd-32ad47f58d31
+  - id: Viz_29
+    answer:
+      name: Search Usage
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "count [ThoughtSpot Query ID] [User Action] = 'search_data' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Number of ThoughtSpot Query ID
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Number of ThoughtSpot Query ID
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Number of ThoughtSpot Query ID
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {}},{\"columnId\": \"3235e403-4ebd-4a89-9f34-9690851c7cab\",\"columnProperty\": {}},{\"columnId\": \"dc490196-0c57-4c24-b9fd-7964773033f5\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a54db063-c8bb-4ced-bdb5-2a22e5f24bc6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of ThoughtSpot Query ID\"],\"isOpposite\": false}},{\"id\": \"e047dd57-1381-469c-a148-fd967740295c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of ThoughtSpot Query ID\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Search Usage
+    viz_guid: 24298822-36fd-400e-9ed7-c7be4f39819f
+  - id: Viz_30
+    answer:
+      name: Spotter Usage
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [ThoughtSpot Query ID] [User Action] = 'spotter' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Unique Number of ThoughtSpot Query ID
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Unique Number of ThoughtSpot Query ID
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Unique Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Unique Number of ThoughtSpot Query ID
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Unique Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of ThoughtSpot Query ID\",\"columnProperty\": {}},{\"columnId\": \"1dd67cc7-fdc8-4e4e-a85d-49db161bda3b\",\"columnProperty\": {}},{\"columnId\": \"039facab-322f-464f-97e3-cf678d59b87f\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4e4b55d0-c817-4609-8701-f24364cc4983\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Unique Number of ThoughtSpot Query ID\"],\"isOpposite\": false}},{\"id\": \"20d50743-58d0-479e-a9a0-41d72a41e0a3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Spotter Usage
+    viz_guid: fb5b8fd8-c686-4f57-8592-4a7b9bb20ca7
+  - id: Viz_31
+    answer:
+      name: Top 20 Liveboards
+      description: By Usage and Number of Users
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [Object ID] [Object] [Object Type] = 'liveboard' top 20 [User Count]"
+      answer_columns:
+      - name: Object
+      - name: Unique Number of Object ID
+      - name: User Count
+      table:
+        table_columns:
+        - column_id: Object
+          show_headline: false
+        - column_id: Unique Number of Object ID
+          show_headline: false
+        - column_id: User Count
+          show_headline: false
+        ordered_column_ids:
+        - Object
+        - Unique Number of Object ID
+        - User Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: TREEMAP
+        chart_columns:
+        - column_id: Object
+        - column_id: Unique Number of Object ID
+        - column_id: User Count
+        axis_configs:
+        - x:
+          - Object
+          "y":
+          - User Count
+          size: Unique Number of Object ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Object\",\"columnProperty\": {}},{\"columnId\": \"Unique Number of Object ID\",\"columnProperty\": {}},{\"columnId\": \"User Count\",\"columnProperty\": {}},{\"columnId\": \"c2835a45-9282-442f-bdd1-146a3b83278d\",\"columnProperty\": {}},{\"columnId\": \"bdf5eded-5427-489b-92e6-524930cf7f2d\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"97116bef-f8b7-4a54-8c3e-dba8ff56a13a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User Count\"],\"isOpposite\": false}},{\"id\": \"41779396-6bad-4c4f-b725-b93d9dc01774\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Object\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Unique Number of Object ID\",\"color\": \"#48D1E0\"},{\"serieName\": \"User Count\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Top 20 Liveboards
+    viz_guid: 6f6c770b-cea4-4f34-82b1-17cd25bc4711
+  - id: Viz_32
+    answer:
+      name: Top 20 Answers
+      description: By Usage and Number of Users
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "count [Object ID] [Object Type] = 'answer' [Object] top 20 [User Count]"
+      answer_columns:
+      - name: Number of Object ID
+      - name: Object
+      - name: User Count
+      table:
+        table_columns:
+        - column_id: Number of Object ID
+          show_headline: false
+        - column_id: Object
+          show_headline: false
+        - column_id: User Count
+          show_headline: false
+        ordered_column_ids:
+        - Object
+        - Number of Object ID
+        - User Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Object\",\"columnProperty\": {}},{\"columnId\": \"Number of Object ID\",\"columnProperty\": {}},{\"columnId\": \"User Count\",\"columnProperty\": {}}]}"
+      chart:
+        type: TREEMAP
+        chart_columns:
+        - column_id: Number of Object ID
+        - column_id: Object
+        - column_id: User Count
+        axis_configs:
+        - x:
+          - Object
+          "y":
+          - User Count
+          size: Number of Object ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Object\",\"columnProperty\": {}},{\"columnId\": \"Number of Object ID\",\"columnProperty\": {}},{\"columnId\": \"User Count\",\"columnProperty\": {}},{\"columnId\": \"6541e85a-5322-4178-826a-733d5a78f110\",\"columnProperty\": {}},{\"columnId\": \"450e6b32-492d-4c14-9d5a-ae54001a2aab\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"92180d78-8388-4eb4-9c04-270cd28883e9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User Count\"],\"isOpposite\": false}},{\"id\": \"9f4e9165-c06e-4e60-bf04-0f1858709970\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Object\"]}}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Top 20 Answers
+    viz_guid: 58a800bc-b6b4-4425-ba54-4eeaf243346d
+  - id: Viz_33
+    answer:
+      name: Data Exports
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "count [ThoughtSpot Query ID] [User Action] = 'download' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Number of ThoughtSpot Query ID
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Number of ThoughtSpot Query ID
+          show_headline: false
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Number of ThoughtSpot Query ID
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {}},{\"columnId\": \"adb27266-07a7-4c13-ba9b-8e4e5b4e01f3\",\"columnProperty\": {}},{\"columnId\": \"eb3682a0-a7c1-4f1f-9318-a6625fe87d77\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a310edae-fc02-4afc-974f-7473ba3c6dea\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of ThoughtSpot Query ID\"],\"isOpposite\": false}},{\"id\": \"ef339e25-ccc3-4898-9a08-c7819dfb5675\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Data Exports
+    viz_guid: 7cbcd7c3-de04-4af8-bb31-09cc44b7e8f1
+  - id: Viz_34
+    answer:
+      name: Top 10 Answer Users
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "count [ThoughtSpot Query ID] [Object Type] = 'answer' top 10 [User]"
+      answer_columns:
+      - name: Number of ThoughtSpot Query ID
+      - name: User
+      table:
+        table_columns:
+        - column_id: Number of ThoughtSpot Query ID
+          show_headline: false
+        - column_id: User
+          show_headline: false
+        ordered_column_ids:
+        - User
+        - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Number of ThoughtSpot Query ID
+        - column_id: User
+        axis_configs:
+        - x:
+          - User
+          "y":
+          - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"570e5784-a069-4fd2-9076-28c68f33ac73\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of ThoughtSpot Query ID\"],\"isOpposite\": false}},{\"id\": \"675bce25-0f71-40dc-80c1-1727689f1c9a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User\"]}}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Top 10 Answer Users
+    viz_guid: ef1d1296-b569-4a15-bd23-b3b6e3df695c
+  - id: Viz_35
+    answer:
+      name: Top 10 Spotter Users
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "total count [ThoughtSpot Query ID] [User Action] = 'spotter' top 10 [User]"
+      answer_columns:
+      - name: Number of ThoughtSpot Query ID
+      - name: User
+      table:
+        table_columns:
+        - column_id: Number of ThoughtSpot Query ID
+          show_headline: false
+        - column_id: User
+          show_headline: false
+        ordered_column_ids:
+        - User
+        - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Number of ThoughtSpot Query ID
+        - column_id: User
+        axis_configs:
+        - x:
+          - User
+          "y":
+          - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"97526fe1-4ff7-4a4a-9f97-b5fab9c03b0e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of ThoughtSpot Query ID\"],\"isOpposite\": false}},{\"id\": \"5364a8ee-fd11-47b6-ada4-8bf7b1fd3b47\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User\"]}}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Top 10 Spotter Users
+    viz_guid: 2f730bf6-fde1-4578-9c56-34137ffd9def
+  - id: Viz_36
+    answer:
+      name: Top 10 Ad-hoc Search Users
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "total count [ThoughtSpot Query ID] [User Action] = 'search_data' top 10 [User]"
+      answer_columns:
+      - name: Number of ThoughtSpot Query ID
+      - name: User
+      table:
+        table_columns:
+        - column_id: Number of ThoughtSpot Query ID
+          show_headline: false
+        - column_id: User
+          show_headline: false
+        ordered_column_ids:
+        - User
+        - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {}}]}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Number of ThoughtSpot Query ID
+        - column_id: User
+        axis_configs:
+        - x:
+          - User
+          "y":
+          - Number of ThoughtSpot Query ID
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Number of ThoughtSpot Query ID\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"8bdb5b0f-bd51-49b5-a165-b49d82b32d24\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of ThoughtSpot Query ID\"],\"isOpposite\": false}},{\"id\": \"79b26f4a-df68-465d-bc25-cc7dadbe5c75\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User\"]}}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Top 10 Ad-hoc Search Users
+    viz_guid: 0e672ba6-5e65-48a1-83ab-434b1b566792
+  - id: Viz_37
+    answer:
+      name: 50 Slowest Search Data Queries
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[SQL Query] [User Action] = 'search_data' top 50 by [Query Latency (External)] [Query Start Time] [Query Start Time].monthly [User] [Query Status] sort by [Query Start Time] descending"
+      answer_columns:
+      - name: Average Query Latency (External)
+      - name: Month(Query Start Time)
+      - name: Query Status
+      - name: SQL Query
+      - name: User
+      table:
+        table_columns:
+        - column_id: Average Query Latency (External)
+          show_headline: false
+        - column_id: Month(Query Start Time)
+          show_headline: false
+        - column_id: Query Status
+          show_headline: false
+        - column_id: SQL Query
+          show_headline: false
+        - column_id: User
+          show_headline: false
+        ordered_column_ids:
+        - SQL Query
+        - Month(Query Start Time)
+        - User
+        - Query Status
+        - Average Query Latency (External)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"SQL Query\",\"columnProperty\": {}},{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Query Status\",\"columnProperty\": {}},{\"columnId\": \"Average Query Latency (External)\",\"columnProperty\": {}}]}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Average Query Latency (External)
+        - column_id: Month(Query Start Time)
+        - column_id: Query Status
+        - column_id: SQL Query
+        - column_id: User
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Average Query Latency (External)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Query Status\",\"columnProperty\": {}},{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"Average Query Latency (External)\",\"columnProperty\": {}},{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"SQL Query\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f19973cd-1574-414c-b927-b66af84826c8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Query Latency (External)\"],\"isOpposite\": false}},{\"id\": \"e5c44840-0ac1-42d3-bd79-418422673c87\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: 50 Slowest Search Data Queries
+    viz_guid: bca43c5f-f2ed-4b6a-b302-8e293eb7d11f
+  - id: Viz_38
+    answer:
+      name: Analyst Studio Usage
+      description: Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "unique count [ThoughtSpot Query ID] [User Action] = 'scheduled' [User Action] = 'adhoc' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Unique Number of ThoughtSpot Query ID
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          headline_aggregation: MIN-MAX
+        - column_id: Unique Number of ThoughtSpot Query ID
+          headline_aggregation: AVERAGE
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Unique Number of ThoughtSpot Query ID
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Unique Number of ThoughtSpot Query ID
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Unique Number of ThoughtSpot Query ID
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 65b8c7bc-a3e0-4d71-9578-56ea96b6b278
+  - id: Viz_39
+    answer:
+      name: Total Credits
+      description: Overall Usage
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[Credits]"
+      answer_columns:
+      - name: Total Credits
+      table:
+        table_columns:
+        - column_id: Total Credits
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Credits
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Credits
+        axis_configs:
+        - "y":
+          - Total Credits
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 41dbf693-8db3-4e75-a1fa-961d8f17cfeb
+  - id: Viz_40
+    answer:
+      name: Analyst Studio - Overall
+      description: Credits Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[Credits] [DB Auth Type] = 'analyst studio' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Total Credits
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Credits
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Total Credits
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Total Credits
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Total Credits
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 862c27d6-f38f-4282-aa92-33846af53f93
+  - id: Viz_41
+    answer:
+      name: Anlayst Studio - Dataset Refresh
+      description: Credits Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[Credits] [DB Auth Type] = 'analyst studio' [User Action] = 'scheduled' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Total Credits
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Credits
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Total Credits
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Total Credits
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Total Credits
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 6da58bc4-ff85-4590-89f1-b3ab793cab46
+  - id: Viz_42
+    answer:
+      name: Analyst Studio - Adhoc
+      description: Credits Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[Credits] [DB Auth Type] = 'analyst studio' [User Action] = 'adhoc' [Query Start Time].monthly"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Total Credits
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Credits
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Total Credits
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Total Credits
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Total Credits
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: e9741de1-4b55-4136-bc69-a076701705d2
+  - id: Viz_43
+    answer:
+      name: Spotter - Credit Usage
+      description: Credits Per Month
+      tables:
+      - id: "TS: AI and BI Stats (Beta)"
+        name: "TS: AI and BI Stats (Beta)"
+      search_query: "[Credits] [User Action] = 'spotter' [Query Start Time].monthly [Query Start Time] = 'last 180 days' [User] != '{empty}...{null}'"
+      answer_columns:
+      - name: Month(Query Start Time)
+      - name: Total Credits
+      table:
+        table_columns:
+        - column_id: Month(Query Start Time)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Credits
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Month(Query Start Time)
+        - Total Credits
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Query Start Time)
+        - column_id: Total Credits
+        axis_configs:
+        - x:
+          - Month(Query Start Time)
+          "y":
+          - Total Credits
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Query Start Time)\",\"columnProperty\": {}},{\"columnId\": \"Total Credits\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7ca961c6-425f-48ba-a737-85af3bd03e47\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Credits\"],\"isOpposite\": false}},{\"id\": \"c5536932-d4f0-40c4-91b4-8d23ae538e7d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Query Start Time)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 0dfd6428-5f4d-4f9a-9cbe-2b3ebddbcc5b
+  filters:
+  - column:
+    - Org
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - User
+    oper: not in
+    values:
+    - "{null}"
+    - "{Empty}"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Query Start Time
+    excluded_visualizations:
+    - Viz_5
+    - Viz_7
+    - Viz_1
+    - Viz_4
+    - Viz_3
+    - Viz_2
+    - Viz_23
+    - Viz_24
+    is_mandatory: false
+    date_filter:
+      type: LAST_N_PERIOD
+      number: 180
+      oper: =
+      date_period: DAY
+    display_name: ""
+  layout:
+    tabs:
+    - name: Overview
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 4
+        "y": 0
+        height: 2
+        width: 2
+      - visualization_id: Viz_2
+        x: 10
+        "y": 0
+        height: 2
+        width: 2
+      - visualization_id: Viz_3
+        x: 8
+        "y": 0
+        height: 2
+        width: 2
+      - visualization_id: Viz_4
+        x: 6
+        "y": 0
+        height: 2
+        width: 2
+      - visualization_id: Viz_5
+        x: 0
+        "y": 0
+        height: 2
+        width: 2
+      - visualization_id: Viz_6
+        x: 6
+        "y": 2
+        height: 4
+        width: 6
+      - visualization_id: Viz_7
+        x: 2
+        "y": 0
+        height: 2
+        width: 2
+      - visualization_id: Viz_8
+        x: 0
+        "y": 10
+        height: 8
+        width: 4
+      - visualization_id: Viz_22
+        x: 4
+        "y": 2
+        height: 4
+        width: 2
+      - visualization_id: Viz_25
+        x: 0
+        "y": 2
+        height: 4
+        width: 2
+      - visualization_id: Viz_26
+        x: 2
+        "y": 2
+        height: 4
+        width: 2
+      - visualization_id: Viz_27
+        x: 0
+        "y": 6
+        height: 4
+        width: 2
+      - visualization_id: Viz_28
+        x: 2
+        "y": 6
+        height: 4
+        width: 2
+      - visualization_id: Viz_29
+        x: 4
+        "y": 6
+        height: 4
+        width: 2
+      - visualization_id: Viz_30
+        x: 6
+        "y": 6
+        height: 4
+        width: 3
+      - visualization_id: Viz_31
+        x: 4
+        "y": 10
+        height: 8
+        width: 4
+      - visualization_id: Viz_32
+        x: 8
+        "y": 10
+        height: 8
+        width: 4
+      - visualization_id: Viz_38
+        x: 9
+        "y": 6
+        height: 4
+        width: 3
+      id: 452fc06a-7656-4d90-b985-5fe2056b2c63
+    - name: Adoption
+      description: ""
+      tiles:
+      - visualization_id: Viz_9
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_10
+        x: 6
+        "y": 0
+        height: 4
+        width: 6
+      - visualization_id: Viz_11
+        x: 0
+        "y": 4
+        height: 4
+        width: 6
+      - visualization_id: Viz_12
+        x: 0
+        "y": 12
+        height: 8
+        width: 12
+      - visualization_id: Viz_33
+        x: 3
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_34
+        x: 6
+        "y": 4
+        height: 4
+        width: 6
+      - visualization_id: Viz_35
+        x: 0
+        "y": 8
+        height: 4
+        width: 6
+      - visualization_id: Viz_36
+        x: 6
+        "y": 8
+        height: 4
+        width: 6
+      id: 61ba4019-7624-4e14-8cac-1c6a6bc03c87
+    - name: Credit Consumption
+      description: ""
+      tiles:
+      - visualization_id: Viz_39
+        x: 0
+        "y": 0
+        height: 4
+        width: 5
+      - visualization_id: Viz_40
+        x: 5
+        "y": 0
+        height: 4
+        width: 7
+      - visualization_id: Viz_41
+        x: 5
+        "y": 4
+        height: 4
+        width: 4
+      - visualization_id: Viz_42
+        x: 9
+        "y": 4
+        height: 4
+        width: 3
+      - visualization_id: Viz_43
+        x: 0
+        "y": 4
+        height: 4
+        width: 5
+      id: 975f8a63-2272-4610-80e3-bdf0af634e00
+    - name: Performance
+      description: ""
+      tiles:
+      - visualization_id: Viz_14
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_15
+        x: 9
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_16
+        x: 6
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_17
+        x: 3
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_18
+        x: 0
+        "y": 4
+        height: 6
+        width: 12
+      - visualization_id: Viz_37
+        x: 0
+        "y": 10
+        height: 8
+        width: 12
+      id: 6ae0463c-0803-4790-961d-7fbb433c6c92
+    - name: Productivity
+      description: ""
+      tiles:
+      - visualization_id: Viz_13
+        x: 0
+        "y": 0
+        height: 7
+        width: 12
+      id: fe0bc1d3-ca0e-4ed1-9c77-dd627be0643a
+    - name: Appendix
+      description: ""
+      tiles:
+      - visualization_id: Viz_19
+        x: 4
+        "y": 0
+        height: 4
+        width: 8
+      - visualization_id: Viz_20
+        x: 0
+        "y": 2
+        height: 2
+        width: 2
+      - visualization_id: Viz_21
+        x: 2
+        "y": 2
+        height: 2
+        width: 2
+      - visualization_id: Viz_23
+        x: 0
+        "y": 0
+        height: 2
+        width: 2
+      - visualization_id: Viz_24
+        x: 2
+        "y": 0
+        height: 2
+        width: 2
+      id: 65ea052a-b615-406e-b693-fef44b1a4438
+  parameter_overrides:
+  - key: 511bed7e-da3f-4be0-a50d-6c0677796052
+    value:
+      name: "TS: AI and BI Stats (Beta)::Time Saved per activity ( in mins )"
+  ordered_chips:
+  - name: Org
+    type: FILTER
+  - name: User
+    type: FILTER
+  - name: Query Start Time
+    type: FILTER
+  - name: "TS: AI and BI Stats (Beta)::Time Saved per activity ( in mins )"
+    type: PARAMETER
