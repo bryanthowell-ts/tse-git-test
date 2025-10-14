@@ -10,7 +10,7 @@ on:
         default: 'Primary'
       OBJECT_TYPE:
         type: choice
-        description: Type of Objects to Download
+        description: Type of Objects to Import
         options: 
         - DATA_MODEL
         - CONTENT
